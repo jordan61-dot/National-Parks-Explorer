@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import type { Park } from "./reference";
 import shapes from "./map-outlines.json";
 export function Atlas({
