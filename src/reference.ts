@@ -1,10 +1,144 @@
-export interface Source{url:string;label:string}
-export interface Attraction{id:string;name:string;kind:'trail'|'visitor-center'|'overlook'|'historic-site'|'waterfall'|'scenic-drive'|'place';description:string;source:string;length?:{value:number;unit:'mi'|'km';method:string};difficulty?:string;accessibility?:string;latitude?:number;longitude?:number}
-export interface Park{id:string;parkCode:string;name:string;designation:string;classification:'system-unit'|'affiliated';states:string[];website:string;description:string;sources:Source[];location?:{latitude:number;longitude:number;kind:string;source:string};research:{title:string;url:string}[];activities:string[];topics:string[];attractions:Attraction[];coverageNote?:string}
-export interface Reference{formatVersion:number;retrievedAt:string;rosterUrl:string;publishedSystemTotal:number;headingCounts:Record<string,number>;attribution:string;licenseUrl:string;units:Park[]}
-let pending:Promise<Reference>|undefined;
-export function loadReference(){return pending??=(import('./data/parks.json').then(x=>x.default as unknown as Reference).catch(e=>{pending=undefined;throw e}));}
-export const stateNames:Record<string,string>={AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',DC:'District of Columbia',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming',AS:'American Samoa',GU:'Guam',MP:'Northern Mariana Islands',PR:'Puerto Rico',VI:'U.S. Virgin Islands'};
-const groups:Record<string,string[]>={Northeast:'CT ME MA NH RI VT NJ NY PA'.split(' '),Midwest:'IN IL MI OH WI IA KS MN MO NE ND SD'.split(' '),South:'DE DC FL GA MD NC SC VA WV AL KY MS TN AR LA OK TX'.split(' '),West:'AZ CO ID MT NV NM UT WY AK CA HI OR WA'.split(' '),Territories:['AS','GU','MP','PR','VI']};
-export function parkRegions(p:Park){return Object.keys(groups).filter(g=>p.states.some(s=>groups[g].includes(s)))}
-export function safeUrl(value:string){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password?u.href:undefined}catch{return undefined}}
+export interface Source {
+  url: string;
+  label: string;
+}
+export interface Attraction {
+  id: string;
+  name: string;
+  kind:
+    | "trail"
+    | "visitor-center"
+    | "overlook"
+    | "historic-site"
+    | "waterfall"
+    | "scenic-drive"
+    | "place";
+  description: string;
+  source: string;
+  length?: { value: number; unit: "mi" | "km"; method: string };
+  difficulty?: string;
+  accessibility?: string;
+  latitude?: number;
+  longitude?: number;
+}
+export interface Park {
+  id: string;
+  parkCode: string;
+  name: string;
+  designation: string;
+  classification: "system-unit" | "affiliated";
+  states: string[];
+  website: string;
+  description: string;
+  sources: Source[];
+  location?: {
+    latitude: number;
+    longitude: number;
+    kind: string;
+    source: string;
+  };
+  research: { title: string; url: string }[];
+  activities: string[];
+  topics: string[];
+  attractions: Attraction[];
+  coverageNote?: string;
+}
+export interface Reference {
+  formatVersion: number;
+  retrievedAt: string;
+  rosterUrl: string;
+  publishedSystemTotal: number;
+  headingCounts: Record<string, number>;
+  attribution: string;
+  licenseUrl: string;
+  units: Park[];
+}
+let pending: Promise<Reference> | undefined;
+export function loadReference() {
+  return (pending ??= import("./data/parks.json")
+    .then((x) => x.default as unknown as Reference)
+    .catch((e) => {
+      pending = undefined;
+      throw e;
+    }));
+}
+export const stateNames: Record<string, string> = {
+  AL: "Alabama",
+  AK: "Alaska",
+  AZ: "Arizona",
+  AR: "Arkansas",
+  CA: "California",
+  CO: "Colorado",
+  CT: "Connecticut",
+  DE: "Delaware",
+  DC: "District of Columbia",
+  FL: "Florida",
+  GA: "Georgia",
+  HI: "Hawaii",
+  ID: "Idaho",
+  IL: "Illinois",
+  IN: "Indiana",
+  IA: "Iowa",
+  KS: "Kansas",
+  KY: "Kentucky",
+  LA: "Louisiana",
+  ME: "Maine",
+  MD: "Maryland",
+  MA: "Massachusetts",
+  MI: "Michigan",
+  MN: "Minnesota",
+  MS: "Mississippi",
+  MO: "Missouri",
+  MT: "Montana",
+  NE: "Nebraska",
+  NV: "Nevada",
+  NH: "New Hampshire",
+  NJ: "New Jersey",
+  NM: "New Mexico",
+  NY: "New York",
+  NC: "North Carolina",
+  ND: "North Dakota",
+  OH: "Ohio",
+  OK: "Oklahoma",
+  OR: "Oregon",
+  PA: "Pennsylvania",
+  RI: "Rhode Island",
+  SC: "South Carolina",
+  SD: "South Dakota",
+  TN: "Tennessee",
+  TX: "Texas",
+  UT: "Utah",
+  VT: "Vermont",
+  VA: "Virginia",
+  WA: "Washington",
+  WV: "West Virginia",
+  WI: "Wisconsin",
+  WY: "Wyoming",
+  AS: "American Samoa",
+  GU: "Guam",
+  MP: "Northern Mariana Islands",
+  PR: "Puerto Rico",
+  VI: "U.S. Virgin Islands",
+};
+const groups: Record<string, string[]> = {
+  Northeast: "CT ME MA NH RI VT NJ NY PA".split(" "),
+  Midwest: "IN IL MI OH WI IA KS MN MO NE ND SD".split(" "),
+  South: "DE DC FL GA MD NC SC VA WV AL KY MS TN AR LA OK TX".split(" "),
+  West: "AZ CO ID MT NV NM UT WY AK CA HI OR WA".split(" "),
+  Territories: ["AS", "GU", "MP", "PR", "VI"],
+};
+export function parkRegions(p: Park) {
+  return Object.keys(groups).filter((g) =>
+    p.states.some((s) => groups[g].includes(s)),
+  );
+}
+export function safeUrl(value: string) {
+  try {
+    const u = new URL(value);
+    return u.protocol === "https:" && !u.username && !u.password
+      ? u.href
+      : undefined;
+  } catch {
+    return undefined;
+  }
+}

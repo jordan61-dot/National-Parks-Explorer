@@ -1,1 +1,34 @@
-{"name":"@explorer/national-parks","version":"0.1.0","type":"module","license":"MIT","exports":"./src/index.ts","peerDependencies":{"react":"^19.2.0"},"devDependencies":{"@types/react":"19.2.2","react":"19.2.0","typescript":"5.9.3","vitest":"4.1.12","fake-indexeddb":"6.2.4"},"scripts":{"check":"tsc --noEmit","test":"vitest run"},"files":["src","README.md","LICENSE","DATA_SOURCES.md"]}
+{
+  "name": "@explorer/national-parks",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts",
+    "./domain": "./src/domain.ts",
+    "./reference": "./src/reference.ts",
+    "./host": "./src/host.ts"
+  },
+  "peerDependencies": {
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "react": "19.2.0",
+    "typescript": "5.9.3",
+    "vitest": "4.1.12",
+    "fake-indexeddb": "6.2.4"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "reference:build": "python scripts/compile.py",
+    "reference:refresh": "python scripts/compile.py --refresh"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "DATA_SOURCES.md"
+  ]
+}
