@@ -37,7 +37,7 @@ export interface Plan extends Entity {
   notes: string;
   stops: Json[];
 }
-export const uid = (kind: string) => kind + "-" + crypto.randomUUID();
+export const uid = (kind: string) => kind + "-" + (crypto.randomUUID?.() ?? Array.from(crypto.getRandomValues(new Uint8Array(16)), n => n.toString(16).padStart(2, "0")).join(""));
 export const stamp = (previous = "") =>
   new Date(Math.max(Date.now(), Date.parse(previous) + 1 || 0)).toISOString();
 export function entity(
@@ -272,6 +272,7 @@ export class Repository {
     );
   }
   async photo(visit: Visit, blob: Blob, caption: string) {
+    if (!crypto.subtle) throw Error("Photographs require HTTPS or localhost. Open Explorer at its secure address.");
     const sha256 = Array.from(
       new Uint8Array(
         await crypto.subtle.digest("SHA-256", await blob.arrayBuffer()),

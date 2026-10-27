@@ -1,4 +1,4 @@
-import { it, expect } from "vitest";
+import { it, expect, vi } from "vitest";
 import {
   Repository,
   newVisit,
@@ -168,4 +168,14 @@ it("ordered trip stops retain independent identities, notes and completion", asy
     (entities(await s.snapshot())[0].stops as { id: string }[])[0].id,
   ).toBe("stop-2");
   expect(visits(entities(await s.snapshot()))).toHaveLength(0);
+});
+
+it('creates secure random record identities without randomUUID in HTTP previews', () => {
+ const getRandomValues = crypto.getRandomValues.bind(crypto);
+ vi.stubGlobal('crypto', {getRandomValues});
+ try {
+  const a=newVisit('park'), b=newVisit('park');
+  expect(validEntity(a)).toBe(true);
+  expect(a.id).not.toBe(b.id);
+ } finally {vi.unstubAllGlobals()}
 });
