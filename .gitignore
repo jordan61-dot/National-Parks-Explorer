@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 .reference-cache/
 __pycache__/
 *.pyc
