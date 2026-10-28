@@ -21,6 +21,6 @@ class CompilerTests(unittest.TestCase):
   home={'links':[['/test/learn/historyculture/index.htm','History']]}
   url='https://www.nps.gov/test/learn/historyculture/index.htm'
   enrich(p,home,{url:{'text':'No date'}},slug);self.assertEqual(p['articles'],[])
-  evidence={url:{'title':'History','text':'Verified text','retrievedAt':'2026-10-27T00:00:00Z','places':[{'url':'https://www.nps.gov/places/trail.htm','title':'New title'},{'url':'https://example.com/places/x.htm','title':'Foreign place'},{'url':'https://www.nps.gov/places/new.htm','title':'Named Overlook'}]}}
+  evidence={url:{'title':'History','text':'This synthetic official article fixture has enough distinct words to represent a substantive source excerpt.','retrievedAt':'2026-10-27T00:00:00Z','places':[{'url':'https://www.nps.gov/places/trail.htm','title':'New title'},{'url':'https://example.com/places/x.htm','title':'Foreign place'},{'url':'https://www.nps.gov/places/new.htm','title':'Named Overlook'}]}}
   enrich(p,home,evidence,slug);self.assertEqual(len(p['articles']),1);self.assertEqual(len(p['attractions']),2);self.assertEqual(p['attractions'][0]['id'],'old-id');self.assertEqual(p['attractions'][1]['kind'],'overlook')
 if __name__=='__main__':unittest.main()

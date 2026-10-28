@@ -1,5 +1,5 @@
 import { it, expect } from "vitest";
-import { loadReference, safeUrl } from "../src/reference";
+import { loadReference, safeUrl, parkSearchText } from "../src/reference";
 it("matches the published official roster without collapsing shared administrative codes", async () => {
   const r = await loadReference();
   expect(
@@ -42,4 +42,11 @@ it("validates article provenance and stable attraction identities",async()=>{
   }
   for(const a of p.attractions){expect(safeUrl(a.source)).toBeTruthy();expect(a.id).toMatch(/^[a-z0-9][a-z0-9._-]{0,79}$/)}
  }
+});
+
+it("finds full state names and sourced article or attraction terms",async()=>{
+ const r=await loadReference(),p=r.units.find(p=>p.id==='cuyahoga-valley-national-park')!;
+ expect(parkSearchText(p)).toContain('ohio');
+ const fixture={...p,articles:[{topic:'Nature',title:'Ecology',text:'Synthetic habitat phrase',source:p.website,retrievedAt:r.retrievedAt}]};
+ expect(parkSearchText(fixture)).toContain('synthetic habitat phrase');
 });

@@ -1,6 +1,6 @@
 import type { Host, ModuleProps } from "./host";
 import { storageSpec } from "./domain";
-import { loadReference } from "./reference";
+import { loadReference, parkSearchText } from "./reference";
 export function createNationalParksModule(host: Host) {
   if (host.apiVersion !== 1)
     throw Error("National Parks Explorer requires host API 1");
@@ -64,10 +64,7 @@ export function createNationalParksModule(host: Host) {
       return reference.units
         .filter((p) =>
           terms.every((t) =>
-            [p.name, p.designation, p.description, ...p.states, ...p.topics]
-              .join(" ")
-              .toLowerCase()
-              .includes(t),
+            parkSearchText(p).includes(t),
           ),
         )
         .slice(0, request.limit)

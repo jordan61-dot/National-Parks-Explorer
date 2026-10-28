@@ -78,6 +78,7 @@ def main():
  parks,counts,total=roster((E/'roster.html').read_text());pages=json.loads((E/'pages.json').read_text()) if (E/'pages.json').exists() else {}
  points=json.loads((E/'points.json').read_text()).get('features',[]) if (E/'points.json').exists() else []
  details=json.loads((E/'details.json').read_text()) if (E/'details.json').exists() else {}
+ places=json.loads((E/'places.json').read_text()) if (E/'places.json').exists() else {}
  for p in parks:
   page=pages.get(p['website'],{});home_url='https://www.nps.gov/'+p['parkCode']+'/index.htm'
   home=pages.get(home_url,{})
@@ -99,7 +100,7 @@ def main():
     if href.startswith('https://www.nps.gov/places/') and title.endswith('Trail') and href not in seen_attractions:
      seen_attractions.add(href);p['attractions'].append(dict(id=slug(title),name=title,kind='trail',description='Listed by the official park hiking guide. Check the linked trail page for route details and current access.',source=href))
    p['sources'].append(dict(url='https://www.nps.gov/'+p['parkCode']+'/planyourvisit/hiking.htm',label='Official hiking guide; individual trails linked'))
-  enrich(p,page,details,slug)
+  enrich(p,page,details,slug,places)
   exact=[f for f in points if slug(f['attributes'].get('UNIT_NAME',''))==slug(p['name'])]
   matching=exact or [f for f in points if p['parkCode'] and f['attributes'].get('UNIT_CODE','').lower()==p['parkCode']]
   if len(matching)==1:

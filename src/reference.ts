@@ -153,3 +153,10 @@ export function safeUrl(value: string) {
     return undefined;
   }
 }
+
+export function parkSearchText(p: Park) {
+  return [p.name, p.designation, p.description,
+    ...p.states.flatMap(s=>[s,stateNames[s]??s]), ...p.activities, ...p.topics,
+    ...(p.articles??[]).flatMap(a=>[a.topic,a.title,a.text]),
+    ...p.attractions.map(a=>a.name)].join(' ').toLowerCase();
+}

@@ -13,6 +13,7 @@ import {
   safeUrl,
   stateNames,
   parkRegions,
+  parkSearchText,
   type Park,
   type Reference,
 } from "./reference";
@@ -239,17 +240,7 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
         .toLowerCase()
         .split(/\s+/)
         .every((t) =>
-          [
-            p.name,
-            p.description,
-            p.designation,
-            ...p.states.flatMap((s) => [s, stateNames[s]]),
-            ...p.activities,
-            ...p.topics,
-          ]
-            .join(" ")
-            .toLowerCase()
-            .includes(t),
+          parkSearchText(p).includes(t),
         ) &&
       (!status ||
         (status === "visited" && stats.ids.has(p.id)) ||
