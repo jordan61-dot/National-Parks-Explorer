@@ -87,7 +87,7 @@ def main():
   if p['description']:p['sources'].append(dict(url=description_url,label='Official NPS park homepage',retrievedAt=page.get('retrievedAt',(E/'date.txt').read_text().strip())))
   seen=set()
   for href,title in page.get('links',[]):
-   url=urljoin(p['website'],href); title=clean(title)
+   url=urljoin(p['website'],href).removesuffix('#'); title=clean(title)
    if urlparse(url).hostname=='www.nps.gov' and p['parkCode'] and '/'+p['parkCode']+'/' in url and any(t in url for t in ['/planyourvisit/','/learn/historyculture/','/learn/nature/']) and title and url not in seen:
     seen.add(url);p['research'].append(dict(title=title,url=url))
   p['research']=p['research'][:25]

@@ -23,7 +23,7 @@ def candidates(park,page):
 def selections(park, page):
  selected={}
  for href,title in sorted(page.get('links',[]),key=lambda x:0 if x[0].endswith('/index.htm') else 1):
-  url=urljoin(park['website'],href);t=topic(url)
+  url=urljoin(park['website'],href).removesuffix('#');t=topic(url)
   if t and t not in selected and urlparse(url).hostname=='www.nps.gov' and park['parkCode'] and '/'+park['parkCode']+'/' in url:selected[t]=url
  return selected
 
