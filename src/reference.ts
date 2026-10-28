@@ -1,6 +1,15 @@
 export interface Source {
   url: string;
   label: string;
+  retrievedAt?: string;
+}
+export interface Article {
+  topic: string;
+  title: string;
+  text: string;
+  source: string;
+  retrievedAt: string;
+  lastUpdated?: string | null;
 }
 export interface Attraction {
   id: string;
@@ -15,6 +24,7 @@ export interface Attraction {
     | "place";
   description: string;
   source: string;
+  retrievedAt?: string;
   length?: { value: number; unit: "mi" | "km"; method: string };
   difficulty?: string;
   accessibility?: string;
@@ -40,6 +50,7 @@ export interface Park {
   research: { title: string; url: string }[];
   activities: string[];
   topics: string[];
+  articles?: Article[];
   attractions: Attraction[];
   coverageNote?: string;
 }

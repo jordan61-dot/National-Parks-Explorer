@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.request import Request,urlopen
 from urllib.parse import urlparse,urljoin
 from html.parser import HTMLParser
+from enrichment import enrich
 ROOT=Path(__file__).resolve().parents[1]; E=ROOT/'scripts/evidence'; E.mkdir(exist_ok=True)
 ROSTER='https://www.nps.gov/aboutus/national-park-system.htm'
 POINTS='https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json'
@@ -76,6 +77,7 @@ def main():
   (E/'points.json').write_text(fetch(POINTS))
  parks,counts,total=roster((E/'roster.html').read_text());pages=json.loads((E/'pages.json').read_text()) if (E/'pages.json').exists() else {}
  points=json.loads((E/'points.json').read_text()).get('features',[]) if (E/'points.json').exists() else []
+ details=json.loads((E/'details.json').read_text()) if (E/'details.json').exists() else {}
  for p in parks:
   page=pages.get(p['website'],{});p['description']=clean(page.get('description',''))
   if p['description']:p['sources'].append(dict(url=p['website'],label='Official NPS park homepage'))
@@ -93,6 +95,7 @@ def main():
     if href.startswith('https://www.nps.gov/places/') and title.endswith('Trail') and href not in seen_attractions:
      seen_attractions.add(href);p['attractions'].append(dict(id=slug(title),name=title,kind='trail',description='Listed by the official park hiking guide. Check the linked trail page for route details and current access.',source=href))
    p['sources'].append(dict(url='https://www.nps.gov/'+p['parkCode']+'/planyourvisit/hiking.htm',label='Official hiking guide; individual trails linked'))
+  enrich(p,page,details,slug)
   exact=[f for f in points if slug(f['attributes'].get('UNIT_NAME',''))==slug(p['name'])]
   matching=exact or [f for f in points if p['parkCode'] and f['attributes'].get('UNIT_CODE','').lower()==p['parkCode']]
   if len(matching)==1:

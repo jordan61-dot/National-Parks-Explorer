@@ -390,6 +390,25 @@ function Profile({ id }: { id: string }) {
         </button>
         <a href={url("plans")}>Trip plans</a>
       </div>
+      <h3>Encyclopedia</h3>
+      <p>
+        Excerpts from official NPS pages, saved for offline reading. A shared
+        park website may describe several separately listed units. Check the
+        linked page for the full context and current visitor information.
+      </p>
+      {!p.articles?.length && <p>No detailed articles are available in this snapshot.</p>}
+      {p.articles?.map((a) => (
+        <section className="np-card" key={a.source}>
+          <p className="eyebrow">{a.topic}</p>
+          <h4>{a.title}</h4>
+          <blockquote className="np-excerpt">{a.text}</blockquote>
+          <p className="muted">
+            Retrieved {a.retrievedAt.slice(0, 10)}
+            {a.lastUpdated ? ` · NPS last updated ${a.lastUpdated}` : ""}
+          </p>
+          <Link href={a.source} label="Read the full official article" />
+        </section>
+      ))}
       <h3>Visitor information & research</h3>
       <p>
         These official sources open online. Bundled text does not report live
@@ -1336,7 +1355,8 @@ function Settings() {
         {r.units.filter((p) => p.description).length} descriptions;{" "}
         {r.units.filter((p) => p.location).length} reference locations;{" "}
         {r.units.reduce((n, p) => n + p.attractions.length, 0)} attraction
-        entries.
+        entries; {r.units.filter((p) => p.articles?.length).length} places with
+        detailed offline articles. Article retrieval dates appear on each profile.
       </p>
       <p>{r.attribution}</p>
     </>
