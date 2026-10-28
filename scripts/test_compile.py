@@ -14,6 +14,8 @@ class CompilerTests(unittest.TestCase):
   a=Article();a.feed('<nav>Navigation</nav><div id="main"><h1>Page title</h1><div class="ArticleTextGroup"><p>Official text</p><script>bad()</script><figure>Credit</figure><a href="/places/trail.htm">Named Trail</a></div></div><footer>Footer</footer>');self.assertEqual(a.title,'Page title');self.assertEqual(a.excerpt(),'Official text Named Trail');self.assertEqual(a.links[0][0],'/places/trail.htm')
  def test_excerpt_is_bounded(self):
   a=Article();a.feed('<div class="ArticleTextGroup">'+('word '*250)+'</div>');self.assertEqual(len(a.excerpt().split()),181)
+ def test_only_first_main_heading_is_the_page_title(self):
+  a=Article();a.feed('<div id="main"><h1 class="modal-title">Embed Video</h1><h1>Named Visitor Center</h1><h1>Transcript title</h1><h1 class="modal-title">Embed Video</h1></div>');self.assertEqual(a.title,'Named Visitor Center')
  def test_enrichment_preserves_ids_and_requires_evidence(self):
   from enrichment import enrich
   from compile import slug

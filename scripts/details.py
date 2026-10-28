@@ -8,14 +8,14 @@ from enrichment import candidates
 VOID={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
 class Article(HTMLParser):
  def __init__(self):
-  super().__init__();self.stack=[];self.parts=[];self.links=[];self.anchor=None;self.title='';self.heading=False
+  super().__init__();self.stack=[];self.parts=[];self.links=[];self.anchor=None;self.title='';self.heading=False;self.title_seen=False
  def handle_starttag(self,tag,attrs):
   a=dict(attrs);parent=self.stack[-1] if self.stack else ('',False,False,False)
   main=parent[3] or a.get('id')=='main'
   active=parent[1] or ('ArticleTextGroup' in a.get('class','') and 'CaptionedImage' not in a.get('class','')) or 'nps-park-header__description' in a.get('class','')
   hidden=parent[2] or tag in {'script','style','figure','figcaption','nav'} or 'visually-hidden' in a.get('class','')
   if tag not in VOID:self.stack.append((tag,active,hidden,main))
-  if tag=='h1' and main:self.heading=True
+  if tag=='h1' and main and not hidden and not self.title_seen and 'modal-title' not in a.get('class',''):self.heading=True;self.title_seen=True
   if tag=='a' and main and not hidden:self.anchor=[a.get('href',''),'']
   if active and tag in {'p','li','br','h2','h3','h4'}:self.parts.append('\n')
  def handle_data(self,data):
@@ -58,10 +58,11 @@ def main():
  if '--homes-only' in sys.argv:return
  chosen=targets();path=E/'details.json';old=json.loads(path.read_text()) if path.exists() else {};data=dict(old)
  urls=sorted({u for choices in chosen.values() for urls in choices.values() for u in urls})
+ if '--repair-titles' in sys.argv:urls=[u for u in urls if 'Embed Video' in old.get(u,{}).get('title','')]
  if '--batch' in sys.argv:
   n=int(sys.argv[sys.argv.index('--batch')+1]);urls=[u for u in urls if u not in old][:n]
  def collect(url):
-  if old.get(url,{}).get('retrievedAt') and '--refresh' not in sys.argv:return url,old[url]
+  if old.get(url,{}).get('retrievedAt') and '--refresh' not in sys.argv and '--repair-titles' not in sys.argv:return url,old[url]
   try:
    if not robots.can_fetch('ExplorerReference',url):return url,{'error':'robots denied'}
    raw=fetch(url);a=Article();a.feed(raw);p=Page();p.feed(raw);updated=re.search(r'Last updated:\s*([^<]+)',raw)

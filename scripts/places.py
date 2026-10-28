@@ -9,9 +9,10 @@ def main():
  data=json.loads((E/'details.json').read_text())
  path=E/'places.json';places=json.loads(path.read_text()) if path.exists() else {}
  urls=sorted({p['url'] for page in data.values() for p in page.get('places',[]) if urlparse(p['url']).hostname=='www.nps.gov'})
+ if '--repair-titles' in sys.argv:urls=[u for u in urls if 'Embed Video' in places.get(u,{}).get('title','')]
  robots=RobotFileParser();robots.parse(fetch('https://www.nps.gov/robots.txt').splitlines())
  def collect(url):
-  if places.get(url,{}).get('retrievedAt') and '--refresh' not in sys.argv:return url,places[url]
+  if places.get(url,{}).get('retrievedAt') and '--refresh' not in sys.argv and '--repair-titles' not in sys.argv:return url,places[url]
   try:
    if not robots.can_fetch('ExplorerReference',url):return url,{'error':'robots denied'}
    raw=fetch(url);a=Article();a.feed(raw);p=Page();p.feed(raw)
