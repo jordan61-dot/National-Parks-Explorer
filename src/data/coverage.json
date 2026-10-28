@@ -1,0 +1,21 @@
+{
+  "system": 434,
+  "affiliated": 33,
+  "entries": 467,
+  "descriptions": 437,
+  "locations": 429,
+  "entriesWithArticles": 435,
+  "articleSections": 1858,
+  "attractions": 156,
+  "byTopic": {
+    "History & culture": 378,
+    "Nature & geology": 296,
+    "Accessibility": 409,
+    "Directions & access": 426,
+    "Activities & trails": 349
+  },
+  "attemptedArticlePages": 2400,
+  "articlePageErrors": 188,
+  "attemptedPlacePages": 201,
+  "verifiedPlaceTitles": 201
+}

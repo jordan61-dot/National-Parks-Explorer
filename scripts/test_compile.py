@@ -23,4 +23,13 @@ class CompilerTests(unittest.TestCase):
   enrich(p,home,{url:{'text':'No date'}},slug);self.assertEqual(p['articles'],[])
   evidence={url:{'title':'History','text':'This synthetic official article fixture has enough distinct words to represent a substantive source excerpt.','retrievedAt':'2026-10-27T00:00:00Z','places':[{'url':'https://www.nps.gov/places/trail.htm','title':'New title'},{'url':'https://example.com/places/x.htm','title':'Foreign place'},{'url':'https://www.nps.gov/places/new.htm','title':'Named Overlook'}]}}
   enrich(p,home,evidence,slug);self.assertEqual(len(p['articles']),1);self.assertEqual(len(p['attractions']),2);self.assertEqual(p['attractions'][0]['id'],'old-id');self.assertEqual(p['attractions'][1]['kind'],'overlook')
+ def test_generic_place_labels_require_verified_title(self):
+  from enrichment import enrich
+  from compile import slug
+  park={'parkCode':'test','website':'https://www.nps.gov/test/','sources':[], 'attractions':[]}
+  url='https://www.nps.gov/test/planyourvisit/things2do.htm';place='https://www.nps.gov/places/lookout.htm'
+  details={url:{'title':'Things To Do','text':'Things To Do','retrievedAt':'2026-10-28T00:00:00Z','places':[{'url':place,'title':'Full Description'}]}}
+  enrich(park,{},details,slug);self.assertEqual(park['articles'],[]);self.assertEqual(park['attractions'],[])
+  enrich(park,{},details,slug,{place:{'title':'Named Overlook','retrievedAt':'2026-10-28T00:00:00Z'}})
+  self.assertEqual(park['attractions'][0]['name'],'Named Overlook');self.assertEqual(park['attractions'][0]['kind'],'overlook')
 if __name__=='__main__':unittest.main()

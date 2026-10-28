@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib.request import Request,urlopen
 from urllib.parse import urlparse,urljoin
 from html.parser import HTMLParser
-from enrichment import enrich
+from enrichment import enrich,TOPICS
 ROOT=Path(__file__).resolve().parents[1]; E=ROOT/'scripts/evidence'; E.mkdir(exist_ok=True)
 ROSTER='https://www.nps.gov/aboutus/national-park-system.htm'
 POINTS='https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json'
@@ -107,7 +107,11 @@ def main():
    g=matching[0].get('geometry',{});lat=g.get('y');lon=g.get('x')
    if isinstance(lat,(float,int)) and isinstance(lon,(float,int)) and -90<=lat<=90 and -180<=lon<=180:p['location']=dict(latitude=lat,longitude=lon,kind='Administrative reference point; not an entrance or trailhead',source=POINTS)
   if not p['description']:p['coverageNote']+=' No description retrieved.'
+  missing=[topic for topic in TOPICS if topic not in {a['topic'] for a in p['articles']}]
+  if missing:p['coverageNote']+=' No substantive offline excerpt for: '+', '.join(missing)+'.'
  result=dict(formatVersion=1,retrievedAt=(E/'date.txt').read_text().strip(),rosterUrl=ROSTER,publishedSystemTotal=total,headingCounts=counts,attribution='Roster and text: National Park Service. Geometry: NPS Land Resources Division; CC BY 4.0. Outlines: Natural Earth, public domain.',licenseUrl='https://www.nps.gov/aboutus/disclaimer.htm',units=parks)
  (ROOT/'src/data').mkdir(exist_ok=True);(ROOT/'src/data/parks.json').write_text(json.dumps(result,ensure_ascii=False,separators=(',',':'))+'\n')
- print(json.dumps(dict(system=total,affiliated=counts['Affiliated Areas'],descriptions=sum(bool(p['description']) for p in parks),locations=sum('location' in p for p in parks))))
+ coverage=dict(system=total,affiliated=counts['Affiliated Areas'],entries=len(parks),descriptions=sum(bool(p['description']) for p in parks),locations=sum('location' in p for p in parks),entriesWithArticles=sum(bool(p['articles']) for p in parks),articleSections=sum(len(p['articles']) for p in parks),attractions=sum(len(p['attractions']) for p in parks),byTopic={topic:sum(any(a['topic']==topic for a in p['articles']) for p in parks) for topic in TOPICS},attemptedArticlePages=len(details),articlePageErrors=sum(bool(p.get('error')) for p in details.values()),attemptedPlacePages=len(places),verifiedPlaceTitles=sum(bool(p.get('title')) for p in places.values()))
+ (ROOT/'src/data/coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2)+'\n')
+ print(json.dumps(coverage))
 if __name__=='__main__':main()

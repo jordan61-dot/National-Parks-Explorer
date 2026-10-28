@@ -16,4 +16,4 @@ Hosts consume an immutable Git commit in the lockfile. Source is TypeScript/Reac
 
 The missing domain, screen and data sources have been implemented and type-check and unit tests pass. Integrated release verification is recorded in Explorer's private Phase 7 handoff. Do not infer physical Android, assistive-technology or production acceptance from these module checks.
 
-Reference coverage is incomplete beyond the complete official inventory: many detailed encyclopedia fields and attractions are unknown. The app labels missing coverage and links to official sources. Current conditions are never inferred from cached data.
+The complete official inventory is supplemented by dated offline article excerpts, verified named attractions, full-state-name search and explicit missing-topic notices. See the generated [coverage report](src/data/coverage.json) for measured totals. Detailed encyclopedia fields and trail attributes remain incomplete; the app labels missing coverage and links to official sources. Current conditions are never inferred from cached data.

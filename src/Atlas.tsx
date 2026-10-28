@@ -125,7 +125,7 @@ export function Atlas({
           aria-label="Park reference points and geographic outlines"
         >
           {(view === "states" ? shapes.states : shapes.countries).map((s) => (
-            <path
+            <path aria-hidden="true"
               key={s.code}
               d={s.path}
               fill="var(--surface-2, #d8e3dc)"
