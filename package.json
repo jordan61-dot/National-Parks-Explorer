@@ -13,17 +13,24 @@
     "react": "^19.2.0"
   },
   "devDependencies": {
+    "@testing-library/react": "16.3.0",
+    "@testing-library/user-event": "14.6.1",
     "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "fake-indexeddb": "6.2.4",
+    "jsdom": "26.1.0",
     "react": "19.2.0",
+    "react-dom": "19.2.0",
     "typescript": "5.9.3",
-    "vitest": "4.1.12",
-    "fake-indexeddb": "6.2.4"
+    "vitest": "4.1.12"
   },
   "scripts": {
     "check": "tsc --noEmit",
     "test": "vitest run",
     "reference:build": "python scripts/compile.py",
-    "reference:refresh": "python scripts/compile.py --refresh"
+    "reference:refresh": "python scripts/compile.py --refresh",
+    "reference:details": "python scripts/details.py",
+    "test:compiler": "python -m unittest discover -s scripts -p \"test_*.py\""
   },
   "files": [
     "src",

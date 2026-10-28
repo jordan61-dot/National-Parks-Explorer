@@ -35,11 +35,14 @@ def roster(raw):
   for row in rows:
    text=clean(row); anchors=re.findall(r'<a[^>]*href="([^"]+)"[^>]*>(.*?)</a>',row,re.S)
    if anchors and 'Klondike Gold Rush' not in text: name=clean(anchors[0][1]); location=text[len(name):].lstrip(', ')
-   else: name,location=text.split(', ',1)
+   else:
+    split=re.search(r', (?=(?:'+ '|'.join(re.escape(v) for v in STATE.values()) +r'|Canada)\b)',text)
+    if not split:raise ValueError('No recognizable location in '+text)
+    name,location=text[:split.start()],text[split.end():]
    links=[urljoin(ROSTER,html.unescape(a[0])) for a in anchors];website=links[0] if links else ROSTER
    match=re.search(r'nps.gov/([a-z]{4})/',website);code=match[1] if match else ''
    states=[k for k,v in STATE.items() if re.search(r'\b'+re.escape(v)+r'\b',location)]
-   parks.append(dict(id=slug(name),parkCode=code,name=name,designation=names.get(label,label[:-1]),classification='affiliated' if label=='Affiliated Areas' else 'system-unit',states=states,website=website,description='',sources=[dict(url=ROSTER,label='Official NPS roster')],research=[],activities=[],topics=[],attractions=[],coverageNote='Roster location: '+location+'. Detailed visitor coverage may be incomplete.'))
+   parks.append(dict(id=('john-d-rockefeller' if name=='John D. Rockefeller, Jr. Memorial Parkway' else slug(name)),parkCode=code,name=name,designation=names.get(label,label[:-1]),classification='affiliated' if label=='Affiliated Areas' else 'system-unit',states=states,website=website,description='',sources=[dict(url=ROSTER,label='Official NPS roster')],research=[],activities=[],topics=[],attractions=[],coverageNote='Roster location: '+location+'. Detailed visitor coverage may be incomplete.'))
  published=int(re.search(r'manages\s+(\d+)\s+individual units',clean(raw))[1])
  assert sum(p['classification']=='system-unit' for p in parks)==published
  assert len({p['id'] for p in parks})==len(parks)
@@ -49,7 +52,7 @@ class Page(HTMLParser):
  def __init__(self): super().__init__();self.description='';self.links=[];self.link=None
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
-  if tag=='meta' and a.get('name','').lower()=='description': self.description=a.get('content','')
+  if tag=='meta' and (a.get('name','').lower()=='description' or a.get('property','').lower()=='og:description') and len(a.get('content',''))>len(self.description): self.description=a.get('content','')
   if tag=='a': self.link=[a.get('href',''),'']
  def handle_data(self,data):
   if self.link:self.link[1]+=data
