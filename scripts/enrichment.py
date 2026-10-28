@@ -10,6 +10,16 @@ def topic(url):
  if re.search(r'(hiking|trails|things2do)',url):return 'Activities & trails'
  return None
 
+TOPICS={'History & culture':'learn/historyculture/index.htm','Nature & geology':'learn/nature/index.htm','Accessibility':'planyourvisit/accessibility.htm','Directions & access':'planyourvisit/directions.htm','Activities & trails':'planyourvisit/things2do.htm'}
+def candidates(park,page):
+ selected=selections(park,page);result={}
+ for label,path in TOPICS.items():
+  urls=[]
+  if park['parkCode'] and urlparse(park['website']).hostname=='www.nps.gov':urls.append('https://www.nps.gov/'+park['parkCode']+'/'+path)
+  if selected.get(label) and selected[label] not in urls:urls.append(selected[label])
+  if urls:result[label]=urls
+ return result
+
 def selections(park, page):
  selected={}
  for href,title in sorted(page.get('links',[]),key=lambda x:0 if x[0].endswith('/index.htm') else 1):
@@ -20,7 +30,8 @@ def selections(park, page):
 def enrich(park, page, details, slug):
  park['articles']=[]
  seen={a['source'] for a in park['attractions']};ids={a['id'] for a in park['attractions']}
- for subject,url in selections(park,page).items():
+ for subject,urls in candidates(park,page).items():
+  url=next((u for u in urls if details.get(u,{}).get('text') and details.get(u,{}).get('retrievedAt')),urls[0])
   evidence=details.get(url,{})
   if not evidence.get('text') or not evidence.get('retrievedAt'):continue
   park['articles'].append(dict(topic=subject,title=evidence.get('title') or subject,text=evidence['text'],source=url,retrievedAt=evidence['retrievedAt'],lastUpdated=evidence.get('lastUpdated')))
@@ -28,7 +39,7 @@ def enrich(park, page, details, slug):
   for place in evidence.get('places',[]):
    source=place['url'];name=place['title'].strip()
    if urlparse(source).hostname!='www.nps.gov' or not urlparse(source).path.startswith('/places/') or not name or source in seen:continue
-   ident=slug(name)
+   ident='place-'+hashlib.sha256(source.encode()).hexdigest()[:20]
    if ident in ids:ident=ident[:65]+'-'+hashlib.sha256(source.encode()).hexdigest()[:10]
    lower=name.lower();kind='place'
    for pattern,value in [('trail','trail'),('visitor center','visitor-center'),('visitor centre','visitor-center'),('overlook','overlook'),('waterfall','waterfall'),('scenic drive','scenic-drive')]:

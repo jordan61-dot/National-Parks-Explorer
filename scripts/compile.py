@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]; E=ROOT/'scripts/evidence'; E.mkdir(exi
 ROSTER='https://www.nps.gov/aboutus/national-park-system.htm'
 POINTS='https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json'
 def fetch(url):
- with urlopen(Request(url,headers={'User-Agent':'ExplorerReference/0.1 public-reference compiler'}),timeout=25) as r:
+ with urlopen(Request(url,headers={'User-Agent':'ExplorerReference/0.1 public-reference compiler'}),timeout=10) as r:
   data=r.read(6000000)
   if len(data)>=6000000: raise ValueError('Response exceeds bound')
   return data.decode('utf-8')
@@ -79,8 +79,12 @@ def main():
  points=json.loads((E/'points.json').read_text()).get('features',[]) if (E/'points.json').exists() else []
  details=json.loads((E/'details.json').read_text()) if (E/'details.json').exists() else {}
  for p in parks:
-  page=pages.get(p['website'],{});p['description']=clean(page.get('description',''))
-  if p['description']:p['sources'].append(dict(url=p['website'],label='Official NPS park homepage'))
+  page=pages.get(p['website'],{});home_url='https://www.nps.gov/'+p['parkCode']+'/index.htm'
+  home=pages.get(home_url,{})
+  if len(home.get('description',''))>len(page.get('description','')):page=home;description_url=home_url
+  else:description_url=p['website']
+  description=clean(page.get('description',''));p['description']=description if len(description.split())>10 else ''
+  if p['description']:p['sources'].append(dict(url=description_url,label='Official NPS park homepage',retrievedAt=page.get('retrievedAt',(E/'date.txt').read_text().strip())))
   seen=set()
   for href,title in page.get('links',[]):
    url=urljoin(p['website'],href); title=clean(title)

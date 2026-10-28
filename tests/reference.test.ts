@@ -28,3 +28,18 @@ it("validates route-safe IDs, coordinates, citations and private-data exclusion"
     expect(p).not.toHaveProperty("companions");
   }
 });
+
+it("validates article provenance and stable attraction identities",async()=>{
+ const r=await loadReference();
+ for(const p of r.units){
+  expect(new Set(p.attractions.map(a=>a.id)).size).toBe(p.attractions.length);
+  for(const a of p.articles??[]){
+   expect(a.text.length).toBeGreaterThan(0);
+   expect(a.text.split(/\s+/).length).toBeLessThanOrEqual(181);
+   expect(new URL(a.source).hostname).toBe('www.nps.gov');
+   expect(Number.isFinite(Date.parse(a.retrievedAt))).toBe(true);
+   expect(p.sources.some(s=>s.url===a.source)).toBe(true);
+  }
+  for(const a of p.attractions){expect(safeUrl(a.source)).toBeTruthy();expect(a.id).toMatch(/^[a-z0-9][a-z0-9._-]{0,79}$/)}
+ }
+});

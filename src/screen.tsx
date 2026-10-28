@@ -1174,7 +1174,7 @@ function Stats() {
           added to itemized totals. {String(baseline.context)}
         </p>
       )}
-      <h3>State & territory coverage</h3>
+      <h3>States & territories represented by visited units</h3>
       <ul>
         {st.states.sort().map((s) => (
           <li key={s}>
@@ -1196,8 +1196,24 @@ function Stats() {
       </ul>
       <p>
         Multistate units appear in multiple subtotals. These subtotals are not
-        additive.
+        additive and do not establish which state you entered during a visit.
       </p>
+      <h3>Milestones</h3>
+      <div className="np-grid">
+        {[
+          ["First official unit", st.units, 1],
+          ["Ten official units", st.units, 10],
+          ["Five national parks", st.national, 5],
+          ["Return to a park", st.repeat, 1],
+          ["Ten recorded activities", st.activities, 10],
+        ].map(([name, value, target]) => (
+          <article className="np-card" key={name}>
+            <h4>{name}</h4>
+            <progress max={Number(target)} value={Math.min(Number(value), Number(target))} aria-label={String(name)} />
+            <p>{Number(value) >= Number(target) ? "Reached" : `${value} / ${target}`}</p>
+          </article>
+        ))}
+      </div>
       <h3>Timeline</h3>
       <ol>
         {visits(all)

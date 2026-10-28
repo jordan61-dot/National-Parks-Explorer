@@ -14,4 +14,13 @@ class CompilerTests(unittest.TestCase):
   a=Article();a.feed('<nav>Navigation</nav><div id="main"><h1>Page title</h1><div class="ArticleTextGroup"><p>Official text</p><script>bad()</script><figure>Credit</figure><a href="/places/trail.htm">Named Trail</a></div></div><footer>Footer</footer>');self.assertEqual(a.title,'Page title');self.assertEqual(a.excerpt(),'Official text Named Trail');self.assertEqual(a.links[0][0],'/places/trail.htm')
  def test_excerpt_is_bounded(self):
   a=Article();a.feed('<div class="ArticleTextGroup">'+('word '*250)+'</div>');self.assertEqual(len(a.excerpt().split()),181)
+ def test_enrichment_preserves_ids_and_requires_evidence(self):
+  from enrichment import enrich
+  from compile import slug
+  p={'parkCode':'test','website':'https://www.nps.gov/test/','sources':[], 'attractions':[{'id':'old-id','source':'https://www.nps.gov/places/trail.htm'}]}
+  home={'links':[['/test/learn/historyculture/index.htm','History']]}
+  url='https://www.nps.gov/test/learn/historyculture/index.htm'
+  enrich(p,home,{url:{'text':'No date'}},slug);self.assertEqual(p['articles'],[])
+  evidence={url:{'title':'History','text':'Verified text','retrievedAt':'2026-10-27T00:00:00Z','places':[{'url':'https://www.nps.gov/places/trail.htm','title':'New title'},{'url':'https://example.com/places/x.htm','title':'Foreign place'},{'url':'https://www.nps.gov/places/new.htm','title':'Named Overlook'}]}}
+  enrich(p,home,evidence,slug);self.assertEqual(len(p['articles']),1);self.assertEqual(len(p['attractions']),2);self.assertEqual(p['attractions'][0]['id'],'old-id');self.assertEqual(p['attractions'][1]['kind'],'overlook')
 if __name__=='__main__':unittest.main()
