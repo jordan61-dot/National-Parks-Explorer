@@ -1,6 +1,6 @@
 # National Parks Explorer
 
-Current release: **module 0.4.0 / Explorer 0.7.2**. See the [release handoff](docs/RELEASE072.md) for reviewed coverage, trail discovery, individual attraction pages, licensed photographs, split offline articles and remaining gaps. [Reproduction instructions](docs/REPRODUCE072.md) distinguish offline compilation from optional source acquisition.
+Current module: **0.12.0**, for **Explorer 0.7.11**. See [the atlas redesign release](docs/RELEASE0711.md) and [the 0.7.10 reference expansion](docs/RELEASE0710_REFERENCE.md). The new large-format map supports state/territory focus, territory navigation, keyboard-accessible collision groups, and offline use. [Reproduction instructions](docs/REPRODUCE072.md) distinguish offline compilation from optional source acquisition.
 
 A reusable local-first Explorer application with a bundled official NPS catalog, interactive offline atlas, park profiles, visit journal, local photographs, statistics, saved destinations and ordered trip plans. This repository owns the public module and reference compiler. It contains no personal history or credentials.
 
