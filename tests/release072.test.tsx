@@ -48,3 +48,11 @@ it('passes available axe rules on trail discovery and individual detail pages',a
  cleanup();const detail=setup('attraction/fixture/unknown');await screen.findByRole('heading',{name:'Unknown Route'});
  expect((await axe.run(detail.container,{rules:{'color-contrast':{enabled:false},region:{enabled:false}}})).violations).toEqual([]);
 });
+it('adds to the chosen repeated stop, preserves other records and rejects duplicates',async()=>{
+ const store=new Memory(),repo=new Repository(store),plan=entity('plan',{name:'Repeat trip',notes:'trip notes',stops:[{id:'first',parkId:'fixture',notes:'First day',completed:true,attractions:['unknown']},{id:'second',parkId:'fixture',notes:'Second day',completed:false,attractions:['retired-id']}]});
+ await repo.save(plan);await repo.save(newVisit('fixture'));const before=visits(entities(store.data));
+ const u=userEvent.setup();setup('attraction/fixture/known',store);await screen.findByRole('heading',{name:'Known Route'});await u.selectOptions(screen.getByLabelText('Trip for this attraction'),plan.id);await u.selectOptions(screen.getByLabelText('Park stop'),'second');await u.click(screen.getByRole('button',{name:'Add attraction stop'}));
+ await screen.findByText(/existing stop updated/);const saved=entities(await store.snapshot()).find(e=>e.id===plan.id)!,stops=saved.stops as unknown as Stop[];
+ expect(stops[0]).toEqual((plan.stops as unknown as Stop[])[0]);expect(stops[1]).toEqual({id:'second',parkId:'fixture',notes:'Second day',completed:false,attractions:['retired-id','known']});expect(visits(entities(store.data))).toEqual(before);
+ await u.click(screen.getByRole('button',{name:'Add attraction stop'}));await screen.findByText(/already selected/);expect((entities(store.data).find(e=>e.id===plan.id)!.stops as unknown as Stop[])[1].attractions).toEqual(['retired-id','known']);
+});

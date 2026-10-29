@@ -505,7 +505,7 @@ function ReferencePhoto({park}:{park:Park}) {
  return <figure className="np-reference-photo"><img src={mediaImages[photo.id]} width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" decoding="async"/><figcaption>{photo.caption} <span className="muted">{photo.credit} · {photo.license}. </span><Link href={photo.source} label="Image and rights"/></figcaption></figure>;
 }
 function AttractionDetail({parkId,id}:{parkId:string;id:string}) {
- const {r,all,repo,run,busy}=useParks(),p=r.units.find(p=>p.id===parkId),a=p?.attractions.find(a=>a.id===id),[planId,setPlanId]=useState('');
+ const {r,all,repo,run,busy}=useParks(),p=r.units.find(p=>p.id===parkId),a=p?.attractions.find(a=>a.id===id),[planId,setPlanId]=useState(''),[stopId,setStopId]=useState('new'),[success,setSuccess]=useState('');
  if(!p||!a)return <p>Attraction reference unavailable. Saved personal selections remain preserved.</p>;
  const facts=[['Distance',a.length?`${a.length.value} ${a.length.unit} (${a.length.method})`:'Unknown'],['Route',a.routeType??'Unknown'],['Difficulty',a.difficulty??'Unknown'],['Elevation gain',a.elevationGain?`${a.elevationGain.value} ${a.elevationGain.unit} (${a.elevationGain.method})`:'Unknown'],['Duration',a.duration??'Unknown'],['Surface',a.surface??'Unknown'],['Terrain',a.terrain??'Unknown']];
  return <><a href={url('park/'+p.id)}>{p.name}</a><p className="eyebrow">{a.kind} · {p.states.join(', ')}</p><h2>{a.name}</h2><p className="np-lead">{a.description}</p>
@@ -516,9 +516,11 @@ function AttractionDetail({parkId,id}:{parkId:string;id:string}) {
   <p>{a.latitude!==undefined?`${a.locationKind}: ${a.latitude}, ${a.longitude}.`:'Associated with this park; individual coordinates are unknown. The park administrative point is not an attraction location.'}</p>
   <p className="muted">Reference checked {a.retrievedAt?.slice(0,10)??'date unavailable'}. Static reference information does not establish current closures, conditions, fees, permits or operating hours.</p><Link href={a.source} label="Official attraction reference"/>
   {(a.relatedSources??[]).map(s=><p key={s}><Link href={s} label="Related official source"/></p>)}
-  <h3>Plan a visit</h3><p>Add a separate incomplete stop to a trip. This saves the selected attraction and does not create a visit.</p>
-  <Field label="Trip for this attraction"><select value={planId} onChange={e=>setPlanId(e.target.value)}><option value="">Choose an existing trip</option>{all.filter(e=>e.kind==='plan').map(e=><option key={e.id} value={e.id}>{String(e.name)}</option>)}</select></Field>
-  <button disabled={busy||!planId} onClick={()=>void run(async()=>{const plan=all.find(e=>e.kind==='plan'&&e.id===planId);if(!plan)throw Error('Choose an existing trip.');const stops=plan.stops as Json[];if(stops.length>=1000)throw Error('This trip already has 1,000 stops.');await repo.save({...plan,stops:[...stops,{id:uid('stop'),parkId:p.id,notes:'',attractions:[a.id],completed:false}]},plan.updatedAt)})}>Add attraction stop</button><a href={url('plan/new')}>Create a trip</a>
+  <h3>Plan a visit</h3><p>Add this activity to a trip. This does not record a visit.</p>
+  <Field label="Trip for this attraction"><select value={planId} onChange={e=>{setPlanId(e.target.value);setStopId('new');setSuccess('')}}><option value="">Choose an existing trip</option>{all.filter(e=>e.kind==='plan').map(e=><option key={e.id} value={e.id}>{String(e.name)}</option>)}</select></Field>
+  {planId && <Field label="Park stop"><select value={stopId} onChange={e=>{setStopId(e.target.value);setSuccess('')}}><option value="new">Create a new stop</option>{((all.find(e=>e.id===planId&&e.kind==='plan')?.stops??[]) as unknown as Stop[]).map((s,i)=>s.parkId===p.id?<option key={s.id} value={s.id}>Stop {i+1} · {s.completed?'completed':'planned'} · {s.notes.trim().slice(0,80)||'no notes'} · {s.attractions.length} activities</option>:null)}</select></Field>}
+  <button disabled={busy||!planId} onClick={()=>{setSuccess('');void run(async()=>{const plan=all.find(e=>e.kind==='plan'&&e.id===planId);if(!plan)throw Error('Choose an existing trip.');const stops=plan.stops as unknown as Stop[];let next:Stop[];if(stopId==='new'){if(stops.length>=1000)throw Error('This trip already has 1,000 stops.');next=[...stops,{id:uid('stop'),parkId:p.id,notes:'',attractions:[a.id],completed:false}]}else{const stop=stops.find(s=>s.id===stopId&&s.parkId===p.id);if(!stop)throw Error('Stop changed. Reopen the trip and try again.');if(stop.attractions.includes(a.id))throw Error('This activity is already selected for that stop.');next=stops.map(s=>s.id===stopId?{...s,attractions:[...s.attractions,a.id]}:s)}await repo.save({...plan,stops:next as unknown as Json[]},plan.updatedAt);setSuccess(`${String(plan.name)}: ${stopId==='new'?'new stop created':'existing stop updated'}.`)})}}>Add attraction stop</button> <a href={url('plan/new')}>Create a trip</a>
+  {success&&<p role="status">{success} <a href={url('plan/'+planId)}>Open saved trip</a></p>}
  </>;
 }
 function Journal() {
@@ -1113,31 +1115,14 @@ function PlanEditor({ id }: { id?: string }) {
                     value={s.completed}
                     onChange={(v) => update({ completed: v })}
                   />
-                  <details>
-                    <summary>
-                      Attractions ({s.attractions.length} selected)
-                    </summary>
-                    {p?.attractions.map((a) => (
-                      <Check
-                        key={a.id}
-                        label={a.name}
-                        value={s.attractions.includes(a.id)}
-                        onChange={(v) =>
-                          update({
-                            attractions: v
-                              ? [...s.attractions, a.id]
-                              : s.attractions.filter((id) => id !== a.id),
-                          })
-                        }
-                      />
-                    ))}
+                  <h4>Planned activities</h4>
+                  {!s.attractions.length && <p>No activities selected for this stop.</p>}
+                  {s.attractions.map(ref=>{const a=p?.attractions.find(x=>x.id===ref);return <div className="np-card" key={ref}>{a ? <><strong><a href={url('attraction/'+s.parkId+'/'+a.id)} target="_blank" rel="noopener noreferrer">{a.name}</a></strong><p>{a.kind} · {p?.name} · {a.length?`${a.length.value} ${a.length.unit} (${a.length.method})`:'Distance unknown'}{a.routeType?' · '+a.routeType:''}{a.difficulty?' · '+a.difficulty:''}{a.elevationGain?` · elevation gain ${a.elevationGain.value} ${a.elevationGain.unit} (${a.elevationGain.method})`:''}</p>{!!a.conflicts?.length&&<p>Official sources differ: {a.conflicts.map(c=>c.detail).join(' ')}</p>}</> : <p>Unavailable saved attraction reference: {ref}. It remains saved until you remove it.</p>}<button type="button" onClick={()=>update({attractions:s.attractions.filter(id=>id!==ref)})}>Remove {a?.name??ref}</button></div>})}
+                  <p className="muted">Activity details open in a new tab so your unsaved trip edits remain here.</p>
+                  <details><summary>Available attractions and trails</summary>
+                    {p?.attractions.filter(a=>!s.attractions.includes(a.id)).map(a=><Check key={a.id} label={a.name} value={false} onChange={()=>update({attractions:[...s.attractions,a.id]})}/>)}
                     {s.attractions.some(id=>!p?.attractions.some(a=>a.id===id))&&<p className="note">Some saved attraction references are unavailable in this catalog. Their identifiers remain saved; use your stop notes for context.</p>}
-                    {!p?.attractions.length && (
-                      <p>
-                        No structured attraction records; keep selections in
-                        stop notes.
-                      </p>
-                    )}
+                    {!p?.attractions.length&&<p>No structured attraction records; keep selections in stop notes.</p>}
                   </details>
                 </li>
               );
