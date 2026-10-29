@@ -18,6 +18,10 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: npm ci
+      - name: Record immutable source archive integrity
+        run: |
+          curl -fLsS "https://codeload.github.com/jordan61-dot/National-Parks-Explorer/tar.gz/${GITHUB_SHA}" -o /tmp/parks-module.tar.gz
+          echo "MODULE_INTEGRITY=sha512-$(openssl dgst -sha512 -binary /tmp/parks-module.tar.gz | base64 -w0)"
       - run: npm run check
       - run: npm test
       - run: npm run test:compiler
