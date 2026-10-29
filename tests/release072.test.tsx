@@ -56,3 +56,12 @@ it('adds to the chosen repeated stop, preserves other records and rejects duplic
  expect(stops[0]).toEqual((plan.stops as unknown as Stop[])[0]);expect(stops[1]).toEqual({id:'second',parkId:'fixture',notes:'Second day',completed:false,attractions:['retired-id','known']});expect(visits(entities(store.data))).toEqual(before);
  await u.click(screen.getByRole('button',{name:'Add attraction stop'}));await screen.findByText(/already selected/);expect((entities(store.data).find(e=>e.id===plan.id)!.stops as unknown as Stop[])[1].attractions).toEqual(['retired-id','known']);
 });
+it('orders activities independently in repeated stops and persists missing references',async()=>{
+ const store=new Memory(),repo=new Repository(store),plan=entity('plan',{name:'Order fixture',notes:'trip note',stops:[{id:'one',parkId:'fixture',notes:'keep note',completed:true,attractions:['known','retired-id','unknown']},{id:'two',parkId:'fixture',notes:'other stop',completed:false,attractions:['unknown','known']}]});
+ await repo.save(plan);await repo.save(newVisit('fixture'));const before=visits(entities(store.data));const u=userEvent.setup();setup('plan/'+plan.id,store);
+ await screen.findByText('Unavailable saved attraction reference: retired-id. It remains saved until you remove it.');
+ expect((screen.getAllByRole('button',{name:'Move Known Route up'})[0] as HTMLButtonElement).disabled).toBe(true);
+ await u.click(screen.getAllByRole('button',{name:'Move Unknown Route up'})[0]);await u.click(screen.getByRole('button',{name:'Save trip plan'}));
+ await waitFor(()=>expect(((entities(store.data).find(e=>e.id===plan.id)!.stops as unknown as Stop[])[0]).attractions).toEqual(['known','unknown','retired-id']));
+ const stops=entities(await store.snapshot()).find(e=>e.id===plan.id)!.stops as unknown as Stop[];expect(stops[0].notes).toBe('keep note');expect(stops[0].completed).toBe(true);expect(stops[1]).toEqual((plan.stops as unknown as Stop[])[1]);expect(visits(entities(store.data))).toEqual(before);
+});
