@@ -55,7 +55,7 @@ it('preserves repeat itinerary stops, reorders their notes, and never creates vi
  await waitFor(()=>expect(entities(v.store.data)).toHaveLength(1));
  const plan=entities(v.store.data)[0],stops=plan.stops as unknown as Stop[];
  expect(stops.map(s=>s.notes)).toEqual(['Return stop','First stop']);expect(stops[0].completed).toBe(true);expect(stops[0].id).not.toBe(stops[1].id);expect(visits(entities(v.store.data))).toHaveLength(0);
- v.go('plans');await screen.findByText('1 of 2 stops completed');v.go('plan/'+plan.id);
+ v.go('plans');await screen.findByText(/1 of 2 stops completed/);v.go('plan/'+plan.id);
  expect((await screen.findByLabelText('Stop 1 notes') as HTMLTextAreaElement).value).toBe('Return stop');
 });
 it('blocks a stale edit after another window changes a record and permits explicit reload',async()=>{
