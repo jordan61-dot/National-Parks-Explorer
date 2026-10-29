@@ -13,4 +13,4 @@
  .np-itinerary-actions{display:none!important}.np-itinerary h2,.np-itinerary h3,.np-itinerary h4{break-after:avoid}.np-itinerary li{break-inside:avoid}.np-itinerary .np-notes{white-space:pre-wrap;overflow:visible;break-inside:auto}.np-itinerary-stop{break-inside:auto}.np-itinerary a{color:black;text-decoration:underline}
 }
 
-.np-trip-card .actions{display:flex;gap:.5rem}.np-trip-card .actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px}.np-trip-card progress{max-width:100%}.np-trip-card h3{overflow-wrap:anywhere}
+.np-trip-card{min-width:0}.np-trip-card h3{overflow-wrap:anywhere}.np-trip-card p{margin:.45rem 0;overflow-wrap:anywhere}.np-trip-card progress{display:block;max-width:100%;margin:.35rem 0}.np-trip-card .actions{display:flex;gap:.5rem;margin:.75rem 0 0}.np-trip-card .actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;text-align:center}.np-trip-card .actions a:focus-visible{outline:3px solid #bd7525;outline-offset:3px}@media(max-width:600px){.np-trip-card .actions a{flex:1 0 auto;max-width:100%}}
