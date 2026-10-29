@@ -1,0 +1,206 @@
+{
+  "parks": {
+    "new-river-gorge-national-park-and-preserve": {
+      "attractions": [
+        {
+          "name": "Long Point Trail",
+          "source": "https://www.nps.gov/places/long-point-trail.htm",
+          "description": "The trail crosses fields and forest before a steeper final approach to a rock outcrop overlooking the gorge and New River Gorge Bridge. The viewpoint has unprotected cliff edges.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "difficulty": "Moderate",
+          "tags": [
+            "hiking",
+            "forest",
+            "bridge views",
+            "overlook"
+          ],
+          "evidence": "Moderate; 1.6 miles/1.29 km (One-way); traverses field and forest; Long Point provides an outstanding overlook",
+          "pageMetadata": {
+            "title": "Long Point Trail",
+            "publisher": "National Park Service",
+            "contentType": "text/html",
+            "lastUpdated": "2022-04-30"
+          },
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The individual page pairs 1.6 miles with 1.29 km for a one-way distance; the units disagree.",
+              "sources": [
+                "https://www.nps.gov/places/long-point-trail.htm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sandstone Falls Boardwalk",
+          "source": "https://www.nps.gov/places/sandstone-falls-boardwalk.htm",
+          "description": "Bridges and boardwalks connect river islands and viewing decks beside Sandstone Falls. The route passes a riverside flatrock plant community associated with powerful Appalachian rivers.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "difficulty": "Easy",
+          "accessibility": "NPS describes the boardwalk as accessible; it crosses bridges to islands and observation decks.",
+          "tags": [
+            "hiking",
+            "boardwalk",
+            "waterfall"
+          ],
+          "evidence": "Easy; Hiking and accessible; 0.2 miles/0.32 km (One-way); A 0.25 mile",
+          "pageMetadata": {
+            "title": "Sandstone Falls Boardwalk",
+            "publisher": "National Park Service",
+            "contentType": "text/html",
+            "lastUpdated": "2022-05-03"
+          },
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The individual page gives 0.2 miles one way and describes 0.25 mile; no numeric length has been selected.",
+              "sources": [
+                "https://www.nps.gov/places/sandstone-falls-boardwalk.htm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cuyahoga-valley-national-park": {
+      "attractions": [
+        {
+          "name": "Brandywine Gorge Loop",
+          "source": "https://www.nps.gov/thingstodo/hike-the-brandywine-gorge-loop.htm",
+          "description": "From the falls trailhead, this loop descends into the gorge, crosses the creek on a footbridge, and returns by the falls viewing boardwalk. A lower viewing deck requires additional steps.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "routeType": "loop",
+          "accessibility": "The gorge loop is not wheelchair accessible: its unpaved surface is hilly and rocky in places. A separate short path reaches the upper boardwalk viewing area for wheelchair users.",
+          "tags": [
+            "hiking",
+            "waterfall",
+            "gorge",
+            "geology"
+          ],
+          "evidence": "This trail is not wheelchair accessible.; geology",
+          "pageMetadata": {
+            "title": "Hike the Brandywine Gorge Loop",
+            "publisher": "National Park Service",
+            "contentType": "text/html",
+            "lastUpdated": "2025-07-25"
+          },
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The activity page gives 1.5 miles round trip; the park hiking table lists 1.4 miles.",
+              "sources": [
+                "https://www.nps.gov/thingstodo/hike-the-brandywine-gorge-loop.htm",
+                "https://www.nps.gov/cuva/planyourvisit/hiking.htm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ledges Trail",
+          "source": "https://www.nps.gov/cuva/the-ledges.htm",
+          "description": "The trail follows the Ledges rock formations and connects with other routes in the Virginia Kendall area. An overlook and the exposed Sharon Conglomerate are features of this landscape.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "accessibility": "NPS states that the trail is not accessible to visitors with mobility impairments.",
+          "tags": [
+            "hiking",
+            "rock formations",
+            "overlook",
+            "geology"
+          ],
+          "evidence": "The trail is not accessible to visitors with mobility impairments.; creation out of Sharon Conglomerate",
+          "pageMetadata": {
+            "title": "The Ledges",
+            "publisher": "National Park Service",
+            "contentType": "text/html",
+            "lastUpdated": "2024-11-08"
+          },
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The dedicated page describes 1.8 miles around the formations; the hiking table lists 2.2 miles, with unresolved route scope.",
+              "sources": [
+                "https://www.nps.gov/cuva/the-ledges.htm",
+                "https://www.nps.gov/cuva/planyourvisit/hiking.htm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "zion-national-park": {
+      "attractions": [
+        {
+          "name": "Riverside Walk",
+          "source": "https://www.nps.gov/thingstodo/hike-riverside-walk.htm",
+          "description": "A paved path follows the Virgin River from the Temple of Sinawava into narrowing sandstone walls. It reaches the beginning of The Narrows; entering the river is a separate continuation.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "difficulty": "Easy",
+          "routeType": "out-and-back",
+          "accessibility": "Paving is irregular in places, minor drop-offs occur, and sand can make the concrete slippery. NPS reports steep sections; paving alone does not establish wheelchair suitability for the whole route.",
+          "tags": [
+            "hiking",
+            "river",
+            "paved",
+            "geology"
+          ],
+          "evidence": "paving is irregular in some sections and minor drop-offs are present; canyon carving, erosion",
+          "pageMetadata": {
+            "title": "Riverside Walk",
+            "publisher": "National Park Service",
+            "contentType": "text/html",
+            "lastUpdated": "2025-04-30",
+            "accessibilityAssessedAt": "2025-02-24"
+          },
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The accessibility survey gives 1 mile one way; the spring 2026 guide gives 2.2 miles round trip.",
+              "sources": [
+                "https://www.nps.gov/thingstodo/hike-riverside-walk.htm",
+                "https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pa'rus Trail",
+          "source": "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm",
+          "description": "The main trail connects Zion Canyon Visitor Center with Canyon Junction along the Virgin River, offering Watchman views and interpretive exhibits. It is shared with bicycles and leashed pets.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "accessibility": "NPS describes the main route as wheelchair accessible. The optional unpaved connector to the Human History Museum is not designed for wheelchairs.",
+          "tags": [
+            "hiking",
+            "bicycling",
+            "river",
+            "paved",
+            "geology"
+          ],
+          "evidence": "It is accessible for wheelchairs, pets on leashes, and bicycles.; geology",
+          "pageMetadata": {
+            "title": "Pa'rus Trail",
+            "publisher": "National Park Service",
+            "contentType": "text/html",
+            "lastUpdated": "2025-04-30",
+            "accessibilityAssessedAt": "2025-01-13"
+          },
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The individual page describes 3.5 miles end-to-end and 1.6 miles one way in its survey; the spring 2026 guide labels 3.5 miles round trip.",
+              "sources": [
+                "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm",
+                "https://www.nps.gov/zion/planyourvisit/upload/26-Spring-InfoGuide.pdf"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

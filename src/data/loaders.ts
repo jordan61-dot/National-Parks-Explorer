@@ -1,0 +1,18 @@
+export const detailLoaders = [
+()=>import("./details-00.json"),
+()=>import("./details-01.json"),
+()=>import("./details-02.json"),
+()=>import("./details-03.json"),
+()=>import("./details-04.json"),
+()=>import("./details-05.json"),
+()=>import("./details-06.json"),
+()=>import("./details-07.json"),
+()=>import("./details-08.json"),
+()=>import("./details-09.json"),
+()=>import("./details-10.json"),
+()=>import("./details-11.json"),
+()=>import("./details-12.json"),
+()=>import("./details-13.json"),
+()=>import("./details-14.json"),
+()=>import("./details-15.json"),
+];

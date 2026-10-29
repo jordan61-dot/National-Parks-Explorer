@@ -24,7 +24,7 @@ Article excerpts cover history, nature, accessibility, directions and activities
 
 Public reference builds must never read personal visits, private historical sources, photographs, backups, credentials or Explorer's private fixtures. No API key or subscription is required.
 
-## Module 0.3.0 / Explorer 0.7.1
+## Historical module 0.3.0 / Explorer 0.7.1
 
 Current measurements are generated in `src/data/coverage.json`; the before/after quality audits are `docs/AUDIT071_BEFORE.json` and `docs/AUDIT071_AFTER.json`. The roster classifications and stable IDs are retained. Initial protection, designation and site-specific historical events are separate milestones, rather than an ambiguous single establishment date.
 
@@ -39,3 +39,11 @@ The build additionally emits `src/data/compact.json`, interning repeated long st
 No reference photographs are integrated in this release. The NPS [ownership policy](https://www.nps.gov/aboutus/disclaimer.htm) explicitly notes third-party rights in some materials. General government-domain availability was not accepted as a license. Local personal photographs continue to use private device storage; administrative coordinates remain separately labeled and no attraction coordinates were inferred.
 
 Run `npm run check`, `npm test`, `npm run test:compiler`, `npm run reference:build`, and `npm run reference:validate`. A second build must reproduce all three generated files exactly. Available axe checks exclude color contrast and document landmarks because the isolated module test does not emulate the final browser canvas or host shell; they are not a complete assistive-technology audit.
+
+## Module 0.4.0 / Explorer 0.7.2
+
+Reviewed additions retrieved October 29, 2026 supplement the earlier evidence. The [release report](docs/RELEASE072.md) records 108 structured trails across 20 parks, 355 named attractions across 78 parks, 450 introductions, 2,387 article sections and four individually licensed public-domain photographs. The generated [coverage register](docs/COVERAGE072.json) retains per-unit gaps and the [source review](docs/SOURCE_REVIEW072.json) distinguishes 189 unresolved legacy URLs from same-topic alternatives. Failed URLs are not counted as recovered.
+
+Individual trail measurements retain their published distance basis, uncertainty and source differences. Missing feature coordinates remain absent. Photograph license evidence, original URLs, attribution, retrieval dates and hashes are retained in `scripts/evidence/release072-media.json` and `media072-rights.json`; bundled thumbnails are separate from users' private photographs.
+
+The compiler now emits a searchable catalog and 16 deterministic article shards in addition to the readable and compact complete reference. Validation reconstructs the complete source without loss and protects all baseline park and attraction identities. See [REPRODUCE072.md](docs/REPRODUCE072.md) for commands and optional acquisition dependencies.

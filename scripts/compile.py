@@ -7,6 +7,7 @@ from urllib.request import Request,urlopen
 from urllib.parse import urlparse,urljoin
 from html.parser import HTMLParser
 from enrichment import enrich,supplement,TOPICS
+from release072 import merge,emit
 ROOT=Path(__file__).resolve().parents[1]; E=ROOT/'scripts/evidence'; E.mkdir(exist_ok=True)
 ROSTER='https://www.nps.gov/aboutus/national-park-system.htm'
 POINTS='https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json'
@@ -105,6 +106,7 @@ def main():
    p['sources'].append(dict(url='https://www.nps.gov/'+p['parkCode']+'/planyourvisit/hiking.htm',label='Official hiking guide; individual trails linked'))
   enrich(p,page,details,slug,places)
   supplement(p,supplemental)
+  for addition in sorted(E.glob('release072*.json')):merge(p,json.loads(addition.read_text()))
   exact=[f for f in points if slug(f['attributes'].get('UNIT_NAME',''))==slug(p['name'])]
   matching=exact or [f for f in points if p['parkCode'] and f['attributes'].get('UNIT_CODE','').lower()==p['parkCode']]
   if len(matching)==1:
@@ -114,26 +116,10 @@ def main():
   missing=[topic for topic in TOPICS if topic not in {a['topic'] for a in p['articles']}]
   if missing:p['coverageNote']+=' No substantive offline excerpt for: '+', '.join(missing)+'.'
  result=dict(formatVersion=1,retrievedAt=(E/'date.txt').read_text().strip(),rosterUrl=ROSTER,publishedSystemTotal=total,headingCounts=counts,attribution='Roster and text: National Park Service. Geometry: NPS Land Resources Division; CC BY 4.0. Outlines: Natural Earth, public domain.',licenseUrl='https://www.nps.gov/aboutus/disclaimer.htm',units=parks)
- (ROOT/'src/data').mkdir(exist_ok=True);(ROOT/'src/data/parks.json').write_text(json.dumps(result,ensure_ascii=False,separators=(',',':'))+'\n')
  coverage=dict(system=total,affiliated=counts['Affiliated Areas'],entries=len(parks),descriptions=sum(bool(p['description']) for p in parks),locations=sum('location' in p for p in parks),entriesWithArticles=sum(bool(p['articles']) for p in parks),articleSections=sum(len(p['articles']) for p in parks),attractions=sum(len(p['attractions']) for p in parks),byTopic={topic:sum(any(a['topic']==topic for a in p['articles']) for p in parks) for topic in TOPICS},attemptedArticlePages=len(details),articlePageErrors=sum(bool(p.get('error')) for p in details.values()),attemptedPlacePages=len(places),verifiedPlaceTitles=sum(bool(p.get('title')) for p in places.values()))
- (ROOT/'src/data/coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2)+'\n')
  coverage.update(parksWithAttractions=sum(bool(p['attractions']) for p in parks),structuredTrails=sum(a['kind']=='trail' and any(k in a for k in ['length','difficulty','accessibility']) for p in parks for a in p['attractions']),licensedPhotographs=0,historyMilestones=sum(len(p.get('history',[])) for p in parks),duplicateAttractionSourcesWithinPark=sum(len(p['attractions'])-len({a['source'] for a in p['attractions']}) for p in parks))
- (ROOT/'src/data/coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2)+'\n')
- # Intern repeated long strings for the shipped chunk; readable source stays intact.
- from collections import Counter
- strings=Counter()
- def count(v):
-  if isinstance(v,str) and len(v)>=60:strings[v]+=1
-  elif isinstance(v,dict):
-   for x in v.values():count(x)
-  elif isinstance(v,list):
-   for x in v:count(x)
- count(result);table=sorted(s for s,n in strings.items() if n>1);indices={s:i for i,s in enumerate(table)}
- def pack(v):
-  if isinstance(v,str) and v in indices:return {'$':indices[v]}
-  if isinstance(v,dict):return {k:pack(x) for k,x in v.items()}
-  if isinstance(v,list):return [pack(x) for x in v]
-  return v
- (ROOT/'src/data/compact.json').write_text(json.dumps(dict(strings=table,reference=pack(result)),ensure_ascii=False,separators=(',',':'))+'\n')
+ trails=[(p,a) for p in parks for a in p['attractions'] if a['kind']=='trail' and any(k in a for k in ['length','difficulty','accessibility'])]
+ coverage.update(parksWithStructuredTrails=len({p['id'] for p,a in trails}),trailsWithLength=sum('length' in a for p,a in trails),trailsWithDifficulty=sum('difficulty' in a for p,a in trails),trailsWithElevation=sum('elevationGain' in a for p,a in trails),trailsWithAccessibility=sum('accessibility' in a for p,a in trails),trailsWithCoordinates=sum('latitude' in a for p,a in trails),trailsWithConflicts=sum(bool(a.get('conflicts')) for p,a in trails),licensedPhotographs=sum(len(p.get('photographs',[])) for p in parks),duplicateAttractionSourcesWithinPark=sum(len(p['attractions'])-len({(a['source'],a.get('sourceKey','')) for a in p['attractions']}) for p in parks))
+ emit(ROOT,result,coverage)
  print(json.dumps(coverage))
 if __name__=='__main__':main()

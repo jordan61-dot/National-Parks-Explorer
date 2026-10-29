@@ -1,0 +1,6862 @@
+{
+  "baselineRevision": "e4e84442f6857eb31bcd36462e4332501b2b72f2",
+  "baseline": {
+    "system": 434,
+    "affiliated": 33,
+    "entries": 467,
+    "descriptions": 437,
+    "locations": 429,
+    "entriesWithArticles": 436,
+    "articleSections": 2375,
+    "attractions": 261,
+    "byTopic": {
+      "History & culture": 385,
+      "Nature & geology": 297,
+      "Accessibility": 410,
+      "Directions & access": 426,
+      "Activities & trails": 350
+    },
+    "attemptedArticlePages": 2700,
+    "articlePageErrors": 189,
+    "attemptedPlacePages": 238,
+    "verifiedPlaceTitles": 238,
+    "parksWithAttractions": 65,
+    "structuredTrails": 20,
+    "licensedPhotographs": 0,
+    "historyMilestones": 21,
+    "duplicateAttractionSourcesWithinPark": 0
+  },
+  "result": {
+    "system": 434,
+    "affiliated": 33,
+    "entries": 467,
+    "descriptions": 450,
+    "locations": 429,
+    "entriesWithArticles": 446,
+    "articleSections": 2387,
+    "attractions": 355,
+    "byTopic": {
+      "History & culture": 393,
+      "Nature & geology": 298,
+      "Accessibility": 410,
+      "Directions & access": 426,
+      "Activities & trails": 351
+    },
+    "attemptedArticlePages": 2700,
+    "articlePageErrors": 189,
+    "attemptedPlacePages": 238,
+    "verifiedPlaceTitles": 238,
+    "parksWithAttractions": 78,
+    "structuredTrails": 108,
+    "licensedPhotographs": 4,
+    "historyMilestones": 28,
+    "duplicateAttractionSourcesWithinPark": 0,
+    "parksWithStructuredTrails": 20,
+    "trailsWithLength": 92,
+    "trailsWithDifficulty": 59,
+    "trailsWithElevation": 4,
+    "trailsWithAccessibility": 26,
+    "trailsWithCoordinates": 0,
+    "trailsWithConflicts": 9
+  },
+  "introductionsRecovered": 13,
+  "unchangedParkIds": 467,
+  "unchangedBaselineAttractionIds": 261,
+  "allNamedTrailReferences": 163,
+  "structuredTrailDefinition": "Named trail with at least one sourced length, difficulty or accessibility field. Bare narrative references are excluded.",
+  "failedReferencesReviewed": 189,
+  "recoveredFailedUrls": 0,
+  "failedReferencesWithAlternatives": 13,
+  "duplicateNames": 0,
+  "coverageRegister": [
+    {
+      "id": "9-11-pentagon-memorial",
+      "name": "9/11 Pentagon Memorial",
+      "designation": "Affiliated Area",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "aleutian-world-war-ii-national-historic-area",
+      "name": "Aleutian World War II National Historic Area",
+      "designation": "Affiliated Area",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "benjamin-franklin-national-memorial",
+      "name": "Benjamin Franklin National Memorial",
+      "designation": "Affiliated Area",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "chimney-rock-national-historic-site",
+      "name": "Chimney Rock National Historic Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "NE"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "eutaw-springs-battlefield",
+      "name": "Eutaw Springs Battlefield",
+      "designation": "Affiliated Area",
+      "states": [
+        "SC"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "fallen-timbers-battlefield-and-fort-miamis-national-historic-site",
+      "name": "Fallen Timbers Battlefield and Fort Miamis National Historic Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "OH"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "historic-camden-revolutionary-war-site",
+      "name": "Historic Camden Revolutionary War Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "SC"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "hohokam-pima-national-monument",
+      "name": "Hohokam Pima National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "ice-age-national-scientific-reserve",
+      "name": "Ice Age National Scientific Reserve",
+      "designation": "Affiliated Area",
+      "states": [
+        "WI"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "international-peace-garden",
+      "name": "International Peace Garden",
+      "designation": "Affiliated Area",
+      "states": [
+        "ND"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "jamestown-national-historic-site",
+      "name": "Jamestown National Historic Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "kate-mullany-national-historic-site",
+      "name": "Kate Mullany National Historic Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "kettle-creek-battlefield",
+      "name": "Kettle Creek Battlefield",
+      "designation": "Affiliated Area",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "middle-delaware-national-scenic-river",
+      "name": "Middle Delaware National Scenic River",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "NJ",
+        "NY",
+        "PA"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "natural-bridge-state-park",
+      "name": "Natural Bridge State Park",
+      "designation": "Affiliated Area",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "parkers-crossroads-battlefield",
+      "name": "Parkers Crossroads Battlefield",
+      "designation": "Affiliated Area",
+      "states": [
+        "TN"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "red-hill-patrick-henry-national-memorial",
+      "name": "Red Hill Patrick Henry National Memorial",
+      "designation": "Affiliated Area",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": true,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 21
+    },
+    {
+      "id": "new-england-national-scenic-trail",
+      "name": "New England National Scenic Trail",
+      "designation": "National Scenic Trail",
+      "states": [
+        "CT",
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 13
+    },
+    {
+      "id": "new-orleans-jazz-national-historical-park",
+      "name": "New Orleans Jazz National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "LA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 13
+    },
+    {
+      "id": "ross-lake-national-recreation-area",
+      "name": "Ross Lake National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 13
+    },
+    {
+      "id": "touro-synagogue-national-historic-site",
+      "name": "Touro Synagogue National Historic Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "RI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 13
+    },
+    {
+      "id": "castle-mountains-national-monument",
+      "name": "Castle Mountains National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "cedar-breaks-national-monument",
+      "name": "Cedar Breaks National Monument",
+      "designation": "National Monument",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "chicago-portage-national-historic-site",
+      "name": "Chicago Portage National Historic Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "IL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "claymont-community-center",
+      "name": "Claymont Community Center",
+      "designation": "Affiliated Area",
+      "states": [
+        "DE"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "desert-shield-and-desert-storm-memorial",
+      "name": "Desert Shield and Desert Storm Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "father-marquette-national-memorial",
+      "name": "Father Marquette National Memorial",
+      "designation": "Affiliated Area",
+      "states": [
+        "MI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "flight-93-national-memorial",
+      "name": "Flight 93 National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "fort-caroline-national-memorial",
+      "name": "Fort Caroline National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 3,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "freedom-riders-national-monument",
+      "name": "Freedom Riders National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "hockessin-colored-school-107",
+      "name": "Hockessin Colored School #107",
+      "designation": "Affiliated Area",
+      "states": [
+        "DE"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "honouliuli-national-historic-site",
+      "name": "Honouliuli National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "HI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "howard-high-school-of-technology",
+      "name": "Howard High School of Technology",
+      "designation": "Affiliated Area",
+      "states": [
+        "DE"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "john-d-rockefeller",
+      "name": "John D. Rockefeller, Jr. Memorial Parkway",
+      "designation": "National Parkway",
+      "states": [
+        "WY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "john-philip-sousa-middle-school",
+      "name": "John Philip Sousa Middle School",
+      "designation": "Affiliated Area",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "lake-chelan-national-recreation-area",
+      "name": "Lake Chelan National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "mary-mcleod-bethune-council-house-national-historic-site",
+      "name": "Mary McLeod Bethune Council House National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "national-capital-parks-east",
+      "name": "National Capital Parks - East",
+      "designation": "Other Designation",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "poverty-point-national-monument",
+      "name": "Poverty Point National Monument",
+      "designation": "National Monument",
+      "states": [
+        "LA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "robert-russa-moton-museum",
+      "name": "Robert Russa Moton Museum",
+      "designation": "Affiliated Area",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "vicksburg-national-military-park",
+      "name": "Vicksburg National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "LA",
+        "MS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "world-war-i-memorial",
+      "name": "World War I Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 11
+    },
+    {
+      "id": "appalachian-national-scenic-trail",
+      "name": "Appalachian National Scenic Trail",
+      "designation": "National Scenic Trail",
+      "states": [
+        "GA",
+        "ME"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "belmont-paul-women-s-equality-national-monument",
+      "name": "Belmont-Paul Women's Equality National Monument",
+      "designation": "National Monument",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "blackwell-school-national-historic-site",
+      "name": "Blackwell School National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "camp-nelson-national-monument",
+      "name": "Camp Nelson National Monument",
+      "designation": "National Monument",
+      "states": [
+        "KY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "carter-g-woodson-home-national-historic-site",
+      "name": "Carter G. Woodson Home National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "castillo-de-san-marcos-national-monument",
+      "name": "Castillo de San Marcos National Monument",
+      "designation": "National Monument",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "cedar-creek-and-belle-grove-national-historical-park",
+      "name": "Cedar Creek and Belle Grove National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "constitution-gardens",
+      "name": "Constitution Gardens",
+      "designation": "Other Designation",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "cumberland-island-national-seashore",
+      "name": "Cumberland Island National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "dwight-d-eisenhower-memorial",
+      "name": "Dwight D. Eisenhower Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "edgar-allan-poe-national-historic-site",
+      "name": "Edgar Allan Poe National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "federal-hall-national-memorial",
+      "name": "Federal Hall National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "first-ladies-national-historic-site",
+      "name": "First Ladies National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "OH"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "fort-laramie-national-historic-site",
+      "name": "Fort Laramie National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "WY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "fort-raleigh-national-historic-site",
+      "name": "Fort Raleigh National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "gila-cliff-dwellings-national-monument",
+      "name": "Gila Cliff Dwellings National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "great-egg-harbor-national-scenic-and-recreational-river",
+      "name": "Great Egg Harbor National Scenic and Recreational River",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "NJ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "hamilton-grange-national-memorial",
+      "name": "Hamilton Grange National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "hopewell-furnace-national-historic-site",
+      "name": "Hopewell Furnace National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "independence-national-historical-park",
+      "name": "Independence National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "inupiat-heritage-center",
+      "name": "Inupiat Heritage Center",
+      "designation": "Affiliated Area",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "jean-lafitte-national-historical-park-and-preserve",
+      "name": "Jean Lafitte National Historical Park and Preserve",
+      "designation": "National Historical Park",
+      "states": [
+        "LA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "johnstown-flood-national-memorial",
+      "name": "Johnstown Flood National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "kaloko-honokohau-national-historical-park",
+      "name": "Kaloko-Honokōhau National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "HI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "kings-mountain-national-military-park",
+      "name": "Kings Mountain National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "SC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "lower-east-side-tenement-national-historic-site",
+      "name": "Lower East Side Tenement National Historic Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "lyndon-baines-johnson-memorial-grove-on-the-potomac",
+      "name": "Lyndon Baines Johnson Memorial Grove on the Potomac",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "manhattan-project-national-historical-park",
+      "name": "Manhattan Project National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NM",
+        "TN",
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "moores-creek-national-battlefield",
+      "name": "Moores Creek National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "NC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "natchez-national-historical-park",
+      "name": "Natchez National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "nicodemus-national-historic-site",
+      "name": "Nicodemus National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "KS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "pennsylvania-avenue-national-historic-site",
+      "name": "Pennsylvania Avenue National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "pinelands-national-reserve",
+      "name": "Pinelands National Reserve",
+      "designation": "Affiliated Area",
+      "states": [
+        "NJ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "reconstruction-era-national-historical-park",
+      "name": "Reconstruction Era National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "SC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "roosevelt-campobello-international-park",
+      "name": "Roosevelt Campobello International Park",
+      "designation": "Affiliated Area",
+      "states": [],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "statue-of-liberty-national-monument",
+      "name": "Statue of Liberty National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NJ",
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "stonewall-national-monument",
+      "name": "Stonewall National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "the-white-house-and-president-s-park",
+      "name": "The White House and President's Park",
+      "designation": "Other Designation",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "theodore-roosevelt-birthplace-national-historic-site",
+      "name": "Theodore Roosevelt Birthplace National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "thomas-cole-national-historic-site",
+      "name": "Thomas Cole National Historic Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "tupelo-national-battlefield",
+      "name": "Tupelo National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "MS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "virgin-islands-coral-reef-national-monument",
+      "name": "Virgin Islands Coral Reef National Monument",
+      "designation": "National Monument",
+      "states": [
+        "VI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "washington-monument",
+      "name": "Washington Monument",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "wing-luke-museum-of-the-asian-pacific-american-experience",
+      "name": "Wing Luke Museum of the Asian Pacific American Experience",
+      "designation": "Affiliated Area",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "wright-brothers-national-memorial",
+      "name": "Wright Brothers National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "NC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 9
+    },
+    {
+      "id": "carlsbad-caverns-national-park",
+      "name": "Carlsbad Caverns National Park",
+      "designation": "National Park",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 8
+    },
+    {
+      "id": "hawai-i-volcanoes-national-park",
+      "name": "Hawai'i Volcanoes National Park",
+      "designation": "National Park",
+      "states": [
+        "HI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 8
+    },
+    {
+      "id": "joshua-tree-national-park",
+      "name": "Joshua Tree National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 8
+    },
+    {
+      "id": "olympic-national-park",
+      "name": "Olympic National Park",
+      "designation": "National Park",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility",
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 8
+    },
+    {
+      "id": "african-burial-ground-national-monument",
+      "name": "African Burial Ground National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "allegheny-portage-railroad-national-historic-site",
+      "name": "Allegheny Portage Railroad National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "american-memorial-park",
+      "name": "American Memorial Park",
+      "designation": "Affiliated Area",
+      "states": [
+        "MP"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "andrew-johnson-national-historic-site",
+      "name": "Andrew Johnson National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "TN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "arlington-house-the-robert-e-lee-memorial",
+      "name": "Arlington House, The Robert E. Lee Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "assateague-island-national-seashore",
+      "name": "Assateague Island National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "MD",
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "bandelier-national-monument",
+      "name": "Bandelier National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "bent-s-old-fort-national-historic-site",
+      "name": "Bent's Old Fort National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "big-south-fork-national-river-and-recreation-area",
+      "name": "Big South Fork National River and Recreation Area",
+      "designation": "National River",
+      "states": [
+        "KY",
+        "TN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "birmingham-civil-rights-national-monument",
+      "name": "Birmingham Civil Rights National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 3,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "blackstone-river-valley-national-historical-park",
+      "name": "Blackstone River Valley National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "RI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "booker-t-washington-national-monument",
+      "name": "Booker T. Washington National Monument",
+      "designation": "National Monument",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "boston-african-american-national-historic-site",
+      "name": "Boston African American National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 2,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "brices-cross-roads-national-battlefield-site",
+      "name": "Brices Cross Roads National Battlefield Site",
+      "designation": "National Battlefield Site",
+      "states": [
+        "MS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "brown-v-board-of-education-national-historical-park",
+      "name": "Brown v. Board of Education National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "KS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "canaveral-national-seashore",
+      "name": "Canaveral National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "canyon-de-chelly-national-monument",
+      "name": "Canyon de Chelly National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "cape-cod-national-seashore",
+      "name": "Cape Cod National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "carl-sandburg-home-national-historic-site",
+      "name": "Carl Sandburg Home National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "carlisle-federal-indian-boarding-school-national-monument",
+      "name": "Carlisle Federal Indian Boarding School National Monument",
+      "designation": "National Monument",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "cesar-e-chavez-national-monument",
+      "name": "César E. Chávez National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "charles-pinckney-national-historic-site",
+      "name": "Charles Pinckney National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "SC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "charles-young-buffalo-soldiers-national-monument",
+      "name": "Charles Young Buffalo Soldiers National Monument",
+      "designation": "National Monument",
+      "states": [
+        "OH"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "chattahoochee-river-national-recreation-area",
+      "name": "Chattahoochee River National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "christiansted-national-historic-site",
+      "name": "Christiansted National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "VI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "clara-barton-national-historic-site",
+      "name": "Clara Barton National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "colonial-national-historical-park",
+      "name": "Colonial National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "delaware-water-gap-national-recreation-area",
+      "name": "Delaware Water Gap National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "NJ",
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "ebey-s-landing-national-historical-reserve",
+      "name": "Ebey's Landing National Historical Reserve",
+      "designation": "National Reserve",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "eisenhower-national-historic-site",
+      "name": "Eisenhower National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "eleanor-roosevelt-national-historic-site",
+      "name": "Eleanor Roosevelt National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 12,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "first-state-national-historical-park",
+      "name": "First State National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "DE"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "ford-s-theatre-national-historic-site",
+      "name": "Ford's Theatre National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "fort-frederica-national-monument",
+      "name": "Fort Frederica National Monument",
+      "designation": "National Monument",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "fort-mchenry-national-monument-and-historic-shrine",
+      "name": "Fort McHenry National Monument and Historic Shrine",
+      "designation": "National Monument",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "fort-monroe-national-monument",
+      "name": "Fort Monroe National Monument",
+      "designation": "National Monument",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "fort-point-national-historic-site",
+      "name": "Fort Point National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "fort-pulaski-national-monument",
+      "name": "Fort Pulaski National Monument",
+      "designation": "National Monument",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "fort-sumter-and-fort-moultrie-national-historical-park",
+      "name": "Fort Sumter and Fort Moultrie National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "SC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "fort-union-national-monument",
+      "name": "Fort Union National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "fort-union-trading-post-national-historic-site",
+      "name": "Fort Union Trading Post National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MT",
+        "ND"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "fossil-butte-national-monument",
+      "name": "Fossil Butte National Monument",
+      "designation": "National Monument",
+      "states": [
+        "WY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "frances-perkins-national-monument",
+      "name": "Frances Perkins National Monument",
+      "designation": "National Monument",
+      "states": [
+        "ME"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "franklin-delano-roosevelt-memorial",
+      "name": "Franklin Delano Roosevelt Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "frederick-douglass-national-historic-site",
+      "name": "Frederick Douglass National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "friendship-hill-national-historic-site",
+      "name": "Friendship Hill National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "gates-of-the-arctic-national-preserve",
+      "name": "Gates of the Arctic National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "gateway-national-recreation-area",
+      "name": "Gateway National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "NJ",
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "general-grant-national-memorial",
+      "name": "General Grant National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "glen-canyon-national-recreation-area",
+      "name": "Glen Canyon National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "AZ",
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "gloria-dei-old-swedes-church-national-historic-site",
+      "name": "Gloria Dei (Old Swedes') Church National Historic Site",
+      "designation": "Affiliated Area",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "golden-spike-national-historical-park",
+      "name": "Golden Spike National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "green-springs-national-historic-landmark-district",
+      "name": "Green Springs National Historic Landmark District",
+      "designation": "Affiliated Area",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "greenbelt-park",
+      "name": "Greenbelt Park",
+      "designation": "Other Designation",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "guilford-courthouse-national-military-park",
+      "name": "Guilford Courthouse National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "NC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "hampton-national-historic-site",
+      "name": "Hampton National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "harriet-tubman-national-historical-park",
+      "name": "Harriet Tubman National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "harriet-tubman-underground-railroad-national-historical-park",
+      "name": "Harriet Tubman Underground Railroad National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "homestead-national-historical-park",
+      "name": "Homestead National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NE"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "horseshoe-bend-national-military-park",
+      "name": "Horseshoe Bend National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "AL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "hubbell-trading-post-national-historic-site",
+      "name": "Hubbell Trading Post National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "ice-age-national-scenic-trail",
+      "name": "Ice Age National Scenic Trail",
+      "designation": "National Scenic Trail",
+      "states": [
+        "WI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "james-a-garfield-national-historic-site",
+      "name": "James A. Garfield National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "OH"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "jimmy-carter-national-historical-park",
+      "name": "Jimmy Carter National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "john-fitzgerald-kennedy-national-historic-site",
+      "name": "John Fitzgerald Kennedy National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "katahdin-woods-and-waters-national-monument",
+      "name": "Katahdin Woods and Waters National Monument",
+      "designation": "National Monument",
+      "states": [
+        "ME"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "kennesaw-mountain-national-battlefield-park",
+      "name": "Kennesaw Mountain National Battlefield Park",
+      "designation": "National Battlefield Park",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "keweenaw-national-historical-park",
+      "name": "Keweenaw National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "korean-war-veterans-memorial",
+      "name": "Korean War Veterans Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "lake-mead-national-recreation-area",
+      "name": "Lake Mead National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "AZ",
+        "NV"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "lake-meredith-national-recreation-area",
+      "name": "Lake Meredith National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "lake-roosevelt-national-recreation-area",
+      "name": "Lake Roosevelt National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "lewis-and-clark-national-historical-park",
+      "name": "Lewis and Clark National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "OR",
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "lincoln-memorial",
+      "name": "Lincoln Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "little-river-canyon-national-preserve",
+      "name": "Little River Canyon National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "little-rock-central-high-school-national-historic-site",
+      "name": "Little Rock Central High School National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "AR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 7,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "lowell-national-historical-park",
+      "name": "Lowell National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "maggie-l-walker-national-historic-site",
+      "name": "Maggie L. Walker National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "martin-luther-king-jr-memorial",
+      "name": "Martin Luther King, Jr. Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "martin-luther-king-jr-national-historical-park",
+      "name": "Martin Luther King, Jr. National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "medgar-and-myrlie-evers-home-national-monument",
+      "name": "Medgar and Myrlie Evers Home National Monument",
+      "designation": "National Monument",
+      "states": [
+        "MS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "mill-springs-battlefield-national-monument",
+      "name": "Mill Springs Battlefield National Monument",
+      "designation": "National Monument",
+      "states": [
+        "KY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "mojave-national-preserve",
+      "name": "Mojave National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "mount-rushmore-national-memorial",
+      "name": "Mount Rushmore National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "SD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "natchez-trace-national-scenic-trail",
+      "name": "Natchez Trace National Scenic Trail",
+      "designation": "National Scenic Trail",
+      "states": [
+        "AL",
+        "MS",
+        "TN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "natchez-trace-parkway",
+      "name": "Natchez Trace Parkway",
+      "designation": "National Parkway",
+      "states": [
+        "MS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "navajo-national-monument",
+      "name": "Navajo National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "new-bedford-whaling-national-historical-park",
+      "name": "New Bedford Whaling National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "new-philadelphia-national-historic-site",
+      "name": "New Philadelphia National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "IL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "niobrara-national-scenic-river",
+      "name": "Niobrara National Scenic River",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "NE"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "north-country-national-scenic-trail",
+      "name": "North Country National Scenic Trail",
+      "designation": "National Scenic Trail",
+      "states": [
+        "ND",
+        "VT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "obed-wild-and-scenic-river",
+      "name": "Obed Wild and Scenic River",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "TN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "oklahoma-city-national-memorial",
+      "name": "Oklahoma City National Memorial",
+      "designation": "Affiliated Area",
+      "states": [
+        "OK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "padre-island-national-seashore",
+      "name": "Padre Island National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "pea-ridge-national-military-park",
+      "name": "Pea Ridge National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "AR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "perry-s-victory-and-international-peace-memorial",
+      "name": "Perry's Victory and International Peace Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "OH"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "port-chicago-naval-magazine-national-memorial",
+      "name": "Port Chicago Naval Magazine National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "pu-uhonua-o-honaunau-national-historical-park",
+      "name": "Pu'uhonua o Hōnaunau National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "HI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "pu-ukohola-heiau-national-historic-site",
+      "name": "Pu'ukoholā Heiau National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "HI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology",
+        "Activities & trails"
+      ],
+      "attractions": 5,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "rio-grande-wild-and-scenic-river",
+      "name": "Rio Grande Wild and Scenic River",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "river-raisin-national-battlefield-park",
+      "name": "River Raisin National Battlefield Park",
+      "designation": "National Battlefield Park",
+      "states": [
+        "MI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "rosie-the-riveter-world-war-ii-home-front-national-historical-park",
+      "name": "Rosie the Riveter/World War II Home Front National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "sagamore-hill-national-historic-site",
+      "name": "Sagamore Hill National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "saint-paul-s-church-national-historic-site",
+      "name": "Saint Paul's Church National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "salem-maritime-national-historical-park",
+      "name": "Salem Maritime National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "salt-river-bay-national-historical-park-and-ecological-preserve",
+      "name": "Salt River Bay National Historical Park and Ecological Preserve",
+      "designation": "National Historical Park",
+      "states": [
+        "VI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "san-francisco-maritime-national-historical-park",
+      "name": "San Francisco Maritime National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "san-juan-national-historic-site",
+      "name": "San Juan National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "PR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "saratoga-national-historical-park",
+      "name": "Saratoga National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "springfield-1908-race-riot-national-monument",
+      "name": "Springfield 1908 Race Riot National Monument",
+      "designation": "National Monument",
+      "states": [
+        "IL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture",
+        "Nature & geology"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "ste-genevieve-national-historical-park",
+      "name": "Ste. Genevieve National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "steamtown-national-historic-site",
+      "name": "Steamtown National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "thaddeus-kosciuszko-national-memorial",
+      "name": "Thaddeus Kosciuszko National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "theodore-roosevelt-inaugural-national-historic-site",
+      "name": "Theodore Roosevelt Inaugural National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "theodore-roosevelt-island",
+      "name": "Theodore Roosevelt Island",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "thomas-edison-national-historical-park",
+      "name": "Thomas Edison National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NJ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "thomas-jefferson-memorial",
+      "name": "Thomas Jefferson Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "thomas-stone-national-historic-site",
+      "name": "Thomas Stone National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "tonto-national-monument",
+      "name": "Tonto National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "tule-springs-fossil-beds-national-monument",
+      "name": "Tule Springs Fossil Beds National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NV"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "tumacacori-national-historical-park",
+      "name": "Tumacacori National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "tuskegee-airmen-national-historic-site",
+      "name": "Tuskegee Airmen National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "AL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "tuskegee-institute-national-historic-site",
+      "name": "Tuskegee Institute National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "AL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "vietnam-veterans-memorial",
+      "name": "Vietnam Veterans Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "waco-mammoth-national-monument",
+      "name": "Waco Mammoth National Monument",
+      "designation": "National Monument",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "whitman-mission-national-historic-site",
+      "name": "Whitman Mission National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "william-howard-taft-national-historic-site",
+      "name": "William Howard Taft National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "OH"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "women-s-rights-national-historical-park",
+      "name": "Women's Rights National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "world-war-ii-memorial",
+      "name": "World War II Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "wupatki-national-monument",
+      "name": "Wupatki National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 7
+    },
+    {
+      "id": "badlands-national-park",
+      "name": "Badlands National Park",
+      "designation": "National Park",
+      "states": [
+        "SD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "channel-islands-national-park",
+      "name": "Channel Islands National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "everglades-national-park",
+      "name": "Everglades National Park",
+      "designation": "National Park",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "gates-of-the-arctic-national-park",
+      "name": "Gates of the Arctic National Park",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "gateway-arch-national-park",
+      "name": "Gateway Arch National Park",
+      "designation": "National Park",
+      "states": [
+        "IL",
+        "MO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "glacier-national-park",
+      "name": "Glacier National Park",
+      "designation": "National Park",
+      "states": [
+        "MT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "mount-rainier-national-park",
+      "name": "Mount Rainier National Park",
+      "designation": "National Park",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "theodore-roosevelt-national-park",
+      "name": "Theodore Roosevelt National Park",
+      "designation": "National Park",
+      "states": [
+        "ND"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "virgin-islands-national-park",
+      "name": "Virgin Islands National Park",
+      "designation": "National Park",
+      "states": [
+        "VI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "yellowstone-national-park",
+      "name": "Yellowstone National Park",
+      "designation": "National Park",
+      "states": [
+        "ID",
+        "MT",
+        "WY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 6
+    },
+    {
+      "id": "adams-national-historical-park",
+      "name": "Adams National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "alagnak-wild-river",
+      "name": "Alagnak Wild River",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "alibates-flint-quarries-national-monument",
+      "name": "Alibates Flint Quarries National Monument",
+      "designation": "National Monument",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "amistad-national-recreation-area",
+      "name": "Amistad National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "andersonville-national-historic-site",
+      "name": "Andersonville National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "aniakchak-national-monument",
+      "name": "Aniakchak National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "aniakchak-national-preserve",
+      "name": "Aniakchak National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "apostle-islands-national-lakeshore",
+      "name": "Apostle Islands National Lakeshore",
+      "designation": "National Lakeshore",
+      "states": [
+        "WI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "arkansas-post-national-memorial",
+      "name": "Arkansas Post National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "AR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "big-cypress-national-preserve",
+      "name": "Big Cypress National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "big-hole-national-battlefield",
+      "name": "Big Hole National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "MT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "big-thicket-national-preserve",
+      "name": "Big Thicket National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "blue-ridge-parkway",
+      "name": "Blue Ridge Parkway",
+      "designation": "National Parkway",
+      "states": [
+        "NC",
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "bluestone-national-scenic-river",
+      "name": "Bluestone National Scenic River",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "WV"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "boston-harbor-islands-national-recreation-area",
+      "name": "Boston Harbor Islands National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "boston-national-historical-park",
+      "name": "Boston National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 2,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "buck-island-reef-national-monument",
+      "name": "Buck Island Reef National Monument",
+      "designation": "National Monument",
+      "states": [
+        "VI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "buffalo-national-river",
+      "name": "Buffalo National River",
+      "designation": "National River",
+      "states": [
+        "AR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "cabrillo-national-monument",
+      "name": "Cabrillo National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "cane-river-creole-national-historical-park",
+      "name": "Cane River Creole National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "LA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "cape-hatteras-national-seashore",
+      "name": "Cape Hatteras National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "NC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "cape-krusenstern-national-monument",
+      "name": "Cape Krusenstern National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "cape-lookout-national-seashore",
+      "name": "Cape Lookout National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "NC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "casa-grande-ruins-national-monument",
+      "name": "Casa Grande Ruins National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "castle-clinton-national-monument",
+      "name": "Castle Clinton National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "catoctin-mountain-park",
+      "name": "Catoctin Mountain Park",
+      "designation": "Other Designation",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "chamizal-national-memorial",
+      "name": "Chamizal National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "chesapeake-and-ohio-canal-national-historical-park",
+      "name": "Chesapeake and Ohio Canal National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "DC",
+        "MD",
+        "WV"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "chickamauga-and-chattanooga-national-military-park",
+      "name": "Chickamauga and Chattanooga National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "GA",
+        "TN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "chickasaw-national-recreation-area",
+      "name": "Chickasaw National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "OK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "city-of-rocks-national-reserve",
+      "name": "City of Rocks National Reserve",
+      "designation": "National Reserve",
+      "states": [
+        "ID"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "cowpens-national-battlefield",
+      "name": "Cowpens National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "SC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "cumberland-gap-national-historical-park",
+      "name": "Cumberland Gap National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "KY",
+        "TN",
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "curecanti-national-recreation-area",
+      "name": "Curecanti National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "dayton-aviation-heritage-national-historical-park",
+      "name": "Dayton Aviation Heritage National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "OH"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "de-soto-national-memorial",
+      "name": "De Soto National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "denali-national-preserve",
+      "name": "Denali National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "devils-postpile-national-monument",
+      "name": "Devils Postpile National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "devils-tower-national-monument",
+      "name": "Devils Tower National Monument",
+      "designation": "National Monument",
+      "states": [
+        "WY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "effigy-mounds-national-monument",
+      "name": "Effigy Mounds National Monument",
+      "designation": "National Monument",
+      "states": [
+        "IA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "el-malpais-national-monument",
+      "name": "El Malpais National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "el-morro-national-monument",
+      "name": "El Morro National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "emmett-till-and-mamie-till-mobley-national-monument",
+      "name": "Emmett Till and Mamie Till-Mobley National Monument",
+      "designation": "National Monument",
+      "states": [
+        "IL",
+        "MS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 3,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "eugene-o-neill-national-historic-site",
+      "name": "Eugene O'Neill National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fire-island-national-seashore",
+      "name": "Fire Island National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "florissant-fossil-beds-national-monument",
+      "name": "Florissant Fossil Beds National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fort-bowie-national-historic-site",
+      "name": "Fort Bowie National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fort-davis-national-historic-site",
+      "name": "Fort Davis National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fort-donelson-national-battlefield",
+      "name": "Fort Donelson National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "KY",
+        "TN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fort-larned-national-historic-site",
+      "name": "Fort Larned National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "KS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fort-necessity-national-battlefield",
+      "name": "Fort Necessity National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Accessibility"
+      ],
+      "attractions": 3,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fort-scott-national-historic-site",
+      "name": "Fort Scott National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "KS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fort-smith-national-historic-site",
+      "name": "Fort Smith National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "AR",
+        "OK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fort-vancouver-national-historic-site",
+      "name": "Fort Vancouver National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fort-washington-park",
+      "name": "Fort Washington Park",
+      "designation": "Other Designation",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "frederick-law-olmsted-national-historic-site",
+      "name": "Frederick Law Olmsted National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "fredericksburg-and-spotsylvania-county-battlefields-memorial-national-13ec65bc",
+      "name": "Fredericksburg and Spotsylvania County Battlefields Memorial National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "gauley-river-national-recreation-area",
+      "name": "Gauley River National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "WV"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "george-rogers-clark-national-historical-park",
+      "name": "George Rogers Clark National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "IN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "george-washington-birthplace-national-monument",
+      "name": "George Washington Birthplace National Monument",
+      "designation": "National Monument",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "george-washington-carver-national-monument",
+      "name": "George Washington Carver National Monument",
+      "designation": "National Monument",
+      "states": [
+        "MO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "george-washington-memorial-parkway",
+      "name": "George Washington Memorial Parkway",
+      "designation": "National Parkway",
+      "states": [
+        "DC",
+        "MD",
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "gettysburg-national-military-park",
+      "name": "Gettysburg National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "glacier-bay-national-preserve",
+      "name": "Glacier Bay National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "golden-gate-national-recreation-area",
+      "name": "Golden Gate National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "governors-island-national-monument",
+      "name": "Governors Island National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "grant-kohrs-ranch-national-historic-site",
+      "name": "Grant-Kohrs Ranch National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "great-sand-dunes-national-preserve",
+      "name": "Great Sand Dunes National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "gulf-islands-national-seashore",
+      "name": "Gulf Islands National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "FL",
+        "MS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "hagerman-fossil-beds-national-monument",
+      "name": "Hagerman Fossil Beds National Monument",
+      "designation": "National Monument",
+      "states": [
+        "ID"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "harry-s-truman-national-historic-site",
+      "name": "Harry S Truman National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "home-of-franklin-d-roosevelt-national-historic-site",
+      "name": "Home of Franklin D. Roosevelt National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 6,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "jewel-cave-national-monument",
+      "name": "Jewel Cave National Monument",
+      "designation": "National Monument",
+      "states": [
+        "SD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "john-day-fossil-beds-national-monument",
+      "name": "John Day Fossil Beds National Monument",
+      "designation": "National Monument",
+      "states": [
+        "OR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "john-muir-national-historic-site",
+      "name": "John Muir National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "kalaupapa-national-historical-park",
+      "name": "Kalaupapa National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "HI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "katmai-national-preserve",
+      "name": "Katmai National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "klondike-gold-rush-national-historical-park",
+      "name": "Klondike Gold Rush National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "AK",
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "knife-river-indian-villages-national-historic-site",
+      "name": "Knife River Indian Villages National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "ND"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "lake-clark-national-preserve",
+      "name": "Lake Clark National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "lincoln-boyhood-national-memorial",
+      "name": "Lincoln Boyhood National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "IN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "lincoln-home-national-historic-site",
+      "name": "Lincoln Home National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "IL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "little-bighorn-battlefield-national-monument",
+      "name": "Little Bighorn Battlefield National Monument",
+      "designation": "National Monument",
+      "states": [
+        "MT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "longfellow-washington-s-headquarters-national-historic-site",
+      "name": "Longfellow - Washington's Headquarters National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "lyndon-b-johnson-national-historical-park",
+      "name": "Lyndon B. Johnson National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "manzanar-national-historic-site",
+      "name": "Manzanar National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "marsh-billings-rockefeller-national-historical-park",
+      "name": "Marsh-Billings-Rockefeller National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "VT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 2,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "martin-van-buren-national-historic-site",
+      "name": "Martin Van Buren National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "minidoka-national-historic-site",
+      "name": "Minidoka National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "ID"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "minute-man-national-historical-park",
+      "name": "Minute Man National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "minuteman-missile-national-historic-site",
+      "name": "Minuteman Missile National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "SD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "mississippi-national-river-and-recreation-areas",
+      "name": "Mississippi National River and Recreation Areas",
+      "designation": "National River",
+      "states": [
+        "MN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "missouri-national-recreational-river",
+      "name": "Missouri National Recreational River",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "NE",
+        "SD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "montezuma-castle-national-monument",
+      "name": "Montezuma Castle National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "morristown-national-historical-park",
+      "name": "Morristown National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NJ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "muir-woods-national-monument",
+      "name": "Muir Woods National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "national-mall-and-memorial-parks",
+      "name": "National Mall and Memorial Parks",
+      "designation": "Other Designation",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "natural-bridges-national-monument",
+      "name": "Natural Bridges National Monument",
+      "designation": "National Monument",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "nez-perce-national-historical-park",
+      "name": "Nez Perce National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "ID",
+        "MT",
+        "OR",
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "ninety-six-national-historic-site",
+      "name": "Ninety Six National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "SC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "noatak-national-preserve",
+      "name": "Noatak National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "ocmulgee-mounds-national-historical-park",
+      "name": "Ocmulgee Mounds National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "GA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "oregon-caves-national-monument-and-preserve",
+      "name": "Oregon Caves National Monument and Preserve",
+      "designation": "National Monument",
+      "states": [
+        "OR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "organ-pipe-cactus-national-monument",
+      "name": "Organ Pipe Cactus National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "ozark-national-scenic-riverways",
+      "name": "Ozark National Scenic Riverways",
+      "designation": "National River",
+      "states": [
+        "MO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "palo-alto-battlefield-national-historical-park",
+      "name": "Palo Alto Battlefield National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "paterson-great-falls-national-historical-park",
+      "name": "Paterson Great Falls National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NJ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "pearl-harbor-national-memorial",
+      "name": "Pearl Harbor National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "HI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "pecos-national-historical-park",
+      "name": "Pecos National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "petersburg-national-battlefield",
+      "name": "Petersburg National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "petroglyph-national-monument",
+      "name": "Petroglyph National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "pictured-rocks-national-lakeshore",
+      "name": "Pictured Rocks National Lakeshore",
+      "designation": "National Lakeshore",
+      "states": [
+        "MI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "pipe-spring-national-monument",
+      "name": "Pipe Spring National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "piscataway-park",
+      "name": "Piscataway Park",
+      "designation": "Other Designation",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 4,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "point-reyes-national-seashore",
+      "name": "Point Reyes National Seashore",
+      "designation": "National Seashore",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "potomac-heritage-national-scenic-trail",
+      "name": "Potomac Heritage National Scenic Trail",
+      "designation": "National Scenic Trail",
+      "states": [
+        "DC",
+        "PA",
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "president-william-jefferson-clinton-birthplace-home-national-historic-site",
+      "name": "President William Jefferson Clinton Birthplace Home National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "AR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 2,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "prince-william-forest-park",
+      "name": "Prince William Forest Park",
+      "designation": "Other Designation",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "pullman-national-historical-park",
+      "name": "Pullman National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "IL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 2,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "rainbow-bridge-national-monument",
+      "name": "Rainbow Bridge National Monument",
+      "designation": "National Monument",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "richmond-national-battlefield-park",
+      "name": "Richmond National Battlefield Park",
+      "designation": "National Battlefield Park",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "roger-williams-national-memorial",
+      "name": "Roger Williams National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "RI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "russell-cave-national-monument",
+      "name": "Russell Cave National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "saint-croix-island-international-historic-site",
+      "name": "Saint Croix Island International Historic Site",
+      "designation": "International Historic Site",
+      "states": [
+        "ME"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "saint-croix-national-scenic-riverway",
+      "name": "Saint Croix National Scenic Riverway",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "MN",
+        "WI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "saint-gaudens-national-historical-park",
+      "name": "Saint-Gaudens National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NH"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "salinas-pueblo-missions-national-monument",
+      "name": "Salinas Pueblo Missions National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "sand-creek-massacre-national-historic-site",
+      "name": "Sand Creek Massacre National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "santa-monica-mountains-national-recreation-area",
+      "name": "Santa Monica Mountains National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "shiloh-national-military-park",
+      "name": "Shiloh National Military Park",
+      "designation": "National Military Park",
+      "states": [
+        "TN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "sitka-national-historical-park",
+      "name": "Sitka National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "springfield-armory-national-historic-site",
+      "name": "Springfield Armory National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "stones-river-national-battlefield",
+      "name": "Stones River National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "TN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "tallgrass-prairie-national-preserve",
+      "name": "Tallgrass Prairie National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "KS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "tule-lake-national-monument",
+      "name": "Tule Lake National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 4,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "tuzigoot-national-monument",
+      "name": "Tuzigoot National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "ulysses-s-grant-national-historic-site",
+      "name": "Ulysses S. Grant National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "vanderbilt-mansion-national-historic-site",
+      "name": "Vanderbilt Mansion National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "walnut-canyon-national-monument",
+      "name": "Walnut Canyon National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "war-in-the-pacific-national-historical-park",
+      "name": "War in the Pacific National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "GU"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "washita-battlefield-national-historic-site",
+      "name": "Washita Battlefield National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "OK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "weir-farm-national-historical-park",
+      "name": "Weir Farm National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "CT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "whiskeytown-shasta-trinity-national-recreation-area",
+      "name": "Whiskeytown-Shasta-Trinity National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "wilson-s-creek-national-battlefield",
+      "name": "Wilson's Creek National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "MO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "wolf-trap-national-park-for-the-performing-arts",
+      "name": "Wolf Trap National Park for the Performing Arts",
+      "designation": "Other Designation",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "wrangell-st-elias-national-preserve",
+      "name": "Wrangell-St. Elias National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "yucca-house-national-monument",
+      "name": "Yucca House National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "yukon-charley-rivers-national-preserve",
+      "name": "Yukon-Charley Rivers National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 5
+    },
+    {
+      "id": "arches-national-park",
+      "name": "Arches National Park",
+      "designation": "National Park",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "big-bend-national-park",
+      "name": "Big Bend National Park",
+      "designation": "National Park",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "biscayne-national-park",
+      "name": "Biscayne National Park",
+      "designation": "National Park",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "black-canyon-of-the-gunnison-national-park",
+      "name": "Black Canyon of the Gunnison National Park",
+      "designation": "National Park",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "bryce-canyon-national-park",
+      "name": "Bryce Canyon National Park",
+      "designation": "National Park",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "capitol-reef-national-park",
+      "name": "Capitol Reef National Park",
+      "designation": "National Park",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "chiricahua-national-park",
+      "name": "Chiricahua National Park",
+      "designation": "National Park",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "death-valley-national-park",
+      "name": "Death Valley National Park",
+      "designation": "National Park",
+      "states": [
+        "CA",
+        "NV"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "denali-national-park",
+      "name": "Denali National Park",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "dry-tortugas-national-park",
+      "name": "Dry Tortugas National Park",
+      "designation": "National Park",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "glacier-bay-national-park",
+      "name": "Glacier Bay National Park",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "grand-teton-national-park",
+      "name": "Grand Teton National Park",
+      "designation": "National Park",
+      "states": [
+        "WY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "great-basin-national-park",
+      "name": "Great Basin National Park",
+      "designation": "National Park",
+      "states": [
+        "NV"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "great-sand-dunes-national-park",
+      "name": "Great Sand Dunes National Park",
+      "designation": "National Park",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "haleakala-national-park",
+      "name": "Haleakalā National Park",
+      "designation": "National Park",
+      "states": [
+        "HI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "hot-springs-national-park",
+      "name": "Hot Springs National Park",
+      "designation": "National Park",
+      "states": [
+        "AR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "indiana-dunes-national-park",
+      "name": "Indiana Dunes National Park",
+      "designation": "National Park",
+      "states": [
+        "IN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "isle-royale-national-park",
+      "name": "Isle Royale National Park",
+      "designation": "National Park",
+      "states": [
+        "MI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "katmai-national-park",
+      "name": "Katmai National Park",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "kenai-fjords-national-park",
+      "name": "Kenai Fjords National Park",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "kings-canyon-national-park",
+      "name": "Kings Canyon National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "kobuk-valley-national-park",
+      "name": "Kobuk Valley National Park",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "lake-clark-national-park",
+      "name": "Lake Clark National Park",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "lassen-volcanic-national-park",
+      "name": "Lassen Volcanic National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "History & culture"
+      ],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "mammoth-cave-national-park",
+      "name": "Mammoth Cave National Park",
+      "designation": "National Park",
+      "states": [
+        "KY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "mesa-verde-national-park",
+      "name": "Mesa Verde National Park",
+      "designation": "National Park",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "national-park-of-american-samoa",
+      "name": "National Park of American Samoa",
+      "designation": "National Park",
+      "states": [
+        "AS"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "north-cascades-national-park",
+      "name": "North Cascades National Park",
+      "designation": "National Park",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "petrified-forest-national-park",
+      "name": "Petrified Forest National Park",
+      "designation": "National Park",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "pinnacles-national-park",
+      "name": "Pinnacles National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "rocky-mountain-national-park",
+      "name": "Rocky Mountain National Park",
+      "designation": "National Park",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "sequoia-national-park",
+      "name": "Sequoia National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "shenandoah-national-park",
+      "name": "Shenandoah National Park",
+      "designation": "National Park",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "voyageurs-national-park",
+      "name": "Voyageurs National Park",
+      "designation": "National Park",
+      "states": [
+        "MN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "white-sands-national-park",
+      "name": "White Sands National Park",
+      "designation": "National Park",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "wrangell-st-elias-national-park",
+      "name": "Wrangell-St. Elias National Park",
+      "designation": "National Park",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 0,
+      "structuredTrails": 0,
+      "priority": 4
+    },
+    {
+      "id": "abraham-lincoln-birthplace-national-historical-park",
+      "name": "Abraham Lincoln Birthplace National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "KY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "amache-national-historic-site",
+      "name": "Amache National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "aztec-ruins-national-monument",
+      "name": "Aztec Ruins National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "bering-land-bridge-national-preserve",
+      "name": "Bering Land Bridge National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "AK"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "colorado-national-monument",
+      "name": "Colorado National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CO"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 9,
+      "structuredTrails": 9,
+      "priority": 3
+    },
+    {
+      "id": "coronado-national-memorial",
+      "name": "Coronado National Memorial",
+      "designation": "National Memorial",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "craters-of-the-moon-national-monument",
+      "name": "Craters of the Moon National Monument",
+      "designation": "National Monument",
+      "states": [
+        "ID"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "craters-of-the-moon-national-preserve",
+      "name": "Craters of the Moon National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "ID"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "dinosaur-national-monument",
+      "name": "Dinosaur National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CO",
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 2,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "fort-matanzas-national-monument",
+      "name": "Fort Matanzas National Monument",
+      "designation": "National Monument",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "fort-stanwix-national-monument",
+      "name": "Fort Stanwix National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 2,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "grand-portage-national-monument",
+      "name": "Grand Portage National Monument",
+      "designation": "National Monument",
+      "states": [
+        "MN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 3,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "harpers-ferry-national-historical-park",
+      "name": "Harpers Ferry National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "MD",
+        "VA",
+        "WV"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 3,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "herbert-hoover-national-historic-site",
+      "name": "Herbert Hoover National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "IA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 10,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "lava-beds-national-monument",
+      "name": "Lava Beds National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Nature & geology"
+      ],
+      "attractions": 12,
+      "structuredTrails": 11,
+      "priority": 3
+    },
+    {
+      "id": "manassas-national-battlefield-park",
+      "name": "Manassas National Battlefield Park",
+      "designation": "National Battlefield Park",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 6,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "monocacy-national-battlefield",
+      "name": "Monocacy National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "pipestone-national-monument",
+      "name": "Pipestone National Monument",
+      "designation": "National Monument",
+      "states": [
+        "MN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 3,
+      "structuredTrails": 1,
+      "priority": 3
+    },
+    {
+      "id": "rock-creek-park",
+      "name": "Rock Creek Park",
+      "designation": "Other Designation",
+      "states": [
+        "DC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 8,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "san-antonio-missions-national-historical-park",
+      "name": "San Antonio Missions National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 6,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "san-juan-island-national-historical-park",
+      "name": "San Juan Island National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "WA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 9,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "saugus-iron-works-national-historic-site",
+      "name": "Saugus Iron Works National Historic Site",
+      "designation": "National Historic Site",
+      "states": [
+        "MA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "sleeping-bear-dunes-national-lakeshore",
+      "name": "Sleeping Bear Dunes National Lakeshore",
+      "designation": "National Lakeshore",
+      "states": [
+        "MI"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 10,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "sunset-crater-volcano-national-monument",
+      "name": "Sunset Crater Volcano National Monument",
+      "designation": "National Monument",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "timpanogos-cave-national-monument",
+      "name": "Timpanogos Cave National Monument",
+      "designation": "National Monument",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "timucuan-ecological-and-historic-preserve",
+      "name": "Timucuan Ecological and Historic Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "FL"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "upper-delaware-scenic-and-recreational-river",
+      "name": "Upper Delaware Scenic and Recreational River",
+      "designation": "National Wild and Scenic River",
+      "states": [
+        "NY",
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 5,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "valles-caldera-national-preserve",
+      "name": "Valles Caldera National Preserve",
+      "designation": "National Preserve",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "valley-forge-national-historical-park",
+      "name": "Valley Forge National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "PA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 2,
+      "structuredTrails": 0,
+      "priority": 3
+    },
+    {
+      "id": "acadia-national-park",
+      "name": "Acadia National Park",
+      "designation": "National Park",
+      "states": [
+        "ME"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 7,
+      "structuredTrails": 2,
+      "priority": 2
+    },
+    {
+      "id": "canyonlands-national-park",
+      "name": "Canyonlands National Park",
+      "designation": "National Park",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 24,
+      "structuredTrails": 0,
+      "priority": 2
+    },
+    {
+      "id": "crater-lake-national-park",
+      "name": "Crater Lake National Park",
+      "designation": "National Park",
+      "states": [
+        "OR"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 2
+    },
+    {
+      "id": "grand-canyon-national-park",
+      "name": "Grand Canyon National Park",
+      "designation": "National Park",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 3,
+      "structuredTrails": 0,
+      "priority": 2
+    },
+    {
+      "id": "great-smoky-mountains-national-park",
+      "name": "Great Smoky Mountains National Park",
+      "designation": "National Park",
+      "states": [
+        "NC",
+        "TN"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 3,
+      "structuredTrails": 0,
+      "priority": 2
+    },
+    {
+      "id": "redwood-national-park",
+      "name": "Redwood National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 11,
+      "structuredTrails": 0,
+      "priority": 2
+    },
+    {
+      "id": "saguaro-national-park",
+      "name": "Saguaro National Park",
+      "designation": "National Park",
+      "states": [
+        "AZ"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 1,
+      "structuredTrails": 0,
+      "priority": 2
+    },
+    {
+      "id": "yosemite-national-park",
+      "name": "Yosemite National Park",
+      "designation": "National Park",
+      "states": [
+        "CA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [
+        "Activities & trails"
+      ],
+      "attractions": 3,
+      "structuredTrails": 3,
+      "priority": 2
+    },
+    {
+      "id": "agate-fossil-beds-national-monument",
+      "name": "Agate Fossil Beds National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NE"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 3,
+      "structuredTrails": 2,
+      "priority": 1
+    },
+    {
+      "id": "antietam-national-battlefield",
+      "name": "Antietam National Battlefield",
+      "designation": "National Battlefield",
+      "states": [
+        "MD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 10,
+      "structuredTrails": 10,
+      "priority": 1
+    },
+    {
+      "id": "appomattox-court-house-national-historical-park",
+      "name": "Appomattox Court House National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "VA"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 11,
+      "structuredTrails": 11,
+      "priority": 1
+    },
+    {
+      "id": "bighorn-canyon-national-recreation-area",
+      "name": "Bighorn Canyon National Recreation Area",
+      "designation": "National Recreation Area",
+      "states": [
+        "MT",
+        "WY"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 13,
+      "structuredTrails": 13,
+      "priority": 1
+    },
+    {
+      "id": "capulin-volcano-national-monument",
+      "name": "Capulin Volcano National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 5,
+      "structuredTrails": 5,
+      "priority": 1
+    },
+    {
+      "id": "chaco-culture-national-historical-park",
+      "name": "Chaco Culture National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "NM"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 4,
+      "structuredTrails": 4,
+      "priority": 1
+    },
+    {
+      "id": "hopewell-culture-national-historical-park",
+      "name": "Hopewell Culture National Historical Park",
+      "designation": "National Historical Park",
+      "states": [
+        "OH"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 4,
+      "structuredTrails": 3,
+      "priority": 1
+    },
+    {
+      "id": "hovenweep-national-monument",
+      "name": "Hovenweep National Monument",
+      "designation": "National Monument",
+      "states": [
+        "CO",
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 7,
+      "structuredTrails": 7,
+      "priority": 1
+    },
+    {
+      "id": "scotts-bluff-national-monument",
+      "name": "Scotts Bluff National Monument",
+      "designation": "National Monument",
+      "states": [
+        "NE"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 8,
+      "structuredTrails": 4,
+      "priority": 1
+    },
+    {
+      "id": "congaree-national-park",
+      "name": "Congaree National Park",
+      "designation": "National Park",
+      "states": [
+        "SC"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 2,
+      "structuredTrails": 2,
+      "priority": 0
+    },
+    {
+      "id": "cuyahoga-valley-national-park",
+      "name": "Cuyahoga Valley National Park",
+      "designation": "National Park",
+      "states": [
+        "OH"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 19,
+      "structuredTrails": 2,
+      "priority": 0
+    },
+    {
+      "id": "guadalupe-mountains-national-park",
+      "name": "Guadalupe Mountains National Park",
+      "designation": "National Park",
+      "states": [
+        "TX"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 2,
+      "structuredTrails": 2,
+      "priority": 0
+    },
+    {
+      "id": "new-river-gorge-national-park-and-preserve",
+      "name": "New River Gorge National Park and Preserve",
+      "designation": "National Park",
+      "states": [
+        "WV"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 23,
+      "structuredTrails": 3,
+      "priority": 0
+    },
+    {
+      "id": "wind-cave-national-park",
+      "name": "Wind Cave National Park",
+      "designation": "National Park",
+      "states": [
+        "SD"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 11,
+      "structuredTrails": 11,
+      "priority": 0
+    },
+    {
+      "id": "zion-national-park",
+      "name": "Zion National Park",
+      "designation": "National Park",
+      "states": [
+        "UT"
+      ],
+      "missingIntroduction": false,
+      "missingTopics": [],
+      "attractions": 5,
+      "structuredTrails": 3,
+      "priority": 0
+    }
+  ]
+}

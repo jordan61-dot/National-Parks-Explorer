@@ -1,0 +1,1176 @@
+{
+  "counts": {
+    "historical-404": 105,
+    "unverified-page": 84
+  },
+  "references": [
+    {
+      "url": "https://www.nps.gov/afbg/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/amme/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/amme/learn/historyculture/battle-of-saipan.htm",
+        "https://www.nps.gov/amme/learn/historyculture/battle-of-the-philippine-sea.htm",
+        "https://www.nps.gov/amme/learn/historyculture/battle-of-tinian.htm",
+        "https://www.nps.gov/amme/learn/historyculture/the-list-of-names-at-the-marianas-memorial-and-the-court-of-honor.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/bepa/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/bepa/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/bicr/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/bicr/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/blrv/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/bost/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/bost/learn/historyculture/bhm.htm",
+        "https://www.nps.gov/bost/learn/historyculture/cny.htm",
+        "https://www.nps.gov/bost/learn/historyculture/fh.htm",
+        "https://www.nps.gov/bost/learn/historyculture/siege-of-boston-hub.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/brcr/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/cach/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/camo/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/camo/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/camo/planyourvisit/things2do.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/cawo/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/chpi/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/chsc/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/chyo/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/ddem/planyourvisit/things2do.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/dsds/planyourvisit/things2do.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/elro/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/feha/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/feha/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/flfo/planyourvisit/directions.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/fols/planyourvisit/directions.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/fora/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/fora/planyourvisit/things2do.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/fosu/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/foun/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/frdo/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/frri/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/frri/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/frst/planyourvisit/directions.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/gegr/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/glde/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/grba/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/grba/learn/nature/airquality.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/greg/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/greg/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/grsp/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hagr/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hagr/planyourvisit/things2do.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hamp/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hart/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hofr/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hono/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hono/planyourvisit/things2do.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/iatr/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/jaga/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/jazz/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/jazz/planyourvisit/accessibility.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/jazz/planyourvisit/directions.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/jeff/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/kaww/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/kaww/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/kaww/learn/nature/lightscape.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/lamr/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/loea/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/loea/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/lowe/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/mamc/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/mapr/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/mawa/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/mima/planyourvisit/directions.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/mima/planyourvisit/directions-transportation.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/moru/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/natt/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/neen/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/neen/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/niob/planyourvisit/directions.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/noco/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/npsa/planyourvisit/directions.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/obed/planyourvisit/accessibility.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/peri/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/pine/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/pine/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/popo/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/popo/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/pull/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/reer/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/reer/learn/historyculture/historyculture.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/reer/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/roca/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/roca/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/rori/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/safr/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/saga/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/saga/learn/historyculture/collections.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/sagu/planyourvisit/directions.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/sagu/planyourvisit/directionsandtransportation.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/sama/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/sama/planyourvisit/directions.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/sapa/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/ston/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/ston/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/thco/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/this/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/thje/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/thko/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/thrb/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/tosy/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/tosy/planyourvisit/things2do.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/tuai/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/tupe/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/tupe/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/vive/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/vive/learn/historyculture/vvmoverview.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/waco/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/waco/learn/nature/nature.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wamo/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wing/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wotr/learn/historyculture/index.htm",
+      "status": "historical-404",
+      "alternatives": [
+        "https://www.nps.gov/wotr/learn/historyculture/theater-101.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wwii/learn/nature/index.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wwim/planyourvisit/things2do.htm",
+      "status": "historical-404",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/amme/planyourvisit/accessibility.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/anjo/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/appa/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/appa/planyourvisit/things2do.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/arho/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/asis/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/blsc/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/blsc/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/boaf/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/bost/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/brvb/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/casa/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/cech/planyourvisit/things2do.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/chat/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/chri/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/chsc/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/clba/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/coga/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/coga/planyourvisit/things2do.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/colo/planyourvisit/accessibility.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/cuis/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/daav/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/ddem/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/ebla/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/edal/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/edis/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/fila/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/fobu/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/fomr/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/fopo/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/foth/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/frde/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hatu/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hofu/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hono/planyourvisit/accessibility.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/hono/planyourvisit/directions.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/inde/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/inup/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/inup/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/jofi/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/kemo/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/kimo/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/kimo/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/kowa/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/linc/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/lyba/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/lyba/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/malu/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/mapr/planyourvisit/things2do.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/memy/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/miin/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/mlkm/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/natc/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/nava/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/nebe/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/neen/planyourvisit/accessibility.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/neen/planyourvisit/things2do.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/nico/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/okci/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/paav/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/paav/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/poch/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/rowi/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/saju/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/spra/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/spra/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/thri/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/till/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/tosy/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/tosy/planyourvisit/accessibility.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/tuin/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/tule/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/vicr/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/vicr/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/vicr/learn/nature/researchpublications.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/vive/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/waco/planyourvisit/things2do.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wiho/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wing/learn/historyculture/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wori/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wrbr/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/wwim/learn/nature/index.htm",
+      "status": "unverified-page",
+      "alternatives": [],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/heho/learn/historyculture/birthplace.htm",
+      "status": "unverified-page",
+      "alternatives": [
+        "https://www.nps.gov/heho/learn/historyculture/herbert-hoover.htm",
+        "https://www.nps.gov/heho/learn/historyculture/index.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    },
+    {
+      "url": "https://www.nps.gov/heho/learn/historyculture/gravesite.htm",
+      "status": "unverified-page",
+      "alternatives": [
+        "https://www.nps.gov/heho/learn/historyculture/herbert-hoover.htm",
+        "https://www.nps.gov/heho/learn/historyculture/index.htm"
+      ],
+      "note": "Alternatives cover the same park/topic; they do not recover or validate the failed URL."
+    }
+  ]
+}

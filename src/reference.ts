@@ -1,3 +1,4 @@
+import {detailLoaders} from './data/loaders';
 export interface Source {
   url: string;
   label: string;
@@ -39,6 +40,18 @@ export interface Attraction {
   longitude?: number;
   routeType?: string;
   tags?: string[];
+  sourceKey?: string;
+  verificationStatus?: string;
+  elevationGain?: {value:number;unit:'ft'|'m';method:string};
+  surface?: string;
+  terrain?: string;
+  duration?: string;
+  seasonalNotes?: string;
+  permitNotes?: string;
+  locationSource?: string;
+  locationKind?: string;
+  relatedSources?: string[];
+  conflicts?: {field:string;detail:string;sources:string[]}[];
 }
 export interface Park {
   id: string;
@@ -49,6 +62,11 @@ export interface Park {
   states: string[];
   website: string;
   description: string;
+  descriptionKind?: 'summary';
+  articleCount?: number;
+  detailShard?: number;
+  searchTerms?: string;
+  photographs?: {id:string;asset:string;alt:string;caption:string;credit:string;license:string;source:string;width:number;height:number;rightsEvidence:string;sha256:string}[];
   sources: Source[];
   location?: {
     latitude: number;
@@ -76,13 +94,24 @@ export interface Reference {
 }
 let pending: Promise<Reference> | undefined;
 export function loadReference() {
-  return (pending ??= import("./data/compact.json")
+  return (pending ??= import("./data/catalog.json")
     .then((x) => unpackReference(x.default))
     .catch((e) => {
       pending = undefined;
       throw e;
     }));
 }
+const detailPromises=new Map<number,Promise<Record<string,Pick<Park,'articles'|'research'|'sources'>>>>();
+export async function loadParkDetails(id:string):Promise<Park|undefined> {
+ const p=(await loadReference()).units.find(p=>p.id===id);
+ if(!p || p.detailShard===undefined)return p;
+ const shard=p.detailShard;
+ let promise=detailPromises.get(shard);
+ if(!promise){promise=detailLoaders[shard]().then(x=>unpackReference(x.default) as unknown as Record<string,Pick<Park,'articles'|'research'|'sources'>>).catch(e=>{detailPromises.delete(shard);throw e});detailPromises.set(shard,promise)}
+ const details=(await promise)[id];if(!details)throw Error('Park detail shard incomplete');
+ return {...p,...details};
+}
+export async function loadCompleteReference():Promise<Reference>{const r=await loadReference();return {...r,units:await Promise.all(r.units.map(async p=>(await loadParkDetails(p.id))!))}}
 export const stateNames: Record<string, string> = {
   AL: "Alabama",
   AK: "Alaska",
@@ -179,11 +208,11 @@ export function unpackReference(bundle: {strings:string[];reference:unknown}): R
   };
   return unpack(bundle.reference) as Reference;
 }
-export const normalizeSearch=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+export const normalizeSearch=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const searchCache=new WeakMap<Park,string>();
 export function parkSearchText(p: Park) {
   const cached=searchCache.get(p);if(cached!==undefined)return cached;
-  const result=normalizeSearch([p.name, p.designation, p.description, ...parkRegions(p),
+  const result=normalizeSearch([p.name, p.designation, p.description, p.searchTerms??'', ...parkRegions(p),
     ...p.states.flatMap(s=>[s,stateNames[s]??s]), ...p.activities, ...p.topics,
     ...(p.articles??[]).flatMap(a=>[a.topic,a.title,a.text]),
     ...(p.history??[]).map(h=>h.event),
@@ -207,4 +236,16 @@ export function matchesTrail(a:Attraction,filter:string) {
   if(filter==='Accessibility described')return !!a.accessibility;
   const tags:Record<string,string>={Waterfalls:'waterfall',History:'historic',Forest:'forest',Geology:'geology',Overlooks:'overlook'};
   return filter==='Any trails' || !!a.tags?.includes(tags[filter]);
+}
+export function matchesParkSearch(p:Park,query:string){
+ const q=normalizeSearch(query),state=Object.entries(stateNames).find(([code,name])=>normalizeSearch(name)===q || code===query.trim());
+ if(state)return p.states.includes(state[0]);
+ return q.split(/\s+/).every(t=>parkSearchText(p).includes(t));
+}
+export const trailMiles=(a:Attraction)=>a.length ? a.length.value*(a.length.unit==='km' ? 1/1.609344 : 1) : undefined;
+export function trailDifficulty(a:Attraction){const d=normalizeSearch(a.difficulty??'');return !d ? 'unknown' : /strenuous|difficult|hard/.test(d) ? 'challenging' : /moderate/.test(d) ? 'moderate' : /easy/.test(d) ? 'easy' : 'other'}
+export function matchesTrailDetails(a:Attraction,distance:string,difficulty:string,route:string){
+ if((distance||difficulty||route) && a.kind!=='trail')return false;
+ const miles=trailMiles(a);
+ return (!difficulty||trailDifficulty(a)===difficulty)&&(!route||a.routeType===route)&&(!distance||(distance==='unknown'?miles===undefined:miles!==undefined&&(distance==='short'?miles<=2:distance==='medium'?miles>2&&miles<=5:miles>5)));
 }

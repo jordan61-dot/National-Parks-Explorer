@@ -1,0 +1,1970 @@
+{
+  "parks": {
+    "colorado-national-monument": {
+      "attractions": [
+        {
+          "name": "Window Rock Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm",
+          "sourceKey": "window-rock-trail",
+          "description": "Pinyon-juniper woodland leads to views of Monument and Wedding Canyons and Independence Monument.",
+          "retrievedAt": "2026-10-29T05:31:37.828330+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Window Rock Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.25,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "forest",
+            "overlook",
+            "geology"
+          ]
+        },
+        {
+          "name": "Canyon Rim Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm",
+          "sourceKey": "canyon-rim-trail",
+          "description": "The cliff-edge route above Wedding Canyon connects Saddlehorn Visitor Center and Book Cliffs View.",
+          "retrievedAt": "2026-10-29T05:31:37.828330+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Canyon Rim Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.5,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "overlook",
+            "geology"
+          ]
+        },
+        {
+          "name": "Alcove Nature Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm",
+          "sourceKey": "alcove-nature-trail",
+          "description": "A box-canyon alcove introduces the monument's plants, animals and rocks. The source describes assistance up to the overlook.",
+          "retrievedAt": "2026-10-29T05:31:37.828330+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Alcove Nature Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.5,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Mostly level",
+          "tags": [
+            "geology"
+          ],
+          "accessibility": "NPS describes access with assistance up to the overlook; this does not establish independent wheelchair suitability."
+        },
+        {
+          "name": "Otto's Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm",
+          "sourceKey": "otto-s-trail",
+          "description": "Woodlands open to views of Sentinel Spire, Pipe Organ, Praying Hands and Independence Monument.",
+          "retrievedAt": "2026-10-29T05:31:37.828330+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Otto's Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.5,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "forest",
+            "overlook",
+            "geology"
+          ]
+        },
+        {
+          "name": "Coke Ovens Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm",
+          "sourceKey": "coke-ovens-trail",
+          "description": "A descending hillside route reaches an overlook of rounded Wingate Sandstone formations shaped by weathering.",
+          "retrievedAt": "2026-10-29T05:31:37.828330+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Coke Ovens Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.5,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "geology",
+            "overlook"
+          ]
+        },
+        {
+          "name": "CCC Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm",
+          "sourceKey": "ccc-trail",
+          "description": "This ascending connection links Black Ridge Trail with Monument Canyon Trail.",
+          "retrievedAt": "2026-10-29T05:31:37.828330+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "CCC Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.75,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Moderate"
+        },
+        {
+          "name": "Devils Kitchen Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm",
+          "sourceKey": "devils-kitchen-trail",
+          "description": "Carved slickrock steps lead toward the natural opening enclosed by tall upright boulders.",
+          "retrievedAt": "2026-10-29T05:31:37.828330+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Devils Kitchen Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.75,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Moderate",
+          "tags": [
+            "geology"
+          ]
+        },
+        {
+          "name": "Serpents Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm",
+          "sourceKey": "serpents-trail",
+          "description": "Sixteen switchbacks follow a historic early-twentieth-century road through Wingate Sandstone.",
+          "retrievedAt": "2026-10-29T05:31:37.828330+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Serpents Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+          },
+          "length": {
+            "value": 1.9,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Steep, moderate hike",
+          "tags": [
+            "historic",
+            "geology"
+          ]
+        },
+        {
+          "name": "Echo Canyon Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm",
+          "sourceKey": "echo-canyon-trail",
+          "description": "The route leaves Old Gordon Trail for a shady canyon and a seasonal pool beneath cottonwoods; poison ivy is noted near the canyon head.",
+          "retrievedAt": "2026-10-29T05:31:37.828330+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Echo Canyon Trail",
+            "measurementBasis": "conflicting miles and kilometres",
+            "retainedGuide": "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+          },
+          "difficulty": "Moderate",
+          "tags": [
+            "forest"
+          ],
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "Numeric length withheld: conflicting miles and kilometres. See the official guide; no correction or conversion was imposed.",
+              "sources": [
+                "https://www.nps.gov/colm/planyourvisit/short-hiking-trails.htm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "capulin-volcano-national-monument": {
+      "attractions": [
+        {
+          "name": "Crater Rim Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/cavo/planyourvisit/hiking.htm",
+          "sourceKey": "crater-rim-trail",
+          "description": "A paved circuit on the volcanic rim has steep climbs and descents and interprets the Raton-Clayton Volcanic Field.",
+          "retrievedAt": "2026-10-29T05:31:40.686490+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Crater Rim Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/cavo/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.0,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "difficulty": "Moderately difficult",
+          "routeType": "loop",
+          "tags": [
+            "geology"
+          ]
+        },
+        {
+          "name": "Crater Vent Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/cavo/planyourvisit/hiking.htm",
+          "sourceKey": "crater-vent-trail",
+          "description": "The paved descent reaches the bottom of Capulin's crater; the source reports a 100-foot elevation change.",
+          "retrievedAt": "2026-10-29T05:31:40.686490+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Crater Vent Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/cavo/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.2,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "geology"
+          ]
+        },
+        {
+          "name": "Lava Flow Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/cavo/planyourvisit/hiking.htm",
+          "sourceKey": "lava-flow-trail",
+          "description": "An unimproved circuit at the base crosses a lava flow and offers views of volcanic topography.",
+          "retrievedAt": "2026-10-29T05:31:40.686490+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Lava Flow Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/cavo/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.0,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "geology"
+          ]
+        },
+        {
+          "name": "Boca Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/cavo/planyourvisit/hiking.htm",
+          "sourceKey": "boca-trail",
+          "description": "This unimproved circuit explores the vent area from which Capulin's lava flows originated.",
+          "retrievedAt": "2026-10-29T05:31:40.686490+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Boca Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/cavo/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 2.0,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "difficulty": "Strenuous",
+          "routeType": "loop",
+          "tags": [
+            "geology"
+          ]
+        },
+        {
+          "name": "Nature Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/cavo/planyourvisit/hiking.htm",
+          "sourceKey": "nature-trail",
+          "description": "A figure-eight sidewalk beside the visitor center interprets plants, wildlife and geology around a volcanic squeeze-up.",
+          "retrievedAt": "2026-10-29T05:31:40.686490+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Nature Trail",
+            "measurementBasis": "not published",
+            "retainedGuide": "https://www.nps.gov/cavo/planyourvisit/hiking.htm"
+          },
+          "tags": [
+            "geology"
+          ],
+          "accessibility": "NPS describes this figure-eight sidewalk as accessible. Paving alone is not used as proof of accessibility."
+        }
+      ]
+    },
+    "chaco-culture-national-historical-park": {
+      "attractions": [
+        {
+          "name": "Wijiji Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/chcu/planyourvisit/hiking.htm",
+          "sourceKey": "wijiji-trail",
+          "description": "The shortest of Chaco's four backcountry hikes explores the wider Chacoan landscape beyond the loop road.",
+          "retrievedAt": "2026-10-29T05:31:43.349730+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Wijiji Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/chcu/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 3.8,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "tags": [
+            "historic"
+          ],
+          "permitNotes": "The source requires each backcountry hiking group to sign in at its trailhead. Check current official requirements."
+        },
+        {
+          "name": "South Mesa Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/chcu/planyourvisit/hiking.htm",
+          "sourceKey": "south-mesa-trail",
+          "description": "This backcountry loop begins at the Casa Rinconada parking area and explores the mesa landscape.",
+          "retrievedAt": "2026-10-29T05:31:43.349730+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "South Mesa Trail",
+            "measurementBasis": "approximately; loop",
+            "retainedGuide": "https://www.nps.gov/chcu/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 4.5,
+            "unit": "mi",
+            "method": "approximately; loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic"
+          ],
+          "permitNotes": "The source requires each backcountry hiking group to sign in at its trailhead. Check current official requirements."
+        },
+        {
+          "name": "Pueblo Alto Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/chcu/planyourvisit/hiking.htm",
+          "sourceKey": "pueblo-alto-trail",
+          "description": "A mesa-top loop offers an elevated view of Pueblo Bonito and context for Chacoan great houses and roads.",
+          "retrievedAt": "2026-10-29T05:31:43.349730+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Pueblo Alto Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/chcu/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 5.5,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic",
+            "overlook"
+          ],
+          "permitNotes": "The source requires each backcountry hiking group to sign in at its trailhead. Check current official requirements."
+        },
+        {
+          "name": "Peñasco Blanco Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/chcu/planyourvisit/hiking.htm",
+          "sourceKey": "penasco-blanco-trail",
+          "description": "The longest of the four backcountry hikes presents the scale of Chaco's great-house and road landscape.",
+          "retrievedAt": "2026-10-29T05:31:43.349730+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Peñasco Blanco Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/chcu/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 7.5,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "tags": [
+            "historic"
+          ],
+          "permitNotes": "The source requires each backcountry hiking group to sign in at its trailhead. Check current official requirements."
+        }
+      ]
+    },
+    "appomattox-court-house-national-historical-park": {
+      "attractions": [
+        {
+          "name": "Coleman House Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "coleman-house-trail",
+          "description": "The wooded route reaches the Coleman House site, where enslaved Hannah Reynolds received the wound that killed her during the battle.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Coleman House Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.6,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "historic",
+            "forest"
+          ]
+        },
+        {
+          "name": "Conner-Sweeney Cabin Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "conner-sweeney-cabin-trail",
+          "description": "Fields and woodland provide views of the Conner-Sweeney Cabin, with a possible connection to the Sweeney Trail.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Conner-Sweeney Cabin Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.5,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "historic",
+            "forest"
+          ]
+        },
+        {
+          "name": "Ferguson Wildlife Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "ferguson-wildlife-trail",
+          "description": "Interpretive stops describe habitats around Ferguson field, managed for native pollinators and grassland birds.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Ferguson Wildlife Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.9,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "difficulty": "Easy",
+          "routeType": "loop"
+        },
+        {
+          "name": "Grant’s Approach Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "grants-approach-trail",
+          "description": "Historic Sears Lane and monuments interpret the route Grant traveled toward his meeting with Lee.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Grant’s Approach Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 1.4,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "difficulty": "Easy",
+          "routeType": "loop",
+          "tags": [
+            "historic",
+            "forest"
+          ]
+        },
+        {
+          "name": "Lee’s Headquarters Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "lees-headquarters-trail",
+          "description": "A short wooded route reaches the marker for Lee's headquarters; roots and rocks remain on the tread.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Lee’s Headquarters Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.3,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "difficulty": "Easy",
+          "routeType": "loop",
+          "tags": [
+            "historic",
+            "forest"
+          ]
+        },
+        {
+          "name": "Southside Connector Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "southside-connector-trail",
+          "description": "Rolling wooded terrain connects Grant's Approach and Tobacco Prizery trails; rocky tread and flood-prone sections require care.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Southside Connector Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 2.4,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Moderate",
+          "tags": [
+            "forest"
+          ]
+        },
+        {
+          "name": "Stage Road Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "stage-road-trail",
+          "description": "The historic Lynchburg-Richmond Stage Road crosses the village toward the Appomattox River.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Stage Road Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 0.9,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "historic"
+          ]
+        },
+        {
+          "name": "Sweeney Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "sweeney-trail",
+          "description": "Open fields connect the Artillery Park, Charles Sweeney Cabin, Sweeney Cemetery and Conner House site.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Sweeney Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 1.0,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "historic"
+          ]
+        },
+        {
+          "name": "Tibbs Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "tibbs-trail",
+          "description": "Field and forest link the Confederate Cemetery and Appomattox Wayside; the route can combine with Stage Road.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Tibbs Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 1.3,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "historic",
+            "forest"
+          ]
+        },
+        {
+          "name": "Tobacco Prizery Nature Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "tobacco-prizery-nature-trail",
+          "description": "Interpretation identifies trees and changes in land use; uneven ground and two stair sets have no handrails.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Tobacco Prizery Nature Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 1.2,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "difficulty": "Easy",
+          "routeType": "loop",
+          "tags": [
+            "historic",
+            "forest"
+          ]
+        },
+        {
+          "name": "USCT Approach Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm",
+          "sourceKey": "usct-approach-trail",
+          "description": "Open fields trace the approach of United States Colored Troops who helped block the Confederate escape route on April 9, 1865.",
+          "retrievedAt": "2026-10-29T05:31:51.149890+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "USCT Approach Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/apco/planyourvisit/hiking-trails.htm"
+          },
+          "length": {
+            "value": 1.2,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "difficulty": "Easy",
+          "routeType": "loop",
+          "tags": [
+            "historic"
+          ]
+        }
+      ]
+    },
+    "antietam-national-battlefield": {
+      "attractions": [
+        {
+          "name": "Antietam Remembered",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "antietam-remembered",
+          "description": "A paved walkway links landmarks near the visitor center, including Dunker Church and the Maryland State Monument.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Antietam Remembered",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.25,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic"
+          ]
+        },
+        {
+          "name": "Bloody Lane Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "bloody-lane-trail",
+          "description": "The route crosses the historic Mumma and Roulette Farms toward the Confederate position at the Sunken Road.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Bloody Lane Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.6,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic"
+          ]
+        },
+        {
+          "name": "Cornfield Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "cornfield-trail",
+          "description": "Starting at Auto Tour Stop 4, the loop interprets the battlefield's early morning fighting.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Cornfield Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.25,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic"
+          ]
+        },
+        {
+          "name": "Final Attack Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "final-attack-trail",
+          "description": "From Auto Tour Stop 8, this walk follows fields of the final Union advance and Confederate counterattack.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Final Attack Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.7,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic"
+          ]
+        },
+        {
+          "name": "Sherrick Farm Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "sherrick-farm-trail",
+          "description": "Farm fields and woodlots lead toward Burnside Bridge; use care crossing modern Burnside Bridge Road.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Sherrick Farm Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.3,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "historic",
+            "forest"
+          ]
+        },
+        {
+          "name": "Snavely Ford Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "snavely-ford-trail",
+          "description": "Much of this shady loop follows Antietam Creek, with an uphill climb near the end.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Snavely Ford Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.8,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic"
+          ]
+        },
+        {
+          "name": "Three Farms Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "three-farms-trail",
+          "description": "This connection links the northern Bloody Lane Trail to the southern Sherrick Farm Trail.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Three Farms Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.6,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "historic"
+          ]
+        },
+        {
+          "name": "Tidball Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "tidball-trail",
+          "description": "The route begins at Newcomer House and reaches a battlefield overlook near the Union Fifth Corps crossing.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Tidball Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.3,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "historic",
+            "overlook"
+          ]
+        },
+        {
+          "name": "Union Advance Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "union-advance-trail",
+          "description": "The walk crosses Burnside Bridge to examine Confederate defenses and Union Ninth Corps approaches.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Union Advance Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.0,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic"
+          ]
+        },
+        {
+          "name": "West Woods Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/anti/planyourvisit/hiking.htm",
+          "sourceKey": "west-woods-trail",
+          "description": "A mostly shaded circuit from Auto Tour Stop 5 explores key locations of fighting in the West Woods.",
+          "retrievedAt": "2026-10-29T05:31:51.171941+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "West Woods Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/anti/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.9,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic",
+            "forest"
+          ]
+        }
+      ]
+    },
+    "lava-beds-national-monument": {
+      "attractions": [
+        {
+          "name": "Heppe Cave Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "heppe-cave-trail",
+          "description": "Ponderosa pines, mountain mahogany and juniper lead toward a large lava-tube collapse and Heppe Ice Cave.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Heppe Cave Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.4,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "forest",
+            "geology"
+          ]
+        },
+        {
+          "name": "Gillem Bluff Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "gillem-bluff-trail",
+          "description": "The climb reaches the top of Gillem Bluff with expansive landscape views.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Gillem Bluff Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.7,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "overlook"
+          ],
+          "elevationGain": {
+            "value": 550,
+            "unit": "ft",
+            "method": "published climb"
+          }
+        },
+        {
+          "name": "Schonchin Butte Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "schonchin-butte-trail",
+          "description": "A climb up a cinder cone reaches a historic fire lookout structure and views over the basin.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Schonchin Butte Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.7,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "geology",
+            "historic",
+            "overlook"
+          ],
+          "elevationGain": {
+            "value": 500,
+            "unit": "ft",
+            "method": "published climb"
+          }
+        },
+        {
+          "name": "Missing Link Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "missing-link-trail",
+          "description": "This connection joins the Three Sisters and Bunchgrass routes and can form part of a longer loop.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Missing Link Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.7,
+            "unit": "mi",
+            "method": "one way"
+          }
+        },
+        {
+          "name": "Symbol Bridge Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "symbol-bridge-trail",
+          "description": "Lava-tube collapses and pictographs are visible near Symbol Bridge Cave and Big Painted Cave.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Symbol Bridge Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.8,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "geology",
+            "historic"
+          ]
+        },
+        {
+          "name": "Bunchgrass Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "bunchgrass-trail",
+          "description": "Open brushlands and juniper thickets connect the campground to Bunchgrass overlook.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Bunchgrass Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.0,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "overlook"
+          ]
+        },
+        {
+          "name": "Thomas-Wright Battlefield Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "thomas-wright-battlefield-trail",
+          "description": "Interpretation connects Modoc War history with examples of volcanism; wildflowers are described for late spring and early summer.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Thomas-Wright Battlefield Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.1,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "historic",
+            "geology"
+          ]
+        },
+        {
+          "name": "Black Crater Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "black-crater-trail",
+          "description": "A spur from Thomas-Wright Battlefield Trail reaches a spatter cone and lava tree molds.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Black Crater Trail",
+            "measurementBasis": "typographic conflict in published mileage",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "tags": [
+            "geology"
+          ],
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "Numeric length withheld: typographic conflict in published mileage. See the official guide; no correction or conversion was imposed.",
+              "sources": [
+                "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Big Nasty Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "big-nasty-trail",
+          "description": "Rough lava, crater-rim views and ponderosa forests characterize a loop near Mammoth Crater and Hidden Valley.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Big Nasty Trail",
+            "measurementBasis": "loop",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 2.0,
+            "unit": "mi",
+            "method": "loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "geology",
+            "forest",
+            "overlook"
+          ]
+        },
+        {
+          "name": "Whitney Butte Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "whitney-butte-trail",
+          "description": "The route curves around Whitney Butte toward the western wilderness boundary, with views of Mount Shasta and Callahan Lava Flow.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Whitney Butte Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 3.3,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "overlook",
+            "geology"
+          ]
+        },
+        {
+          "name": "Three Sisters Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "three-sisters-trail",
+          "description": "Collapsed lava-tube trenches thread through juniper and sagebrush wilderness; connecting routes form a longer loop.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Three Sisters Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 8.7,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "tags": [
+            "geology"
+          ]
+        },
+        {
+          "name": "Lyons Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/labe/planyourvisit/hiking.htm",
+          "sourceKey": "lyons-trail",
+          "description": "A former monument road crosses much of the park from north to south through wilderness.",
+          "retrievedAt": "2026-10-29T05:31:58.963780+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Lyons Trail",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/labe/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 9.4,
+            "unit": "mi",
+            "method": "one way"
+          }
+        }
+      ]
+    },
+    "wind-cave-national-park": {
+      "attractions": [
+        {
+          "name": "Prairie Vista",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "prairie-vista",
+          "description": "Waysides interpret prairie grasslands on a loop starting near the visitor center.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Prairie Vista",
+            "measurementBasis": "approximately; round trip",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.0,
+            "unit": "mi",
+            "method": "approximately; round trip"
+          },
+          "difficulty": "Easy"
+        },
+        {
+          "name": "Elk Mountain",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "elk-mountain",
+          "description": "A campground loop follows the meeting of grassland and forest; elk bugling may be heard in autumn.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Elk Mountain",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.0,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "forest"
+          ]
+        },
+        {
+          "name": "Rankin Ridge",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "rankin-ridge",
+          "description": "A nature loop reaches the park's highest point and distant views; the fire tower itself is closed.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Rankin Ridge",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.0,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "overlook"
+          ]
+        },
+        {
+          "name": "Wind Cave Canyon",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "wind-cave-canyon",
+          "description": "A former road follows limestone cliffs and forested hillsides toward the park boundary.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Wind Cave Canyon",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.8,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "geology",
+            "forest"
+          ]
+        },
+        {
+          "name": "Cold Brook Canyon",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "cold-brook-canyon",
+          "description": "Ponderosa forest gives way to prairie and a prairie-dog town along the canyon.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Cold Brook Canyon",
+            "measurementBasis": "inconsistent miles and kilometres",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "difficulty": "Moderate",
+          "tags": [
+            "forest"
+          ],
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "Numeric length withheld: inconsistent miles and kilometres. See the official guide; no correction or conversion was imposed.",
+              "sources": [
+                "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lookout Point",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "lookout-point",
+          "description": "Rolling prairie descends toward Beaver Creek and connects to longer loop options.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Lookout Point",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 2.2,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Moderate",
+          "tags": [
+            "overlook"
+          ]
+        },
+        {
+          "name": "East Bison Flats",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "east-bison-flats",
+          "description": "A steep climb from Wind Cave Canyon leads into rolling prairie and views of Buffalo Gap and the Black Hills.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "East Bison Flats",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 3.7,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Strenuous",
+          "tags": [
+            "overlook"
+          ]
+        },
+        {
+          "name": "Sanctuary",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "sanctuary",
+          "description": "Rolling prairie and a large prairie-dog town lead toward the Highland Creek junction.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Sanctuary",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 3.6,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Strenuous"
+        },
+        {
+          "name": "Centennial",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "centennial",
+          "description": "This park segment forms part of the much longer Black Hills Centennial Trail, crossing prairie, pine forest and Beaver Creek.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Centennial",
+            "measurementBasis": "park segment; one way",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 6.0,
+            "unit": "mi",
+            "method": "park segment; one way"
+          },
+          "difficulty": "Strenuous",
+          "tags": [
+            "forest"
+          ]
+        },
+        {
+          "name": "Highland Creek",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "highland-creek",
+          "description": "The park's longest trail crosses mixed-grass prairie, ponderosa forest and riparian habitats.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Highland Creek",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 8.6,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Strenuous",
+          "tags": [
+            "forest"
+          ]
+        },
+        {
+          "name": "Boland Ridge",
+          "kind": "trail",
+          "source": "https://www.nps.gov/wica/planyourvisit/hiking.htm",
+          "sourceKey": "boland-ridge",
+          "description": "A succession of climbs affords Black Hills, Red Valley and prairie panoramas.",
+          "retrievedAt": "2026-10-29T05:31:56.104707+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Boland Ridge",
+            "measurementBasis": "one way",
+            "retainedGuide": "https://www.nps.gov/wica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 2.6,
+            "unit": "mi",
+            "method": "one way"
+          },
+          "difficulty": "Strenuous",
+          "tags": [
+            "overlook"
+          ]
+        }
+      ]
+    },
+    "bighorn-canyon-national-recreation-area": {
+      "attractions": [
+        {
+          "name": "Beaver Pond Nature Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/beaver-pond-nature-trail.htm",
+          "sourceKey": "",
+          "description": "Yucca flats and a ridge above Lime Kiln Creek lead down a steep hillside to beaver ponds and evidence of dam-building.",
+          "retrievedAt": "2026-10-29T05:36:34.448620+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Beaver Pond Nature Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 2.6,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Moderate",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/beaver-pond-nature-trail.htm"
+          ]
+        },
+        {
+          "name": "Bighorn Head Gate",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/bighorn-head-gate-trail.htm",
+          "sourceKey": "",
+          "description": "A gravel path reaches remnants of an early-twentieth-century irrigation system. Water levels can submerge the head gate.",
+          "retrievedAt": "2026-10-29T05:36:34.741681+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Bighorn Head Gate",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.1,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/bighorn-head-gate-trail.htm"
+          ]
+        },
+        {
+          "name": "Three Mile Access",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/three-mile-access-trail.htm",
+          "sourceKey": "",
+          "description": "A riverside path follows the Bighorn River to a cottonwood grove, with opportunities to observe fishing and waterbirds.",
+          "retrievedAt": "2026-10-29T05:36:45.933333+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Three Mile Access",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 2.0,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/three-mile-access-trail.htm"
+          ]
+        },
+        {
+          "name": "Visitor Center Pond",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/visitor-center-pond.htm",
+          "sourceKey": "",
+          "description": "A concrete loop behind the Lovell visitor center circles a former solar-reflection pond now returning toward marsh habitat.",
+          "retrievedAt": "2026-10-29T05:36:52.450297+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Visitor Center Pond",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.26,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy",
+          "accessibility": "The official guide labels this route accessible; detailed slope, surface and assistance requirements are not provided.",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/visitor-center-pond.htm"
+          ]
+        },
+        {
+          "name": "Sykes Mountain Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/sykes-mountain-trail.htm",
+          "sourceKey": "",
+          "description": "A rugged desert-mountain ascent reaches overlooks of Bighorn Canyon and Horseshoe Bend; summer heat is a particular concern.",
+          "retrievedAt": "2026-10-29T05:36:46.711741+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Sykes Mountain Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 4.6,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Hard",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/sykes-mountain-trail.htm"
+          ],
+          "elevationGain": {
+            "value": 1250,
+            "unit": "ft",
+            "method": "official trail page elevation gain"
+          }
+        },
+        {
+          "name": "Mouth of the Canyon Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/mouth-of-the-canyon-trail.htm",
+          "sourceKey": "",
+          "description": "Views of the Pryor and Bighorn Mountains contrast with red Chugwater outcrops near Horseshoe Bend.",
+          "retrievedAt": "2026-10-29T05:36:40.509190+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Mouth of the Canyon Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.8,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Moderate",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/mouth-of-the-canyon-trail.htm"
+          ]
+        },
+        {
+          "name": "State Line Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/state-line-trail.htm",
+          "sourceKey": "",
+          "description": "Juniper scrubland and limestone plateaus lead to a canyon-rim view, with a connection toward Ranger Delight.",
+          "retrievedAt": "2026-10-29T05:36:43.225879+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "State Line Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.52,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy to Moderate",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/state-line-trail.htm"
+          ]
+        },
+        {
+          "name": "Ranger Delight",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/rangers-delight-trail.htm",
+          "sourceKey": "",
+          "description": "A faint road cut and saddle lead toward the canyon rim from near the Montana state line.",
+          "retrievedAt": "2026-10-29T05:36:44.123463+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Ranger Delight",
+            "measurementBasis": "published as round; return basis not further specified",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.66,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy to Moderate",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/rangers-delight-trail.htm"
+          ]
+        },
+        {
+          "name": "Sullivan's Knob Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/Sullivans-Knob-Trail.htm",
+          "sourceKey": "",
+          "description": "A canyon-rim walk passes near the ancient Bad Pass Trail, seasonally used by Indigenous travelers between the Bighorn Basin and Northern Plains.",
+          "retrievedAt": "2026-10-29T05:42:08.408618+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Sullivan's Knob Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.75,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy to Moderate",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/Sullivans-Knob-Trail.htm"
+          ]
+        },
+        {
+          "name": "Two Eagles Interpretive Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/two-eagles-interpretive-trail.htm",
+          "sourceKey": "",
+          "description": "Interpretation explains stone circles left by Indigenous families who weighted tipi edges with stones. These cultural resources must remain in place.",
+          "retrievedAt": "2026-10-29T05:36:48.874852+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Two Eagles Interpretive Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.25,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy",
+          "tags": [
+            "historic"
+          ],
+          "accessibility": "The official guide labels this route accessible; detailed slope, surface and assistance requirements are not provided.",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/two-eagles-interpretive-trail.htm"
+          ]
+        },
+        {
+          "name": "Lower Layout Creek Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/lower-layout-creek-trail.htm",
+          "sourceKey": "",
+          "description": "An old two-track road follows the area south of Layout Creek, with views into Layout Creek Canyon.",
+          "retrievedAt": "2026-10-29T05:36:40.859668+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Lower Layout Creek Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 3.4,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Easy to Moderate",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/lower-layout-creek-trail.htm"
+          ]
+        },
+        {
+          "name": "Upper Layout Creek Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/upper-layout-creek-trail.htm",
+          "sourceKey": "",
+          "description": "A steep hike explores Layout Creek’s water and ranching landscape, whose irrigation history includes Erastus Ewing’s 1897 water claim.",
+          "retrievedAt": "2026-10-29T05:36:49.650117+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Upper Layout Creek Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.8,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Hard",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/upper-layout-creek-trail.htm"
+          ],
+          "elevationGain": {
+            "value": 1250,
+            "unit": "ft",
+            "method": "official trail page elevation gain"
+          }
+        },
+        {
+          "name": "Barry's Island Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/bica/planyourvisit/barrys-island-trail.htm",
+          "sourceKey": "",
+          "description": "A former two-track road circles Chain Canyon, once used by cattle rustlers, toward Barry’s Island; high reservoir water may cover parts of the route.",
+          "retrievedAt": "2026-10-29T05:36:30.873369+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Barry's Island Trail",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/bica/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 4.0,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "difficulty": "Moderate",
+          "relatedSources": [
+            "https://www.nps.gov/bica/planyourvisit/barrys-island-trail.htm"
+          ]
+        }
+      ]
+    },
+    "hovenweep-national-monument": {
+      "attractions": [
+        {
+          "name": "Paved Path to Canyon Overlook",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hove/planyourvisit/hiking.htm",
+          "sourceKey": "paved-path-to-canyon-overlook",
+          "description": "The path from the visitor center reaches views of Square Tower Group structures and native-plant interpretation.",
+          "retrievedAt": "2026-10-29T05:32:06.354507+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Paved Path to Canyon Overlook",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/hove/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.32,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "tags": [
+            "historic",
+            "overlook"
+          ],
+          "seasonalNotes": "Trails are described as daylight-only; remain on designated paths and do not enter structures."
+        },
+        {
+          "name": "Square Tower Loop Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hove/planyourvisit/hiking.htm",
+          "sourceKey": "square-tower-loop-trail",
+          "description": "Primitive slickrock and packed dirt circle ancestral Puebloan structures, with a steep canyon crossing.",
+          "retrievedAt": "2026-10-29T05:32:06.354507+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Square Tower Loop Trail",
+            "measurementBasis": "round trip; loop",
+            "retainedGuide": "https://www.nps.gov/hove/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 2.0,
+            "unit": "mi",
+            "method": "round trip; loop"
+          },
+          "routeType": "loop",
+          "tags": [
+            "historic",
+            "geology"
+          ],
+          "seasonalNotes": "Trails are described as daylight-only; remain on designated paths and do not enter structures."
+        },
+        {
+          "name": "Hovenweep Castle Hike (Out-and-Back)",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hove/planyourvisit/hiking.htm",
+          "sourceKey": "hovenweep-castle-hike-out-and-back",
+          "description": "A shorter route from Canyon Overlook uses the Square Tower Loop to view Hovenweep Castle and nearby structures.",
+          "retrievedAt": "2026-10-29T05:32:06.354507+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Hovenweep Castle Hike (Out-and-Back)",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/hove/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.82,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "routeType": "out-and-back",
+          "tags": [
+            "historic"
+          ],
+          "seasonalNotes": "Trails are described as daylight-only; remain on designated paths and do not enter structures."
+        },
+        {
+          "name": "Horseshoe and Hackberry Trail (Out-and-Back)",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hove/planyourvisit/hiking.htm",
+          "sourceKey": "horseshoe-and-hackberry-trail-out-and-back",
+          "description": "Packed dirt, sandy wash and slickrock connect Horseshoe House and the larger Hackberry sacred site.",
+          "retrievedAt": "2026-10-29T05:32:06.354507+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Horseshoe and Hackberry Trail (Out-and-Back)",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/hove/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 1.44,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "routeType": "out-and-back",
+          "tags": [
+            "historic"
+          ],
+          "seasonalNotes": "Trails are described as daylight-only; remain on designated paths and do not enter structures."
+        },
+        {
+          "name": "Hiking at Holly (Out-and-Back hike from Holly parking area)",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hove/planyourvisit/hiking.htm",
+          "sourceKey": "hiking-at-holly-out-and-back-hike-from-holly-parking-area",
+          "description": "The primitive route passes Holly Tower and Holly House and ends at a petroglyph panel beneath an overhang.",
+          "retrievedAt": "2026-10-29T05:32:06.354507+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Hiking at Holly (Out-and-Back hike from Holly parking area)",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/hove/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.44,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "routeType": "out-and-back",
+          "tags": [
+            "historic"
+          ],
+          "seasonalNotes": "Trails are described as daylight-only; remain on designated paths and do not enter structures."
+        },
+        {
+          "name": "Hiking to Holly (Out-and-Back hike from campground)",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hove/planyourvisit/hiking.htm",
+          "sourceKey": "hiking-to-holly-out-and-back-hike-from-campground",
+          "description": "The Keely Canyon route passes narrow boulder slots and partly crosses Bureau of Land Management land on its way to Holly.",
+          "retrievedAt": "2026-10-29T05:32:06.354507+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Hiking to Holly (Out-and-Back hike from campground)",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/hove/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 7.0,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "routeType": "out-and-back",
+          "tags": [
+            "historic"
+          ],
+          "seasonalNotes": "Trails are described as daylight-only; remain on designated paths and do not enter structures."
+        },
+        {
+          "name": "Hiking at Cajon (Out-and-Back)",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hove/planyourvisit/hiking.htm",
+          "sourceKey": "hiking-at-cajon-out-and-back",
+          "description": "A mostly flat slickrock path winds around ancestral structures with broad canyon-country views.",
+          "retrievedAt": "2026-10-29T05:32:06.354507+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "name": "Hiking at Cajon (Out-and-Back)",
+            "measurementBasis": "round trip",
+            "retainedGuide": "https://www.nps.gov/hove/planyourvisit/hiking.htm"
+          },
+          "length": {
+            "value": 0.2,
+            "unit": "mi",
+            "method": "round trip"
+          },
+          "routeType": "out-and-back",
+          "tags": [
+            "historic",
+            "overlook"
+          ],
+          "seasonalNotes": "Trails are described as daylight-only; remain on designated paths and do not enter structures."
+        }
+      ]
+    }
+  }
+}

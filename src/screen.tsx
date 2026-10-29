@@ -7,9 +7,10 @@ import React, {
   useState,
   type ReactNode,
 } from "react";
-import type { Host, ModuleProps, Snapshot } from "./host";
+import type { Host, ModuleProps, Snapshot, Json } from "./host";
 import {
   loadReference,
+  loadParkDetails, matchesParkSearch, matchesTrailDetails,
   safeUrl,
   stateNames,
   parkRegions,
@@ -17,7 +18,9 @@ import {
   normalizeSearch, trailFilters, matchesTrail, parkSearchRank,
   type Park,
   type Reference,
+  type Attraction,
 } from "./reference";
+import {mediaImages} from './data/media';
 import { Atlas } from "./Atlas";
 import {
   Repository,
@@ -241,11 +244,7 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
       (!region || parkRegions(p).includes(region)) &&
       (!trail || p.attractions.some(a=>matchesTrail(a,trail))) &&
       (!designation || p.designation === designation) &&
-      normalizeSearch(q)
-        .split(/\s+/)
-        .every((t) =>
-          parkSearchText(p).includes(t),
-        ) &&
+      matchesParkSearch(p,q) &&
       (!status ||
         (status === "visited" && stats.ids.has(p.id)) ||
         (status === "unvisited" && !stats.ids.has(p.id)) ||
@@ -349,8 +348,11 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
 }
 function Profile({ id }: { id: string }) {
   const { r, all, repo, run, confirm, busy } = useParks(),
-    p = r.units.find((p) => p.id === id),
+    core = r.units.find((p) => p.id === id),
     saved = all.find((e) => e.kind === "saved" && e.parkId === id);
+  const [detail,setDetail]=useState<Park>(),[detailError,setDetailError]=useState(false),[attempt,setAttempt]=useState(0);
+  useEffect(()=>{let active=true;if(core?.detailShard!==undefined){setDetailError(false);void loadParkDetails(id).then(p=>{if(active)setDetail(p)}).catch(()=>{if(active)setDetailError(true)})}return()=>{active=false}},[id,core,attempt]);
+  const p=detail??core;
   if (!p)
     return (
       <p>Park reference unavailable. Personal records remain preserved.</p>
@@ -363,13 +365,14 @@ function Profile({ id }: { id: string }) {
           : "Affiliated area"}
       </p>
       <h2>{p.name}</h2>
+      <ReferencePhoto park={p}/>
       <p>
         {p.states.map((s) => stateNames[s] ?? s).join(" · ")} · {p.designation}
       </p>
       <p className="np-lead">
         {p.description || "Detailed description unavailable."}
       </p>
-      {p.description && <p className="muted">Official NPS park introduction</p>}
+      {p.description && <p className="muted">{p.descriptionKind==='summary'?'Source-based introduction summary':'Official NPS park introduction'}</p>}
       <div className="actions">
         <a className="button" href={url("visit/new/" + id)}>
           Record visit
@@ -393,6 +396,8 @@ function Profile({ id }: { id: string }) {
       <nav className="np-sections" aria-label="Park sections">{[['encyclopedia','Encyclopedia'],['attractions','Attractions & trails'],['geography','Geography & research'],['visits','Your visits']].map(([anchor,label])=><a key={anchor} href={'#np-'+anchor} onClick={e=>{e.preventDefault();const target=document.getElementById('np-'+anchor);target?.scrollIntoView({block:'start'});target?.focus();}}>{label}</a>)}</nav>
       {!!p.history?.length && <section className="np-card"><h3>History milestones</h3><ul>{p.history.map((h,i)=><li key={i}><strong>{h.date}</strong> · {h.event} <span className="muted">({h.kind.replaceAll('-',' ')})</span> <Link href={h.source} label="Source" /></li>)}</ul></section>}
       <h3 id="np-encyclopedia" tabIndex={-1}>Encyclopedia</h3>
+      {core?.detailShard!==undefined && !detail && !detailError && <p role="status">Loading offline article collection…</p>}
+      {detailError && <p role="alert">Article collection unavailable. Your personal records remain available. <button onClick={()=>setAttempt(x=>x+1)}>Retry articles</button></p>}
       <p>
         Excerpts from official NPS pages, saved for offline reading. A shared
         park website may describe several separately listed units. Check the
@@ -400,7 +405,8 @@ function Profile({ id }: { id: string }) {
       </p>
       {!p.articles?.length && <p>No detailed articles are available in this snapshot.</p>}
       {p.articles?.map((a,i) => (
-        <section className="np-card" key={a.source+'-'+i}>
+        <details className="np-card np-article" open={a.contentKind==='summary'||i===0} key={a.source+'-'+i}>
+          <summary>{a.topic} · {a.title}</summary>
           <p className="eyebrow">{a.topic}</p>
           <h4>{a.title}</h4>
           <p className="muted">{a.contentKind==='summary' ? 'Source-based summary' : 'Official NPS excerpt'}</p>
@@ -410,7 +416,7 @@ function Profile({ id }: { id: string }) {
             {a.lastUpdated ? ` · NPS last updated ${a.lastUpdated}` : ""}
           </p>
           <Link href={a.source} label="Read the full official article" />
-        </section>
+        </details>
       ))}
       <h3 id="np-geography" tabIndex={-1}>Visitor information & research</h3>
       <p>
@@ -449,7 +455,7 @@ function Profile({ id }: { id: string }) {
       <div className="np-grid">
         {p.attractions.map((a) => (
           <article key={a.id} className="np-card">
-            <h4>{a.name}</h4>
+            <h4><a href={url('attraction/'+p.id+'/'+a.id)}>{a.name}</a></h4>
             {a.descriptionKind && <p className="muted">{a.descriptionKind==='summary' ? 'Source-based summary' : a.descriptionKind==='official-excerpt' ? 'Official NPS place excerpt' : 'Official source reference'}</p>}
             <p>
               {a.kind} · {a.description}
@@ -492,6 +498,28 @@ function Profile({ id }: { id: string }) {
       </ul></details>
     </>
   );
+}
+function ReferencePhoto({park}:{park:Park}) {
+ const photo=park.photographs?.[0];
+ if(!photo||!mediaImages[photo.id])return null;
+ return <figure className="np-reference-photo"><img src={mediaImages[photo.id]} width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" decoding="async"/><figcaption>{photo.caption} <span className="muted">{photo.credit} · {photo.license}. </span><Link href={photo.source} label="Image and rights"/></figcaption></figure>;
+}
+function AttractionDetail({parkId,id}:{parkId:string;id:string}) {
+ const {r,all,repo,run,busy}=useParks(),p=r.units.find(p=>p.id===parkId),a=p?.attractions.find(a=>a.id===id),[planId,setPlanId]=useState('');
+ if(!p||!a)return <p>Attraction reference unavailable. Saved personal selections remain preserved.</p>;
+ const facts=[['Distance',a.length?`${a.length.value} ${a.length.unit} (${a.length.method})`:'Unknown'],['Route',a.routeType??'Unknown'],['Difficulty',a.difficulty??'Unknown'],['Elevation gain',a.elevationGain?`${a.elevationGain.value} ${a.elevationGain.unit} (${a.elevationGain.method})`:'Unknown'],['Duration',a.duration??'Unknown'],['Surface',a.surface??'Unknown'],['Terrain',a.terrain??'Unknown']];
+ return <><a href={url('park/'+p.id)}>{p.name}</a><p className="eyebrow">{a.kind} · {p.states.join(', ')}</p><h2>{a.name}</h2><p className="np-lead">{a.description}</p>
+  {a.kind==='trail'&&<dl className="np-facts">{facts.map(([key,value])=><div key={key}><dt>{key}</dt><dd>{value}</dd></div>)}</dl>}
+  <h3>Accessibility & visitor context</h3><p>{a.accessibility??'Accessibility has not been established in this reference. Consult the official source for your requirements.'}</p>
+  {a.seasonalNotes&&<p>{a.seasonalNotes}</p>}{a.permitNotes&&<p>{a.permitNotes}</p>}
+  {!!a.conflicts?.length&&<section className="np-card"><h3>Unresolved source differences</h3>{a.conflicts.map((c,i)=><div key={i}><p>{c.detail}</p>{c.sources.map(s=><p key={s}><Link href={s} label="Measurement source"/></p>)}</div>)}</section>}
+  <p>{a.latitude!==undefined?`${a.locationKind}: ${a.latitude}, ${a.longitude}.`:'Associated with this park; individual coordinates are unknown. The park administrative point is not an attraction location.'}</p>
+  <p className="muted">Reference checked {a.retrievedAt?.slice(0,10)??'date unavailable'}. Static reference information does not establish current closures, conditions, fees, permits or operating hours.</p><Link href={a.source} label="Official attraction reference"/>
+  {(a.relatedSources??[]).map(s=><p key={s}><Link href={s} label="Related official source"/></p>)}
+  <h3>Plan a visit</h3><p>Add a separate incomplete stop to a trip. This saves the selected attraction and does not create a visit.</p>
+  <Field label="Trip for this attraction"><select value={planId} onChange={e=>setPlanId(e.target.value)}><option value="">Choose an existing trip</option>{all.filter(e=>e.kind==='plan').map(e=><option key={e.id} value={e.id}>{String(e.name)}</option>)}</select></Field>
+  <button disabled={busy||!planId} onClick={()=>void run(async()=>{const plan=all.find(e=>e.kind==='plan'&&e.id===planId);if(!plan)throw Error('Choose an existing trip.');const stops=plan.stops as Json[];if(stops.length>=1000)throw Error('This trip already has 1,000 stops.');await repo.save({...plan,stops:[...stops,{id:uid('stop'),parkId:p.id,notes:'',attractions:[a.id],completed:false}]},plan.updatedAt)})}>Add attraction stop</button><a href={url('plan/new')}>Create a trip</a>
+ </>;
 }
 function Journal() {
   const { all, r } = useParks(),
@@ -1103,6 +1131,7 @@ function PlanEditor({ id }: { id?: string }) {
                         }
                       />
                     ))}
+                    {s.attractions.some(id=>!p?.attractions.some(a=>a.id===id))&&<p className="note">Some saved attraction references are unavailable in this catalog. Their identifiers remain saved; use your stop notes for context.</p>}
                     {!p?.attractions.length && (
                       <p>
                         No structured attraction records; keep selections in
@@ -1387,7 +1416,7 @@ function Settings() {
     </>
   );
 }
-function Discover() {
+function Discover({trailsOnly=false}:{trailsOnly?:boolean}) {
   const { r,all } = useParks(),
     [q, setQ] = useState(""),
     [kind, setKind] = useState(""),
@@ -1395,12 +1424,15 @@ function Discover() {
     [park,setPark]=useState(''),
     [trail,setTrail]=useState(''),
     [status,setStatus]=useState(''),
+    [region,setRegion]=useState(''),[distance,setDistance]=useState(''),[difficulty,setDifficulty]=useState(''),[routeType,setRouteType]=useState(''),
     [limit, setLimit] = useState(30),
     items = r.units
       .flatMap((p) => p.attractions.map((a) => ({ p, a })))
       .filter(
         ({ p, a }) =>
           (!kind || a.kind === kind) &&
+          (!trailsOnly || a.kind==='trail') &&
+          (!region || parkRegions(p).includes(region)) && matchesTrailDetails(a,distance,difficulty,routeType) &&
           (!state || p.states.includes(state)) && (!park || p.id===park) &&
           (!trail || matchesTrail(a,trail)) &&
           (!status || (status==='saved' ? all.some(e=>e.kind==='saved' && e.parkId===p.id) : visits(all).some(v=>v.parkId===p.id && v.experience==='visited'))) &&
@@ -1408,7 +1440,7 @@ function Discover() {
       );
   return (
     <>
-      <h2>Attractions & trails</h2>
+      <h2>{trailsOnly ? 'Trail discovery' : 'Attractions & trails'}</h2>
       <p>
         Available sourced coverage is incomplete. Park profiles provide further
         official research links.
@@ -1437,18 +1469,23 @@ function Discover() {
         </select>
       </Field>
       <div className="np-filters">
+       <Field label="Discovery region"><select value={region} onChange={e=>{setRegion(e.target.value);setLimit(30)}}><option value="">All regions</option>{['Northeast','Midwest','South','West','Territories'].map(x=><option key={x}>{x}</option>)}</select></Field>
+       <Field label="Trail distance"><select value={distance} onChange={e=>{setDistance(e.target.value);setLimit(30)}}><option value="">Any published distance</option><option value="short">Up to 2 mi</option><option value="medium">Over 2 to 5 mi</option><option value="long">Over 5 mi</option><option value="unknown">Distance unknown</option></select></Field>
+       <Field label="Trail difficulty"><select value={difficulty} onChange={e=>{setDifficulty(e.target.value);setLimit(30)}}><option value="">Any difficulty</option><option value="easy">Easy, as described</option><option value="moderate">Moderate, including mixed ratings</option><option value="challenging">Difficult or strenuous</option><option value="unknown">Difficulty unknown</option><option value="other">Other description</option></select></Field>
+       <Field label="Trail route"><select value={routeType} onChange={e=>{setRouteType(e.target.value);setLimit(30)}}><option value="">Any route</option>{[...new Set(r.units.flatMap(p=>p.attractions.filter(a=>a.kind==='trail'&&a.routeType).map(a=>a.routeType!)))].sort().map(x=><option key={x}>{x}</option>)}</select></Field>
        <Field label="Attraction park"><select value={park} onChange={e=>{setPark(e.target.value);setLimit(30)}}><option value="">All parks and affiliated areas</option>{r.units.filter(p=>p.attractions.length).map(p=><option key={p.id} value={p.id}>{p.name}{p.classification==='affiliated' ? ' · affiliated' : ''}</option>)}</select></Field>
        <Field label="Attraction state or territory"><select value={state} onChange={e=>{setState(e.target.value);setLimit(30)}}><option value="">All locations</option>{Object.entries(stateNames).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></Field>
        <Field label="Trail attributes"><select value={trail} onChange={e=>{setTrail(e.target.value);setLimit(30)}}><option value="">Any reference attributes</option>{trailFilters.map(x=><option key={x}>{x}</option>)}</select></Field>
        <Field label="Attraction personal records"><select value={status} onChange={e=>{setStatus(e.target.value);setLimit(30)}}><option value="">Any visit or saved status</option><option value="visited">Visited parks</option><option value="saved">Saved parks</option></select></Field>
       </div>
-      <button onClick={()=>{setQ('');setKind('');setState('');setPark('');setTrail('');setStatus('');setLimit(30)}}>Reset attraction filters</button>
+      <button onClick={()=>{setQ('');setKind('');setState('');setPark('');setTrail('');setStatus('');setRegion('');setDistance('');setDifficulty('');setRouteType('');setLimit(30)}}>Reset attraction filters</button>
+      <p className="muted">Distance filters use the published measurement basis shown on each trail. One-way and round-trip values are not interchangeable. Unknown attributes are never treated as easy or accessible.</p>
       <p role="status">{items.length} sourced matches</p>
       {!items.length && <p>No sourced attractions match these filters. Missing trail attributes are excluded; broaden your filters or read the park's official hiking guide.</p>}
       <div className="np-grid">
         {items.slice(0, limit).map(({ p, a }) => (
           <article className="np-card" key={p.id + a.id}>
-            <h3>{a.name}</h3>
+            <h3><a href={url('attraction/'+p.id+'/'+a.id)}>{a.name}</a></h3>
             <a href={url("park/" + p.id)}>{p.name}</a>
             <p>{a.description}</p>
             {a.length && <p>{a.length.value} {a.length.unit} · {a.length.method}</p>}
@@ -1491,12 +1528,15 @@ export function createScreen(host: Host) {
     }, []);
     useEffect(() => {
       let active = true;
-      void Promise.all([loadReference(), services.store.snapshot()])
+      void Promise.all([loadReference().catch(e=>{
+        services.report(e);
+        return {formatVersion:1,retrievedAt:'',rosterUrl:'https://www.nps.gov/aboutus/national-park-system.htm',publishedSystemTotal:0,headingCounts:{},attribution:'Reference unavailable',licenseUrl:'https://www.nps.gov/aboutus/disclaimer.htm',units:[]} as Reference;
+      }), services.store.snapshot()])
         .then(([r, s]) => {
           if (active) {
             setR(r);
             setS(s);
-            setError("");
+            setError(r.units.length?'':'Reference catalog unavailable. Personal records are available using saved identifiers.');
           }
         })
         .catch((e) => {
@@ -1577,6 +1617,10 @@ export function createScreen(host: Host) {
         <Catalog key={route} atlas={route === "atlas"} />
       ) : route === "discover" ? (
         <Discover />
+      ) : route === "trails" ? (
+        <Discover key="trails" trailsOnly />
+      ) : seg[0] === 'attraction' ? (
+        <AttractionDetail key={route} parkId={seg[1]} id={seg[2]} />
       ) : route === "visits" ? (
         <Journal />
       ) : seg[0] === "visit" ? (
@@ -1625,6 +1669,7 @@ export function createScreen(host: Host) {
               ["catalog", "Encyclopedia"],
               ["atlas", "Atlas"],
               ["discover", "Attractions"],
+              ["trails", "Trails"],
               ["visits", "Visits"],
               ["plans", "Plans"],
               ["statistics", "Statistics"],
@@ -1645,6 +1690,7 @@ export function createScreen(host: Host) {
             </p>
           )}
           {notice && <p role="status">{notice}</p>}
+          {!r.units.length&&<button onClick={()=>setRetry(x=>x+1)}>Retry reference catalog</button>}
           <div aria-busy={busy}>{content}</div>
           <Confirm
             open={!!confirmation}

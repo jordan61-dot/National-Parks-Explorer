@@ -32,7 +32,10 @@ def collect(url,robots):
   if urlparse(final).hostname not in {'www.nps.gov','nps.gov'} or expected!=actual:return dict(error='Unverified redirect association',errorCategory='redirect-association',status=status,finalUrl=final,attemptedAt=now)
   a=Article();a.feed(raw);p=Page();p.feed(raw)
   title=clean(a.title);text=a.excerpt() or ' '.join(clean(p.description).split()[:180])
-  if not title or any(t in title.lower() for t in ['page not found','access denied','404']):return dict(error='No verified article',errorCategory='unverified-page',status=status,finalUrl=final,attemptedAt=now)
+  import re
+  document_title=re.search(r'<title[^>]*>(.*?)</title>',raw,re.S|re.I)
+  if document_title and re.search(r'page in.progress',clean(document_title[1]),re.I):return dict(error='Official source page in progress',errorCategory='source-in-progress',status=status,finalUrl=final,attemptedAt=now,documentTitle=clean(document_title[1]))
+  if not title or any(t in title.lower() for t in ['page not found','access denied','404']):return dict(error='No verified article',errorCategory='unverified-page',status=status,finalUrl=final,attemptedAt=now,documentTitle=clean(document_title[1]) if document_title else None)
   places={}
   for href,label in a.links:
    link=canonical(url,href)

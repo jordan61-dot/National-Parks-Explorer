@@ -1,0 +1,96 @@
+{
+  "parks": {
+    "agate-fossil-beds-national-monument": {
+      "photographs": [
+        {
+          "id": "photo072-agfo",
+          "asset": "src/media072/agfo.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/d316f176-98ff-42db-95d0-8c995cb22050",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/d316f176-98ff-42db-95d0-8c995cb22050/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/d316f176-98ff-42db-95d0-8c995cb22050/proxylores.jpg",
+          "retrievedAt": "2026-10-29T05:37:24.296557+00:00",
+          "alt": "View of multiple bluffs on small hills",
+          "caption": "Agate Fossil Beds National Monument, Nebraska",
+          "credit": "NPS staff",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain",
+          "width": 500,
+          "height": 333,
+          "sha256": "8833236dd446fbb14dbe8451ec40c143f470f18661149d61dfdb93c1c9a69b91",
+          "bytes": 28424,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    },
+    "cumberland-island-national-seashore": {
+      "photographs": [
+        {
+          "id": "photo072-cuis",
+          "asset": "src/media072/cuis.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/05582b75-1dd8-b71b-0b46-217d130f46ab",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/05582b75-1dd8-b71b-0b46-217d130f46ab/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/05582B75-1DD8-B71B-0B46217D130F46AB/proxylores.jpg",
+          "retrievedAt": "2026-10-29T05:37:29.765212+00:00",
+          "alt": "brick and stone ruins of a large mansion at sunset under colorful clouds",
+          "caption": "Dungeness Ruins",
+          "credit": "NPS Photo",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "width": 500,
+          "height": 333,
+          "sha256": "f3747a6440054c1b1b749341ec406f3c7bbaefc9db9bfc5ffb6c15d9bab2d2c3",
+          "bytes": 45338,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    },
+    "fort-union-trading-post-national-historic-site": {
+      "photographs": [
+        {
+          "id": "photo072-fous",
+          "asset": "src/media072/fous.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/bc98082c-93ba-4e19-b96d-fc4c7d70dddd",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/bc98082c-93ba-4e19-b96d-fc4c7d70dddd/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/bc98082c-93ba-4e19-b96d-fc4c7d70dddd/proxylores.jpg",
+          "retrievedAt": "2026-10-29T05:37:41.741286+00:00",
+          "alt": "Various pieces of historic carpenter and smithing equipment",
+          "caption": "Fort Union Trading Post National Historic Site",
+          "credit": "NPS / Victoria Stauffenberg",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "width": 500,
+          "height": 375,
+          "sha256": "1e1b662d4288cb561b488f9eb33b792a5efea539515cc3c84644c885008cab18",
+          "bytes": 86130,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    },
+    "great-basin-national-park": {
+      "photographs": [
+        {
+          "id": "photo072-grba",
+          "asset": "src/media072/grba.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/e1c25a5a-17c3-4458-ae38-2944f58b2eb3",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/e1c25a5a-17c3-4458-ae38-2944f58b2eb3/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/e1c25a5a-17c3-4458-ae38-2944f58b2eb3/proxylores.jpg",
+          "retrievedAt": "2026-10-29T05:48:57.162453+00:00",
+          "alt": "Bobcat on left side of frame looking to the left. Photo is black and white. Bobcat has large ears and shining large eyes. Whiskers and nose are visible. Face is partially obscured by vegetation.",
+          "caption": "Bobcat",
+          "credit": "NPS",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "width": 500,
+          "height": 281,
+          "sha256": "d645644d8f517249276c5dbb755a22a7927381bcbcb74be4ebf9677fa9899e62",
+          "bytes": 8820,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    }
+  }
+}
