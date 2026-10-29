@@ -30,6 +30,22 @@ export interface Stop {
   notes: string;
   completed: boolean;
   attractions: string[];
+  completedAttractions?: string[];
+}
+export const completedActivities = (stop: Stop) =>
+  stop.attractions.filter(id => stop.completedAttractions?.includes(id));
+export function setActivityCompleted(plan: Entity, stopId: string, activityId: string, completed: boolean): Entity {
+  if (plan.kind !== "plan" || !validEntity(plan)) throw Error("Trip unavailable or invalid. Reload before retrying.");
+  const stops = plan.stops as unknown as Stop[];
+  const stop = stops.find(s => s.id === stopId);
+  if (!stop?.attractions.includes(activityId)) throw Error("Activity changed or was removed. Reload the saved trip before retrying.");
+  const selected = completedActivities(stop);
+  const next = completed ? [...new Set([...selected, activityId])] : selected.filter(id => id !== activityId);
+  return {...plan, stops: stops.map(s => s.id === stopId ? {...s, completedAttractions: next} : s) as unknown as Json[]};
+}
+export function removePlannedActivity(stop: Stop, activityId: string): Stop {
+  return {...stop, attractions: stop.attractions.filter(id => id !== activityId),
+    ...(stop.completedAttractions === undefined ? {} : {completedAttractions: stop.completedAttractions.filter(id => id !== activityId)})};
 }
 export interface Plan extends Entity {
   kind: "plan";
@@ -146,13 +162,16 @@ export function validEntity(x: unknown): x is Json {
         (s) =>
           object(s) &&
           Object.keys(s).every((k) =>
-            ["id", "parkId", "notes", "completed", "attractions"].includes(k),
+            ["id", "parkId", "notes", "completed", "attractions", "completedAttractions"].includes(k),
           ) &&
           validId(s.id) &&
           validId(s.parkId) &&
           text(s.notes) &&
           typeof s.completed === "boolean" &&
-          strings(s.attractions),
+          strings(s.attractions) &&
+          (!Object.hasOwn(s, "completedAttractions") ||
+            (strings(s.completedAttractions) &&
+              (s.completedAttractions as string[]).every(id => validId(id) && (s.attractions as string[]).includes(id)))),
       )
     );
   if (x.kind === "baseline")

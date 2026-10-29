@@ -14,3 +14,4 @@
 }
 
 .np-trip-card{min-width:0}.np-trip-card h3{overflow-wrap:anywhere}.np-trip-card p{margin:.45rem 0;overflow-wrap:anywhere}.np-trip-card progress{display:block;max-width:100%;margin:.35rem 0}.np-trip-card .actions{display:flex;gap:.5rem;margin:.75rem 0 0}.np-trip-card .actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;text-align:center}.np-trip-card .actions a:focus-visible{outline:3px solid #bd7525;outline-offset:3px}@media(max-width:600px){.np-trip-card .actions a{flex:1 0 auto;max-width:100%}}
+.np-activity-check{display:flex;align-items:center;gap:.6rem;min-height:44px;cursor:pointer}.np-activity-check input{width:1.3rem;height:1.3rem;min-height:1.3rem;flex:0 0 1.3rem;margin:0;padding:0}.np-activity-status{font-weight:600}.np-checklist-feedback:empty{display:none}@media print{.np-activity-check,.np-checklist-feedback{display:none!important}}

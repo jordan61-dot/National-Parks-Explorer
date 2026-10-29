@@ -1,6 +1,7 @@
 import { it, expect, vi } from "vitest";
 import {
   Repository,
+  completedActivities, setActivityCompleted, removePlannedActivity, type Stop,
   newVisit,
   validEntity,
   validSnapshot,
@@ -188,4 +189,28 @@ it('retains separate unknown-date visits after a display-name or designation cha
  expect(visits(entities(before))).toHaveLength(2);
  expect(visits(entities(before)).every(v=>v.date==='' && v.parkId==='stable-park')).toBe(true);
  expect(await s.snapshot()).toEqual(before);
+});
+
+const checklistPlan = () => entity('plan',{name:'Checklist fixture',notes:'trip note',stops:[{id:'one',parkId:'park',notes:'stop note',completed:false,attractions:['known','retired-id']},{id:'two',parkId:'park',notes:'repeat',completed:true,attractions:['known']}]});
+it('planned activity validation accepts legacy and selected missing references but rejects invalid completion data',()=>{
+ const legacy=checklistPlan();expect(validEntity(legacy)).toBe(true);expect(completedActivities((legacy.stops as unknown as Stop[])[0])).toEqual([]);
+ const next=setActivityCompleted(legacy,'one','retired-id',true);expect(validEntity(next)).toBe(true);expect((legacy.stops as unknown as Stop[])[0]).not.toHaveProperty('completedAttractions');
+ for(const bad of [null,'known',['known','known'],['outside'],[42],['bad id']]){const p=structuredClone(legacy);(p.stops as any[])[0].completedAttractions=bad;expect(validEntity(p)).toBe(false)}
+ expect(()=>setActivityCompleted(next,'absent','known',true)).toThrow();expect(()=>setActivityCompleted(next,'one','outside',true)).toThrow();
+});
+it('planned activity completion is reversible, stop-specific, independent and survives selection edits',()=>{
+ const legacy=checklistPlan(),before=structuredClone(legacy),done=setActivityCompleted(legacy,'one','known',true),stops=done.stops as unknown as Stop[];
+ expect(stops[0]).toEqual({...((legacy.stops as unknown as Stop[])[0]),completedAttractions:['known']});expect(stops[1]).toEqual((legacy.stops as unknown as Stop[])[1]);expect(legacy).toEqual(before);
+ const reordered={...stops[0],attractions:['retired-id','known']};expect(completedActivities(reordered)).toEqual(['known']);
+ const added={...reordered,attractions:[...reordered.attractions,'another']};expect(completedActivities(added)).toEqual(['known']);
+ const removed=removePlannedActivity(added,'known');expect(removed.attractions).toEqual(['retired-id','another']);expect(removed.completedAttractions).toEqual([]);expect(completedActivities({...removed,attractions:[...removed.attractions,'known']})).toEqual([]);
+ const undone=setActivityCompleted(done,'one','known',false);expect((undone.stops as unknown as Stop[])[0].attractions).toEqual(stops[0].attractions);expect((undone.stops as unknown as Stop[])[0].completedAttractions).toEqual([]);
+});
+it('planned activity persistence rejects stale writes and failed transactions without touching visits or other trips',async()=>{
+ const store=new Memory(),repo=new Repository(store),plan=checklistPlan(),other=checklistPlan();await repo.save(plan);await repo.save(other);await repo.save(newVisit('park'));
+ const saved=entities(await store.snapshot()).find(e=>e.id===plan.id)!,before=await store.snapshot();await repo.save(setActivityCompleted(saved,'one','known',true),saved.updatedAt);
+ const reopened=entities(await store.snapshot()).find(e=>e.id===plan.id)!;expect((reopened.stops as unknown as Stop[])[0].completedAttractions).toEqual(['known']);expect(visits(entities(store.data))).toEqual(visits(entities(before)));expect(entities(store.data).find(e=>e.id===other.id)).toEqual(entities(before).find(e=>e.id===other.id));
+ await expect(repo.save(setActivityCompleted(saved,'two','known',true),saved.updatedAt)).rejects.toThrow('changed');const confirmed=await store.snapshot();
+ const atomic=vi.spyOn(store,'atomic').mockImplementationOnce(async change=>{change(await store.snapshot());throw Error('Injected storage failure')});await expect(repo.save({...reopened,notes:'failed'},reopened.updatedAt)).rejects.toThrow('Injected');expect(await store.snapshot()).toEqual(confirmed);atomic.mockRestore();
+ await repo.save({...reopened,notes:'unrelated edit'},reopened.updatedAt);expect((entities(await store.snapshot()).find(e=>e.id===plan.id)!.stops as unknown as Stop[])[0].completedAttractions).toEqual(['known']);
 });

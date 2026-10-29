@@ -33,6 +33,9 @@ import {
   applyHistory,
   validHistory,
   uid,
+  completedActivities,
+  setActivityCompleted,
+  removePlannedActivity,
   type Entity,
   type Visit,
   type Stop,
@@ -938,13 +941,21 @@ function Plans() {
 }
 
 function TripOverview({id}:{id:string}) {
- const {all,r}=useParks(),plan=all.find(e=>e.id===id&&e.kind==='plan');
+ const {all,r,repo,run,busy}=useParks(),plan=all.find(e=>e.id===id&&e.kind==='plan');
+ const [needsReload,setNeedsReload]=useState(false),[feedback,setFeedback]=useState('');
+ async function complete(stop:Stop,ref:string,value:boolean,label:string) {
+   if(!plan)return;
+   setFeedback('');
+   const ok=await run(async()=>{await repo.save(setActivityCompleted(plan!,stop.id,ref,value),plan!.updatedAt)});
+   if(ok)setFeedback(`${label}: ${value?'completed':'planned'}. Saved.`);
+   else setNeedsReload(true);
+ }
  if(!plan)return <p>Trip unavailable. <a href={url('plans')}>Return to trips</a></p>;
  const stops=plan.stops as unknown as Stop[];
- return <article className="np-itinerary"><div className="np-itinerary-actions actions"><a href={url('plans')}>Trip list</a><a href={url('plan/'+id)}>Edit trip</a><button onClick={()=>window.print()}>Print itinerary</button></div><p>Personal trip plan</p><h2>{String(plan.name)}</h2>{!!plan.notes&&<p className="np-notes">{String(plan.notes)}</p>}<p>{stops.length} park stops · {stops.filter(s=>s.completed).length} completed · {stops.reduce((n,s)=>n+s.attractions.length,0)} planned activity selections</p><p>Stop completion describes planning status; visit history is separate.</p>
+ return <article className="np-itinerary"><div className="np-itinerary-actions actions"><a href={url('plans')}>Trip list</a><a href={url('plan/'+id)}>Edit trip</a><button onClick={()=>window.print()}>Print itinerary</button></div><p>Personal trip plan</p><h2>{String(plan.name)}</h2>{!!plan.notes&&<p className="np-notes">{String(plan.notes)}</p>}<p>{stops.length} park stops · {stops.filter(s=>s.completed).length} completed · {stops.reduce((n,s)=>n+s.attractions.length,0)} planned activity selections</p><p>Activity checks, stop completion and visit history are independent.</p><div className="np-checklist-feedback"><p role="status">{busy?'Saving activity…':feedback}</p>{needsReload&&<p role="alert">The activity change was not confirmed. Reload the saved trip before retrying. <button type="button" disabled={busy} onClick={()=>{void run(async()=>{}).then(ok=>{if(ok){setNeedsReload(false);setFeedback('Saved trip reloaded. You can retry the activity.')}})}}>Reload saved trip</button></p>}</div>
  {!stops.length&&<p>No park stops planned yet. Use the trip editor to add stops.</p>}
  {stops.map((s,i)=>{const p=r.units.find(p=>p.id===s.parkId);return <section key={s.id} className="np-itinerary-stop"><h3>Stop {i+1} — {p?.name??'Saved park — current reference unavailable'}</h3>{!p&&<p>Park identifier: {s.parkId}</p>}{p&&<p>{p.designation} · {p.states.map(x=>stateNames[x]??x).join(', ')}</p>}<p>Status: {s.completed?'Completed':'Planned'}</p>{s.notes&&<p className="np-notes">{s.notes}</p>}{p&&<p><a href={url('park/'+p.id)}>Park details</a> · <Link href={p.website} label="Official park information"/></p>}
- {s.attractions.length?<><h4>Planned activities</h4><ol>{s.attractions.map(ref=>{const a=p?.attractions.find(a=>a.id===ref);return <li key={ref}>{a?<><strong><a href={url('attraction/'+s.parkId+'/'+ref)}>{a.name}</a></strong><p>{a.kind}{a.length?` · ${a.length.value} ${a.length.unit} (${a.length.method})`:a.kind==='trail'?' · Distance unknown':''}{a.routeType?' · '+a.routeType:''}{a.difficulty?' · '+a.difficulty:a.kind==='trail'?' · Difficulty unknown':''}{a.elevationGain?` · Elevation gain ${a.elevationGain.value} ${a.elevationGain.unit} (${a.elevationGain.method})`:''}</p>{a.accessibility&&<p>{a.accessibility}</p>}{a.conflicts?.map((c,i)=><p key={i}>Source difference: {c.detail}</p>)}</>:<p>Previously saved attraction — current reference unavailable. Identifier: {ref}</p>}</li>})}</ol></>:<p>No activities selected for this stop.</p>}</section>})}</article>;
+ {s.attractions.length?<><h4>Planned activities</h4><p>{completedActivities(s).length} of {s.attractions.length} planned activities completed</p><ol>{s.attractions.map(ref=>{const a=p?.attractions.find(a=>a.id===ref);const done=completedActivities(s).includes(ref),label=a?.name??`Unavailable activity ${ref}`;return <li key={ref}><label className="np-activity-check"><input type="checkbox" checked={done} disabled={busy||needsReload} aria-label={`Mark ${label} completed at stop ${i+1}`} onChange={e=>{void complete(s,ref,e.target.checked,label)}}/><span>Activity completed</span></label><p className="np-activity-status">{done?'Completed':'Planned'}</p>{a?<><strong><a href={url('attraction/'+s.parkId+'/'+ref)}>{a.name}</a></strong><p>{a.kind}{a.length?` · ${a.length.value} ${a.length.unit} (${a.length.method})`:a.kind==='trail'?' · Distance unknown':''}{a.routeType?' · '+a.routeType:''}{a.difficulty?' · '+a.difficulty:a.kind==='trail'?' · Difficulty unknown':''}{a.elevationGain?` · Elevation gain ${a.elevationGain.value} ${a.elevationGain.unit} (${a.elevationGain.method})`:''}</p>{a.accessibility&&<p>{a.accessibility}</p>}{a.conflicts?.map((c,i)=><p key={i}>Source difference: {c.detail}</p>)}</>:<p>Previously saved attraction — current reference unavailable. Identifier: {ref}</p>}</li>})}</ol></>:<p>No activities selected for this stop.</p>}</section>})}</article>;
 }
 function PlanEditor({ id }: { id?: string }) {
   const { all, r, repo, run, confirm, busy } = useParks(),
@@ -1096,7 +1107,7 @@ function PlanEditor({ id }: { id?: string }) {
                   />
                   <h4>Planned activities</h4>
                   {!s.attractions.length && <p>No activities selected for this stop.</p>}
-                  {s.attractions.map((ref,index)=>{const a=p?.attractions.find(x=>x.id===ref);return <div className="np-card" key={ref}><p>Activity {index+1} of {s.attractions.length}</p>{a ? <><strong><a href={url('attraction/'+s.parkId+'/'+a.id)} target="_blank" rel="noopener noreferrer">{a.name}</a></strong><p>{a.kind} · {p?.name} · {a.length?`${a.length.value} ${a.length.unit} (${a.length.method})`:'Distance unknown'}{a.routeType?' · '+a.routeType:''}{a.difficulty?' · '+a.difficulty:''}{a.elevationGain?` · elevation gain ${a.elevationGain.value} ${a.elevationGain.unit} (${a.elevationGain.method})`:''}</p>{!!a.conflicts?.length&&<p>Official sources differ: {a.conflicts.map(c=>c.detail).join(' ')}</p>}</> : <p>Unavailable saved attraction reference: {ref}. It remains saved until you remove it.</p>}<div className="actions"><button type="button" aria-label={`Move ${a?.name??ref} up`} disabled={index===0} onClick={()=>{const next=[...s.attractions];[next[index-1],next[index]]=[next[index],next[index-1]];update({attractions:next})}}>Move up</button><button type="button" aria-label={`Move ${a?.name??ref} down`} disabled={index===s.attractions.length-1} onClick={()=>{const next=[...s.attractions];[next[index],next[index+1]]=[next[index+1],next[index]];update({attractions:next})}}>Move down</button><button type="button" onClick={()=>update({attractions:s.attractions.filter(id=>id!==ref)})}>Remove {a?.name??ref}</button></div></div>})}
+                  {s.attractions.map((ref,index)=>{const a=p?.attractions.find(x=>x.id===ref);return <div className="np-card" key={ref}><p>Activity {index+1} of {s.attractions.length} · {completedActivities(s).includes(ref)?'Completed':'Planned'}</p>{a ? <><strong><a href={url('attraction/'+s.parkId+'/'+a.id)} target="_blank" rel="noopener noreferrer">{a.name}</a></strong><p>{a.kind} · {p?.name} · {a.length?`${a.length.value} ${a.length.unit} (${a.length.method})`:'Distance unknown'}{a.routeType?' · '+a.routeType:''}{a.difficulty?' · '+a.difficulty:''}{a.elevationGain?` · elevation gain ${a.elevationGain.value} ${a.elevationGain.unit} (${a.elevationGain.method})`:''}</p>{!!a.conflicts?.length&&<p>Official sources differ: {a.conflicts.map(c=>c.detail).join(' ')}</p>}</> : <p>Unavailable saved attraction reference: {ref}. It remains saved until you remove it.</p>}<div className="actions"><button type="button" aria-label={`Move ${a?.name??ref} up`} disabled={index===0} onClick={()=>{const next=[...s.attractions];[next[index-1],next[index]]=[next[index],next[index-1]];update({attractions:next})}}>Move up</button><button type="button" aria-label={`Move ${a?.name??ref} down`} disabled={index===s.attractions.length-1} onClick={()=>{const next=[...s.attractions];[next[index],next[index+1]]=[next[index+1],next[index]];update({attractions:next})}}>Move down</button><button type="button" onClick={()=>update(removePlannedActivity(s,ref))}>Remove {a?.name??ref}</button></div></div>})}
                   <p className="muted">Activity details open in a new tab so your unsaved trip edits remain here.</p>
                   <details><summary>Available attractions and trails</summary>
                     {p?.attractions.filter(a=>!s.attractions.includes(a.id)).map(a=><Check key={a.id} label={a.name} value={false} onChange={()=>update({attractions:[...s.attractions,a.id]})}/>)}
@@ -1598,7 +1609,7 @@ export function createScreen(host: Host) {
       ) : route === "plans" ? (
         <Plans />
       ) : seg[0] === "itinerary" ? (
-        <TripOverview id={seg[1]} />
+        <TripOverview key={route} id={seg[1]} />
       ) : seg[0] === "plan" ? (
         <PlanEditor key={route} id={seg[1] === "new" ? undefined : seg[1]} />
       ) : route === "statistics" ? (
