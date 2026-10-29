@@ -106,7 +106,7 @@ def main():
    p['sources'].append(dict(url='https://www.nps.gov/'+p['parkCode']+'/planyourvisit/hiking.htm',label='Official hiking guide; individual trails linked'))
   enrich(p,page,details,slug,places)
   supplement(p,supplemental)
-  for addition in sorted(E.glob('release072*.json')):merge(p,json.loads(addition.read_text()))
+  for addition in [*sorted(E.glob('release072*.json')), E/'release0710-trails.json']:merge(p,json.loads(addition.read_text()))
   exact=[f for f in points if slug(f['attributes'].get('UNIT_NAME',''))==slug(p['name'])]
   matching=exact or [f for f in points if p['parkCode'] and f['attributes'].get('UNIT_CODE','').lower()==p['parkCode']]
   if len(matching)==1:

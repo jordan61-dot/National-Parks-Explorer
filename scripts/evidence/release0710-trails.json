@@ -1,0 +1,1577 @@
+{
+  "parks": {
+    "allegheny-portage-railroad-national-historic-site": {
+      "attractions": [
+        {
+          "name": "Skew Arch Bridge Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+          "sourceKey": "skew-arch-bridge-trail",
+          "description": "Descend beside historic Incline 6 from the summit boardwalk to the angled stone bridge. The climb back follows the same hillside; the route also connects to the longer Inclines 6 to 10 system.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+                "title": "Hiking and Biking",
+                "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+                "sourceUpdated": "January 20, 2026",
+                "excerpts": [
+                  "te Game Lands will be busy during hunting seasons.\nTrails and Biking Navigation\nSkew Arch Bridge Trail\nNPS\nSkew Arch Bridge Trail\nThe Skew Arch Bridge can be accessed by a trail at the end of the boardwalk. It is approximately 1/3 mile long each way. Please keep in mind that you are roughly walking alongside Incline 6 on your way down, so it is uphill on the way back!\nThis trail is also the start of the Inclines 6 to 10 Trail system. Hikers can continue from the bridge down the eastern side of the",
+                  "dge can be accessed by a trail at the end of the boardwalk. It is approximately 1/3 mile long each way. Please keep in mind that you are roughly walking alongside Incline 6 on your way down, so it is uphill on the way back!\nThis trail is also the start of the Inclines 6 to 10 Trail system. Hikers can continue from the bridge down the eastern side of the Allegheny Mountain.\nThe bridge is also accessible by vehicle from Old Route 22 where there is a small parking lot in front of the bridge!\nA sectio"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 0.33,
+            "unit": "mi",
+            "method": "approximately one-third mile one way; decimal rounded, return not included"
+          },
+          "terrain": "Downhill to the bridge; uphill on return.",
+          "tags": [
+            "historic",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Summit Level Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+          "sourceKey": "summit-level-trail",
+          "description": "Follow the railroad trace between the heads of inclined planes 6 and 5, on the high crossing of the Allegheny Mountains. The route reaches the park boundary before continuing onto a township road.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+                "title": "Hiking and Biking",
+                "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+                "sourceUpdated": "January 20, 2026",
+                "excerpts": [
+                  "age.\nPlease respect the private property of nearby landowners.\nSummit Level\nNPS\nSummit Level Trail\nThis trail starts at the head of Inclined Plane 6, at Engine House 6 and ends at the head of Inclined Plane 5. Hikers can follow the railroad trace for approximately one mile to the park boundary. A short distance from there, it turns into a paved road maintained by Cresson Township.\nRound trip, this hike on nearly flat ground, is a little over 3 miles in length. The Summit Level was the highest ",
+                  "maintained by Cresson Township.\nRound trip, this hike on nearly flat ground, is a little over 3 miles in length. The Summit Level was the highest point that the Allegheny Portage Railroad crossed the Allegheny Mountains.\nPicnic Area Trail\nNPS\nPicnic Area Trail\nFrom the Summit Level, there is a trail to the left of the railroad trace to the picnic area. The distance from the Lemon House to the picnic area is 1/3 mile. If you are looking for a longer hike, the trail loops down to the railroad trace"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 3,
+            "unit": "mi",
+            "method": "a little over 3 miles round trip; numeric value is a lower bound, not an exact survey"
+          },
+          "terrain": "Nearly flat railroad trace.",
+          "tags": [
+            "historic",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Picnic Area Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+          "sourceKey": "picnic-area-trail",
+          "description": "A branch from the Summit Level railroad trace leads through woodland to the picnic area. The longer option loops back to the trace rather than simply returning along the short access branch.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+                "title": "Hiking and Biking",
+                "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+                "sourceUpdated": "January 20, 2026",
+                "excerpts": [
+                  "hest point that the Allegheny Portage Railroad crossed the Allegheny Mountains.\nPicnic Area Trail\nNPS\nPicnic Area Trail\nFrom the Summit Level, there is a trail to the left of the railroad trace to the picnic area. The distance from the Lemon House to the picnic area is 1/3 mile. If you are looking for a longer hike, the trail loops down to the railroad trace farther down on the Summit Level. The full section to the picnic area, looping down to the Summit Level and following the railroad trace",
+                  "area, looping down to the Summit Level and following the railroad trace back is about one mile. This trail contains mixed terrain; there are flat portions and parts with steeper slopes.\nNature Loop Trail\nNPS\nNature Loop Trail\nThe Nature Loop Trail starts off in the woods to the right of the railroad trace on the Summit Level. The beginning of the trail is marked with a sign on the service road a short distance up the hill from the Lemon House. The trail contains steep climbs as it goes to "
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 1,
+            "unit": "mi",
+            "method": "approximately one mile for the full picnic-area loop returning via Summit Level; direct access is one-third mile"
+          },
+          "routeType": "loop",
+          "terrain": "Mixed flat ground and steeper slopes.",
+          "tags": [
+            "historic",
+            "forest",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Nature Loop Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+          "sourceKey": "nature-loop-trail",
+          "description": "Climb into the woods from the Summit Level near the Lemon House, reach one of the higher areas of the park, and circle down to the historic railroad trace.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+                "title": "Hiking and Biking",
+                "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+                "sourceUpdated": "January 20, 2026",
+                "excerpts": [
+                  " contains mixed terrain; there are flat portions and parts with steeper slopes.\nNature Loop Trail\nNPS\nNature Loop Trail\nThe Nature Loop Trail starts off in the woods to the right of the railroad trace on the Summit Level. The beginning of the trail is marked with a sign on the service road a short distance up the hill from the Lemon House. The trail contains steep climbs as it goes to one of the higher points in the park. It then circles down to the railroad trace along the Summit Level. The ",
+                  "he park. It then circles down to the railroad trace along the Summit Level. The entire trail is about one mile long.\nThe western portal of the Staple Bend Tunnel.\nNPS\nStaple Bend Tunnel Trail\nSince, 2001, the Staple Bend Tunnel has been open as a separate area of Allegheny Portage Railroad National Historic Site. It is not in the immediate area of the Summit Level Visitor Center. Rather, it is near the town of Mineral Point, 5 miles from Johnstown. Once you park your vehicle at the trail head, it is a two"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 1,
+            "unit": "mi",
+            "method": "approximately one mile for the entire loop"
+          },
+          "routeType": "loop",
+          "terrain": "Steep climbs through woodland.",
+          "tags": [
+            "forest",
+            "historic",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Staple Bend Tunnel Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+          "sourceKey": "staple-bend-tunnel-trail",
+          "description": "Walk or bicycle the limestone-dust railroad corridor from Mineral Point to the western tunnel portal. This detached park area interprets early railroad engineering rather than the summit inclined planes.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/alpo/planyourvisit/hiking-and-biking.htm",
+                "title": "Hiking and Biking",
+                "retrievedAt": "2026-10-29T20:25:19.268160+00:00",
+                "sourceUpdated": "January 20, 2026",
+                "excerpts": [
+                  "trail is about one mile long.\nThe western portal of the Staple Bend Tunnel.\nNPS\nStaple Bend Tunnel Trail\nSince, 2001, the Staple Bend Tunnel has been open as a separate area of Allegheny Portage Railroad National Historic Site. It is not in the immediate area of the Summit Level Visitor Center. Rather, it is near the town of Mineral Point, 5 miles from Johnstown. Once you park your vehicle at the trail head, it is a two mile walk to the Staple Bend Tunnel (and, of course, a two mile return trip to y",
+                  ", 5 miles from Johnstown. Once you park your vehicle at the trail head, it is a two mile walk to the Staple Bend Tunnel (and, of course, a two mile return trip to your vehicle). You are welcome to bring bicycles, but no motorized transport for the limestone dust surfaced trail.\nDirections: Take US Route 22 to the Mundy's Corner/Nanty Glo exit. Turn right onto PA Route 271 South. Continue on Route 271 South approximately 5 miles until a (marked) left turn onto Mineral Point Road (PA 3030).",
+                  "rtion are very steep and rugged. The section from Muleshoe to Foot of Ten has a limestone dust surface and can be used by bicyclists.\nPlease see the trail map below or the park tiles map. Additional information can be found on our Inclines 6 to 10 Trail page.\nPlease respect the private property of nearby landowners.\nSummit Level\nNPS\nSummit Level Trail\nThis trail starts at the head of Inclined Plane 6, at Engine House 6 and ends at the head of Inclined Plane 5. Hikers can follow the railroa"
+                ]
+              },
+              {
+                "url": "https://www.nps.gov/alpo/learn/historyculture/staplebend.htm",
+                "title": "Staple Bend Tunnel",
+                "retrievedAt": "2026-10-29T20:25:22.563236+00:00",
+                "sourceUpdated": "October 12, 2026",
+                "excerpts": [
+                  "Contact Us\nStaple Bend Tunnel\nStaple Bend Tunnel Closure\nDue to a rockfall, the interior of the Staple Bend Tunnel is closed. The trail is still open. From the Mineral Point Trailhead, visitors can bypass the tunnel, via a path around the right side of the tunnel structure.\nPark Rangers and Volunteers in period costume framed by the western portal of the Staple Bend Tunnel.\nLocation\nSince, 2001, the Staple Bend Tunnel has bee"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 2,
+            "unit": "mi",
+            "method": "one way from the trailhead to the tunnel; source separately specifies a two-mile return"
+          },
+          "surface": "Limestone dust.",
+          "seasonalNotes": "The tunnel history page reported an interior closure due to rockfall when retrieved. This is retained reference information, not live access status; check official conditions before entry.",
+          "tags": [
+            "historic",
+            "hiking"
+          ],
+          "relatedSources": [
+            "https://www.nps.gov/alpo/learn/historyculture/staplebend.htm"
+          ]
+        },
+        {
+          "name": "Lemon House Tavern",
+          "kind": "historic-site",
+          "source": "https://www.nps.gov/alpo/planyourvisit/lemon-tavern.htm",
+          "sourceKey": "lemon-house-tavern",
+          "description": "Explore the restored first-floor tavern rooms where railroad travelers ate, rested and waited while their trains were prepared to cross the mountain. Access is on foot from the summit visitor area.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:19.269320+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/alpo/planyourvisit/lemon-tavern.htm",
+                "title": "Lemon House Tavern",
+                "retrievedAt": "2026-10-29T20:25:19.269320+00:00",
+                "sourceUpdated": "January 20, 2026",
+                "excerpts": [
+                  " first floor of the Lemon House is open to visitors. The first floor contains a period bar room, fancy parlor, dining room, and exhibit room. Park staff, as available, will greet visitors and guide you through the building.\nLemon House history\nLearn about the history of the Lemon House.\nLast updated: January 20, 2026\nPark footer\nContact Info\nMailing Address:\n110 Federal Park Road\nGallitzin,\nPA\n16641\nPhone:\n814 886-6150\nContact Us\nTools\nFAQ\nSite Index\nEspañol\nStay Connected",
+                  " is open to visitors. The first floor contains a period bar room, fancy parlor, dining room, and exhibit room. Park staff, as available, will greet visitors and guide you through the building.\nLemon House history\nLearn about the history of the Lemon House.\nLast updated: January 20, 2026\nPark footer\nContact Info\nMailing Address:\n110 Federal Park Road\nGallitzin,\nPA\n16641\nPhone:\n814 886-6150\nContact Us\nTools\nFAQ\nSite Index\nEspañol\nStay Connected"
+                ]
+              }
+            ]
+          },
+          "tags": [
+            "historic",
+            "railroad"
+          ]
+        },
+        {
+          "name": "Engine House No. 6 Exhibit Shelter",
+          "kind": "museum",
+          "source": "https://www.nps.gov/alpo/planyourvisit/engine-house-6.htm",
+          "sourceKey": "engine-house-no-6-exhibit-shelter",
+          "description": "See the preserved foundations beneath a shelter containing a reconstructed stationary engine, tow-rope machinery, gears and brakes. Tactile and interactive exhibits explain how inclined-plane rail transport worked.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:22.545167+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/alpo/planyourvisit/engine-house-6.htm",
+                "title": "Engine House No. 6 Exhibit Shelter",
+                "retrievedAt": "2026-10-29T20:25:22.545167+00:00",
+                "sourceUpdated": "January 20, 2026",
+                "excerpts": [
+                  " 6. The displays detail the parts and workings of the building. This includes a stationary engine (not a locomotive) as well as the gears, brakes, and assorted levers that kept the tow rope in motion. The building itself is the same general shape as the original engine house but built larger to protect the original foundations; hence the name. Those foundation pieces can be seen through the metal grating that serves as flooring in the exhibit shelter.\nEngine House history\nThere were ten Engin",
+                  "rs linger as long as they wish. There are panels to read, interactive exhibits, tactile exhibits, and more.\nOver half of the exhibit shelter contains a reproduction of the machinery that would have been in Engine House No. 6. The displays detail the parts and workings of the building. This includes a stationary engine (not a locomotive) as well as the gears, brakes, and assorted levers that kept the tow rope in motion. The building itself is the same general shape as the original engine hous"
+                ]
+              }
+            ]
+          },
+          "tags": [
+            "historic",
+            "railroad",
+            "engineering"
+          ]
+        },
+        {
+          "name": "Staple Bend Tunnel",
+          "kind": "historic-site",
+          "source": "https://www.nps.gov/alpo/learn/historyculture/staplebend.htm",
+          "sourceKey": "staple-bend-tunnel",
+          "description": "Visit the portals of an early American railroad tunnel in the park’s detached Mineral Point section. Interpret the engineering at the end of the approach trail; interior access must be checked separately.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:22.563236+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/alpo/learn/historyculture/staplebend.htm",
+                "title": "Staple Bend Tunnel",
+                "retrievedAt": "2026-10-29T20:25:22.563236+00:00",
+                "sourceUpdated": "October 12, 2026",
+                "excerpts": [
+                  "Contact Us\nStaple Bend Tunnel\nStaple Bend Tunnel Closure\nDue to a rockfall, the interior of the Staple Bend Tunnel is closed. The trail is still open. From the Mineral Point Trailhead, visitors can bypass the tunnel, via a path around the right side of the tunnel structure.\nPark Rangers and Volunteers in period costume framed by the western portal of the Staple Bend Tunnel.\nLocation\nSince, 2001, the Staple Bend Tunnel has bee",
+                  "Contact Us\nStaple Bend Tunnel\nStaple Bend Tunnel Closure\nDue to a rockfall, the interior of the Staple Bend Tunnel is closed. The trail is still open. From the Mineral Point Trailhead, visitors can bypass the tunnel, via a path around the right side of the tunnel structure.\nPark Rangers and Volunteers in period costume framed by the western portal of the Staple Bend Tunnel.\nLocation\nSince, 2001, the Staple Bend Tunnel has been open as a separate area of Allegheny Portag"
+                ]
+              }
+            ]
+          },
+          "seasonalNotes": "The retained NPS page reports a rockfall closure of the tunnel interior and a bypass path. Do not infer that the interior is currently open.",
+          "tags": [
+            "historic",
+            "railroad",
+            "engineering"
+          ]
+        }
+      ]
+    },
+    "harpers-ferry-national-historical-park": {
+      "attractions": [
+        {
+          "name": "Maryland Heights Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hafe/planyourvisit/maryland-heights-trail.htm",
+          "sourceKey": "maryland-heights-trail",
+          "description": "Climb above the Potomac to a cliff overlook of Harpers Ferry, passing Civil War defenses and rocky woodland. The optional Stone Fort extension is a different, longer hike and is not included in the base overlook distance.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:01.958362+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/hafe/planyourvisit/maryland-heights-trail.htm",
+                "title": "Maryland Heights Trail",
+                "retrievedAt": "2026-10-29T20:26:01.958362+00:00",
+                "sourceUpdated": "August 27, 2026",
+                "excerpts": [
+                  "acular scenery, geology, Civil War, industrial, and transportation history. The quickest route to the Maryland Heights Overlook is 4.5 miles round trip from the Master Armorer's House. The Stone Fort Loop trail adds another 2 miles.\nTrail is open during daylight hours. Closed from sunset to sunrise.\nWe recommend that visitors park at the Visitor Center parking area and use the park’s free shuttle system or the Visitor Center to Lower Town Trail to access the trail from Lower Town.\nFrom the",
+                  " transportation history. The quickest route to the Maryland Heights Overlook is 4.5 miles round trip from the Master Armorer's House. The Stone Fort Loop trail adds another 2 miles.\nTrail is open during daylight hours. Closed from sunset to sunrise.\nWe recommend that visitors park at the Visitor Center parking area and use the park’s free shuttle system or the Visitor Center to Lower Town Trail to access the trail from Lower Town.\nFrom the Master Armorer's House in Lower Town turn right to merge",
+                  "culty\nTime Estimate\nMaryland Heights\n4.5 - 6.5 miles\n(7.2 - 10.5 km) round trip\n990 - 1788 feet\nModerately strenuous\nto Strenuous\n3 - 4 hours\nThe Goodloe Byron Memorial Footbridge staircase is currently CLOSED during construction of a new and improved staircase. Access to the Maryland Heights trailhead is provided via shuttle bus from the Visitor Center, located at 171 Shoreline Drive. Shuttles run from the Visitor Center to Lock 34 on the C&O Canal approximately once every hour. Find ",
+                  "ng\nDifficulty\nTime Estimate (hours)\nLower Town to Maryland Heights Overlook\n4.5\n1154\n6.8\nModerate\n3.4\nLower Town to Maryland Heights Overlook, including Stone Fort Trail\n6.2\n1522\n9.2\nModerate\n4.6\nVisitor Center to Maryland Heights Overlook, including Stone Fort Trail\n9.5\n1771\n13.0\nStrenuous\n6.5\nHiking\nLoudoun Heights Trail\nBolivar Heights Trail\nMurphy-Chambers Farm Trail\nLast updated: August 27, 2026\nPark footer\nContact Info\nMailing Address:\nHarpers Ferry National Historical Park"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 4.5,
+            "unit": "mi",
+            "method": "round trip from Lower Town / Master Armorer’s House to the overlook; excludes Stone Fort extension"
+          },
+          "terrain": "Steep climbs, boulders and a narrow rocky descent near the overlook.",
+          "seasonalNotes": "The retained August 2026 page describes footbridge staircase construction and altered trailhead access. Verify official current conditions; the historic approach description is not a live access guarantee.",
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The source describes the Stone Fort extension as 6.5 miles in its introduction but 6.2 miles from Lower Town in its hike table. The 4.5-mile base overlook route agrees; extension distance remains unresolved.",
+              "sources": [
+                "https://www.nps.gov/hafe/planyourvisit/maryland-heights-trail.htm"
+              ]
+            },
+            {
+              "field": "elevationGain",
+              "detail": "Quick facts give a 990–1788-foot range, while the hike table gives 1154 feet for the base overlook route. No single elevation gain is published here.",
+              "sources": [
+                "https://www.nps.gov/hafe/planyourvisit/maryland-heights-trail.htm"
+              ]
+            },
+            {
+              "field": "difficulty",
+              "detail": "Quick facts say Moderately strenuous to Strenuous; the base-route table says Moderate. Difficulty remains unclassified here because those ratings differ.",
+              "sources": [
+                "https://www.nps.gov/hafe/planyourvisit/maryland-heights-trail.htm"
+              ]
+            }
+          ],
+          "tags": [
+            "historic",
+            "forest",
+            "overlook",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Murphy-Chambers Farm Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hafe/planyourvisit/murphy-chambers-farm-trail.htm",
+          "sourceKey": "murphy-chambers-farm-trail",
+          "description": "Walk through fields and wooded ravines to Shenandoah River views, Civil War earthworks and a former location of John Brown’s Fort. Side trails extend the core farm walk into additional river overlooks.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:01.986632+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/hafe/planyourvisit/murphy-chambers-farm-trail.htm",
+                "title": "Murphy-Chambers Farm Trail",
+                "retrievedAt": "2026-10-29T20:26:01.986632+00:00",
+                "sourceUpdated": "November 21, 2022",
+                "excerpts": [
+                  " Download\nDistance\nElevation Gain\nDifficulty\nTime Estimate\nMurphy-Chambers Farm\n1 - 3 miles\n(1.6 - 4.8 km) round trip\n187 feet\nEasy to Moderate\n1 - 2 hours\nEasy to Moderate, 1-3 miles (1.6-4.8 km) round trip with optional side trails, 30 min - 2 hours\nVisitors to the Murphy-Chambers Farm hike through fields and wooded ravines to see spectacular views of the Shenandoah River and the surrounding mountains, as well as Civil War cannons and earthworks, and one of the previous locations of t",
+                  "iculty\nTime Estimate\nMurphy-Chambers Farm\n1 - 3 miles\n(1.6 - 4.8 km) round trip\n187 feet\nEasy to Moderate\n1 - 2 hours\nEasy to Moderate, 1-3 miles (1.6-4.8 km) round trip with optional side trails, 30 min - 2 hours\nVisitors to the Murphy-Chambers Farm hike through fields and wooded ravines to see spectacular views of the Shenandoah River and the surrounding mountains, as well as Civil War cannons and earthworks, and one of the previous locations of the John Brown Fort.\nTrail is open d",
+                  "side trails, 30 min - 2 hours\nVisitors to the Murphy-Chambers Farm hike through fields and wooded ravines to see spectacular views of the Shenandoah River and the surrounding mountains, as well as Civil War cannons and earthworks, and one of the previous locations of the John Brown Fort.\nTrail is open during daylight hours. Closed from sunset to sunrise.\nThe trail starts at the Visitor Center. From the Visitor Center, the trail crosses Shoreline Drive, goes down to a small creek and up to the unpaved"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 1,
+            "unit": "mi",
+            "method": "minimum round-trip option in the NPS 1–3-mile range; optional side trails extend the walk to 3 miles"
+          },
+          "difficulty": "Easy to Moderate",
+          "elevationGain": {
+            "value": 187,
+            "unit": "ft",
+            "method": "NPS trail quick facts; gain is not assigned separately to every optional side trail"
+          },
+          "terrain": "Fields, ravines, mulched trail and a footbridge on a side branch.",
+          "tags": [
+            "historic",
+            "river",
+            "overlook",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Schoolhouse Ridge North Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hafe/planyourvisit/schoolhouse-ridge-north-trail.htm",
+          "sourceKey": "schoolhouse-ridge-north-trail",
+          "description": "Explore rolling farm fields from the Confederate side of the 1862 battle landscape. Cannons and views toward Bolivar Heights and Maryland Heights help explain the surrounding military terrain.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:05.944119+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/hafe/planyourvisit/schoolhouse-ridge-north-trail.htm",
+                "title": "Schoolhouse Ridge North Trail",
+                "retrievedAt": "2026-10-29T20:26:05.944119+00:00",
+                "sourceUpdated": "November 21, 2022",
+                "excerpts": [
+                  "wnload\nDistance\nElevation Gain\nDifficulty\nTime Estimate\nSchoolhouse Ridge North\n1.7 miles\n(2.7 km) round trip\n110 feet\nEasy to Moderate\n0.6 - 1 hours\nModerate, 2.1 miles (3.4 km) round trip, 1 hour\nThis hike offers a stroll over rolling hills through farm fields. Hikers will see the terrain from the confederate perspective of 1862, views of Bolivar Heights, Maryland Heights and Civil War cannons.\nTrail is open during daylight hours. Closed from sunset to sunrise.\nThis trail can be acc",
+                  "1.7 miles\n(2.7 km) round trip\n110 feet\nEasy to Moderate\n0.6 - 1 hours\nModerate, 2.1 miles (3.4 km) round trip, 1 hour\nThis hike offers a stroll over rolling hills through farm fields. Hikers will see the terrain from the confederate perspective of 1862, views of Bolivar Heights, Maryland Heights and Civil War cannons.\nTrail is open during daylight hours. Closed from sunset to sunrise.\nThis trail can be accessed from the School House Ridge North parking area on Bakerton Road, or by cro",
+                  "\nDifficulty\nTime Estimate\nSchoolhouse Ridge North\n1.7 miles\n(2.7 km) round trip\n110 feet\nEasy to Moderate\n0.6 - 1 hours\nModerate, 2.1 miles (3.4 km) round trip, 1 hour\nThis hike offers a stroll over rolling hills through farm fields. Hikers will see the terrain from the confederate perspective of 1862, views of Bolivar Heights, Maryland Heights and Civil War cannons.\nTrail is open during daylight hours. Closed from sunset to sunrise.\nThis trail can be accessed from the School House R",
+                  "tegy. Cannons reflect the violent history of this site.\nThis sunny trail offers little to no shade during hot summer months.\nDrinking Water is not available on this trail.\nRestrooms (pit toilets) are available at the trailhead. Do not dispose of any items, including diapers, pet waste, and feminine hygiene products in the pit toilets, as they will cause damage to the equipment.\nBe prepared to carry out all of your trash.\nHiking\nSchoolhouse Ridge South\nBolivar Heights Trail\nMurphy-Chambers Farm"
+                ]
+              }
+            ]
+          },
+          "difficulty": "Easy to Moderate in quick facts; Moderate in the narrative",
+          "elevationGain": {
+            "value": 110,
+            "unit": "ft",
+            "method": "NPS trail quick facts"
+          },
+          "terrain": "Rolling open fields with little shade.",
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The same official page gives 1.7 miles round trip in quick facts and 2.1 miles round trip in its narrative. Distance is deliberately omitted until the route definitions are reconciled.",
+              "sources": [
+                "https://www.nps.gov/hafe/planyourvisit/schoolhouse-ridge-north-trail.htm"
+              ]
+            }
+          ],
+          "tags": [
+            "historic",
+            "battlefield",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Visitor Center to Lower Town Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/hafe/planyourvisit/visitor-center-to-lower-town-trail.htm",
+          "sourceKey": "visitor-center-to-lower-town-trail",
+          "description": "Walk from the visitor center through a steep ravine, wetlands and remnants of the Shenandoah Pulp Mill and canal. The trail offers a walking alternative to the shuttle, with a road crossing and a strenuous uphill return.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:05.991850+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/hafe/planyourvisit/visitor-center-to-lower-town-trail.htm",
+                "title": "Visitor Center to Lower Town Trail",
+                "retrievedAt": "2026-10-29T20:26:05.991850+00:00",
+                "sourceUpdated": "November 21, 2022",
+                "excerpts": [
+                  "d\nDistance\nElevation Gain\nDifficulty\nTime Estimate\nVisitor Center to Lower Town\n1.6 miles (2.6 km), one way\n150 feet downhill from Visitor Center to Lower Town\nEasy with one strenuous section\n30 min - 1 hour\nModerate due to one steep section, 1.6 miles (2.6 km) one way, 45 min\nThis scenic trail offers an alternative to the shuttle bus between Lower Town and the Visitor Center, useful for visitors who have dogs in the park.\nTrail is open during daylight hours. Closed from sunset to sun",
+                  "r, at the back of the main parking area.\nHikers travel down a steep ravine with 97 stone steps, passing by small intermittent waterfalls. At the base of the ravine, the trail crosses Shoreline Drive. Cars and buses use this road. Please keep dogs and children off of the pavement. The trail parallels the road, passing by wetlands, where hikers may see herons, wood ducks, Canada geese, turtles, and occasionally a beaver or muskrat. Hikers will see the ruins of the Shenandoah Pulp Mill and a ",
+                  "fficulty\nTime Estimate\nVisitor Center to Lower Town\n1.6 miles (2.6 km), one way\n150 feet downhill from Visitor Center to Lower Town\nEasy with one strenuous section\n30 min - 1 hour\nModerate due to one steep section, 1.6 miles (2.6 km) one way, 45 min\nThis scenic trail offers an alternative to the shuttle bus between Lower Town and the Visitor Center, useful for visitors who have dogs in the park.\nTrail is open during daylight hours. Closed from sunset to sunrise.\nCaution: The return trip up th"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 1.6,
+            "unit": "mi",
+            "method": "one way from the visitor center to Lower Town; return not included"
+          },
+          "routeType": "one-way segment",
+          "terrain": "97 stone steps, a steep ravine and a road crossing; source describes 150 feet of descent, not total elevation gain.",
+          "accessibility": "The stone staircase and strenuous uphill return are important mobility barriers; this is not represented as an accessible alternative to the shuttle.",
+          "conflicts": [
+            {
+              "field": "difficulty",
+              "detail": "Quick facts describe Easy with one strenuous section; narrative describes Moderate due to one steep section. No single simplified rating is assigned.",
+              "sources": [
+                "https://www.nps.gov/hafe/planyourvisit/visitor-center-to-lower-town-trail.htm"
+              ]
+            }
+          ],
+          "tags": [
+            "historic",
+            "river",
+            "waterfall",
+            "hiking"
+          ]
+        },
+        {
+          "name": "John Brown's Fort",
+          "kind": "historic-site",
+          "source": "https://www.nps.gov/places/john-brown-s-fort.htm",
+          "sourceKey": "john-brown-s-fort",
+          "description": "The former armory fire-engine house became John Brown’s final stronghold during the 1859 raid. Its later moves, including a period at Storer College, form part of the site’s history of emancipation and remembrance.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:25.734827+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/places/john-brown-s-fort.htm",
+                "title": "John Brown's Fort",
+                "retrievedAt": "2026-10-29T20:25:25.734827+00:00",
+                "sourceUpdated": "June 18, 2026",
+                "excerpts": [
+                  "erry, WV\nSignificance:\nSite of the last stand of abolitionist John Brown in his 1859 assault upon slavery at Harpers Ferry\nDesignation:\nNational Park, National Register of Historic Places, HABS/HAER/HALS\nAmenities\n1 listed\nHistorical/Interpretive Information/Exhibits\nThe structure we now call John Brown's Fort was erected in 1848 as the Armory's fire engine and guard house. The building was described in a June 30, 1848, Armory report: \"An engine and guard-house, 35½ x 24 feet, on",
+                  "ree miles outside of town on a bluff overlooking the Shenandoah River.\nIn 1903, Storer College began their own fundraising drive to acquire the structure. In 1909, on the occasion of the 50th Anniversary of John Brown's Raid, the building was purchased and moved to the Storer College campus on Camp Hill in Harpers Ferry.\nAcquired by the National Park Service in 1960, the building was moved back to the Lower Town in 1968. Because the fort's original site was covered with a railroad embankme"
+                ]
+              }
+            ]
+          },
+          "tags": [
+            "historic",
+            "civil-rights"
+          ]
+        },
+        {
+          "name": "Storer College",
+          "kind": "historic-site",
+          "source": "https://www.nps.gov/hafe/learn/historyculture/storer-college.htm",
+          "sourceKey": "storer-college",
+          "description": "Explore the story of a post-Civil War school that grew from education for formerly enslaved people into a college open across race and gender. The Camp Hill campus connects education, community building and resistance to segregation.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:28.833455+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/hafe/learn/historyculture/storer-college.htm",
+                "title": "Storer College",
+                "retrievedAt": "2026-10-29T20:25:28.833455+00:00",
+                "sourceUpdated": "October 24, 2023",
+                "excerpts": [
+                  "outreach and accomplishment. What began as a one-room missionary school for the formerly enslaved grew into a college open to both sexes and all races.\nThe driving force behind the mission school was Nathan Brackett. With his wife and four teachers, all possessed with boundless energy and missionary zeal, and Lockwood House as a base of operations, Brackett set up primary schools throughout the eastern panhandle of West Virginia. By 1867 Brackett supervised 16 teachers and schools for 2,500 s",
+                  "h others, and to develop marketable skills. By 1869 the college expanded across Camp Hill in Harpers Ferry and added three more government buildings. Fundraising slowly resulted in more campus buildings as enrollment grew and African American teachers and ministers joined the faculty.\nOf all the benefits that Storer provided to its students, perhaps the most valuable was a sense of community. The college owned land in and around the town and profited from a summer boarding house busin"
+                ]
+              }
+            ]
+          },
+          "tags": [
+            "historic",
+            "civil-rights",
+            "education"
+          ]
+        }
+      ]
+    },
+    "chesapeake-and-ohio-canal-national-historical-park": {
+      "attractions": [
+        {
+          "name": "Billy Goat Trail Section A",
+          "kind": "trail",
+          "source": "https://www.nps.gov/choh/planyourvisit/billy-goat-trail.htm",
+          "sourceKey": "billy-goat-trail-section-a",
+          "description": "Scramble over angled rock and boulders above Mather Gorge and the Potomac. NPS recommends downstream travel; the towpath return is separate from the scrambling section.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:28.833832+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/choh/planyourvisit/billy-goat-trail.htm",
+                "title": "Billy Goat Trail—All Sections",
+                "retrievedAt": "2026-10-29T20:25:28.833832+00:00",
+                "sourceUpdated": "February 24, 2026",
+                "excerpts": [
+                  "rse Beach to Potomac River\nNPS Photo\nOn This Page Navigation\nIs the Trail Open?\nSection A of the Billy Goat Trail often closes due to flooding. Under normal conditions, the trail is closed when the gauge at Little Falls reaches 5 feet and reopens when the gauge falls to 4.8 feet. However, under certain circumstances, the trail may be closed at lower levels.\nMore than half a dozen trails and paths surround the Billy Goat Trail, including the towpath, Gold Mine Loop, and Ford Mine Trail",
+                  "un and adventure for all ages.\nSection A\nLevel: Technical and Strenuous\nLength: 1.75 miles one way\nPets: Not permitted\nClosest Parking: Great Falls Tavern Visitor Center\nMap and Trail Tips: Great Falls Hiking Map\nThe hike involves scrambling over angled rocks, boulders and climbing. Visitors in less than optimal health, visitors with small children, and visitors not experienced or properly outftted should consider other trail options. The 1.7 mile hike takes most visitors 2-3 hours to complete",
+                  "s not experienced or properly outftted should consider other trail options. The 1.7 mile hike takes most visitors 2-3 hours to complete. Along the trail are views of Mather Gorge and Potomac River. This trail can close due to fooding from the river.\nRecommended ONE-WAY going downstream:\nStart at the upstream entrance near Great Falls and end downstream near Anglers\nOne-way travel reduces the number of encounters with other visitors\nOne-way travel prevents hiker \"jam-ups\" at the Traverse a"
+                ]
+              }
+            ]
+          },
+          "difficulty": "Technical and Strenuous",
+          "routeType": "one-way segment",
+          "terrain": "Angled rocks, boulders and climbing; narrow exposed passages.",
+          "duration": "2–3 hours for the scrambling section, as described by NPS.",
+          "seasonalNotes": "Flooding can close this section. Verify the official Current Conditions page before hiking.",
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The fact box states 1.75 miles one way, while prose states 1.7 miles. Both measurements are retained here; a single numeric distance is omitted rather than selecting one.",
+              "sources": [
+                "https://www.nps.gov/choh/planyourvisit/billy-goat-trail.htm"
+              ]
+            }
+          ],
+          "tags": [
+            "river",
+            "geology",
+            "overlook",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Billy Goat Trail Section B",
+          "kind": "trail",
+          "source": "https://www.nps.gov/choh/planyourvisit/billy-goat-trail.htm",
+          "sourceKey": "billy-goat-trail-section-b",
+          "description": "Follow a quieter Potomac-side route with small rock scrambles and spring birding opportunities. The section is reached from the towpath near the Anglers access area.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:28.833832+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/choh/planyourvisit/billy-goat-trail.htm",
+                "title": "Billy Goat Trail—All Sections",
+                "retrievedAt": "2026-10-29T20:25:28.833832+00:00",
+                "sourceUpdated": "February 24, 2026",
+                "excerpts": [
+                  " in the DC area, contains three different sections that total eight miles, each section begins and ends on the towpath. The Billy Goat Trail provides fun and adventure for all ages.\nSection A\nLevel: Technical and Strenuous\nLength: 1.75 miles one way\nPets: Not permitted\nClosest Parking: Great Falls Tavern Visitor Center\nMap and Trail Tips: Great Falls Hiking Map\nThe hike involves scrambling over angled rocks, boulders and climbing. Visitors in less than optimal health, visitors with sm",
+                  "endations, and a preview of trail conditions.\nSection B\nLevel: Moderate\nLength: 1.4 miles one way\nPets: Permitted\nClosest Parking: Anglers Parking Area\nMap and Trail Tips: Great Falls Hiking Map\nSection B contains a few small rock scrambles and provides a quieter atmosphere than Section A. Section B is the best of the three trails for birding, especially in the spring.\nSection C\nLevel: Easy to Moderate\nLength: 1.6 miles one way\nPets: Permitted\nClosest Parking: Carderock Recreation Area\nMap an",
+                  "uieter atmosphere than Section A. Section B is the best of the three trails for birding, especially in the spring.\nSection C\nLevel: Easy to Moderate\nLength: 1.6 miles one way\nPets: Permitted\nClosest Parking: Carderock Recreation Area\nMap and Trail Tips: Great Falls Hiking Map\nRiver views and a small waterfall are encountered on this trail. Although there are a few rock outcroppings, most of the trail is wooded.\nWhat to Bring\nGood, comfortable, broken-in, hiking shoes that grip well "
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 1.4,
+            "unit": "mi",
+            "method": "one way along Section B; excludes connecting towpath travel"
+          },
+          "difficulty": "Moderate",
+          "terrain": "Small rock scrambles.",
+          "tags": [
+            "river",
+            "birding",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Billy Goat Trail Section C",
+          "kind": "trail",
+          "source": "https://www.nps.gov/choh/planyourvisit/billy-goat-trail.htm",
+          "sourceKey": "billy-goat-trail-section-c",
+          "description": "Walk wooded terrain past Potomac views and a small waterfall near Carderock. Rock outcrops remain part of the route even though most of the trail runs through forest.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:28.833832+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/choh/planyourvisit/billy-goat-trail.htm",
+                "title": "Billy Goat Trail—All Sections",
+                "retrievedAt": "2026-10-29T20:25:28.833832+00:00",
+                "sourceUpdated": "February 24, 2026",
+                "excerpts": [
+                  "ection B is the best of the three trails for birding, especially in the spring.\nSection C\nLevel: Easy to Moderate\nLength: 1.6 miles one way\nPets: Permitted\nClosest Parking: Carderock Recreation Area\nMap and Trail Tips: Great Falls Hiking Map\nRiver views and a small waterfall are encountered on this trail. Although there are a few rock outcroppings, most of the trail is wooded.\nWhat to Bring\nGood, comfortable, broken-in, hiking shoes that grip well on rocks and hills. The majority of i",
+                  "or birding, especially in the spring.\nSection C\nLevel: Easy to Moderate\nLength: 1.6 miles one way\nPets: Permitted\nClosest Parking: Carderock Recreation Area\nMap and Trail Tips: Great Falls Hiking Map\nRiver views and a small waterfall are encountered on this trail. Although there are a few rock outcroppings, most of the trail is wooded.\nWhat to Bring\nGood, comfortable, broken-in, hiking shoes that grip well on rocks and hills. The majority of injuries—sprained ankles, tweaked knees, and falls—",
+                  "ck Recreation Area\nMap and Trail Tips: Great Falls Hiking Map\nRiver views and a small waterfall are encountered on this trail. Although there are a few rock outcroppings, most of the trail is wooded.\nWhat to Bring\nGood, comfortable, broken-in, hiking shoes that grip well on rocks and hills. The majority of injuries—sprained ankles, tweaked knees, and falls—happen because people did not wear good shoes.\n64 oz (2 L) of water per person\nSnacks\nSuncreen and a hat\nMap of Hiking Trails\nProceed wi"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 1.6,
+            "unit": "mi",
+            "method": "one way along Section C; excludes connecting towpath travel"
+          },
+          "difficulty": "Easy to Moderate",
+          "terrain": "Mostly wooded with rock outcrops.",
+          "tags": [
+            "river",
+            "forest",
+            "waterfall",
+            "hiking"
+          ]
+        }
+      ]
+    },
+    "bluestone-national-scenic-river": {
+      "attractions": [
+        {
+          "name": "Bluestone Turnpike Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/places/bluestone-turnpike-trail.htm",
+          "sourceKey": "bluestone-turnpike-trail",
+          "description": "Follow an old riverbank road through forest and wildlife habitat between access points near Bluestone and Pipestem state parks. Remnants of Lilly and former farms connect the river corridor to its human history.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:32.317117+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/places/bluestone-turnpike-trail.htm",
+                "title": "Bluestone Turnpike Trail",
+                "retrievedAt": "2026-10-29T20:25:32.317117+00:00",
+                "sourceUpdated": "July 12, 2022",
+                "excerpts": [
+                  "n.\nNPS/Dave Bieri\nQuick Facts\nAmenities\n1 listed\nTrailhead\nLength\n4 to 5 hours -9.5 miles (one way)\nDifficulty\nModerate\nTrail Type\nHiking\nTrail Description\nFollow the path of an old riverbank road, the Bluestone Turnpike. Farmed and timbered until the 1940s, this forested area has a great diversity of plants and river wildlife. This area is now managed as a wildlife area. This area still has remnants of its human history, like the town site of Lilly located at the confluence of the Bluestone an",
+                  "menities\n1 listed\nTrailhead\nLength\n4 to 5 hours -9.5 miles (one way)\nDifficulty\nModerate\nTrail Type\nHiking\nTrail Description\nFollow the path of an old riverbank road, the Bluestone Turnpike. Farmed and timbered until the 1940s, this forested area has a great diversity of plants and river wildlife. This area is now managed as a wildlife area. This area still has remnants of its human history, like the town site of Lilly located at the confluence of the Bluestone and Little Bluestone R",
+                  "as a wildlife area. This area still has remnants of its human history, like the town site of Lilly located at the confluence of the Bluestone and Little Bluestone Rivers. Please note that overnight camping is not permitted in this area.\nThe Bluestone Turnpike Trail junctions on the north end with Bluestone State Park’s campground road, just past the Old Mill Camprground. On the south end in Pipestem Resort State Park, this trail junctions with Farley Loop Trail and River Trail. These trails ca"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 9.5,
+            "unit": "mi",
+            "method": "one way for the full turnpike trail; shorter ranger walks are different itineraries"
+          },
+          "difficulty": "Moderate",
+          "duration": "4–5 hours, as published by NPS.",
+          "terrain": "Riverbank road with small hills and sections of rough or muddy footing.",
+          "permitNotes": "The official trail description prohibits overnight camping in this area. Verify access arrangements at the state-park endpoints.",
+          "tags": [
+            "river",
+            "forest",
+            "historic",
+            "hiking"
+          ]
+        }
+      ]
+    },
+    "indiana-dunes-national-park": {
+      "attractions": [
+        {
+          "name": "Cowles Bog Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/indu/planyourvisit/cb16.htm",
+          "sourceKey": "cowles-bog-trail",
+          "description": "Cross wetlands, black oak savanna and interdunal ponds before climbing loose-sand dunes to Lake Michigan. The featured lollipop route returns via the beach and wetland-edge trail; the cut-off avoids both the dune climb and the lake.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:09.803341+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/indu/planyourvisit/cb16.htm",
+                "title": "Cowles Bog Trail",
+                "retrievedAt": "2026-10-29T20:26:09.803341+00:00",
+                "sourceUpdated": "February 9, 2023",
+                "excerpts": [
+                  "Hours – Open daily from 6:00 am to 11:00 pm.\nPasses are required.\nHike Length – 4.7 miles, 202 feet of elevation gain, 15% maximum grade.\nHike Time – 4 hours.\nDifficulty – Moderate to rugged with steep dune climbs in loose sand.\nTrail Surface – Mixture of loose sand and packed dirt.\nFacilities – Year-round porta potties. No potable water.\nPets – Permitted on a leash (6' or shorter).\nProhibited – Littering and hunting.\nProhibited – Bicycles and motorized vehicles.\nProhibited – Removing plants, r",
+                  " 2% average grade, 15% maximum grade\nHike time: 4 hours\nThis featured hike is a lollipop shaped trail and a classic of the Indiana dunes. Starting from the north parking lot, hike out back to Mineral Springs Road on the gravel entrance road and pick up the trail across the street. The trail heads along the edge of a wetland with abundant plant and wildlife diversity. At roughly the one-mile mark, you will reach the loop trail junction. The preferred direction around the loop is counter-cloc",
+                  "owles Bog Trailhead (Greenbelt, south).\nTrailhead GPS Coordinates\nMain (north): 41.645191, -87.084633 (Decimal Degrees)\nGreenbelt (south): 41.636898, -87.087185 (Decimal Degrees)\nNeed to Know\nHours & Information\nHours – Open daily from 6:00 am to 11:00 pm.\nPasses are required.\nHike Length – 4.7 miles, 202 feet of elevation gain, 15% maximum grade.\nHike Time – 4 hours.\nDifficulty – Moderate to rugged with steep dune climbs in loose sand.\nTrail Surface – Mixture of loose sand and packed dirt.\nFacil"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 4.7,
+            "unit": "mi",
+            "method": "complete NPS featured lollipop hike from the main north lot, including the return spur"
+          },
+          "routeType": "lollipop",
+          "difficulty": "Moderate to rugged with steep dune climbs in loose sand",
+          "elevationGain": {
+            "value": 202,
+            "unit": "ft",
+            "method": "total gain for the 4.7-mile NPS featured hike"
+          },
+          "surface": "Loose sand and packed dirt.",
+          "accessibility": "NPS states the trail is not wheelchair accessible.",
+          "latitude": 41.645191,
+          "longitude": -87.084633,
+          "locationKind": "Trailhead: main north parking lot",
+          "locationSource": "https://www.nps.gov/indu/planyourvisit/cb16.htm",
+          "tags": [
+            "forest",
+            "lake",
+            "wetland",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Calumet Dunes Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/indu/planyourvisit/cd16.htm",
+          "sourceKey": "calumet-dunes-trail",
+          "description": "Follow a paved loop along a former Lake Michigan shoreline ridge. Connections lead toward other dune systems, while the featured circuit returns around the former visitor-center building.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:09.807867+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/indu/planyourvisit/cd16.htm",
+                "title": "Calumet Dunes Trail",
+                "retrievedAt": "2026-10-29T20:26:09.807867+00:00",
+                "sourceUpdated": "February 9, 2023",
+                "excerpts": [
+                  "isitor Center.\nCalumet Dunes Trail Map\nFeatured Hikes\nCalumet Dunes Paved Trail\n0.5 miles, 32 feet of elevation gain, 2% average grade, 5% maximum grade\nHike time: 20 minutes\nThis featured hike is a loop trail and is wheelchair accessible. Starting at the parking lot trailhead, hike the trail loop in a counter-clockwise direction. The path is easy to follow. Please be aware of trail junctions. Stick to the left at each junction. The first two junctions are the north and south entrances to the ",
+                  "% average grade, 5% maximum grade\nHike time: 20 minutes\nThis featured hike is a loop trail and is wheelchair accessible. Starting at the parking lot trailhead, hike the trail loop in a counter-clockwise direction. The path is easy to follow. Please be aware of trail junctions. Stick to the left at each junction. The first two junctions are the north and south entrances to the Glenwood Dunes Trail system. Note that no pets are allowed on this portion of the Glenwood Dunes Trail. The las",
+                  "s now USGS Lake Michigan Ecological Research Station.\nTrailhead GPS Coordinates\n41.661836, -87.010109 (Decimal Degrees)\nNeed to Know\nHours & Information\nHours – Open daily from 6:00 am to 11:00 pm.\nPasses are required.\nHike Length – 0.5 miles.\nHike Time – 20 minutes.\nDifficulty – Easy with some elevation change.\nTrail Surface – Paved.\nFacilities – Year-round restrooms and potable water.\nPets – Permitted on a leash (6' or shorter). Pets are prohibited on the equestrian portion of the Glenwood Dune",
+                  "ncy or to report a crime, call 1-800-PARK-TIP.\nAccessibility\nTrail is paved but slopes exceed ADA limits. Trail is wheelchair accessible with proper support. Restrooms are accessible.\nTrail Map\nClick here for a list of all hiking trail maps of the Indiana Dunes National Park.\nDownload a national parks interactive trail guide phone app. Apple or Android.\nPaper trail maps are available at the trailhead kiosk and the Indiana Dunes Visitor Center.\nCalumet Dunes Trail Map\nFeatured Hikes\nCalumet Dunes Pav"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 0.5,
+            "unit": "mi",
+            "method": "entire NPS featured loop"
+          },
+          "routeType": "loop",
+          "difficulty": "Easy with some elevation change",
+          "elevationGain": {
+            "value": 32,
+            "unit": "ft",
+            "method": "NPS featured half-mile loop"
+          },
+          "surface": "Paved.",
+          "accessibility": "NPS says slopes exceed ADA limits and wheelchair access may require support; the featured-hike description calls the loop wheelchair accessible. Do not infer suitability from pavement alone.",
+          "latitude": 41.661836,
+          "longitude": -87.010109,
+          "locationKind": "Trailhead parking lot",
+          "locationSource": "https://www.nps.gov/indu/planyourvisit/cd16.htm",
+          "tags": [
+            "geology",
+            "forest",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Dune Ridge Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/indu/planyourvisit/dr16.htm",
+          "sourceKey": "dune-ridge-trail",
+          "description": "A short lollipop route crosses sandy foredunes and oak savanna before reaching views over Great Marsh. The return descends a steep loose-sand slope and rejoins the approach path.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:13.312530+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/indu/planyourvisit/dr16.htm",
+                "title": "Dune Ridge Trail",
+                "retrievedAt": "2026-10-29T20:26:13.312530+00:00",
+                "sourceUpdated": "February 9, 2023",
+                "excerpts": [
+                  "iana Dunes Visitor Center.\nDune Ridge Trail Map\nFeatured Hikes\nDune Ridge Trail\n0.7 miles, 73 feet of elevation gain, 4% average grade, 11% maximum grade\nHike time: 30 minutes\nThe featured hike is a lollipop shaped trail. From the parking lot trailhead, head south with a short tour through a foredune complex on sandy soil. It transitions into an oak savanna with a more stable soil structure, which provides better footing. At the junction with the loop trail, turn left to hike the loop in the c",
+                  "% average grade, 11% maximum grade\nHike time: 30 minutes\nThe featured hike is a lollipop shaped trail. From the parking lot trailhead, head south with a short tour through a foredune complex on sandy soil. It transitions into an oak savanna with a more stable soil structure, which provides better footing. At the junction with the loop trail, turn left to hike the loop in the clockwise direction. The loop starts on an old roadbed and you will need to turn right to leave the wide road onto si",
+                  "is called Kemil Road to the south of U.S. Highway 12.\nTrailhead GPS Coordinates\n41.677357, -87.008950 (Decimal Degrees)\nNeed to Know\nHours & Information\nHours – Open daily from 6:00 am to 11:00 pm.\nPasses are required.\nTrail Length – 0.7 miles. 73 feet of elevation gain, 11% maximum grade.\nHike Time – 30 minutes to 1 hour.\nDifficulty – Moderate with some steep slopes in loose sand.\nTrail Surface – Mixture of loose sand and packed dirt.\nFacilities – Year-round restrooms and potable water.\nPets – P"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 0.7,
+            "unit": "mi",
+            "method": "entire NPS featured lollipop hike, including the return spur"
+          },
+          "routeType": "lollipop",
+          "difficulty": "Moderate with some steep slopes in loose sand",
+          "elevationGain": {
+            "value": 73,
+            "unit": "ft",
+            "method": "NPS featured 0.7-mile hike"
+          },
+          "surface": "Loose sand and packed dirt.",
+          "accessibility": "NPS states trails are not wheelchair accessible; accessible restrooms do not make the route accessible.",
+          "latitude": 41.677357,
+          "longitude": -87.00895,
+          "locationKind": "Dune Ridge trailhead / Kemil Beach parking lot",
+          "locationSource": "https://www.nps.gov/indu/planyourvisit/dr16.htm",
+          "tags": [
+            "overlook",
+            "wetland",
+            "forest",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Great Marsh Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/indu/planyourvisit/gm16.htm",
+          "sourceKey": "great-marsh-trail",
+          "description": "Explore the restored wetland habitat used by waterfowl, wading birds and migrating songbirds. The main route starts at the south lot; a separate paved approach from the north lot reaches an observation deck.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:13.319648+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/indu/planyourvisit/gm16.htm",
+                "title": "Great Marsh Trail",
+                "retrievedAt": "2026-10-29T20:26:13.319648+00:00",
+                "sourceUpdated": "February 9, 2023",
+                "excerpts": [
+                  "& Information\nHours – Open daily from 6:00 am to 11:00 pm.\nPasses are required.\nHike Length – 1.3 miles.\nHike Time – 1 hour.\nDifficulty – Easy with no change in elevation.\nTrail Surface – Packed dirt and grass with some sections of gravel. Trail can be very wet and muddy.\nFacilities – No restrooms or potable water.\nPets – Permitted on a leash (6' or shorter).\nProhibited – Littering, hunting, and removing plants.\nProhibited – Bicycles and motorized vehicles.\nMain trailhead is at the south parking lo",
+                  "th lot has one handicap and one regular parking spot.\nTrailhead GPS Coordinates\nSouth Lot: 41.674825, -86.986607 (Decimal Degrees)\nNorth Lot: 41.677522, -86.988220 (Decimal Degrees)\nNeed to Know\nHours & Information\nHours – Open daily from 6:00 am to 11:00 pm.\nPasses are required.\nHike Length – 1.3 miles.\nHike Time – 1 hour.\nDifficulty – Easy with no change in elevation.\nTrail Surface – Packed dirt and grass with some sections of gravel. Trail can be very wet and muddy.\nFacilities – No restrooms or potable w",
+                  "se of an emergency or to report a crime, call 1-800-PARK-TIP.\nAccessibility\nThe main trail is not wheelchair accessible. There is a paved wheelchair accessible trail to an overlook of the marsh from the north parking lot.\nTrail Map\nClick here for a list of all hiking trail maps of the Indiana Dunes National Park.\nDownload a national parks interactive trail guide app. Apple or Android.\nPaper trail maps are available at the trailhead kiosk and the Indiana Dunes Visitor Center.\nGreat Marsh Trail Map\nFeatured Hikes\nGr"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 1.3,
+            "unit": "mi",
+            "method": "published main-hike length; guide does not establish a one-way versus round-trip basis"
+          },
+          "difficulty": "Easy with no change in elevation",
+          "surface": "Packed dirt and grass with gravel sections; can be wet and muddy.",
+          "accessibility": "Main trail is not wheelchair accessible. A separate paved wheelchair-accessible trail reaches the overlook from the north lot; 1.3 miles must not be assigned to that accessible subsection.",
+          "latitude": 41.674825,
+          "longitude": -86.986607,
+          "locationKind": "Main trailhead: south parking lot (not the accessible north approach)",
+          "locationSource": "https://www.nps.gov/indu/planyourvisit/gm16.htm",
+          "tags": [
+            "birding",
+            "wetland",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Bailly–Chellberg / Little Calumet–Mnoké Outer Loop",
+          "kind": "trail",
+          "source": "https://www.nps.gov/places/bailly-homestead-chellberg-farm-little-calumet-river-mnoke-prairie-trails.htm",
+          "sourceKey": "bailly-chellberg-little-calumet-mnok-outer-loop",
+          "description": "Combine woodland ravines, a Little Calumet River crossing and restored prairie with the Bailly Homestead and Chellberg Farm landscape. This is the featured perimeter hike, not a sum of every trail in the system.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:39.974513+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/places/bailly-homestead-chellberg-farm-little-calumet-river-mnoke-prairie-trails.htm",
+                "title": "Bailly Homestead, Chellberg Farm, Little Calumet River, Mnoké Prairie Trails",
+                "retrievedAt": "2026-10-29T20:25:39.974513+00:00",
+                "sourceUpdated": "November 13, 2024",
+                "excerpts": [
+                  "sh/Litter Receptacles, Water - Bottle-Filling Station, Water - Drinking/Potable\nOuter Loop Trail\n3.4 miles, 120 feet of elevation gain, 1% average grade, 9% maximum grade\nHike time: 2.5 hours\nThe Little Calumet River, Mnoké Prairie, Bailly Homestead, Chellberg Farm and Bailly Cemetery trail system reveals the rich natural diversity that has drawn people to this area for over 10,000 years. Hike through a forest dominated by maple, beech, basswood and oak trees. Follow a stretch of the Little ",
+                  "cles, Water - Bottle-Filling Station, Water - Drinking/Potable\nOuter Loop Trail\n3.4 miles, 120 feet of elevation gain, 1% average grade, 9% maximum grade\nHike time: 2.5 hours\nThe Little Calumet River, Mnoké Prairie, Bailly Homestead, Chellberg Farm and Bailly Cemetery trail system reveals the rich natural diversity that has drawn people to this area for over 10,000 years. Hike through a forest dominated by maple, beech, basswood and oak trees. Follow a stretch of the Little Calumet River, once ",
+                  " Highway 20 on Mineral Springs Road, Porter, IN 46304\nTrailhead GPS Coordinates\n41.624679, -87.089502 (Decimal Degrees)\nNeed to Know\nHours & Information\nHours – Open daily from 6:00 am to 11:00 pm.\nHike Length – Outer Loop: 3.4 miles, Bailly/Chellberg Inner Loop: 1.1 miles.\nHike Time – 45 minutes to 2.5 hours.\nDifficulty – Easy to moderate with some changes in elevation and sets of stairs.\nTrail Surface – Packed soil with wood chips in places; several sets of stairs. Trail can be very wet and mud",
+                  "Chellberg Farm.\nThis featured hike combines sections from several trails into a perimeter loop hike. Start the hike at the Bailly / Chellberg parking lot and head north on the Bailly Homestead / Chellberg Farm Trail. Just before the Chellberg farm buildings is a trail junction. Proceed straight (north) onto the Little Calumet River / Mnoké Prairie Trail. The Little Calumet Trail will wind through a small scenic ravine that has some sections of stairs. After a third of a mile, stay left at the j"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 3.4,
+            "unit": "mi",
+            "method": "NPS featured outer perimeter loop; excludes the optional 0.6-mile cemetery extension"
+          },
+          "routeType": "loop",
+          "difficulty": "Easy to moderate with elevation changes and stairs",
+          "elevationGain": {
+            "value": 120,
+            "unit": "ft",
+            "method": "NPS featured outer loop"
+          },
+          "surface": "Packed soil with wood chips in places; stairs and muddy sections.",
+          "accessibility": "NPS says the trails are not wheelchair accessible; accessible restrooms and picnic facilities are separate amenities.",
+          "latitude": 41.624679,
+          "longitude": -87.089502,
+          "locationKind": "Bailly / Chellberg trailhead parking lot",
+          "locationSource": "https://www.nps.gov/places/bailly-homestead-chellberg-farm-little-calumet-river-mnoke-prairie-trails.htm",
+          "tags": [
+            "historic",
+            "forest",
+            "river",
+            "prairie",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Bailly Homestead",
+          "kind": "historic-site",
+          "source": "https://www.nps.gov/indu/learn/historyculture/bailly_homestead.htm",
+          "sourceKey": "bailly-homestead",
+          "description": "Historic log and brick buildings interpret Joseph and Marie Bailly’s trading, family and community history where Indigenous travel routes met the Little Calumet River. The site places settlement and trade within the Potawatomi homeland.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:39.996472+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/indu/learn/historyculture/bailly_homestead.htm",
+                "title": "The Bailly Homestead at Indiana Dunes National Park",
+                "retrievedAt": "2026-10-29T20:25:39.996472+00:00",
+                "sourceUpdated": "November 13, 2024",
+                "excerpts": [
+                  " Bailly Homestead was home to Joseph Bailly de Messein (1774-1835) and his wife Marie Le Fevre de la Vigne Bailly (1783-1866). This site, along with the nearby Bailly Cemetery, is listed as a National Historic Landmark. Arriving around 1824, the Bailly's established a trading post along the Little Calumet River near two major Indigenous trails, which contributed to Joseph’s success as a trader and, later, as a land speculator and innkeeper.\nA French-Canadian fur trader, Bailly had previous",
+                  " settlers, facilitating commerce and cultural exchange in the wilderness of the Potawatomi Nation.\nThe Bailly Homestead was an important stopping point between Detroit and Fort Dearborn (present-day Chicago) along the early stagecoach road. Its presence signaled an early European-American settlement that shaped the future of the Calumet Region. Except for a post in White Pigeon, Michigan, Bailly’s trading post was one of few stops on the route, marking a pivotal location for missionaries and "
+                ]
+              }
+            ]
+          },
+          "tags": [
+            "historic",
+            "cultural-landscape"
+          ]
+        },
+        {
+          "name": "Chellberg Farm",
+          "kind": "historic-site",
+          "source": "https://www.nps.gov/indu/learn/historyculture/chellberg-farm.htm",
+          "sourceKey": "chellberg-farm",
+          "description": "A brick farmhouse, timber-framed barn and farm buildings preserve the story of a Swedish immigrant family in Baillytown. Interior access depends on official programs rather than being guaranteed by a general park visit.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:43.260020+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/indu/learn/historyculture/chellberg-farm.htm",
+                "title": "Chellberg Farm",
+                "retrievedAt": "2026-10-29T20:25:43.260020+00:00",
+                "sourceUpdated": "November 13, 2024",
+                "excerpts": [
+                  "e Chellberg Farm is one of the few remaining intact representations of a unique Swedish immigrant community in northwestern Indiana known as Baillytown. The first Swedes came to the area beginning in the 1840s. They were recruited by Joseph and Marie Bailly’s son-in-law Joel Wicker, a wealthy Chicago businessman. He managed a nearby sawmill and employed Swedish immigrants. As they continued to work, they slowly earned enough money to be able to purchase land. By the 1880s, Baillytown and Port",
+                  "des our virtual tour. We invite you to visit this site in person.\nThe Chellberg farmhouse is open to the public during festivals, demonstrations, and ranger-guided tours. Check with the Indiana Dunes Visitor Center and calendar for dates and times. The Chellberg Farmhouse is wheelchair accessible via a short ramp located on the north side of the front porch. The trail leading from the main parking lot to the Chellberg Farmhouse is accessible as well.\nNPS / Jeff Manuszak\nChellberg Barn\nThe Chellberg Barn is the ol"
+                ]
+              }
+            ]
+          },
+          "accessibility": "The farmhouse has a short access ramp and an accessible approach trail as described by NPS; scheduled interior access must be checked separately.",
+          "tags": [
+            "historic",
+            "agriculture"
+          ]
+        }
+      ]
+    },
+    "pictured-rocks-national-lakeshore": {
+      "attractions": [
+        {
+          "name": "Sand Point Marsh Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/piro/planyourvisit/hikes.htm",
+          "sourceKey": "sand-point-marsh-trail",
+          "description": "A boardwalk loop passes old beach ridges, cattails, ponds and cedar–spruce swamp near Sand Point Beach. The wetland setting offers wildlife observation without a long backcountry hike.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:43.327769+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/piro/planyourvisit/hikes.htm",
+                "title": "Hiking at Pictured Rocks ",
+                "retrievedAt": "2026-10-29T20:25:43.327769+00:00",
+                "sourceUpdated": "July 22, 2025",
+                "excerpts": [
+                  "n 6 feet. Bicycles are prohibited on all park trails.\nWalks Of One Mile Or Less\nSand Point Marsh Trail\nLength: 0.5 mile loop. Located across from Sand Point Beach, this boardwalk trail takes you through one of the park's most beautiful wetlands. Old beach ridges, a cattail marsh, small ponds, and white cedar and black spruce swamp communities dominate the scene. The best times for wildlife activity are early or late in the day. This trail is wheelchair-accessible. Pets not allowed.\nMunising Falls\n",
+                  "ed on all park trails.\nWalks Of One Mile Or Less\nSand Point Marsh Trail\nLength: 0.5 mile loop. Located across from Sand Point Beach, this boardwalk trail takes you through one of the park's most beautiful wetlands. Old beach ridges, a cattail marsh, small ponds, and white cedar and black spruce swamp communities dominate the scene. The best times for wildlife activity are early or late in the day. This trail is wheelchair-accessible. Pets not allowed.\nMunising Falls\n4/29/2025: The Munisin",
+                  "he best times for wildlife activity are early or late in the day. This trail is wheelchair-accessible. Pets not allowed.\nMunising Falls\n4/29/2025: The Munising Falls Trail is closed until further notice due to damage sustained in a storm on 4/28/2025.\nLength: 800 feet one way. Walk this paved trail up the cool, shaded sandstone canyon along Munising Creek to the main viewing platform to see the 50-foot waterfall. (This is also a lovely trail in winter.) Two sets of stairs lead to elevated platfor"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 0.5,
+            "unit": "mi",
+            "method": "entire boardwalk loop"
+          },
+          "routeType": "loop",
+          "surface": "Boardwalk.",
+          "accessibility": "The official hiking guide identifies this boardwalk trail as wheelchair accessible.",
+          "tags": [
+            "wetland",
+            "birding",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Log Slide Overlook Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/piro/planyourvisit/hikes.htm",
+          "sourceKey": "log-slide-overlook-trail",
+          "description": "Walk through mature hardwoods to the edge of Grand Sable Dunes, where a former logging chute once carried timber toward Lake Superior. Views extend toward the dunes and Au Sable lighthouse.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:43.327769+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/piro/planyourvisit/hikes.htm",
+                "title": "Hiking at Pictured Rocks ",
+                "retrievedAt": "2026-10-29T20:25:43.327769+00:00",
+                "sourceUpdated": "July 22, 2025",
+                "excerpts": [
+                  "atform just off the parking lot is wheelchair-accessible. Leashed pets allowed.\nLog Slide Overlook Trail\nLength: 0.25 miles roundtrip. This short trail leads through mature hardwoods to the western edge of the Grand Sable Dunes where logs once slid down to the lake in a wooden chute. The popular overlook platform was destroyed in a winter storm several years ago but the path to the platform location is still there. You'll be rewarded with breathtaking views of Lake Superior, the Grand Sable Dunes, a",
+                  "s wheelchair-accessible. Leashed pets allowed.\nLog Slide Overlook Trail\nLength: 0.25 miles roundtrip. This short trail leads through mature hardwoods to the western edge of the Grand Sable Dunes where logs once slid down to the lake in a wooden chute. The popular overlook platform was destroyed in a winter storm several years ago but the path to the platform location is still there. You'll be rewarded with breathtaking views of Lake Superior, the Grand Sable Dunes, and Au Sable Lighthouse in the",
+                  "s where logs once slid down to the lake in a wooden chute. The popular overlook platform was destroyed in a winter storm several years ago but the path to the platform location is still there. You'll be rewarded with breathtaking views of Lake Superior, the Grand Sable Dunes, and Au Sable Lighthouse in the distance. Pets not allowed.\nGrand Sable Dunes Trail\nLength: 0.6 miles roundtrip. This is the main access point into the Grand Sable Dunes. The trail starts at the Sable Falls parking area near t"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 0.25,
+            "unit": "mi",
+            "method": "round trip to the overlook area"
+          },
+          "surface": "Forest path.",
+          "seasonalNotes": "The retained guide says the former overlook platform was destroyed; the path to its location remains described. Check current conditions and do not assume an intact platform.",
+          "tags": [
+            "historic",
+            "overlook",
+            "forest",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Miners Falls Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/piro/planyourvisit/hikes.htm",
+          "sourceKey": "miners-falls-trail",
+          "description": "A forest walk leads to a sandstone waterfall on the Miners River. A lower viewing platform requires an additional descent by stairs, so the approach and lower viewpoint have different mobility demands.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:43.327769+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/piro/planyourvisit/hikes.htm",
+                "title": "Hiking at Pictured Rocks ",
+                "retrievedAt": "2026-10-29T20:25:43.327769+00:00",
+                "sourceUpdated": "July 22, 2025",
+                "excerpts": [
+                  "untry Scenic Trail in Pictured Rocks National Lakeshore.\nNPS photo\nLonger Hikes\nMiners Falls Trail\nLength: 1.2 miles roundtrip. This easy, fairly level trail takes you through the forest to Miners River, where the park's most powerful waterfall cascades 50 feet over a sandstone cliff. Take another 64 steps down to a lower platform. Leashed pets allowed.\nMiners Castle to Miners Beach\nLength: 2.0 miles roundtrip. Part of the North Country Scenic Trail. Take the trail from Miners Castle downhill ",
+                  "red Rocks National Lakeshore.\nNPS photo\nLonger Hikes\nMiners Falls Trail\nLength: 1.2 miles roundtrip. This easy, fairly level trail takes you through the forest to Miners River, where the park's most powerful waterfall cascades 50 feet over a sandstone cliff. Take another 64 steps down to a lower platform. Leashed pets allowed.\nMiners Castle to Miners Beach\nLength: 2.0 miles roundtrip. Part of the North Country Scenic Trail. Take the trail from Miners Castle downhill to Miners Beach, crossing th",
+                  "s most powerful waterfall cascades 50 feet over a sandstone cliff. Take another 64 steps down to a lower platform. Leashed pets allowed.\nMiners Castle to Miners Beach\nLength: 2.0 miles roundtrip. Part of the North Country Scenic Trail. Take the trail from Miners Castle downhill to Miners Beach, crossing the Miners River along the way. Enjoy the beach and then hike back up - or shorten the walk by having a friend pick you up in the Miners Beach west end parking lot. No pets allowed on"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 1.2,
+            "unit": "mi",
+            "method": "round trip on the Miners Falls route"
+          },
+          "difficulty": "Easy, fairly level",
+          "accessibility": "The lower platform requires 64 additional steps; the fairly level approach is not a claim of full wheelchair accessibility.",
+          "tags": [
+            "waterfall",
+            "forest",
+            "geology",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Chapel Falls",
+          "kind": "trail",
+          "source": "https://www.nps.gov/piro/planyourvisit/hikes.htm",
+          "sourceKey": "chapel-falls",
+          "description": "Follow an old roadbed through upland maple forest to Chapel Falls. This short destination hike stops at the waterfall rather than continuing to Chapel Beach or completing the much longer cliff loop.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:43.327769+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/piro/planyourvisit/hikes.htm",
+                "title": "Hiking at Pictured Rocks ",
+                "retrievedAt": "2026-10-29T20:25:43.327769+00:00",
+                "sourceUpdated": "July 22, 2025",
+                "excerpts": [
+                  "hort falls over three rock shelves, the highest being 8 feet. Pets not allowed.\nChapel Falls\nLength: 2.5 miles roundtrip. Leaving from the Chapel parking lot, this easy hike runs along an old roadbed through upland maple forest to stunning, 60-foot high Chapel Falls. Pets not allowed.\nMosquito Beach\nLength: 3.9 miles roundtrip straight out and back; 4.5 miles via loop back past Mosquito Falls. Trail is usually very muddy and rough. Follow the trail from the Chapel parking lot through low",
+                  " rock shelves, the highest being 8 feet. Pets not allowed.\nChapel Falls\nLength: 2.5 miles roundtrip. Leaving from the Chapel parking lot, this easy hike runs along an old roadbed through upland maple forest to stunning, 60-foot high Chapel Falls. Pets not allowed.\nMosquito Beach\nLength: 3.9 miles roundtrip straight out and back; 4.5 miles via loop back past Mosquito Falls. Trail is usually very muddy and rough. Follow the trail from the Chapel parking lot through lowland hemlock and mixed fores",
+                  "es roundtrip. Leaving from the Chapel parking lot, this easy hike runs along an old roadbed through upland maple forest to stunning, 60-foot high Chapel Falls. Pets not allowed.\nMosquito Beach\nLength: 3.9 miles roundtrip straight out and back; 4.5 miles via loop back past Mosquito Falls. Trail is usually very muddy and rough. Follow the trail from the Chapel parking lot through lowland hemlock and mixed forest to Mosquito Beach. This beautiful beach is bordered by stunning rock cliffs a"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 2.5,
+            "unit": "mi",
+            "method": "round trip from Chapel parking lot to Chapel Falls; not the Chapel Beach or Chapel Loop hike"
+          },
+          "difficulty": "Easy",
+          "surface": "Old roadbed through upland maple forest.",
+          "tags": [
+            "waterfall",
+            "forest",
+            "hiking"
+          ]
+        },
+        {
+          "name": "Miners Castle",
+          "kind": "overlook",
+          "source": "https://www.nps.gov/places/miners-castle.htm",
+          "sourceKey": "miners-castle",
+          "description": "View a sandstone cliff formation and Lake Superior from the park’s drive-accessible cliff area. Upper overlooks and the lower platform have different approaches, and a 2006 rockfall changed the formation’s outline.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:46.742717+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/places/miners-castle.htm",
+                "title": "Miners Castle",
+                "retrievedAt": "2026-10-29T20:25:46.742717+00:00",
+                "sourceUpdated": "December 15, 2022",
+                "excerpts": [
+                  ", a short paved wheelchair-accessible trail leads past interpretive exhibits to two breathtaking overlooks of Lake Superior and Grand Island. Stairs and a steeper trail lead to the lower overlook adjacent to Miners Castle. Erosion over long periods of time has created the interesting rock formation that gives this place its name. A rockfall in 2006 dramatically changed the look of Miners Castle as one of its two turrets unexpectedly fell into the lake.\nThe loop from the information deck to all three o",
+                  "etive exhibits to two breathtaking overlooks of Lake Superior and Grand Island. Stairs and a steeper trail lead to the lower overlook adjacent to Miners Castle. Erosion over long periods of time has created the interesting rock formation that gives this place its name. A rockfall in 2006 dramatically changed the look of Miners Castle as one of its two turrets unexpectedly fell into the lake.\nThe loop from the information deck to all three overlooks and back is about 1/2 mile. Access to the lower overl",
+                  "ed the interesting rock formation that gives this place its name. A rockfall in 2006 dramatically changed the look of Miners Castle as one of its two turrets unexpectedly fell into the lake.\nThe loop from the information deck to all three overlooks and back is about 1/2 mile. Access to the lower overlook includes stairs and a steep walking incline. The North Country Scenic Trail passes through the Miners Castle area. There is a 1.0 mile section of the trail that leads from top of"
+                ]
+              }
+            ]
+          },
+          "accessibility": "A paved wheelchair-accessible path reaches the upper overlooks; the lower overlook requires stairs and a steep incline.",
+          "tags": [
+            "geology",
+            "overlook",
+            "lake"
+          ]
+        },
+        {
+          "name": "Au Sable Light Station",
+          "kind": "historic-site",
+          "source": "https://www.nps.gov/piro/planyourvisit/au-sable.htm",
+          "sourceKey": "au-sable-light-station",
+          "description": "Visit the isolated Lake Superior light station and learn how keepers served shipping along this hazardous shoreline. The lighthouse climb is a separate ranger activity involving a long staircase.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:46.780562+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/piro/planyourvisit/au-sable.htm",
+                "title": "Visit the Au Sable Light Station",
+                "retrievedAt": "2026-10-29T20:25:46.780562+00:00",
+                "sourceUpdated": "August 19, 2026",
+                "excerpts": [
+                  " Station, a walk through of the Assistant Keeper's Quarters, and a climb up the 98 steps to the top of the lighthouse for a view of Lake Superior and the Grand Sable Dunes.\nSecurely-strapped shoes (no flip flops, slides, or bare feet) are required to climb the lighthouse.\nLighthouse Climb Rules\nLighthouse climb rules ensure the safety of yourself and others while climbing and while at the top!\nSecure shoes with a heel strap are required to climb the lighthouse, no flip-flops, heels, ",
+                  "of the history and purpose of the Au Sable Light Station, a walk through of the Assistant Keeper's Quarters, and a climb up the 98 steps to the top of the lighthouse for a view of Lake Superior and the Grand Sable Dunes.\nSecurely-strapped shoes (no flip flops, slides, or bare feet) are required to climb the lighthouse.\nLighthouse Climb Rules\nLighthouse climb rules ensure the safety of yourself and others while climbing and while at the top!\nSecure shoes with a heel strap are required to clim"
+                ]
+              }
+            ]
+          },
+          "accessibility": "The lighthouse climb involves 98 steps. Check official tour arrangements; the station grounds and tower climb are not equivalent experiences.",
+          "tags": [
+            "historic",
+            "lighthouse",
+            "lake"
+          ]
+        }
+      ]
+    },
+    "mammoth-cave-national-park": {
+      "attractions": [
+        {
+          "name": "Cedar Sink Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/thingstodo/cedar-sink-trail.htm",
+          "sourceKey": "cedar-sink-trail",
+          "description": "Descend into a large sinkhole on a forest trail known for seasonal wildflowers. The route reveals surface karst geology and includes substantial stair travel into and out of the sink.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:49.999185+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/thingstodo/cedar-sink-trail.htm",
+                "title": "Explore Wildflowers at Cedar Sink",
+                "retrievedAt": "2026-10-29T20:25:49.999185+00:00",
+                "sourceUpdated": "April 4, 2025",
+                "excerpts": [
+                  "owers, making it a favorite spot for hikers and floral enthusiasts.\nThe hike is 1-mile roundtrip, with several sets of stairs that will lead you down into the sink hole and back out. A total of 295 stairs will be traveled during the hike.\nDetails\nDuration\n45-60 Minutes\nThis is a 1-mile (1.6 km) loop trail that begins and ends at the Cedar Sink trailhead.\nAs Cedar Sink is located approximately 10 minutes away from the visitor center, you will need to factor travel time and parking into your s",
+                  "s of stairs that will lead you down into the sink hole and back out. A total of 295 stairs will be traveled during the hike.\nDetails\nDuration\n45-60 Minutes\nThis is a 1-mile (1.6 km) loop trail that begins and ends at the Cedar Sink trailhead.\nAs Cedar Sink is located approximately 10 minutes away from the visitor center, you will need to factor travel time and parking into your schedule for the day.\nActivity\nFront-Country Hiking\nAge(s)\nConsider your abilities; visitors will walk down a",
+                  "veled during the hike.\nDetails\nDuration\n45-60 Minutes\nThis is a 1-mile (1.6 km) loop trail that begins and ends at the Cedar Sink trailhead.\nAs Cedar Sink is located approximately 10 minutes away from the visitor center, you will need to factor travel time and parking into your schedule for the day.\nActivity\nFront-Country Hiking\nAge(s)\nConsider your abilities; visitors will walk down approximately 150 feet of stairs into the sinkhole and return back up.\nPets Allowed\nYes\nOwners must kee"
+                ]
+              },
+              {
+                "url": "https://www.nps.gov/maca/planyourvisit/mammoth-cave-map-guide.htm",
+                "title": "Mammoth Cave Map & Guide",
+                "retrievedAt": "2026-10-29T20:25:54.117010+00:00",
+                "sourceUpdated": "April 27, 2022",
+                "excerpts": [
+                  "Contact Us\nMammoth Cave Map & Guide\nOn This Page Navigation\nThe park brochure is available in a variety of formats: Braille, audio description, text-only and print.\nPrinted paper brochures are available in person at the visitor center or one can be requested by calling (270) 758-2180 or by emailing us. A printed copy of the brochure in Braille is available at the visitor center or by downloading a copy in Braille Ready Format (BRF)"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 1,
+            "unit": "mi",
+            "method": "round trip as stated by the individual activity page"
+          },
+          "terrain": "Rolling dirt approach and 295 stairs over the hike.",
+          "accessibility": "NPS describes a roughly six-foot-wide dirt approach and a descent of about 150 feet by stairs into the sink, followed by a climb out. This is not an accessible route.",
+          "conflicts": [
+            {
+              "field": "routeType",
+              "detail": "The individual activity page calls the hike a loop; the park map guide calls Cedar Sink a short out-and-back hike. Route type is left unspecified.",
+              "sources": [
+                "https://www.nps.gov/thingstodo/cedar-sink-trail.htm",
+                "https://www.nps.gov/maca/planyourvisit/mammoth-cave-map-guide.htm"
+              ]
+            }
+          ],
+          "tags": [
+            "geology",
+            "forest",
+            "wildflowers",
+            "hiking"
+          ],
+          "relatedSources": [
+            "https://www.nps.gov/maca/planyourvisit/mammoth-cave-map-guide.htm"
+          ]
+        },
+        {
+          "name": "Sand Cave Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/maca/planyourvisit/accessible-activities.htm",
+          "sourceKey": "sand-cave-trail",
+          "description": "A short interpretive boardwalk recounts Floyd Collins’ fatal 1925 entrapment and rescue attempt at Sand Cave. The outdoor route leads toward the historic site rather than providing a cave tour.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:16.621593+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/maca/planyourvisit/accessible-activities.htm",
+                "title": "Accessible Activities",
+                "retrievedAt": "2026-10-29T20:26:16.621593+00:00",
+                "sourceUpdated": "June 24, 2025",
+                "excerpts": [
+                  "cated in the Green River Ferry parking lot, features an accessible picnic area.\nSand Cave Trail\nThis 0.1 mile boardwalk leads to the site of Floyd Collins' famous - but fatal - entrapment in Sand Cave in 1925. Wayside exhibits unfold the tragic story along the boardwalk. The trailhead is at the park's eastern entrance on Cave City Road, accessible parking is available at the entrance sign.\nSloans Crossing Pond Trail\nThis 0.4 mile boardwalk takes visitors around the edge of a marshy pond. Wa",
+                  "ver Ferry parking lot, features an accessible picnic area.\nSand Cave Trail\nThis 0.1 mile boardwalk leads to the site of Floyd Collins' famous - but fatal - entrapment in Sand Cave in 1925. Wayside exhibits unfold the tragic story along the boardwalk. The trailhead is at the park's eastern entrance on Cave City Road, accessible parking is available at the entrance sign.\nSloans Crossing Pond Trail\nThis 0.4 mile boardwalk takes visitors around the edge of a marshy pond. Wayside exhibits along the",
+                  "sible picnic area.\nSand Cave Trail\nThis 0.1 mile boardwalk leads to the site of Floyd Collins' famous - but fatal - entrapment in Sand Cave in 1925. Wayside exhibits unfold the tragic story along the boardwalk. The trailhead is at the park's eastern entrance on Cave City Road, accessible parking is available at the entrance sign.\nSloans Crossing Pond Trail\nThis 0.4 mile boardwalk takes visitors around the edge of a marshy pond. Wayside exhibits along the way help you understand the pond's"
+                ]
+              },
+              {
+                "url": "https://www.nps.gov/maca/planyourvisit/mammoth-cave-map-guide.htm",
+                "title": "Mammoth Cave Map & Guide",
+                "retrievedAt": "2026-10-29T20:25:54.117010+00:00",
+                "sourceUpdated": "April 27, 2022",
+                "excerpts": [
+                  "Contact Us\nMammoth Cave Map & Guide\nOn This Page Navigation\nThe park brochure is available in a variety of formats: Braille, audio description, text-only and print.\nPrinted paper brochures are available in person at the visitor center or one can be requested by calling (270) 758-2180 or by emailing us. A printed copy of the brochure in Braille is available at the visitor center or by downloading a copy in Braille Ready Format (BRF)"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 0.1,
+            "unit": "mi",
+            "method": "published boardwalk approach length; NPS does not explicitly state whether this number includes the return"
+          },
+          "routeType": "out-and-back",
+          "surface": "Boardwalk.",
+          "accessibility": "Listed by NPS among accessible self-guided adventures, with accessible parking at the eastern entrance sign.",
+          "tags": [
+            "historic",
+            "geology",
+            "hiking"
+          ],
+          "relatedSources": [
+            "https://www.nps.gov/maca/planyourvisit/mammoth-cave-map-guide.htm"
+          ]
+        },
+        {
+          "name": "Heritage Trail",
+          "kind": "trail",
+          "source": "https://www.nps.gov/thingstodo/heritage-trail.htm",
+          "sourceKey": "heritage-trail",
+          "description": "A ridge-top walk reaches views over the Green River Valley and links the visitor-center area with the Old Guides Cemetery and historic cave landscape. Conflicting published measurements and rehabilitation information require checking the official source before planning.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:26:16.653374+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/thingstodo/heritage-trail.htm",
+                "title": "Take a Ridge-top Walk to Sunset Point",
+                "retrievedAt": "2026-10-29T20:26:16.653374+00:00",
+                "sourceUpdated": "July 26, 2020",
+                "excerpts": [
+                  "pring foliage and vivid autumn colors.\nDetails\nDuration\n30-60 Minutes\nThis is a .6-mile (1 km) out-and-back trail that begins and ends at the same trailhead.\nAs the trail is located very close to the visitor center, it is a great hike to do between ranger programs and scheduled cave tours.\nActivity\nFront-Country Hiking\nPets Allowed\nYes\nOwners must keep pets on leashes no longer than 6 feet and clean up after their pets.\nActivity Fee\nNo\nEntrance fees may apply, see Fees & Passes info",
+                  "Contact Us\nReturn to Previous Page\nThing to Do\nTake a Ridge-top Walk to Sunset Point\nMammoth Cave National Park\nAbove the winding underground passages of Mammoth Cave, you can gaze over the hills and valleys that make up our Kentucky karst landscape.\nTake an easy stroll to Sunset Point to enjoy a park-favorite panorama of the Green River Valley where you can catch the best views of fresh spring foliage and vivid autumn colors.\nDetails\nDuration\n30-60 Minutes\nThis is a .6-mile (1 k",
+                  "t during peak foliage times in the spring and fall.\nTime of Day\nDay, Dawn, Dusk\nAccessibility Information\nThe Heritage Trail is appropriate for all visitors and all ranges of mobility.\nThe first .5 miles of the trail is a raised, wooden walkway, accessible by low grade ramps at the beginning for the trail. The remaining .1 mile of the trail is a flat, stable cement loop, also appropriate for all visitors.\nThe trail is approximately 6 feet wide with, railings available and benches readily available.\nT"
+                ]
+              },
+              {
+                "url": "https://www.nps.gov/maca/planyourvisit/visitor-center-area-and-south-side-trails.htm",
+                "title": "Visitor Center Area and South Side Trails",
+                "retrievedAt": "2026-10-29T20:25:49.998788+00:00",
+                "sourceUpdated": "November 17, 2025",
+                "excerpts": [
+                  "Contact Us\nVisitor Center Area and South Side Trails\nOn This Page Navigation\nMany trails in the visitor center area can be connected together into a longer hike.\nNPS Photo/ Nathaniel Leies\nA hiking adventure is never out of reach at Mammoth Cave. With 18 miles of easy to access trails found on the south side of the Green River, you can take a day to explore the above ground geology and history of the park, or simply venture out on a quick hike betw"
+                ]
+              },
+              {
+                "url": "https://www.nps.gov/maca/learn/news/heritage-trail-rehabilitation-project-for-mammoth-cave-national-park.htm",
+                "title": "Heritage Trail Rehabilitation Project for Mammoth Cave National Park",
+                "retrievedAt": "2026-10-29T20:26:20.396482+00:00",
+                "sourceUpdated": "January 2, 2025",
+                "excerpts": [
+                  "ntact Us\nNPS.gov\nPark Home\nLearn About the Park\nNews\nNews Releases\nNews Release\nHeritage Trail Rehabilitation Project for Mammoth Cave National Park\nYou are viewing ARCHIVED content\nThis content was published online before January 20, 2025.\nPlease note that this content is NOT UPDATED, and links may not work. For current information, visit https://www.nps.gov/aboutus/news/index.htm.\nThe Heritage Trail Rehabilitation Project will widen the area around the north exit of the main hotel building to create a clearer start to the Heritage Trail and"
+                ]
+              }
+            ]
+          },
+          "routeType": "out-and-back",
+          "accessibility": "NPS identifies an accessible trail, but the older activity page’s wood-and-cement surface description predates the rehabilitation project. Verify current access and surface information.",
+          "seasonalNotes": "The retained visitor-area guide reports a rehabilitation closure, while an archived 2025 release gives an expected completion date. Neither is a verified current opening notice.",
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The individual activity page gives 0.6 mile out-and-back, while the visitor-area table and 2025 rehabilitation release give 0.5 mile. A numeric distance is intentionally omitted.",
+              "sources": [
+                "https://www.nps.gov/thingstodo/heritage-trail.htm",
+                "https://www.nps.gov/maca/planyourvisit/visitor-center-area-and-south-side-trails.htm",
+                "https://www.nps.gov/maca/learn/news/heritage-trail-rehabilitation-project-for-mammoth-cave-national-park.htm"
+              ]
+            },
+            {
+              "field": "surface",
+              "detail": "The 2020 activity description lists raised wooden walkway and cement. The 2025 project planned replacement with hardened cement; completion and final surface were not independently verified.",
+              "sources": [
+                "https://www.nps.gov/thingstodo/heritage-trail.htm",
+                "https://www.nps.gov/maca/learn/news/heritage-trail-rehabilitation-project-for-mammoth-cave-national-park.htm"
+              ]
+            }
+          ],
+          "tags": [
+            "historic",
+            "overlook",
+            "forest",
+            "hiking"
+          ],
+          "relatedSources": [
+            "https://www.nps.gov/maca/planyourvisit/visitor-center-area-and-south-side-trails.htm",
+            "https://www.nps.gov/maca/learn/news/heritage-trail-rehabilitation-project-for-mammoth-cave-national-park.htm"
+          ]
+        }
+      ]
+    },
+    "hopewell-culture-national-historical-park": {
+      "attractions": [
+        {
+          "name": "Hopewell Mound Group trails",
+          "kind": "trail",
+          "source": "https://www.nps.gov/thingstodo/hiking-exploring-hopewell-mound-group.htm",
+          "sourceKey": "hopewell-mound-group-trails",
+          "description": "Walk the earthwork landscape and woodland to surviving sections of the original ceremonial enclosure. The source describes gravel and mulch paths with elevation changes; published mileage elsewhere on the official site is inconsistent.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:57.411311+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/thingstodo/hiking-exploring-hopewell-mound-group.htm",
+                "title": "Hiking & Exploring Hopewell Mound Group",
+                "retrievedAt": "2026-10-29T20:25:57.411311+00:00",
+                "sourceUpdated": "November 17, 2020",
+                "excerpts": [
+                  "rt of the original earthen wall. Open during daylight hours, the trail is about 2.5 miles long with a few changes in elevation. A bike path also runs alongside the complex.\nDetails\nDuration\n45-180 Minutes\nDuration is dependent upon each person's physical stamina and level of interest.\nActivity\nHiking\nWhile most of the 2.5 miles of trail are on flat, level ground, there are parts that require ascending in a few spots. The hike is still an easy to moderate hike. Trails are gravel and mu",
+                  " of perimeter trail. Slight elevation changes on north-side of perimeter trail. Narrow, wooden bridge crossing low-lying stream on north-northwest portion of perimeter trail.\nRestrooms: Men's and Women's both wheelchair accessible.\nNo pay phones\nPicnic shelter: Open-air, covered shelter provided on the south-side of parking area. Paved sidewalk from parking area to shelter entrance. Handicap accessible shelter with regular and wheelchair-friendly picnic tables.\nHopewell Culture National Historica"
+                ]
+              },
+              {
+                "url": "https://www.nps.gov/hocu/learn/historyculture/hopewell-mound-group.htm",
+                "title": "Hopewell Mound Group",
+                "retrievedAt": "2026-10-29T20:25:54.122620+00:00",
+                "sourceUpdated": "July 10, 2024",
+                "excerpts": [
+                  "Contact Us\nHopewell Mound Group\nOn This Page Navigation\nSquier & Davis, c.1848\nTHIS IS NOT where the park visitor center is located. Start your visit at the Hopewell Culture National Historical Park Mound City Group Visitor Center located at 16062 State Route 104, Chillicothe, OH 45601. There you may talk to Park Rangers, view our interpretive film, and pick-up Junior Ranger activities every day of the week.\nHopewell Mound Grou"
+                ]
+              }
+            ]
+          },
+          "length": {
+            "value": 2.5,
+            "unit": "mi",
+            "method": "approximate site trail distance from the NPS activity introduction; an official history page also describes a two-mile interpretive trail, so route extent is uncertain"
+          },
+          "difficulty": "Easy to Moderate",
+          "accessibility": "Only a short sidewalk from the parking area is paved. Other trails use mulch, pebbled dirt, or grass and include elevation changes and a narrow wooden bridge.",
+          "tags": [
+            "hiking",
+            "earthworks",
+            "woodland",
+            "historic",
+            "forest"
+          ],
+          "conflicts": [
+            {
+              "field": "length",
+              "detail": "The activity introduction and history-page introduction describe 2.5 miles, but the history page Visiting the Site section says two miles. It is unclear whether different route extents are intended; the existing approximate 2.5-mile value is retained with this limitation.",
+              "sources": [
+                "https://www.nps.gov/thingstodo/hiking-exploring-hopewell-mound-group.htm",
+                "https://www.nps.gov/hocu/learn/historyculture/hopewell-mound-group.htm"
+              ]
+            }
+          ],
+          "relatedSources": [
+            "https://www.nps.gov/hocu/learn/historyculture/hopewell-mound-group.htm"
+          ]
+        },
+        {
+          "name": "Hopewell Mound Group",
+          "kind": "historic-site",
+          "source": "https://www.nps.gov/hocu/learn/historyculture/hopewell-mound-group.htm",
+          "sourceKey": "hopewell-mound-group",
+          "description": "Explore the archaeological landscape that gave the Hopewell culture its modern name. Most monumental earthworks were reduced by farming and excavation, but surviving wall remnants and interpretation help reveal the scale of the ceremonial enclosure.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:54.122620+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/hocu/learn/historyculture/hopewell-mound-group.htm",
+                "title": "Hopewell Mound Group",
+                "retrievedAt": "2026-10-29T20:25:54.122620+00:00",
+                "sourceUpdated": "July 10, 2024",
+                "excerpts": [
+                  "part of elaborate mortuary ceremonies.\nThe 300-acre Hopewell Mound Group is the type site for the Hopewell culture. Early archeologists named the site for its owner, M. Cloud Hopewell. The general shape of the Hopewell Mound Group is a parallelogram 1,800 feet long on the east and the west sides and 2,800 feet long on the north and south. Archeologists estimated that the walls were originally 35 feet wide at the base and enclosed an area of 111 acres. A smaller square enclosure with s",
+                  "lleling the trail on the northwest side of the great enclosure, lies an intact, six-foot-high section of the original 2,000-year-old embankment wall. Use the key on the below map to locate the other visible remnants of the Hopewell Mound Group earthworks.\nBack to Top\nArcheological crew from Hopewell Culture NHP work under a tent at Hopewell Mound Group during the 2014 field season.\nNPS / Tom Engberg\nArcheological Expeditions\nWhen Europeans first came to this area in the late 1700’s they were amaz"
+                ]
+              }
+            ]
+          },
+          "tags": [
+            "historic",
+            "earthworks",
+            "Indigenous heritage"
+          ]
+        },
+        {
+          "name": "Seip Earthworks",
+          "kind": "historic-site",
+          "source": "https://www.nps.gov/places/seip.htm",
+          "sourceKey": "seip-earthworks",
+          "description": "A restored central mound, a reconstructed section of enclosure and interpretive waysides reveal part of a much larger ceremonial earthwork complex. The self-guided landscape visit is distinct from viewing excavated objects in a museum.",
+          "descriptionKind": "summary",
+          "retrievedAt": "2026-10-29T20:25:57.396322+00:00",
+          "verificationStatus": "official-source",
+          "evidence": {
+            "retainedFile": "acquired0710.json",
+            "sources": [
+              {
+                "url": "https://www.nps.gov/places/seip.htm",
+                "title": "Seip Earthworks",
+                "retrievedAt": "2026-10-29T20:25:57.396322+00:00",
+                "sourceUpdated": "July 10, 2023",
+                "excerpts": [
+                  "e & precsious exotic materials.\nVisitors to the site are still able to view the restored central mound. A portion of the original large circle was reconstructed and is visible, as well. Interpretive trails and waysides help guide visitors on a self-guided and self-paced tour. The covered picnic shelter at the entrance to the site is available on a first-come, first-serve basis. We do not take reservations for the shelter. Visit the Seip Earthworks page for additional information about this site, i",
+                  "portion of the original large circle was reconstructed and is visible, as well. Interpretive trails and waysides help guide visitors on a self-guided and self-paced tour. The covered picnic shelter at the entrance to the site is available on a first-come, first-serve basis. We do not take reservations for the shelter. Visit the Seip Earthworks page for additional information about this site, including directions and maps.\nImportant Note: Launching, landing and operation of any type of Unmanned Aerial Vehicl"
+                ]
+              }
+            ]
+          },
+          "tags": [
+            "historic",
+            "earthworks",
+            "Indigenous heritage"
+          ]
+        }
+      ]
+    }
+  }
+}

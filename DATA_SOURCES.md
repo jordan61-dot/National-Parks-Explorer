@@ -47,3 +47,14 @@ Reviewed additions retrieved October 29, 2026 supplement the earlier evidence. T
 Individual trail measurements retain their published distance basis, uncertainty and source differences. Missing feature coordinates remain absent. Photograph license evidence, original URLs, attribution, retrieval dates and hashes are retained in `scripts/evidence/release072-media.json` and `media072-rights.json`; bundled thumbnails are separate from users' private photographs.
 
 The compiler now emits a searchable catalog and 16 deterministic article shards in addition to the readable and compact complete reference. Validation reconstructs the complete source without loss and protects all baseline park and attraction identities. See [REPRODUCE072.md](docs/REPRODUCE072.md) for commands and optional acquisition dependencies.
+
+## 0.11.0 regional expansion (Explorer 0.7.10)
+
+33 targeted NPS pages retrieved October 29, 2026 are retained in
+`scripts/evidence/acquired0710.json`, including original main text, response
+hashes, retrieval/update dates and official URLs. Reviewed original summaries
+and attribute evidence live in `scripts/evidence/release0710-trails.json`,
+reproduced by `scripts/curated0710.py`. The compiler applies this file after
+historical 0.7.2 additions without refreshing the roster. See
+[measured coverage, record-level sources and limitations](docs/RELEASE0710_REFERENCE.md).
+Conflicting measurements remain explicit; unknown fields are not inferred.
