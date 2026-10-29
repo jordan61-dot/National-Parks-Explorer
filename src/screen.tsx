@@ -331,6 +331,8 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
             selectedId={selected}
             onSelect={setSelected}
             visitedIds={stats.ids}
+            stateFilter={state}
+            onStateChange={(code) => { setState(code); setRegion(""); setCount(24); setSelected(""); }}
           />
           {parks.find((p) => p.id === selected) && (
             <Card park={parks.find((p) => p.id === selected)!} />
