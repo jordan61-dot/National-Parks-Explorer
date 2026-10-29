@@ -927,46 +927,13 @@ function Saved({ item }: { item: Entity }) {
   );
 }
 function Plans() {
-  const { all } = useParks();
-  return (
-    <>
-      <h2>Destinations & trip plans</h2>
-      <a className="button" href={url("plan/new")}>
-        Create trip plan
-      </a>
-      <div className="np-grid">
-        {all
-          .filter((e) => e.kind === "plan")
-          .map((e) => (
-            <article className="np-card" key={e.id}>
-              <h3>
-                <a href={url("plan/" + e.id)}>{String(e.name)}</a>
-              </h3><a href={url("itinerary/"+e.id)}>View itinerary</a>
-              <p>
-                {
-                  (e.stops as unknown as Stop[]).filter((s) => s.completed)
-                    .length
-                }{" "}
-                of {(e.stops as unknown as Stop[]).length} stops completed
-              </p>
-            </article>
-          ))}
-      </div>
-      <h3>Saved destinations</h3>
-      <div className="np-grid">
-        {all
-          .filter((e) => e.kind === "saved")
-          .map((e) => (
-            <Saved key={e.id + e.updatedAt} item={e} />
-          ))}
-      </div>
-      <p>
-        Save destinations from park profiles. Plan completion never creates a
-        visit automatically.
-      </p>
-    </>
-  );
+ const {all,r}=useParks(), plans=all.filter(e=>e.kind==='plan');
+ return <><h2>Destinations & trip plans</h2><a className="button" href={url('plan/new')}>Create trip plan</a>
+ {!plans.length&&<p>No saved trips yet. Create a trip to begin planning.</p>}
+ <div className="np-grid">{plans.map(e=>{const stops=e.stops as unknown as Stop[],completed=stops.filter(s=>s.completed).length,activities=stops.reduce((n,s)=>n+s.attractions.length,0),next=stops.find(s=>!s.completed),park=next&&r.units.find(p=>p.id===next.parkId),name=String(e.name);return <article className="np-card np-trip-card" key={e.id}><h3>{name}</h3><p>{stops.length} park stops · {activities} planned activities</p><p>Progress: {completed} of {stops.length} stops completed</p>{stops.length>0&&<progress aria-label={`Stop completion for ${name}`} value={completed} max={stops.length}/>}<p>{!stops.length?'No stops added yet.':next?`Next incomplete stop: ${park?.name??'Park reference unavailable ('+next.parkId+')'}`:'All planned stops completed.'}</p><div className="actions"><a className="button" aria-label={`View itinerary for ${name}`} href={url('itinerary/'+e.id)}>View itinerary</a><a className="button" aria-label={`Edit trip ${name}`} href={url('plan/'+e.id)}>Edit trip</a></div></article>})}</div>
+ <h3>Saved destinations</h3><div className="np-grid">{all.filter(e=>e.kind==='saved').map(e=><Saved key={e.id+e.updatedAt} item={e}/>)}</div><p>Save destinations from park profiles. Plan completion never creates a visit automatically.</p></>;
 }
+
 function TripOverview({id}:{id:string}) {
  const {all,r}=useParks(),plan=all.find(e=>e.id===id&&e.kind==='plan');
  if(!plan)return <p>Trip unavailable. <a href={url('plans')}>Return to trips</a></p>;
