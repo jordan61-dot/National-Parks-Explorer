@@ -1,0 +1,1459 @@
+{
+  "coverage": {
+    "system": 434,
+    "affiliated": 33,
+    "entries": 467,
+    "descriptions": 437,
+    "locations": 429,
+    "entriesWithArticles": 436,
+    "articleSections": 2375,
+    "attractions": 261,
+    "byTopic": {
+      "History & culture": 385,
+      "Nature & geology": 297,
+      "Accessibility": 410,
+      "Directions & access": 426,
+      "Activities & trails": 350
+    },
+    "attemptedArticlePages": 2700,
+    "articlePageErrors": 189,
+    "attemptedPlacePages": 238,
+    "verifiedPlaceTitles": 238,
+    "parksWithAttractions": 65,
+    "structuredTrails": 20,
+    "licensedPhotographs": 0,
+    "historyMilestones": 21,
+    "duplicateAttractionSourcesWithinPark": 0
+  },
+  "parksWithAttractions": 65,
+  "structuredTrails": 20,
+  "licensedPhotographs": 0,
+  "missingDescriptions": [
+    "fort-caroline-national-memorial",
+    "hohokam-pima-national-monument",
+    "statue-of-liberty-national-monument",
+    "white-sands-national-park",
+    "john-d-rockefeller",
+    "lake-chelan-national-recreation-area",
+    "ross-lake-national-recreation-area",
+    "middle-delaware-national-scenic-river",
+    "9-11-pentagon-memorial",
+    "aleutian-world-war-ii-national-historic-area",
+    "benjamin-franklin-national-memorial",
+    "chicago-portage-national-historic-site",
+    "chimney-rock-national-historic-site",
+    "claymont-community-center",
+    "eutaw-springs-battlefield",
+    "fallen-timbers-battlefield-and-fort-miamis-national-historic-site",
+    "father-marquette-national-memorial",
+    "historic-camden-revolutionary-war-site",
+    "hockessin-colored-school-107",
+    "howard-high-school-of-technology",
+    "ice-age-national-scientific-reserve",
+    "international-peace-garden",
+    "jamestown-national-historic-site",
+    "john-philip-sousa-middle-school",
+    "kate-mullany-national-historic-site",
+    "kettle-creek-battlefield",
+    "natural-bridge-state-park",
+    "parkers-crossroads-battlefield",
+    "red-hill-patrick-henry-national-memorial",
+    "robert-russa-moton-museum"
+  ],
+  "missingTopics": {
+    "History & culture": [
+      "moores-creek-national-battlefield",
+      "tupelo-national-battlefield",
+      "kings-mountain-national-military-park",
+      "vicksburg-national-military-park",
+      "marsh-billings-rockefeller-national-historical-park",
+      "new-orleans-jazz-national-historical-park",
+      "blackwell-school-national-historic-site",
+      "carter-g-woodson-home-national-historic-site",
+      "little-rock-central-high-school-national-historic-site",
+      "pennsylvania-avenue-national-historic-site",
+      "desert-shield-and-desert-storm-memorial",
+      "federal-hall-national-memorial",
+      "flight-93-national-memorial",
+      "fort-caroline-national-memorial",
+      "lyndon-baines-johnson-memorial-grove-on-the-potomac",
+      "world-war-i-memorial",
+      "belmont-paul-women-s-equality-national-monument",
+      "birmingham-civil-rights-national-monument",
+      "camp-nelson-national-monument",
+      "castillo-de-san-marcos-national-monument",
+      "castle-mountains-national-monument",
+      "cedar-breaks-national-monument",
+      "fort-mchenry-national-monument-and-historic-shrine",
+      "fossil-butte-national-monument",
+      "freedom-riders-national-monument",
+      "gila-cliff-dwellings-national-monument",
+      "hohokam-pima-national-monument",
+      "katahdin-woods-and-waters-national-monument",
+      "poverty-point-national-monument",
+      "springfield-1908-race-riot-national-monument",
+      "statue-of-liberty-national-monument",
+      "stonewall-national-monument",
+      "virgin-islands-coral-reef-national-monument",
+      "badlands-national-park",
+      "death-valley-national-park",
+      "hawai-i-volcanoes-national-park",
+      "joshua-tree-national-park",
+      "lassen-volcanic-national-park",
+      "mount-rainier-national-park",
+      "virgin-islands-national-park",
+      "john-d-rockefeller",
+      "chattahoochee-river-national-recreation-area",
+      "lake-chelan-national-recreation-area",
+      "lake-meredith-national-recreation-area",
+      "ross-lake-national-recreation-area",
+      "middle-delaware-national-scenic-river",
+      "great-egg-harbor-national-scenic-and-recreational-river",
+      "appalachian-national-scenic-trail",
+      "ice-age-national-scenic-trail",
+      "new-england-national-scenic-trail",
+      "assateague-island-national-seashore",
+      "cumberland-island-national-seashore",
+      "national-capital-parks-east",
+      "piscataway-park",
+      "9-11-pentagon-memorial",
+      "aleutian-world-war-ii-national-historic-area",
+      "benjamin-franklin-national-memorial",
+      "chicago-portage-national-historic-site",
+      "chimney-rock-national-historic-site",
+      "claymont-community-center",
+      "eutaw-springs-battlefield",
+      "fallen-timbers-battlefield-and-fort-miamis-national-historic-site",
+      "father-marquette-national-memorial",
+      "historic-camden-revolutionary-war-site",
+      "hockessin-colored-school-107",
+      "howard-high-school-of-technology",
+      "ice-age-national-scientific-reserve",
+      "international-peace-garden",
+      "inupiat-heritage-center",
+      "jamestown-national-historic-site",
+      "john-philip-sousa-middle-school",
+      "kate-mullany-national-historic-site",
+      "kettle-creek-battlefield",
+      "lower-east-side-tenement-national-historic-site",
+      "natural-bridge-state-park",
+      "parkers-crossroads-battlefield",
+      "pinelands-national-reserve",
+      "red-hill-patrick-henry-national-memorial",
+      "robert-russa-moton-museum",
+      "roosevelt-campobello-international-park",
+      "touro-synagogue-national-historic-site",
+      "wing-luke-museum-of-the-asian-pacific-american-experience"
+    ],
+    "Nature & geology": [
+      "tupelo-national-battlefield",
+      "kennesaw-mountain-national-battlefield-park",
+      "brices-cross-roads-national-battlefield-site",
+      "guilford-courthouse-national-military-park",
+      "kings-mountain-national-military-park",
+      "pea-ridge-national-military-park",
+      "blackstone-river-valley-national-historical-park",
+      "boston-national-historical-park",
+      "brown-v-board-of-education-national-historical-park",
+      "cedar-creek-and-belle-grove-national-historical-park",
+      "dayton-aviation-heritage-national-historical-park",
+      "fort-sumter-and-fort-moultrie-national-historical-park",
+      "golden-spike-national-historical-park",
+      "harriet-tubman-national-historical-park",
+      "harriet-tubman-underground-railroad-national-historical-park",
+      "independence-national-historical-park",
+      "kaloko-honokohau-national-historical-park",
+      "lowell-national-historical-park",
+      "manhattan-project-national-historical-park",
+      "martin-luther-king-jr-national-historical-park",
+      "natchez-national-historical-park",
+      "new-bedford-whaling-national-historical-park",
+      "new-orleans-jazz-national-historical-park",
+      "pullman-national-historical-park",
+      "reconstruction-era-national-historical-park",
+      "rosie-the-riveter-world-war-ii-home-front-national-historical-park",
+      "san-francisco-maritime-national-historical-park",
+      "salem-maritime-national-historical-park",
+      "thomas-edison-national-historical-park",
+      "women-s-rights-national-historical-park",
+      "andrew-johnson-national-historic-site",
+      "blackwell-school-national-historic-site",
+      "boston-african-american-national-historic-site",
+      "carter-g-woodson-home-national-historic-site",
+      "charles-pinckney-national-historic-site",
+      "christiansted-national-historic-site",
+      "clara-barton-national-historic-site",
+      "edgar-allan-poe-national-historic-site",
+      "eleanor-roosevelt-national-historic-site",
+      "first-ladies-national-historic-site",
+      "ford-s-theatre-national-historic-site",
+      "fort-laramie-national-historic-site",
+      "fort-point-national-historic-site",
+      "fort-raleigh-national-historic-site",
+      "frederick-douglass-national-historic-site",
+      "hampton-national-historic-site",
+      "home-of-franklin-d-roosevelt-national-historic-site",
+      "hopewell-furnace-national-historic-site",
+      "honouliuli-national-historic-site",
+      "james-a-garfield-national-historic-site",
+      "john-fitzgerald-kennedy-national-historic-site",
+      "little-rock-central-high-school-national-historic-site",
+      "maggie-l-walker-national-historic-site",
+      "mary-mcleod-bethune-council-house-national-historic-site",
+      "minidoka-national-historic-site",
+      "new-philadelphia-national-historic-site",
+      "nicodemus-national-historic-site",
+      "pennsylvania-avenue-national-historic-site",
+      "president-william-jefferson-clinton-birthplace-home-national-historic-site",
+      "pu-ukohola-heiau-national-historic-site",
+      "sagamore-hill-national-historic-site",
+      "saint-paul-s-church-national-historic-site",
+      "san-juan-national-historic-site",
+      "steamtown-national-historic-site",
+      "theodore-roosevelt-birthplace-national-historic-site",
+      "theodore-roosevelt-inaugural-national-historic-site",
+      "tuskegee-airmen-national-historic-site",
+      "tuskegee-institute-national-historic-site",
+      "william-howard-taft-national-historic-site",
+      "arlington-house-the-robert-e-lee-memorial",
+      "desert-shield-and-desert-storm-memorial",
+      "dwight-d-eisenhower-memorial",
+      "federal-hall-national-memorial",
+      "fort-caroline-national-memorial",
+      "franklin-delano-roosevelt-memorial",
+      "general-grant-national-memorial",
+      "hamilton-grange-national-memorial",
+      "korean-war-veterans-memorial",
+      "lincoln-memorial",
+      "lyndon-baines-johnson-memorial-grove-on-the-potomac",
+      "martin-luther-king-jr-memorial",
+      "mount-rushmore-national-memorial",
+      "port-chicago-naval-magazine-national-memorial",
+      "roger-williams-national-memorial",
+      "thaddeus-kosciuszko-national-memorial",
+      "theodore-roosevelt-island",
+      "thomas-jefferson-memorial",
+      "vietnam-veterans-memorial",
+      "washington-monument",
+      "world-war-i-memorial",
+      "world-war-ii-memorial",
+      "wright-brothers-national-memorial",
+      "african-burial-ground-national-monument",
+      "belmont-paul-women-s-equality-national-monument",
+      "birmingham-civil-rights-national-monument",
+      "camp-nelson-national-monument",
+      "canyon-de-chelly-national-monument",
+      "carlisle-federal-indian-boarding-school-national-monument",
+      "castillo-de-san-marcos-national-monument",
+      "castle-mountains-national-monument",
+      "cedar-breaks-national-monument",
+      "charles-young-buffalo-soldiers-national-monument",
+      "emmett-till-and-mamie-till-mobley-national-monument",
+      "fort-monroe-national-monument",
+      "fort-union-national-monument",
+      "frances-perkins-national-monument",
+      "freedom-riders-national-monument",
+      "hohokam-pima-national-monument",
+      "lava-beds-national-monument",
+      "medgar-and-myrlie-evers-home-national-monument",
+      "mill-springs-battlefield-national-monument",
+      "navajo-national-monument",
+      "poverty-point-national-monument",
+      "springfield-1908-race-riot-national-monument",
+      "statue-of-liberty-national-monument",
+      "stonewall-national-monument",
+      "tule-lake-national-monument",
+      "tule-springs-fossil-beds-national-monument",
+      "virgin-islands-coral-reef-national-monument",
+      "carlsbad-caverns-national-park",
+      "gateway-arch-national-park",
+      "theodore-roosevelt-national-park",
+      "john-d-rockefeller",
+      "little-river-canyon-national-preserve",
+      "ebey-s-landing-national-historical-reserve",
+      "gateway-national-recreation-area",
+      "lake-chelan-national-recreation-area",
+      "lake-mead-national-recreation-area",
+      "ross-lake-national-recreation-area",
+      "middle-delaware-national-scenic-river",
+      "great-egg-harbor-national-scenic-and-recreational-river",
+      "rio-grande-wild-and-scenic-river",
+      "natchez-trace-national-scenic-trail",
+      "new-england-national-scenic-trail",
+      "north-country-national-scenic-trail",
+      "constitution-gardens",
+      "national-capital-parks-east",
+      "the-white-house-and-president-s-park",
+      "9-11-pentagon-memorial",
+      "aleutian-world-war-ii-national-historic-area",
+      "benjamin-franklin-national-memorial",
+      "chicago-portage-national-historic-site",
+      "chimney-rock-national-historic-site",
+      "claymont-community-center",
+      "eutaw-springs-battlefield",
+      "fallen-timbers-battlefield-and-fort-miamis-national-historic-site",
+      "father-marquette-national-memorial",
+      "gloria-dei-old-swedes-church-national-historic-site",
+      "green-springs-national-historic-landmark-district",
+      "historic-camden-revolutionary-war-site",
+      "hockessin-colored-school-107",
+      "howard-high-school-of-technology",
+      "ice-age-national-scientific-reserve",
+      "international-peace-garden",
+      "inupiat-heritage-center",
+      "jamestown-national-historic-site",
+      "john-philip-sousa-middle-school",
+      "kate-mullany-national-historic-site",
+      "kettle-creek-battlefield",
+      "lower-east-side-tenement-national-historic-site",
+      "natural-bridge-state-park",
+      "oklahoma-city-national-memorial",
+      "parkers-crossroads-battlefield",
+      "pinelands-national-reserve",
+      "red-hill-patrick-henry-national-memorial",
+      "robert-russa-moton-museum",
+      "roosevelt-campobello-international-park",
+      "thomas-cole-national-historic-site",
+      "touro-synagogue-national-historic-site",
+      "wing-luke-museum-of-the-asian-pacific-american-experience"
+    ],
+    "Accessibility": [
+      "fort-necessity-national-battlefield",
+      "horseshoe-bend-national-military-park",
+      "vicksburg-national-military-park",
+      "colonial-national-historical-park",
+      "jean-lafitte-national-historical-park-and-preserve",
+      "keweenaw-national-historical-park",
+      "new-orleans-jazz-national-historical-park",
+      "salt-river-bay-national-historical-park-and-ecological-preserve",
+      "saratoga-national-historical-park",
+      "allegheny-portage-railroad-national-historic-site",
+      "friendship-hill-national-historic-site",
+      "honouliuli-national-historic-site",
+      "mary-mcleod-bethune-council-house-national-historic-site",
+      "flight-93-national-memorial",
+      "fort-caroline-national-memorial",
+      "johnstown-flood-national-memorial",
+      "washington-monument",
+      "fort-pulaski-national-monument",
+      "hohokam-pima-national-monument",
+      "poverty-point-national-monument",
+      "statue-of-liberty-national-monument",
+      "channel-islands-national-park",
+      "olympic-national-park",
+      "john-d-rockefeller",
+      "natchez-trace-parkway",
+      "lake-chelan-national-recreation-area",
+      "ross-lake-national-recreation-area",
+      "big-south-fork-national-river-and-recreation-area",
+      "middle-delaware-national-scenic-river",
+      "obed-wild-and-scenic-river",
+      "new-england-national-scenic-trail",
+      "greenbelt-park",
+      "9-11-pentagon-memorial",
+      "aleutian-world-war-ii-national-historic-area",
+      "american-memorial-park",
+      "benjamin-franklin-national-memorial",
+      "chicago-portage-national-historic-site",
+      "chimney-rock-national-historic-site",
+      "claymont-community-center",
+      "eutaw-springs-battlefield",
+      "fallen-timbers-battlefield-and-fort-miamis-national-historic-site",
+      "father-marquette-national-memorial",
+      "historic-camden-revolutionary-war-site",
+      "hockessin-colored-school-107",
+      "howard-high-school-of-technology",
+      "ice-age-national-scientific-reserve",
+      "international-peace-garden",
+      "jamestown-national-historic-site",
+      "john-philip-sousa-middle-school",
+      "kate-mullany-national-historic-site",
+      "kettle-creek-battlefield",
+      "natural-bridge-state-park",
+      "parkers-crossroads-battlefield",
+      "red-hill-patrick-henry-national-memorial",
+      "robert-russa-moton-museum",
+      "thomas-cole-national-historic-site",
+      "touro-synagogue-national-historic-site"
+    ],
+    "Activities & trails": [
+      "moores-creek-national-battlefield",
+      "river-raisin-national-battlefield-park",
+      "vicksburg-national-military-park",
+      "cedar-creek-and-belle-grove-national-historical-park",
+      "first-state-national-historical-park",
+      "homestead-national-historical-park",
+      "independence-national-historical-park",
+      "jean-lafitte-national-historical-park-and-preserve",
+      "jimmy-carter-national-historical-park",
+      "kaloko-honokohau-national-historical-park",
+      "lewis-and-clark-national-historical-park",
+      "manhattan-project-national-historical-park",
+      "natchez-national-historical-park",
+      "new-orleans-jazz-national-historical-park",
+      "pu-uhonua-o-honaunau-national-historical-park",
+      "reconstruction-era-national-historical-park",
+      "saint-gaudens-national-historical-park",
+      "ste-genevieve-national-historical-park",
+      "tumacacori-national-historical-park",
+      "bent-s-old-fort-national-historic-site",
+      "boston-african-american-national-historic-site",
+      "carl-sandburg-home-national-historic-site",
+      "edgar-allan-poe-national-historic-site",
+      "eisenhower-national-historic-site",
+      "eleanor-roosevelt-national-historic-site",
+      "first-ladies-national-historic-site",
+      "fort-laramie-national-historic-site",
+      "fort-raleigh-national-historic-site",
+      "fort-union-trading-post-national-historic-site",
+      "hopewell-furnace-national-historic-site",
+      "honouliuli-national-historic-site",
+      "hubbell-trading-post-national-historic-site",
+      "mary-mcleod-bethune-council-house-national-historic-site",
+      "nicodemus-national-historic-site",
+      "pu-ukohola-heiau-national-historic-site",
+      "theodore-roosevelt-birthplace-national-historic-site",
+      "thomas-stone-national-historic-site",
+      "whitman-mission-national-historic-site",
+      "desert-shield-and-desert-storm-memorial",
+      "dwight-d-eisenhower-memorial",
+      "flight-93-national-memorial",
+      "fort-caroline-national-memorial",
+      "hamilton-grange-national-memorial",
+      "johnstown-flood-national-memorial",
+      "perry-s-victory-and-international-peace-memorial",
+      "world-war-i-memorial",
+      "wright-brothers-national-memorial",
+      "bandelier-national-monument",
+      "booker-t-washington-national-monument",
+      "castle-mountains-national-monument",
+      "cedar-breaks-national-monument",
+      "cesar-e-chavez-national-monument",
+      "colorado-national-monument",
+      "fort-frederica-national-monument",
+      "freedom-riders-national-monument",
+      "george-washington-birthplace-national-monument",
+      "gila-cliff-dwellings-national-monument",
+      "hohokam-pima-national-monument",
+      "muir-woods-national-monument",
+      "pipestone-national-monument",
+      "statue-of-liberty-national-monument",
+      "tonto-national-monument",
+      "waco-mammoth-national-monument",
+      "wupatki-national-monument",
+      "acadia-national-park",
+      "bryce-canyon-national-park",
+      "carlsbad-caverns-national-park",
+      "everglades-national-park",
+      "gates-of-the-arctic-national-park",
+      "glacier-national-park",
+      "hawai-i-volcanoes-national-park",
+      "joshua-tree-national-park",
+      "olympic-national-park",
+      "yellowstone-national-park",
+      "yosemite-national-park",
+      "john-d-rockefeller",
+      "gates-of-the-arctic-national-preserve",
+      "mojave-national-preserve",
+      "delaware-water-gap-national-recreation-area",
+      "glen-canyon-national-recreation-area",
+      "lake-chelan-national-recreation-area",
+      "lake-roosevelt-national-recreation-area",
+      "ross-lake-national-recreation-area",
+      "middle-delaware-national-scenic-river",
+      "niobrara-national-scenic-river",
+      "appalachian-national-scenic-trail",
+      "new-england-national-scenic-trail",
+      "canaveral-national-seashore",
+      "cape-cod-national-seashore",
+      "cumberland-island-national-seashore",
+      "padre-island-national-seashore",
+      "constitution-gardens",
+      "national-capital-parks-east",
+      "the-white-house-and-president-s-park",
+      "9-11-pentagon-memorial",
+      "aleutian-world-war-ii-national-historic-area",
+      "benjamin-franklin-national-memorial",
+      "chicago-portage-national-historic-site",
+      "chimney-rock-national-historic-site",
+      "claymont-community-center",
+      "eutaw-springs-battlefield",
+      "fallen-timbers-battlefield-and-fort-miamis-national-historic-site",
+      "father-marquette-national-memorial",
+      "historic-camden-revolutionary-war-site",
+      "hockessin-colored-school-107",
+      "howard-high-school-of-technology",
+      "ice-age-national-scientific-reserve",
+      "international-peace-garden",
+      "jamestown-national-historic-site",
+      "john-philip-sousa-middle-school",
+      "kate-mullany-national-historic-site",
+      "kettle-creek-battlefield",
+      "natural-bridge-state-park",
+      "parkers-crossroads-battlefield",
+      "red-hill-patrick-henry-national-memorial",
+      "robert-russa-moton-museum",
+      "touro-synagogue-national-historic-site"
+    ]
+  },
+  "emptyArticles": 0,
+  "duplicateArticleTextsAcrossEntries": 64,
+  "duplicateAttractionSourcesWithinPark": 0,
+  "failureCategories": {
+    "missing-page": 105,
+    "unverified-page": 84
+  },
+  "failures": [
+    {
+      "url": "https://www.nps.gov/afbg/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/amme/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/amme/planyourvisit/accessibility.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/anjo/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/appa/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/appa/planyourvisit/things2do.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/arho/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/asis/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/bepa/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/bepa/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/bicr/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/bicr/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/blrv/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/blsc/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/blsc/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/boaf/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/bost/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/bost/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/brcr/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/brvb/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/cach/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/camo/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/camo/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/camo/planyourvisit/things2do.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/casa/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/cawo/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/cech/planyourvisit/things2do.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/chat/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/chpi/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/chri/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/chsc/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/chsc/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/chyo/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/clba/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/coga/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/coga/planyourvisit/things2do.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/colo/planyourvisit/accessibility.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/cuis/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/daav/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/ddem/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/ddem/planyourvisit/things2do.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/dsds/planyourvisit/things2do.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/ebla/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/edal/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/edis/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/elro/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/feha/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/feha/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/fila/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/flfo/planyourvisit/directions.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/fobu/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/fols/planyourvisit/directions.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/fomr/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/fopo/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/fora/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/fora/planyourvisit/things2do.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/fosu/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/foth/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/foun/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/frde/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/frdo/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/frri/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/frri/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/frst/planyourvisit/directions.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/gegr/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/glde/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/grba/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/greg/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/greg/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/grsp/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/hagr/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/hagr/planyourvisit/things2do.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/hamp/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/hart/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/hatu/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/heho/learn/historyculture/birthplace.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/heho/learn/historyculture/gravesite.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/hofr/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/hofu/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/hono/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/hono/planyourvisit/accessibility.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/hono/planyourvisit/directions.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/hono/planyourvisit/things2do.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/iatr/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/inde/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/inup/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/inup/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/jaga/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/jazz/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/jazz/planyourvisit/accessibility.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/jazz/planyourvisit/directions.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/jeff/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/jofi/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/kaww/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/kaww/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/kemo/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/kimo/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/kimo/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/kowa/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/lamr/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/linc/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/loea/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/loea/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/lowe/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/lyba/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/lyba/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/malu/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/mamc/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/mapr/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/mapr/planyourvisit/things2do.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/mawa/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/memy/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/miin/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/mima/planyourvisit/directions.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/mlkm/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/moru/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/natc/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/natt/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/nava/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/nebe/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/neen/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/neen/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/neen/planyourvisit/accessibility.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/neen/planyourvisit/things2do.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/nico/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/niob/planyourvisit/directions.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/noco/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/npsa/planyourvisit/directions.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/obed/planyourvisit/accessibility.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/okci/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/paav/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/paav/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/peri/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/pine/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/pine/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/poch/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/popo/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/popo/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/pull/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/reer/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/reer/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/roca/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/roca/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/rori/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/rowi/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/safr/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/saga/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/sagu/planyourvisit/directions.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/saju/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/sama/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/sama/planyourvisit/directions.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/sapa/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/spra/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/spra/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/ston/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/ston/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/thco/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/this/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/thje/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/thko/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/thrb/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/thri/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/till/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/tosy/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/tosy/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/tosy/planyourvisit/accessibility.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/tosy/planyourvisit/things2do.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/tuai/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/tuin/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/tule/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/tupe/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/tupe/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/vicr/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/vicr/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/vicr/learn/nature/researchpublications.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/vive/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/vive/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/waco/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/waco/planyourvisit/things2do.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/wamo/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/wiho/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/wing/learn/historyculture/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/wing/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/wori/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/wotr/learn/historyculture/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/wrbr/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/wwii/learn/nature/index.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    },
+    {
+      "url": "https://www.nps.gov/wwim/learn/nature/index.htm",
+      "error": "No verified article",
+      "category": "unverified-page"
+    },
+    {
+      "url": "https://www.nps.gov/wwim/planyourvisit/things2do.htm",
+      "error": "HTTPError",
+      "category": "missing-page"
+    }
+  ],
+  "limitations": [
+    "Legacy HTTPError evidence did not retain status codes; missing pages, rate limits and server errors cannot be distinguished retrospectively.",
+    "Shared NPS websites explain some duplicate text across separately classified units.",
+    "Metrics count substantive excerpts (>10 words), not comprehensive encyclopedia coverage.",
+    "No photographic license is inferred from a government domain."
+  ]
+}

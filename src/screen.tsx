@@ -14,6 +14,7 @@ import {
   stateNames,
   parkRegions,
   parkSearchText,
+  normalizeSearch, trailFilters, matchesTrail, parkSearchRank,
   type Park,
   type Reference,
 } from "./reference";
@@ -227,6 +228,8 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
     [scope, setScope] = useState("system-unit"),
     [designation, setDesignation] = useState(""),
     [status, setStatus] = useState(""),
+    [region,setRegion]=useState(""),
+    [trail,setTrail]=useState(""),
     [count, setCount] = useState(24),
     [selected, setSelected] = useState("");
   const stats = statistics(all, r.units),
@@ -235,9 +238,10 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
     (p) =>
       (!scope || p.classification === scope) &&
       (!state || p.states.includes(state)) &&
+      (!region || parkRegions(p).includes(region)) &&
+      (!trail || p.attractions.some(a=>matchesTrail(a,trail))) &&
       (!designation || p.designation === designation) &&
-      q
-        .toLowerCase()
+      normalizeSearch(q)
         .split(/\s+/)
         .every((t) =>
           parkSearchText(p).includes(t),
@@ -250,7 +254,7 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
           visits(all).some(
             (v) => v.parkId === p.id && v.experience === "pass-through",
           ))),
-  );
+  ).sort((a,b)=>parkSearchRank(b,q)-parkSearchRank(a,q));
   const filter = (fn: (s: string) => void, v: string) => {
     fn(v);
     setCount(24);
@@ -312,7 +316,11 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
             ))}
           </select>
         </Field>
+        <Field label="Region"><select value={region} onChange={e=>filter(setRegion,e.target.value)}><option value="">All regions</option>{['Northeast','Midwest','South','West','Territories'].map(x=><option key={x}>{x}</option>)}</select></Field>
+        <Field label="Trail discovery"><select value={trail} onChange={e=>filter(setTrail,e.target.value)}><option value="">All parks, any trail coverage</option>{trailFilters.map(x=><option key={x}>{x}</option>)}</select></Field>
       </div>
+      <button onClick={()=>{setQ('');setState('');setScope('system-unit');setDesignation('');setStatus('');setRegion('');setTrail('');setCount(24);setSelected('');}}>Reset filters</button>
+      {trail && <p className="muted">Filters use recorded trail attributes only. Accessibility descriptions include limitations; read the trail details before choosing a route.</p>}
       <p role="status">{parks.length} matching places</p>
       {atlas && (
         <>
@@ -332,7 +340,7 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
           <Card key={p.id} park={p} />
         ))}
       </div>
-      {!parks.length && <p>No places match. Try clearing a filter.</p>}
+      {!parks.length && <p>No places match the selected scope and filters. Try Reset filters, include affiliated areas, or remove the trail filter where structured information is missing.</p>}
       {count < parks.length && (
         <button onClick={() => setCount(count + 24)}>Show more parks</button>
       )}
@@ -361,6 +369,7 @@ function Profile({ id }: { id: string }) {
       <p className="np-lead">
         {p.description || "Detailed description unavailable."}
       </p>
+      {p.description && <p className="muted">Official NPS park introduction</p>}
       <div className="actions">
         <a className="button" href={url("visit/new/" + id)}>
           Record visit
@@ -381,18 +390,21 @@ function Profile({ id }: { id: string }) {
         </button>
         <a href={url("plans")}>Trip plans</a>
       </div>
-      <h3>Encyclopedia</h3>
+      <nav className="np-sections" aria-label="Park sections">{[['encyclopedia','Encyclopedia'],['attractions','Attractions & trails'],['geography','Geography & research'],['visits','Your visits']].map(([anchor,label])=><a key={anchor} href={'#np-'+anchor} onClick={e=>{e.preventDefault();const target=document.getElementById('np-'+anchor);target?.scrollIntoView({block:'start'});target?.focus();}}>{label}</a>)}</nav>
+      {!!p.history?.length && <section className="np-card"><h3>History milestones</h3><ul>{p.history.map((h,i)=><li key={i}><strong>{h.date}</strong> · {h.event} <span className="muted">({h.kind.replaceAll('-',' ')})</span> <Link href={h.source} label="Source" /></li>)}</ul></section>}
+      <h3 id="np-encyclopedia" tabIndex={-1}>Encyclopedia</h3>
       <p>
         Excerpts from official NPS pages, saved for offline reading. A shared
         park website may describe several separately listed units. Check the
         linked page for the full context and current visitor information.
       </p>
       {!p.articles?.length && <p>No detailed articles are available in this snapshot.</p>}
-      {p.articles?.map((a) => (
-        <section className="np-card" key={a.source}>
+      {p.articles?.map((a,i) => (
+        <section className="np-card" key={a.source+'-'+i}>
           <p className="eyebrow">{a.topic}</p>
           <h4>{a.title}</h4>
-          <blockquote className="np-excerpt">{a.text}</blockquote>
+          <p className="muted">{a.contentKind==='summary' ? 'Source-based summary' : 'Official NPS excerpt'}</p>
+          {a.contentKind==='summary' ? <p>{a.text}</p> : <blockquote className="np-excerpt">{a.text}</blockquote>}
           <p className="muted">
             Retrieved {a.retrievedAt.slice(0, 10)}
             {a.lastUpdated ? ` · NPS last updated ${a.lastUpdated}` : ""}
@@ -400,11 +412,12 @@ function Profile({ id }: { id: string }) {
           <Link href={a.source} label="Read the full official article" />
         </section>
       ))}
-      <h3>Visitor information & research</h3>
+      <h3 id="np-geography" tabIndex={-1}>Visitor information & research</h3>
       <p>
         These official sources open online. Bundled text does not report live
         closures, access conditions, bookings or travel times.
       </p>
+      <a href={url('atlas')}>Explore the atlas and state filters</a>
       <ul>
         <li>
           <Link href={p.website} label="Official park information" />
@@ -425,7 +438,8 @@ function Profile({ id }: { id: string }) {
         {[...p.activities, ...p.topics].join(" · ") ||
           "Structured coverage unavailable; see official visitor sources."}
       </p>
-      <h3>Attractions & trails</h3>
+      <h3 id="np-attractions" tabIndex={-1}>Attractions & trails</h3>
+      {!!p.attractions.length && <p className="muted">Associated through official park resources. Shared park websites can cover several units; these listings do not establish a boundary location or navigable entrance.</p>}
       {!p.attractions.length && (
         <p>
           No individually sourced attraction records are included for this park
@@ -436,21 +450,25 @@ function Profile({ id }: { id: string }) {
         {p.attractions.map((a) => (
           <article key={a.id} className="np-card">
             <h4>{a.name}</h4>
+            {a.descriptionKind && <p className="muted">{a.descriptionKind==='summary' ? 'Source-based summary' : a.descriptionKind==='official-excerpt' ? 'Official NPS place excerpt' : 'Official source reference'}</p>}
             <p>
               {a.kind} · {a.description}
             </p>
             <p>
-              {a.length
+              {a.kind==='trail' && (a.length
                 ? `${a.length.value} ${a.length.unit} (${a.length.method})`
-                : "Distance unknown"}
+                : "Distance unknown")}
               {a.difficulty ? " · " + a.difficulty : ""}
+              {a.routeType ? " · " + a.routeType : ""}
             </p>
             {a.accessibility && <p>{a.accessibility}</p>}
+            {!!a.tags?.length && <p className="muted">{a.tags.join(' · ')}</p>}
+            {a.retrievedAt && <p className="muted">Reference checked {a.retrievedAt.slice(0,10)}. Check official resources for current access.</p>}
             <Link href={a.source} label="Official source" />
           </article>
         ))}
       </div>
-      <h3>Your visits</h3>
+      <h3 id="np-visits" tabIndex={-1}>Your visits</h3>
       <ul>
         {visits(all)
           .filter((v) => v.parkId === id)
@@ -465,13 +483,13 @@ function Profile({ id }: { id: string }) {
       <h3>Sources & coverage</h3>
       <p>{p.coverageNote}</p>
       <p>Retrieved {r.retrievedAt.slice(0, 10)}</p>
-      <ul>
-        {p.sources.map((s) => (
-          <li key={s.url}>
+      <details><summary>Reference sources ({p.sources.length})</summary><ul>
+        {p.sources.map((s,i) => (
+          <li key={s.url+'-'+i}>
             <Link href={s.url} label={s.label} />
           </li>
         ))}
-      </ul>
+      </ul></details>
     </>
   );
 }
@@ -1370,19 +1388,23 @@ function Settings() {
   );
 }
 function Discover() {
-  const { r } = useParks(),
+  const { r,all } = useParks(),
     [q, setQ] = useState(""),
     [kind, setKind] = useState(""),
+    [state,setState]=useState(''),
+    [park,setPark]=useState(''),
+    [trail,setTrail]=useState(''),
+    [status,setStatus]=useState(''),
     [limit, setLimit] = useState(30),
     items = r.units
       .flatMap((p) => p.attractions.map((a) => ({ p, a })))
       .filter(
         ({ p, a }) =>
           (!kind || a.kind === kind) &&
-          [p.name, a.name, a.description]
-            .join(" ")
-            .toLowerCase()
-            .includes(q.toLowerCase()),
+          (!state || p.states.includes(state)) && (!park || p.id===park) &&
+          (!trail || matchesTrail(a,trail)) &&
+          (!status || (status==='saved' ? all.some(e=>e.kind==='saved' && e.parkId===p.id) : visits(all).some(v=>v.parkId===p.id && v.experience==='visited'))) &&
+          normalizeSearch([p.name,...p.states.map(s=>stateNames[s]??s),a.name,a.description,...(a.tags??[])].join(' ')).includes(normalizeSearch(q)),
       );
   return (
     <>
@@ -1409,26 +1431,29 @@ function Discover() {
           }}
         >
           <option value="">All types</option>
-          {[
-            "trail",
-            "visitor-center",
-            "overlook",
-            "historic-site",
-            "waterfall",
-            "scenic-drive",
-            "place",
-          ].map((k) => (
+          {[...new Set(r.units.flatMap(p=>p.attractions.map(a=>a.kind)))].sort().map((k) => (
             <option key={k}>{k}</option>
           ))}
         </select>
       </Field>
+      <div className="np-filters">
+       <Field label="Attraction park"><select value={park} onChange={e=>{setPark(e.target.value);setLimit(30)}}><option value="">All parks and affiliated areas</option>{r.units.filter(p=>p.attractions.length).map(p=><option key={p.id} value={p.id}>{p.name}{p.classification==='affiliated' ? ' · affiliated' : ''}</option>)}</select></Field>
+       <Field label="Attraction state or territory"><select value={state} onChange={e=>{setState(e.target.value);setLimit(30)}}><option value="">All locations</option>{Object.entries(stateNames).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></Field>
+       <Field label="Trail attributes"><select value={trail} onChange={e=>{setTrail(e.target.value);setLimit(30)}}><option value="">Any reference attributes</option>{trailFilters.map(x=><option key={x}>{x}</option>)}</select></Field>
+       <Field label="Attraction personal records"><select value={status} onChange={e=>{setStatus(e.target.value);setLimit(30)}}><option value="">Any visit or saved status</option><option value="visited">Visited parks</option><option value="saved">Saved parks</option></select></Field>
+      </div>
+      <button onClick={()=>{setQ('');setKind('');setState('');setPark('');setTrail('');setStatus('');setLimit(30)}}>Reset attraction filters</button>
       <p role="status">{items.length} sourced matches</p>
+      {!items.length && <p>No sourced attractions match these filters. Missing trail attributes are excluded; broaden your filters or read the park's official hiking guide.</p>}
       <div className="np-grid">
         {items.slice(0, limit).map(({ p, a }) => (
           <article className="np-card" key={p.id + a.id}>
             <h3>{a.name}</h3>
             <a href={url("park/" + p.id)}>{p.name}</a>
             <p>{a.description}</p>
+            {a.length && <p>{a.length.value} {a.length.unit} · {a.length.method}</p>}
+            {(a.routeType || a.difficulty) && <p>{[a.routeType,a.difficulty].filter(Boolean).join(' · ')}</p>}
+            {a.accessibility && <p>{a.accessibility}</p>}
             <Link href={a.source} label="Official source" />
           </article>
         ))}

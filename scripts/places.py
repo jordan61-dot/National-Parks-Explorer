@@ -20,7 +20,7 @@ def main():
    if not title or re.search(r'page not found|404|access denied',title,re.I):return url,{'error':'No verified title'}
    return url,dict(title=title,text=text if len(text.split())>10 else '',retrievedAt=datetime.datetime.now(datetime.timezone.utc).isoformat())
   except Exception as e:return url,{'error':type(e).__name__}
- with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+ with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
   for i,(url,page) in enumerate(pool.map(collect,urls),1):
    places[url]=page
    if i%25==0:write(path,places);print(f'Places {i}/{len(urls)}',flush=True)

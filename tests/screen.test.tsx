@@ -3,6 +3,7 @@ import React from 'react';
 import { afterEach, expect, it, vi } from 'vitest';
 import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import axe from 'axe-core';
 import { createScreen } from '../src/screen';
 import { entities, newVisit, Repository, validSnapshot, visits, type Stop } from '../src/domain';
 import type { Host, Snapshot, Store } from '../src/host';
@@ -85,4 +86,19 @@ it('reports failed writes and preserves the current draft for retry',async()=>{
  await u.click(screen.getByRole('button',{name:'Save visit'}));await screen.findByRole('alert');
  expect((screen.getByLabelText('Personal notes') as HTMLTextAreaElement).value).toBe('Keep this draft');expect(v.store.data.records).toHaveLength(0);
  await u.click(screen.getByRole('button',{name:'Save visit'}));await waitFor(()=>expect(v.store.data.records).toHaveLength(1));
+});
+it('combines region and evidence-based trail filters and resets empty results',async()=>{
+ const u=userEvent.setup();setup('catalog');await screen.findByLabelText('Region');
+ await u.selectOptions(screen.getByLabelText('Region'),'West');expect(screen.getByText('0 matching places')).toBeTruthy();
+ await u.click(screen.getByRole('button',{name:'Reset filters'}));expect(screen.getByText('1 matching places')).toBeTruthy();
+ await u.selectOptions(screen.getByLabelText('Trail discovery'),'Waterfalls');expect(screen.getByText('0 matching places')).toBeTruthy();
+ expect(screen.getByText(/structured information is missing/)).toBeTruthy();
+});
+it('passes available automated accessibility rules on catalog, profile and attraction filters',async()=>{
+ const v=setup('catalog');await screen.findByLabelText('Search parks');
+ for(const route of ['catalog','park/test-park','discover']){
+  v.go(route);await screen.findByRole('heading',{name:route==='catalog' ? 'Park encyclopedia' : route==='discover' ? 'Attractions & trails' : 'Synthetic Park'});
+  const result=await axe.run(v.container,{rules:{'color-contrast':{enabled:false},region:{enabled:false}}});
+  expect(result.violations.map(x=>({id:x.id,nodes:x.nodes.map(n=>n.target)}))).toEqual([]);
+ }
 });

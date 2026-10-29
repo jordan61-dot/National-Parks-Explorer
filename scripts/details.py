@@ -50,7 +50,7 @@ def main():
    return url,dict(description=max([p.description,a.excerpt()],key=len),links=[link for link in p.links if any(t in link[0] for t in ['/planyourvisit/','/learn/historyculture/','/learn/nature/'])],retrievedAt=datetime.datetime.now(datetime.timezone.utc).isoformat())
   except Exception as e:return url,{**old,'error':type(e).__name__}
  if '--details-only' not in sys.argv:
-  with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+  with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
    for i,(url,page) in enumerate(pool.map(home,sorted(pages)),1):
     pages[url]=page
     if i%25==0:write(path,pages);print(f'Homepages {i}/{len(pages)}',flush=True)
@@ -73,7 +73,7 @@ def main():
     if href.startswith('https://www.nps.gov/places/') and href not in seen and title:seen.add(href);links.append({'url':href,'title':title})
    return url,dict(title=clean(a.title),text=text,retrievedAt=datetime.datetime.now(datetime.timezone.utc).isoformat(),lastUpdated=clean(updated[1]) if updated else None,places=links)
   except Exception as e:return url,{**old.get(url,{}),'error':type(e).__name__}
- with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+ with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
   for i,(url,page) in enumerate(pool.map(collect,urls),1):
    data[url]=page
    if i%25==0:write(path,data);print(f'Details {i}/{len(urls)}',flush=True)

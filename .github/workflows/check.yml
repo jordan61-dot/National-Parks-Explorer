@@ -22,4 +22,5 @@ jobs:
       - run: npm test
       - run: npm run test:compiler
       - run: npm run reference:build
+      - run: python scripts/validate.py
       - run: git diff --exit-code -- src/data

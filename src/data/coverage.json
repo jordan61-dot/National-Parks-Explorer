@@ -4,18 +4,23 @@
   "entries": 467,
   "descriptions": 437,
   "locations": 429,
-  "entriesWithArticles": 435,
-  "articleSections": 1858,
-  "attractions": 156,
+  "entriesWithArticles": 436,
+  "articleSections": 2375,
+  "attractions": 261,
   "byTopic": {
-    "History & culture": 378,
-    "Nature & geology": 296,
-    "Accessibility": 409,
+    "History & culture": 385,
+    "Nature & geology": 297,
+    "Accessibility": 410,
     "Directions & access": 426,
-    "Activities & trails": 349
+    "Activities & trails": 350
   },
-  "attemptedArticlePages": 2400,
-  "articlePageErrors": 188,
-  "attemptedPlacePages": 201,
-  "verifiedPlaceTitles": 201
+  "attemptedArticlePages": 2700,
+  "articlePageErrors": 189,
+  "attemptedPlacePages": 238,
+  "verifiedPlaceTitles": 238,
+  "parksWithAttractions": 65,
+  "structuredTrails": 20,
+  "licensedPhotographs": 0,
+  "historyMilestones": 21,
+  "duplicateAttractionSourcesWithinPark": 0
 }

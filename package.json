@@ -1,6 +1,6 @@
 {
   "name": "@explorer/national-parks",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "license": "MIT",
   "exports": {
@@ -17,6 +17,7 @@
     "@testing-library/user-event": "14.6.1",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
+    "axe-core": "4.14.0",
     "fake-indexeddb": "6.2.4",
     "jsdom": "26.1.0",
     "react": "19.2.0",
@@ -28,6 +29,7 @@
     "check": "tsc --noEmit",
     "test": "vitest run",
     "reference:build": "python scripts/compile.py",
+    "reference:validate": "python scripts/validate.py",
     "reference:refresh": "python scripts/compile.py --refresh",
     "reference:details": "python scripts/details.py",
     "test:compiler": "python -m unittest discover -s scripts -p \"test_*.py\""

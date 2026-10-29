@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib.request import Request,urlopen
 from urllib.parse import urlparse,urljoin
 from html.parser import HTMLParser
-from enrichment import enrich,TOPICS
+from enrichment import enrich,supplement,TOPICS
 ROOT=Path(__file__).resolve().parents[1]; E=ROOT/'scripts/evidence'; E.mkdir(exist_ok=True)
 ROSTER='https://www.nps.gov/aboutus/national-park-system.htm'
 POINTS='https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json'
@@ -79,6 +79,7 @@ def main():
  points=json.loads((E/'points.json').read_text()).get('features',[]) if (E/'points.json').exists() else []
  details=json.loads((E/'details.json').read_text()) if (E/'details.json').exists() else {}
  places=json.loads((E/'places.json').read_text()) if (E/'places.json').exists() else {}
+ supplemental=json.loads((E/'supplemental.json').read_text()) if (E/'supplemental.json').exists() else {}
  for p in parks:
   page=pages.get(p['website'],{});home_url='https://www.nps.gov/'+p['parkCode']+'/index.htm'
   home=pages.get(home_url,{})
@@ -101,6 +102,7 @@ def main():
      seen_attractions.add(href);p['attractions'].append(dict(id=slug(title),name=title,kind='trail',description='Listed by the official park hiking guide. Check the linked trail page for route details and current access.',source=href))
    p['sources'].append(dict(url='https://www.nps.gov/'+p['parkCode']+'/planyourvisit/hiking.htm',label='Official hiking guide; individual trails linked'))
   enrich(p,page,details,slug,places)
+  supplement(p,supplemental)
   exact=[f for f in points if slug(f['attributes'].get('UNIT_NAME',''))==slug(p['name'])]
   matching=exact or [f for f in points if p['parkCode'] and f['attributes'].get('UNIT_CODE','').lower()==p['parkCode']]
   if len(matching)==1:
@@ -113,5 +115,23 @@ def main():
  (ROOT/'src/data').mkdir(exist_ok=True);(ROOT/'src/data/parks.json').write_text(json.dumps(result,ensure_ascii=False,separators=(',',':'))+'\n')
  coverage=dict(system=total,affiliated=counts['Affiliated Areas'],entries=len(parks),descriptions=sum(bool(p['description']) for p in parks),locations=sum('location' in p for p in parks),entriesWithArticles=sum(bool(p['articles']) for p in parks),articleSections=sum(len(p['articles']) for p in parks),attractions=sum(len(p['attractions']) for p in parks),byTopic={topic:sum(any(a['topic']==topic for a in p['articles']) for p in parks) for topic in TOPICS},attemptedArticlePages=len(details),articlePageErrors=sum(bool(p.get('error')) for p in details.values()),attemptedPlacePages=len(places),verifiedPlaceTitles=sum(bool(p.get('title')) for p in places.values()))
  (ROOT/'src/data/coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2)+'\n')
+ coverage.update(parksWithAttractions=sum(bool(p['attractions']) for p in parks),structuredTrails=sum(a['kind']=='trail' and any(k in a for k in ['length','difficulty','accessibility']) for p in parks for a in p['attractions']),licensedPhotographs=0,historyMilestones=sum(len(p.get('history',[])) for p in parks),duplicateAttractionSourcesWithinPark=sum(len(p['attractions'])-len({a['source'] for a in p['attractions']}) for p in parks))
+ (ROOT/'src/data/coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2)+'\n')
+ # Intern repeated long strings for the shipped chunk; readable source stays intact.
+ from collections import Counter
+ strings=Counter()
+ def count(v):
+  if isinstance(v,str) and len(v)>=60:strings[v]+=1
+  elif isinstance(v,dict):
+   for x in v.values():count(x)
+  elif isinstance(v,list):
+   for x in v:count(x)
+ count(result);table=sorted(s for s,n in strings.items() if n>1);indices={s:i for i,s in enumerate(table)}
+ def pack(v):
+  if isinstance(v,str) and v in indices:return {'$':indices[v]}
+  if isinstance(v,dict):return {k:pack(x) for k,x in v.items()}
+  if isinstance(v,list):return [pack(x) for x in v]
+  return v
+ (ROOT/'src/data/compact.json').write_text(json.dumps(dict(strings=table,reference=pack(result)),ensure_ascii=False,separators=(',',':'))+'\n')
  print(json.dumps(coverage))
 if __name__=='__main__':main()

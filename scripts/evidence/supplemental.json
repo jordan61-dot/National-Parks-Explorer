@@ -1,0 +1,765 @@
+{
+  "retrievalDatePrecision": "day",
+  "retrievalTimezone": "America/New_York",
+  "parks": {
+    "neri": {
+      "parkId": "new-river-gorge-national-park-and-preserve",
+      "articles": [
+        {
+          "topic": "History & culture",
+          "title": "Railroads, coal towns, and lives along the New River",
+          "text": "The gorge preserves the connected histories of Indigenous communities, settlers, railroad workers, miners, and timber workers. Rail transport helped coal and logging towns grow, while later industrial decline left places such as Thurmond as evidence of those changing economies. Oral histories and surviving town sites help explain the people behind the industrial landscape.",
+          "source": "https://www.nps.gov/neri/learn/historyculture/index.htm",
+          "retrievedAt": "2026-10-28",
+          "lastUpdated": "2025-09-07",
+          "contentKind": "summary",
+          "evidence": "the ensuing boom and bust of the coal mining and logging industries",
+          "pageMetadata": {"title": "History & Culture - New River Gorge National Park & Preserve", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Nature & geology",
+          "title": "A gorge that connects and divides habitats",
+          "text": "The New River cuts through Appalachian rock formations and a varied forest landscape. Riverbanks, cliffs, plateaus, and sheltered coves create different habitats within the gorge. NPS describes the river corridor as a possible route for southern species moving into West Virginia, while the gorge can also limit some species' movement from east to west.",
+          "source": "https://www.nps.gov/neri/learn/nature/index.htm",
+          "retrievedAt": "2026-10-28",
+          "lastUpdated": "2021-01-27",
+          "contentKind": "summary",
+          "evidence": "provides a geographical barrier that limits the east-west distribution of other species",
+          "pageMetadata": {"title": "Nature & Science - New River Gorge National Park & Preserve", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Indigenous heritage",
+          "title": "Indigenous life before written accounts",
+          "text": "Archaeological evidence in the New River Gorge reaches far earlier than European written accounts. Clovis points document early hunting communities; later pottery, tools, seeds, and village remains show farming settlements linked by trails. These places preserve a long sequence of Indigenous life, and leaving artifacts undisturbed protects the context needed to understand it.",
+          "source": "https://www.nps.gov/neri/learn/historyculture/arrowheads-of-the-past-and-present.htm",
+          "retrievedAt": "2026-10-28",
+          "lastUpdated": "2021-01-26",
+          "contentKind": "summary",
+          "evidence": "The oldest artifacts from New River Gorge are Clovis points.",
+          "pageMetadata": {"title": "Arrowheads of the Past and Present", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ],
+      "history": [
+        {
+          "date": "1978-11-10",
+          "event": "New River Gorge became a National Park System unit as New River Gorge National River.",
+          "kind": "initial-protection",
+          "source": "https://www.nps.gov/articles/nps-geodiversity-atlas-new-river-gorge-national-river-west-virginia.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "Established as an NPS park unit on November 10, 1978",
+          "pageMetadata": {"title": "NPS Geodiversity Atlas—New River Gorge National River, West Virginia", "publisher": "National Park Service", "contentType": "text/html", "section": "Introduction"}
+        },
+        {
+          "date": "2020-12-27",
+          "event": "New River Gorge National River was redesignated New River Gorge National Park and Preserve under Public Law 116-260.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/aboutus/recent-changes.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "December 27, 2020",
+          "pageMetadata": {"title": "Recent Changes to the National Park System", "publisher": "National Park Service", "contentType": "text/html", "section": "Changes to Unit Designations"}
+        }
+      ],
+      "attractions": [
+        {
+          "name": "Endless Wall Trail",
+          "source": "https://www.nps.gov/places/endless-wall-trail.htm",
+          "description": "A forest walk crosses Fern Creek and follows the gorge rim to cliffside views, including Diamond Point. The published trail distance excludes the road walk needed to return between its two trailheads.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 2.4, "unit": "mi", "method": "NPS Length field: \"2.4 miles/3.86 km (One-way)\". Trail distance only; the separately described road return is excluded. No conversion or doubling."},
+          "difficulty": "Easy to Moderate",
+          "tags": ["hiking", "forest", "gorge views", "overlook", "historic"],
+          "evidence": "Easy to Moderate; Diamond Point Overlook; Nuttallburg Mine; rich forest",
+          "pageMetadata": {"title": "Endless Wall Trail", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2022-07-13"}
+        },
+        {
+          "name": "Long Point Trail",
+          "source": "https://www.nps.gov/places/long-point-trail.htm",
+          "description": "The trail crosses fields and forest before a steeper final approach to a rock outcrop overlooking the gorge and New River Gorge Bridge. The viewpoint has unprotected cliff edges.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "difficulty": "Moderate",
+          "tags": ["hiking", "forest", "bridge views", "overlook"],
+          "evidence": "Moderate; 1.6 miles/1.29 km (One-way); traverses field and forest; Long Point provides an outstanding overlook",
+          "pageMetadata": {"title": "Long Point Trail", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2022-04-30"}
+        },
+        {
+          "name": "Sandstone Falls Boardwalk",
+          "source": "https://www.nps.gov/places/sandstone-falls-boardwalk.htm",
+          "description": "Bridges and boardwalks connect river islands and viewing decks beside Sandstone Falls. The route passes a riverside flatrock plant community associated with powerful Appalachian rivers.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "difficulty": "Easy",
+          "accessibility": "NPS describes the boardwalk as accessible; it crosses bridges to islands and observation decks.",
+          "tags": ["hiking", "boardwalk", "waterfall"],
+          "evidence": "Easy; Hiking and accessible; 0.2 miles/0.32 km (One-way); A 0.25 mile",
+          "pageMetadata": {"title": "Sandstone Falls Boardwalk", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2022-05-03"}
+        }
+      ]
+    },
+    "cuva": {
+      "parkId": "cuyahoga-valley-national-park",
+      "articles": [
+        {
+          "topic": "History & culture",
+          "title": "Canal, railway, and the campaign to preserve a valley",
+          "text": "The Ohio & Erie Canal and Valley Railway strengthened connections between valley farms and the growing cities of Cleveland and Akron. The valley also became a place for urban residents to spend leisure time. In the twentieth century, residents and political leaders pushed for federal protection as suburban development threatened its landscape.",
+          "source": "https://www.nps.gov/cuva/learn/historyculture/index.htm",
+          "retrievedAt": "2026-10-28",
+          "lastUpdated": "2026-04-28",
+          "contentKind": "summary",
+          "evidence": "Local residents and political leaders worked to stop suburban development that threatened the valley.",
+          "pageMetadata": {"title": "History & Culture - Cuyahoga Valley National Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Nature & geology",
+          "title": "Habitats along the crooked river",
+          "text": "Riverbank habitat, deciduous forest, wetlands, working farmland, and old fields form Cuyahoga Valley's habitat mosaic. The park sits where the Appalachian Plateau meets the Central Lowlands, in terrain reshaped by repeated glaciations. Steep ravines carry tributaries from the uplands toward the Cuyahoga River.",
+          "source": "https://www.nps.gov/cuva/learn/nature/index.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "the Appalachian Plateau and the Central Lowlands",
+          "pageMetadata": {"title": "Nature & Science - Cuyahoga Valley National Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Indigenous heritage",
+          "title": "Native communities across generations",
+          "text": "Indigenous people in the valley adapted from mobile hunting to seasonal camps and more settled communities, drawing food and materials from forests and waterways. Warfare and displacement profoundly changed those communities. Native people continue to live in the Cleveland region, maintain cultural traditions, and participate in the park's relationships with associated Tribes.",
+          "source": "https://www.nps.gov/cuva/learn/native-american-heritage.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "Those who live here now work together to preserve and celebrate their cultures.",
+          "pageMetadata": {"title": "Native American Heritage", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ],
+      "history": [
+        {
+          "date": "1974-12-27",
+          "event": "Enabling legislation authorized Cuyahoga Valley National Recreation Area under Public Law 93-555.",
+          "kind": "initial-protection",
+          "source": "https://www.nps.gov/cuva/learn/news/presskit.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "Enabling Legislation: December 27, 1974",
+          "pageMetadata": {"title": "Press Kit - Cuyahoga Valley National Park", "publisher": "National Park Service", "contentType": "text/html", "section": "Park Creation"}
+        },
+        {
+          "date": "2000-10-11",
+          "event": "Name-change legislation redesignated the recreation area as Cuyahoga Valley National Park under Public Law 106-291.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/cuva/learn/news/presskit.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "Name Change Legislation: October 11, 2000",
+          "pageMetadata": {"title": "Press Kit - Cuyahoga Valley National Park", "publisher": "National Park Service", "contentType": "text/html", "section": "Park Creation"}
+        }
+      ],
+      "attractions": [
+        {
+          "name": "Brandywine Gorge Loop",
+          "source": "https://www.nps.gov/thingstodo/hike-the-brandywine-gorge-loop.htm",
+          "description": "From the falls trailhead, this loop descends into the gorge, crosses the creek on a footbridge, and returns by the falls viewing boardwalk. A lower viewing deck requires additional steps.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "routeType": "loop",
+          "accessibility": "The gorge loop is not wheelchair accessible: its unpaved surface is hilly and rocky in places. A separate short path reaches the upper boardwalk viewing area for wheelchair users.",
+          "tags": ["hiking", "waterfall", "gorge", "geology"],
+          "evidence": "This trail is not wheelchair accessible.; geology",
+          "pageMetadata": {"title": "Hike the Brandywine Gorge Loop", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2025-07-25"}
+        },
+        {
+          "name": "Ledges Trail",
+          "source": "https://www.nps.gov/cuva/the-ledges.htm",
+          "description": "The trail follows the Ledges rock formations and connects with other routes in the Virginia Kendall area. An overlook and the exposed Sharon Conglomerate are features of this landscape.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "accessibility": "NPS states that the trail is not accessible to visitors with mobility impairments.",
+          "tags": ["hiking", "rock formations", "overlook", "geology"],
+          "evidence": "The trail is not accessible to visitors with mobility impairments.; creation out of Sharon Conglomerate",
+          "pageMetadata": {"title": "The Ledges", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2024-11-08"}
+        }
+      ]
+    },
+    "acad": {
+      "parkId": "acadia-national-park",
+      "articles": [
+        {
+          "topic": "History & culture",
+          "title": "Civic groups and the creation of Acadia",
+          "text": "Local improvement groups built trails and responded to development pressures as tourism grew around Mount Desert Island. Conservation organizations and private donors then assembled land for public protection. The park developed through the Sieur de Monts, Lafayette, and Acadia names; NPS also acknowledges that this conservation history rests on Indigenous displacement.",
+          "source": "https://www.nps.gov/acad/learn/historyculture/founding.htm",
+          "retrievedAt": "2026-10-28",
+          "lastUpdated": "2023-12-21",
+          "contentKind": "summary",
+          "evidence": "these groups built an island wide trail system",
+          "pageMetadata": {"title": "Founding Acadia", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Nature & geology",
+          "title": "Rocky coast, forest transition, and migration",
+          "text": "Acadia combines rocky shorelines and exposed summits with lakes, streams, wetlands, forests, and meadows. Its position between northern and southern forest regions places some plant communities near the edges of their ranges. The park also provides resting and feeding habitat for migrating birds and bats along the Atlantic flyway.",
+          "source": "https://www.nps.gov/acad/learn/nature/index.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "Acadia is within the transition zone between southern and northern forests",
+          "pageMetadata": {"title": "Nature - Acadia National Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Indigenous heritage",
+          "title": "Acadia in the Wabanaki homeland",
+          "text": "Acadia remains part of the homeland of Wabanaki peoples, including Maliseet, Mi'kmaq, Passamaquoddy, and Penobscot communities. Generations traveled by land and birchbark canoe, gathering food and maintaining connections around Mount Desert Island. Tribal governments continue relationships with the park, and work on traditional plant gathering supports renewed cultural practices in these places.",
+          "source": "https://www.nps.gov/acad/learn/historyculture/wabanaki.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "Tribal governments have a government-to-government relationship with Acadia National Park.",
+          "pageMetadata": {"title": "Wabanaki Nations", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ],
+      "history": [
+        {
+          "date": "1916",
+          "event": "President Woodrow Wilson created Sieur de Monts National Monument following land donations for federal protection.",
+          "kind": "initial-protection",
+          "source": "https://www.nps.gov/acad/learn/historyculture/founding.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "in 1916 President Wilson announced the creation of Sieur de Monts National Monument",
+          "pageMetadata": {"title": "Founding Acadia", "publisher": "National Park Service", "contentType": "text/html", "section": "Federal Designation and Beyond"}
+        },
+        {
+          "date": "1919",
+          "event": "Lafayette National Park was established, and George B. Dorr became its first superintendent.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/acad/learn/historyculture/founding.htm",
+          "retrievedAt": "2026-10-28",
+          "pageMetadata": {"title": "Founding Acadia", "publisher": "National Park Service", "contentType": "text/html", "section": "Federal Designation and Beyond"}
+        },
+        {
+          "date": "1929",
+          "event": "The name Acadia National Park was adopted when Congress authorized acceptance of land on the Schoodic Peninsula.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/acad/learn/historyculture/founding.htm",
+          "retrievedAt": "2026-10-28",
+          "pageMetadata": {"title": "Founding Acadia", "publisher": "National Park Service", "contentType": "text/html", "section": "Federal Designation and Beyond"}
+        }
+      ],
+      "attractions": [
+        {
+          "name": "Jordan Pond Path",
+          "source": "https://www.nps.gov/thingstodo/hike-jordan-pond-path.htm",
+          "description": "This shoreline loop circles Jordan Pond below surrounding mountains and the Bubbles. Forest sections include boardwalks, rocks, and footbridges; the western half is more difficult than the eastern half.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 3.3, "unit": "mi", "method": "NPS Distance bullet: \"Distance: 3.3 mile loop\". Full pond circuit, not a one-way shore segment; no conversion."},
+          "routeType": "loop",
+          "accessibility": "Uneven footing includes boardwalks, rocks, and footbridges. NPS warns that the western half can be challenging for people with mobility impairments.",
+          "tags": ["hiking", "pond", "forest", "geology"],
+          "evidence": "significantly more difficult than the eastern half; valley carved out by the retreat of glaciers",
+          "pageMetadata": {"title": "Hike Jordan Pond Path", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "name": "Ship Harbor Trail",
+          "source": "https://www.nps.gov/thingstodo/hike-ship-harbor-trail.htm",
+          "description": "The route passes a narrow cove, rocky headland, spruce woods, and coastal bird habitat. Its two connected loops form a figure eight near the shore.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 1.3, "unit": "mi", "method": "NPS introduction: \"Ship Harbor Trail is a figure-8 trail covering 1.3 miles\". Entire figure-eight route; no conversion or doubling."},
+          "routeType": "figure-eight",
+          "accessibility": "NPS calls the first loop ADA compliant. The second has occasional steps and plank trail. A drop at the trail entrance may require wheelchair assistance; trailhead vault toilets are not accessible.",
+          "tags": ["hiking", "coast", "birding", "forest"],
+          "evidence": "The first loop is ADA compliant.; spruce woods",
+          "pageMetadata": {"title": "Hike Ship Harbor Trail", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ]
+    },
+    "yose": {
+      "parkId": "yosemite-national-park",
+      "articles": [
+        {
+          "topic": "History & culture",
+          "title": "The Yosemite Grant and the later national park",
+          "text": "The Yosemite Grant protected Yosemite Valley and the Mariposa Grove under California's administration before the surrounding national park was created. The grant lands joined the federal park later. These were separate stages in Yosemite's protection, so the national park designation date does not mark the beginning of all public protection here.",
+          "source": "https://www.nps.gov/yose/learn/news/yose120.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "The Grant was administered by the State of California until 1906",
+          "pageMetadata": {"title": "Yosemite National Park Celebrates 120th Birthday on October 1", "publisher": "National Park Service", "contentType": "text/html", "publishedAt": "2010-09-20", "archived": true}
+        },
+        {
+          "topic": "Nature & geology",
+          "title": "Granite, uplift, and ice",
+          "text": "Yosemite's landscape records both the formation of granitic rocks and their later exposure and erosion. Uplift and tilting helped build the Sierra Nevada, while glaciers, flowing water, and changing temperatures shaped the rock into valleys, domes, cliffs, and waterfalls. Today's landmarks preserve evidence of several interacting geological processes.",
+          "source": "https://www.nps.gov/yose/learn/nature/geology.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "Later came uplift, erosion, and glaciation of the rocks",
+          "pageMetadata": {"title": "Geology - Yosemite National Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Indigenous heritage",
+          "title": "Surviving communities and ancestral connections",
+          "text": "Some Ahwahneechee returned to Yosemite Valley and rebuilt small communities, joined by survivors from other Tribes. NPS identifies seven traditionally associated Tribes and groups with ancestral connections to the park, including Southern Sierra Miwuk, Paiute, Mono, Chukchansi, and Me-Wuk communities. Those connections continue through the park's work with associated Tribes today.",
+          "source": "https://www.nps.gov/yose/learn/historyculture/surviving-communities.htm",
+          "retrievedAt": "2026-10-28",
+          "lastUpdated": "2026-10-26",
+          "contentKind": "summary",
+          "evidence": "Some Ahwahneechee slowly returned and established small communities in the Valley.",
+          "pageMetadata": {"title": "Surviving Communities", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ],
+      "history": [
+        {
+          "date": "1864-06-30",
+          "event": "President Abraham Lincoln signed the Yosemite Grant, setting aside Yosemite Valley and the Mariposa Grove for public use and recreation under California's administration.",
+          "kind": "initial-protection",
+          "source": "https://www.nps.gov/yose/learn/news/yose120.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "June 30, 1864",
+          "pageMetadata": {"title": "Yosemite National Park Celebrates 120th Birthday on October 1", "publisher": "National Park Service", "contentType": "text/html", "archived": true}
+        },
+        {
+          "date": "1890-10-01",
+          "event": "An Act of Congress established Yosemite National Park.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/yose/learn/news/yose120.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "October 1, 1890",
+          "pageMetadata": {"title": "Yosemite National Park Celebrates 120th Birthday on October 1", "publisher": "National Park Service", "contentType": "text/html", "archived": true}
+        },
+        {
+          "date": "1906",
+          "event": "Yosemite Valley and the Mariposa Grove were transferred from California to the federal government and included in Yosemite National Park.",
+          "kind": "historical-event",
+          "source": "https://www.nps.gov/yose/learn/news/yose120.htm",
+          "retrievedAt": "2026-10-28",
+          "pageMetadata": {"title": "Yosemite National Park Celebrates 120th Birthday on October 1", "publisher": "National Park Service", "contentType": "text/html", "archived": true}
+        }
+      ],
+      "attractions": [
+        {
+          "name": "Lower Yosemite Fall Trail",
+          "source": "https://www.nps.gov/yose/planyourvisit/lowerfalltrail.htm",
+          "description": "A paved circuit approaches the base of Lower Yosemite Fall and offers views of the falls and Yosemite Creek. Spray is strongest during high spring and early summer flows.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 1, "unit": "mi", "method": "NPS Trail Overview: \"Distance: 1 mile (1.6 km) loop\". Entire loop; no conversion or doubling."},
+          "difficulty": "Easy",
+          "routeType": "loop",
+          "accessibility": "The eastern portion of the paved loop is wheelchair accessible when free of ice and snow; this statement does not apply to the entire loop.",
+          "tags": ["hiking", "waterfall", "paved"],
+          "evidence": "This eastern portion of this loop trail is wheelchair accessible",
+          "pageMetadata": {"title": "Lower Yosemite Fall Trail", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "name": "Cook's Meadow Loop",
+          "source": "https://www.nps.gov/yose/planyourvisit/cooksmeadowtrail.htm",
+          "description": "Paths and boardwalks cross the Yosemite Valley meadow landscape, with views of Yosemite Falls, Half Dome, Glacier Point, and Sentinel Rock. The circuit includes road crossings.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 1, "unit": "mi", "method": "NPS Trail Overview: \"Distance: 1 mile (1.6 km) loop\". Entire loop; no conversion or doubling."},
+          "difficulty": "Easy",
+          "routeType": "loop",
+          "accessibility": "NPS describes the trail as wheelchair accessible when not covered in snow. Boardwalks can be slippery when wet or frosted.",
+          "tags": ["hiking", "meadow", "boardwalk", "waterfall"],
+          "evidence": "This trail is wheelchair accessible (when not covered in snow).; views of Yosemite Falls",
+          "pageMetadata": {"title": "Cook's Meadow Loop", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "name": "Mirror Lake Trail (lake and back)",
+          "source": "https://www.nps.gov/yose/planyourvisit/mirrorlaketrail.htm",
+          "description": "The shorter Mirror Lake outing follows a paved service road to the lake below Tenaya Canyon. Water is usually fullest in spring and early summer; the separate longer circuit continues beyond the paved section.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 2, "unit": "mi", "method": "NPS Trail Overview: \"Distance: 2 miles (3.2 km) round trip to lake and back\". The lake-and-back option only, excluding the separately listed five-mile loop."},
+          "difficulty": "Easy to Moderate",
+          "routeType": "out-and-back",
+          "tags": ["hiking", "lake", "canyon views"],
+          "evidence": "The first mile of this trail is a paved service road",
+          "pageMetadata": {"title": "Mirror Lake Trail", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ]
+    },
+    "zion": {
+      "parkId": "zion-national-park",
+      "articles": [
+        {
+          "topic": "History & culture",
+          "title": "From Mukuntuweap to Zion National Park",
+          "text": "Federal protection began with Mukuntuweap National Monument. The monument was later enlarged and renamed Zion before receiving national park status. A separate neighboring Zion National Monument was subsequently created and eventually combined with the park. These changes reflect several stages of protection rather than a single founding event.",
+          "source": "https://www.nps.gov/im/ncpn/bpd-zion.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "The park and monument were combined by an Act of Congress",
+          "pageMetadata": {"title": "Biophysical Description of Zion National Park", "publisher": "National Park Service", "contentType": "text/html", "section": "Park History and Purpose", "basis": "Summary of a monitoring plan published in 2004; used here for historical events only."}
+        },
+        {
+          "topic": "Nature & geology",
+          "title": "Water and elevation create Zion's habitats",
+          "text": "Zion's plateaus and sandstone canyons support desert, riverbank, pinyon-juniper, and conifer woodland communities. Springs and seeps sustain hanging gardens on canyon walls. Differences in elevation and the meeting of neighboring ecological regions help explain why dry slopes, lush river corridors, and cooler forests occur close together.",
+          "source": "https://www.nps.gov/zion/learn/nature/index.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "Desert, riparian (river bank), pinyon-juniper, and conifer woodland communities",
+          "pageMetadata": {"title": "Nature & Science - Zion National Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Indigenous heritage",
+          "title": "Communities and living knowledge in Zion",
+          "text": "Zion's archaeological record includes homes and communities associated with Archaic peoples, Ancestral Puebloans, and Southern Paiute people. Descendant communities remain in the Great Basin and Colorado Plateau. Their family records and oral traditions continue to contribute to understanding the canyon's human history alongside the material evidence preserved in the park.",
+          "source": "https://www.nps.gov/zion/learn/historyculture/archeology-in-zion.htm",
+          "retrievedAt": "2026-10-28",
+          "lastUpdated": "2026-06-29",
+          "contentKind": "summary",
+          "evidence": "These communities' descendants still live in the Great Basin and Colorado Plateau",
+          "pageMetadata": {"title": "Archeology in Zion", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ],
+      "history": [
+        {
+          "date": "1909-07-31",
+          "event": "A presidential proclamation established Mukuntuweap National Monument, protecting the area that became Zion National Park.",
+          "kind": "initial-protection",
+          "source": "https://www.nps.gov/im/ncpn/bpd-zion.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "July 31, 1909",
+          "pageMetadata": {"title": "Biophysical Description of Zion National Park", "publisher": "National Park Service", "contentType": "text/html", "section": "Park History and Purpose"}
+        },
+        {
+          "date": "1918-03-18",
+          "event": "The monument was enlarged and renamed Zion National Monument.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/im/ncpn/bpd-zion.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "March 18, 1918",
+          "pageMetadata": {"title": "Biophysical Description of Zion National Park", "publisher": "National Park Service", "contentType": "text/html", "section": "Park History and Purpose"}
+        },
+        {
+          "date": "1919-11-19",
+          "event": "An Act of Congress established Zion National Park.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/im/ncpn/bpd-zion.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "November 19, 1919",
+          "pageMetadata": {"title": "Biophysical Description of Zion National Park", "publisher": "National Park Service", "contentType": "text/html", "section": "Park History and Purpose"}
+        }
+      ],
+      "attractions": [
+        {
+          "name": "Watchman Trail",
+          "source": "https://www.nps.gov/thingstodo/hike-watchman-trail.htm",
+          "description": "From the Zion Canyon Visitor Center, the trail follows the river before climbing sandy, rocky terrain to a viewpoint over lower Zion Canyon and Springdale. There are drop-offs along the route.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 3.3, "unit": "mi", "method": "NPS Duration text: \"Watchman trail is 3.3 miles (5.3 km) roundtrip.\" Published whole-hike distance; not derived from the separately assessed overlook and loop segments."},
+          "difficulty": "Moderate",
+          "routeType": "out-and-back",
+          "accessibility": "The unpaved route is sandy, rocky, and uneven, with drop-offs. NPS assesses the approach and overlook loop as separate segments with steps and steep grades.",
+          "tags": ["hiking", "overlook", "canyon views"],
+          "evidence": "moderate out-and-back hike",
+          "pageMetadata": {"title": "Watchman Trail", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "name": "Riverside Walk",
+          "source": "https://www.nps.gov/thingstodo/hike-riverside-walk.htm",
+          "description": "A paved path follows the Virgin River from the Temple of Sinawava into narrowing sandstone walls. It reaches the beginning of The Narrows; entering the river is a separate continuation.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "difficulty": "Easy",
+          "routeType": "out-and-back",
+          "accessibility": "Paving is irregular in places, minor drop-offs occur, and sand can make the concrete slippery. NPS reports steep sections; paving alone does not establish wheelchair suitability for the whole route.",
+          "tags": ["hiking", "river", "paved", "geology"],
+          "evidence": "paving is irregular in some sections and minor drop-offs are present; canyon carving, erosion",
+          "pageMetadata": {"title": "Riverside Walk", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2025-04-30", "accessibilityAssessedAt": "2025-02-24"}
+        },
+        {
+          "name": "Pa'rus Trail",
+          "source": "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm",
+          "description": "The main trail connects Zion Canyon Visitor Center with Canyon Junction along the Virgin River, offering Watchman views and interpretive exhibits. It is shared with bicycles and leashed pets.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "accessibility": "NPS describes the main route as wheelchair accessible. The optional unpaved connector to the Human History Museum is not designed for wheelchairs.",
+          "tags": ["hiking", "bicycling", "river", "paved", "geology"],
+          "evidence": "It is accessible for wheelchairs, pets on leashes, and bicycles.; geology",
+          "pageMetadata": {"title": "Pa'rus Trail", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2025-04-30", "accessibilityAssessedAt": "2025-01-13"}
+        }
+      ]
+    },
+    "cong": {
+      "parkId": "congaree-national-park",
+      "articles": [
+        {
+          "topic": "History & culture",
+          "title": "A refuge and a forest worth protecting",
+          "text": "Congaree's floodplain offered refuge to enslaved people who escaped plantations and built lives in the woods. Later, commercial logging removed old cypress before difficult access made operations unprofitable. Harry Hampton and subsequent conservation advocates helped turn renewed logging threats into a campaign for federal protection of the remaining forest.",
+          "source": "https://www.nps.gov/cong/learn/historyculture/history-culture.htm",
+          "retrievedAt": "2026-10-28",
+          "lastUpdated": "2026-01-07",
+          "contentKind": "summary",
+          "evidence": "served as a refuge",
+          "pageMetadata": {"title": "People in the Floodplain", "publisher": "National Park Service", "contentType": "text/html", "section": "A Refuge from Slavery; Champions Begin to Fall; Congaree Action Now"}
+        },
+        {
+          "topic": "Nature & geology",
+          "title": "Flood and fire shape different forests",
+          "text": "Floodwaters from the Congaree and Wateree Rivers spread sediment and nutrients through the bottomland forest. Small elevation differences help determine where wetlands, sloughs, oxbow lakes, and different tree communities occur. On higher ground, fire helps maintain upland pine forest, making both flooding and burning important ecological processes in the park.",
+          "source": "https://www.nps.gov/cong/learn/nature/index.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "defined by the presence of both flood and flame",
+          "pageMetadata": {"title": "Nature & Science - Congaree National Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Indigenous heritage",
+          "title": "The Congaree name and earlier floodplain communities",
+          "text": "The park and river take their name from the Congaree people of this region. Archaeological evidence documents earlier communities that moved from temporary camps toward villages and agriculture. The floodplain's Indigenous history therefore extends beyond the colonial accounts that recorded the Congaree name.",
+          "source": "https://www.nps.gov/cong/learn/historyculture/history-culture.htm",
+          "retrievedAt": "2026-10-28",
+          "lastUpdated": "2026-01-07",
+          "contentKind": "summary",
+          "evidence": "named for the Congaree people who once lived in this region",
+          "pageMetadata": {"title": "People in the Floodplain", "publisher": "National Park Service", "contentType": "text/html", "section": "Landscape of Culture; Earliest Residents"}
+        }
+      ],
+      "history": [
+        {
+          "date": "1917",
+          "event": "Commercial logging operations described in the park's floodplain history had ceased after extraction proved difficult and costly.",
+          "kind": "historical-event",
+          "source": "https://www.nps.gov/cong/learn/historyculture/history-culture.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "by 1917, logging operations had ceased",
+          "pageMetadata": {"title": "People in the Floodplain", "publisher": "National Park Service", "contentType": "text/html", "section": "Champions Begin to Fall"}
+        },
+        {
+          "date": "1976-10-18",
+          "event": "Congaree Swamp National Monument was authorized to protect the floodplain forest.",
+          "kind": "initial-protection",
+          "source": "https://www.nps.gov/articles/nps-geodiversity-atlas-congree-national-park.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "October 18, 1976",
+          "pageMetadata": {"title": "NPS Geodiversity Atlas—Congaree National Park, South Carolina", "publisher": "National Park Service", "contentType": "text/html", "section": "Introduction"}
+        },
+        {
+          "date": "2003-11-10",
+          "event": "Congaree Swamp National Monument was redesignated Congaree National Park.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/articles/nps-geodiversity-atlas-congree-national-park.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "November 10, 2003",
+          "pageMetadata": {"title": "NPS Geodiversity Atlas—Congaree National Park, South Carolina", "publisher": "National Park Service", "contentType": "text/html", "section": "Introduction"}
+        }
+      ],
+      "attractions": [
+        {
+          "name": "Boardwalk Loop",
+          "source": "https://www.nps.gov/cong/planyourvisit/boardwalk.htm",
+          "description": "A boardwalk circuit introduces the park's floodplain landscape. A self-guided tour uses numbered stops to explain natural and cultural resources, and benches are shown on the route maps.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 2.6, "unit": "mi", "method": "NPS Boardwalk Loop page: \"The 2.6 mile boardwalk\". Distance applies to the named boardwalk loop, using the page updated August 27, 2025; no conversion."},
+          "routeType": "loop",
+          "accessibility": "NPS describes the boardwalk's flat surface as accessible. This is a physical description, not a current construction or flood-status check.",
+          "tags": ["hiking", "boardwalk", "self-guided interpretation"],
+          "evidence": "The flat surface is accessible",
+          "pageMetadata": {"title": "Boardwalk Loop - Congaree National Park", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2025-08-27"}
+        },
+        {
+          "name": "Weston Lake Trail",
+          "source": "https://www.nps.gov/cong/planyourvisit/trail-information.htm",
+          "description": "This trail follows Cedar Creek views and a cypress-tupelo slough with exposed cypress knees. Like other low floodplain trails, it is subject to periodic flooding.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 4.5, "unit": "mi", "method": "NPS Weston Lake Trail (#3) entry: \"Round Trip Distance: 4.5 miles\". The page states mileages are approximate and assume all trails are passable; no conversion."},
+          "difficulty": "Moderate",
+          "tags": ["hiking", "creek", "floodplain forest", "forest"],
+          "evidence": "Weston Lake Trail (#3) - MODERATE; a cypress -tupelo slough",
+          "pageMetadata": {"title": "Trail Information - Congaree National Park", "publisher": "National Park Service", "contentType": "text/html", "section": "Weston Lake Trail (#3)"}
+        }
+      ]
+    },
+    "hocu": {
+      "parkId": "hopewell-culture-national-historical-park",
+      "articles": [
+        {
+          "topic": "History & culture",
+          "title": "From Mound City monument to a wider protected landscape",
+          "text": "The park began as Mound City Group National Monument. Later legislation added land at Hopeton and led to investigation of other earthwork sites. The national historical park designation expanded protection to additional complexes, preserving a wider record of the ceremonial and social traditions represented by these earthworks.",
+          "source": "https://www.nps.gov/hocu/learn/historyculture/index.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "evolved in part from the former Mound City Group National Monument",
+          "pageMetadata": {"title": "History & Culture - Hopewell Culture National Historical Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Nature & geology",
+          "title": "Restoring habitat around the earthworks",
+          "text": "Hopewell Culture's protected sites contain deciduous woods, former agricultural fields, river corridors, grasslands, and wetlands. Staff and volunteers monitor native and invasive species across these habitats. Restoration of native grasses and flowering plants aims to improve conditions for birds that nest in grasslands.",
+          "source": "https://www.nps.gov/hocu/learn/nature/index.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "Restoration efforts are ongoing for native grasses and forbs",
+          "pageMetadata": {"title": "Nature & Science - Hopewell Culture National Historical Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Indigenous heritage",
+          "title": "What the name Hopewell represents",
+          "text": "Native people built the monumental geometric earthworks of the Scioto Valley. The archaeological label Hopewell comes from a later landowner, rather than the builders' own name or the name of a Tribe. Forced removal of Ohio's Tribal Nations preceded early archaeological investigations, which took place without Indigenous participation.",
+          "source": "https://www.nps.gov/places/hopewell-earthworks.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "\"Hopewell\" is not the name of any American Indian tribe.",
+          "pageMetadata": {"title": "Hopewell Earthworks", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ],
+      "history": [
+        {
+          "date": "1923-03-02",
+          "event": "Mound City Group National Monument was proclaimed, establishing the predecessor of Hopewell Culture National Historical Park.",
+          "kind": "initial-protection",
+          "source": "https://www.nps.gov/articles/nps-geodiversity-atlas-hopewell-culture-national-historical-park-ohio.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "March 2, 1923",
+          "pageMetadata": {"title": "NPS Geodiversity Atlas—Hopewell Culture National Historical Park, Ohio", "publisher": "National Park Service", "contentType": "text/html", "section": "Introduction"}
+        },
+        {
+          "date": "1961-05-14",
+          "event": "The visitor center was dedicated, with archaeologist John L. Cotter delivering the keynote speech.",
+          "kind": "historical-event",
+          "source": "https://www.nps.gov/hocu/learn/historyculture/index.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "visitor center dedication on May 14, 1961",
+          "pageMetadata": {"title": "History & Culture - Hopewell Culture National Historical Park", "publisher": "National Park Service", "contentType": "text/html", "section": "Visitor center dedication photograph caption"}
+        },
+        {
+          "date": "1992-05-27",
+          "event": "Mound City Group National Monument was renamed and redesignated Hopewell Culture National Historical Park.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/articles/nps-geodiversity-atlas-hopewell-culture-national-historical-park-ohio.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "May 27, 1992",
+          "pageMetadata": {"title": "NPS Geodiversity Atlas—Hopewell Culture National Historical Park, Ohio", "publisher": "National Park Service", "contentType": "text/html", "section": "Introduction"}
+        }
+      ],
+      "attractions": [
+        {
+          "name": "Hopewell Mound Group trails",
+          "source": "https://www.nps.gov/thingstodo/hiking-exploring-hopewell-mound-group.htm",
+          "description": "Trails cross the earthwork landscape and enter woodland containing a surviving part of an original earthen wall. Gravel and mulch surfaces include some climbs despite much of the site being fairly level.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 2.5, "unit": "mi", "method": "NPS introduction: \"the trail is about 2.5 miles long with a few changes in elevation\". Approximate site trail distance; not claimed as a measured perimeter-only loop."},
+          "difficulty": "Easy to Moderate",
+          "accessibility": "Only a short sidewalk from the parking area is paved. Other trails use mulch, pebbled dirt, or grass and include elevation changes and a narrow wooden bridge.",
+          "tags": ["hiking", "earthworks", "woodland", "historic", "forest"],
+          "evidence": "easy to moderate hike",
+          "pageMetadata": {"title": "Hiking & Exploring Hopewell Mound Group", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "name": "Mound City Group nature trail",
+          "source": "https://www.nps.gov/thingstodo/hiking-exploring-mound-city-group.htm",
+          "description": "A nature trail circles the reconstructed mound group, passes through young woodland, and follows the Scioto River side of the site. Interpretive signs within the mound enclosure explain the earthworks.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "accessibility": "Forest paths have mulch and grass surfaces. Concrete steps connect to the lower paved river walk; the upper river walk is flat and gravel covered.",
+          "tags": ["hiking", "earthworks", "river", "historic", "forest"],
+          "evidence": "concrete steps to access the lower walk area; Trails winding through the forest are mulch and grass-covered.",
+          "pageMetadata": {"title": "Hiking & Exploring Mound City Group", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "name": "Hopeton Earthworks overlook trail",
+          "source": "https://www.nps.gov/thingstodo/hiking-exploring-hopeton-earthworks.htm",
+          "description": "A self-guided trail climbs to an overlook of the earthwork landscape. Interpretive mowing outlines the former circle and square, helping visitors understand features whose surviving earthen walls are low.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "difficulty": "Moderate",
+          "accessibility": "Only the short entrance section is paved. The remaining grass, mulch, and gravel trails have uneven terrain with ascents and descents.",
+          "tags": ["hiking", "earthworks", "overlook", "historic"],
+          "evidence": "Hike is rated as moderate.; an overlook of the entire site; low-earthen walls",
+          "pageMetadata": {"title": "Hiking & Exploring Hopeton Earthworks", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2022-01-01"}
+        }
+      ]
+    },
+    "gumo": {
+      "parkId": "guadalupe-mountains-national-park",
+      "articles": [
+        {
+          "topic": "History & culture",
+          "title": "Routes, ranches, and surviving historic places",
+          "text": "The Guadalupe Mountains preserve histories of Mescalero Apache people, conflict with soldiers, overland mail, and ranching. The Frijole and Williams ranch sites and the Pinery Station ruins retain evidence of different periods of settlement and travel. Their buildings and archaeological remains help explain human life in this mountain and desert landscape.",
+          "source": "https://www.nps.gov/gumo/learn/historyculture/index.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "preserved at the Frijole and Williams Ranches, and at the ruins of the Pinery Station",
+          "pageMetadata": {"title": "History & Culture - Guadalupe Mountains National Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Nature & geology",
+          "title": "An exposed fossil reef in a desert mountain range",
+          "text": "The Guadalupe Mountains expose part of a marine reef formed in a Permian tropical sea. Sponges, algae, and other organisms contributed limestone material as the reef grew. Burial under sediments and salts preserved it before later uplift exposed the rocks, allowing scientists to examine an ancient marine environment within today's desert landscape.",
+          "source": "https://www.nps.gov/gumo/learn/nature/index.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "until uplift exposed massive portions of it",
+          "pageMetadata": {"title": "Nature & Science - Guadalupe Mountains National Park", "publisher": "National Park Service", "contentType": "text/html"}
+        },
+        {
+          "topic": "Indigenous heritage",
+          "title": "Mescalero Apache relationships with the Guadalupes",
+          "text": "Mescalero Apache people used the mountains' animals and plants through seasonal movement, with agave important for food, fiber, and cultural practices. Settler expansion and military conflict drove many from the Guadalupes. NPS describes the mountains as a continuing cultural and spiritual sanctuary for Mescalero Apache people.",
+          "source": "https://www.nps.gov/gumo/learn/historyculture/apaches.htm",
+          "retrievedAt": "2026-10-28",
+          "contentKind": "summary",
+          "evidence": "an important cultural and spiritual sanctuary for the Mescalero Apaches",
+          "pageMetadata": {"title": "Mescalero Apaches", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ],
+      "history": [
+        {
+          "date": "1925",
+          "event": "An early landowner began advocating national park status for the Guadalupe Mountains.",
+          "kind": "historical-event",
+          "source": "https://www.nps.gov/gumo/learn/historyculture/gumo50.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "Beginning in 1925 one landowner was an early advocate",
+          "pageMetadata": {"title": "Preserving the Guadalupe Mountains", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2022-10-03"}
+        },
+        {
+          "date": "1972-09-30",
+          "event": "Guadalupe Mountains National Park was formally established, six years after congressional authorization.",
+          "kind": "designation",
+          "source": "https://www.nps.gov/gumo/learn/historyculture/gumo50.htm",
+          "retrievedAt": "2026-10-28",
+          "evidence": "on September 30, 1972, Guadalupe Mountains National Park was formally established",
+          "pageMetadata": {"title": "Preserving the Guadalupe Mountains", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2022-10-03"}
+        }
+      ],
+      "attractions": [
+        {
+          "name": "Smith Spring Trail Loop",
+          "source": "https://www.nps.gov/thingstodo/gumo_hike_smith_springs_trail.htm",
+          "description": "From Frijole Ranch, the loop passes Manzanita Spring and climbs toward the shaded vegetation around Smith Spring. The route offers views across the surrounding foothills and desert.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 2.3, "unit": "mi", "method": "NPS overview: \"Distance: 2.3 miles (3.7 km) round-trip, loop\". Full loop from Frijole Ranch; no conversion or doubling."},
+          "difficulty": "Easy - Moderate",
+          "routeType": "loop",
+          "accessibility": "The section from Frijole Ranch to Manzanita Spring is paved. Beyond Manzanita Spring, the trail has loose or hardened rock surfaces; this does not establish accessibility of the full loop.",
+          "tags": ["hiking", "spring", "desert", "birding", "forest"],
+          "evidence": "Difficulty: Easy - Moderate; forested setting",
+          "pageMetadata": {"title": "Smith Spring Trail Loop", "publisher": "National Park Service", "contentType": "text/html", "lastUpdated": "2022-12-18"}
+        },
+        {
+          "name": "McKittrick Canyon Nature Trail",
+          "source": "https://www.nps.gov/thingstodo/gumo_hike_mckittrick_canyon_nature_trail.htm",
+          "description": "This short loop passes an intermittent seep, climbs a sunny slope, and returns on a less exposed slope. Exhibits explain desert plants, wildland fire, and Permian reef geology.",
+          "kind": "trail",
+          "retrievedAt": "2026-10-28",
+          "length": {"value": 0.9, "unit": "mi", "method": "NPS overview: \"Distance: 0.9 miles (1.4 km) round-trip, loop\". Entire nature-trail loop, distinct from longer McKittrick Canyon hikes; no conversion."},
+          "difficulty": "Moderate",
+          "routeType": "loop",
+          "accessibility": "NPS describes loose or hardened rock surfaces with variable trail width. Accessible trailhead parking is not evidence that the trail itself is wheelchair accessible.",
+          "tags": ["hiking", "desert", "geology", "interpretive exhibits"],
+          "evidence": "Difficulty: moderate",
+          "pageMetadata": {"title": "McKittrick Canyon Nature Trail", "publisher": "National Park Service", "contentType": "text/html"}
+        }
+      ]
+    }
+  }
+}

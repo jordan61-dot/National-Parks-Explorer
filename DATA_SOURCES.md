@@ -16,10 +16,26 @@ Roster retrieved October 27, 2026; article and place evidence retrieved October 
 
 The roster separates parks and preserves that share an NPS code. IDs derive from the full official roster name, not the administrative code. A future rename requires an explicit alias/data migration review so personal references are preserved; do not silently collapse records.
 
-## Observed coverage and limitations
+## Historical 0.2.0 coverage and limitations
 
 467 total reference entries: 434 official units and 33 affiliated areas. 437 have substantive homepage introductions and 429 have an unambiguous administrative reference point. 435 entries include 1,858 article sections, with 156 named attraction records. All 2,400 candidate article URLs were attempted; 188 returned retrieval or verification errors. 201 linked place pages supplied verified titles; only places associated with the selected profile evidence are included in the compiled catalog. The generated [coverage report](src/data/coverage.json) records topic totals and retrieval failures. Missing and ambiguous values remain missing. Each profile identifies unavailable offline article topics and links its source evidence.
 
 Article excerpts cover history, nature, accessibility, directions and activities where substantive official text was available. This is not exhaustive encyclopedia or trail coverage: structured establishment dates, route distances, difficulty, accessibility attributes, licensed park photographs and individual attraction coordinates remain incomplete. No real-time closures, travel durations, bookings, park photographs, or full NPS API snapshot are claimed. Some official pages contain only headings, navigation or unavailable content; those do not count as substantive articles.
 
 Public reference builds must never read personal visits, private historical sources, photographs, backups, credentials or Explorer's private fixtures. No API key or subscription is required.
+
+## Module 0.3.0 / Explorer 0.7.1
+
+Current measurements are generated in `src/data/coverage.json`; the before/after quality audits are `docs/AUDIT071_BEFORE.json` and `docs/AUDIT071_AFTER.json`. The roster classifications and stable IDs are retained. Initial protection, designation and site-specific historical events are separate milestones, rather than an ambiguous single establishment date.
+
+The compiler now includes substantive alternate official articles and their verified place links, deduplicating exact excerpt text within each park. A new attraction requires a retrieved official place title. Existing attraction identities are retained by source URL; curated trail enrichment updates an existing URL without assigning a replacement identity. Association through a park website is not proof of a point lying within a park boundary. Shared administrative websites remain explicitly described in profiles.
+
+`scripts/evidence/supplemental.json` contains reviewed, original summaries for eight parks, official trail attributes and historical milestones. Source URLs, retrieval dates, relevant publication dates, short verification evidence and page metadata are retained there. Shipped articles label summaries separately from official excerpts. Distances carry their published route context, including approximate language. Conflicting distances stay unknown rather than being resolved through invented conversions. Accessibility text can describe limitations or only one route segment; the discovery filter is deliberately labeled **Accessibility described**, not a suitability certification.
+
+`python scripts/expand.py --limit 300` collects previously unattempted official topic links from retained homepages, then their linked places. `--retry-failures` revisits legacy failures once and records attempted timestamps, HTTP status, redirects, response bounds, network failures and verification failures. Collection is resumable, uses two workers, checks robots, pauses after a rate limit and saves atomic checkpoints. It does not retry failed URLs in a tight loop. Legacy error-only records cannot retrospectively establish HTTP codes; remaining uncertainties are reported in the audit.
+
+The build additionally emits `src/data/compact.json`, interning repeated long strings without losing reference information. Both Python validation and TypeScript tests compare its decoded value to the readable source dataset. Explorer lazily loads the compact chunk and preserves its service-worker cache safeguards. Search text is cached per immutable park object and includes names, states, regions, article topics, milestones, attractions and supported trail tags.
+
+No reference photographs are integrated in this release. The NPS [ownership policy](https://www.nps.gov/aboutus/disclaimer.htm) explicitly notes third-party rights in some materials. General government-domain availability was not accepted as a license. Local personal photographs continue to use private device storage; administrative coordinates remain separately labeled and no attraction coordinates were inferred.
+
+Run `npm run check`, `npm test`, `npm run test:compiler`, `npm run reference:build`, and `npm run reference:validate`. A second build must reproduce all three generated files exactly. Available axe checks exclude color contrast and document landmarks because the isolated module test does not emulate the final browser canvas or host shell; they are not a complete assistive-technology audit.

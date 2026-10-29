@@ -4,6 +4,7 @@ export interface Source {
   retrievedAt?: string;
 }
 export interface Article {
+  contentKind?: "summary" | "official-excerpt";
   topic: string;
   title: string;
   text: string;
@@ -12,6 +13,7 @@ export interface Article {
   lastUpdated?: string | null;
 }
 export interface Attraction {
+  descriptionKind?: "summary" | "official-excerpt" | "reference-note";
   id: string;
   name: string;
   kind:
@@ -21,6 +23,11 @@ export interface Attraction {
     | "historic-site"
     | "waterfall"
     | "scenic-drive"
+    | "museum"
+    | "cave"
+    | "fort"
+    | "battlefield"
+    | "monument"
     | "place";
   description: string;
   source: string;
@@ -30,6 +37,8 @@ export interface Attraction {
   accessibility?: string;
   latitude?: number;
   longitude?: number;
+  routeType?: string;
+  tags?: string[];
 }
 export interface Park {
   id: string;
@@ -53,6 +62,7 @@ export interface Park {
   articles?: Article[];
   attractions: Attraction[];
   coverageNote?: string;
+  history?: {date:string;event:string;kind:string;source:string;retrievedAt:string}[];
 }
 export interface Reference {
   formatVersion: number;
@@ -66,8 +76,8 @@ export interface Reference {
 }
 let pending: Promise<Reference> | undefined;
 export function loadReference() {
-  return (pending ??= import("./data/parks.json")
-    .then((x) => x.default as unknown as Reference)
+  return (pending ??= import("./data/compact.json")
+    .then((x) => unpackReference(x.default))
     .catch((e) => {
       pending = undefined;
       throw e;
@@ -154,9 +164,47 @@ export function safeUrl(value: string) {
   }
 }
 
+export function unpackReference(bundle: {strings:string[];reference:unknown}): Reference {
+  const unpack=(v:unknown):unknown=>{
+    if(Array.isArray(v))return v.map(unpack);
+    if(v && typeof v==='object') {
+      const o=v as Record<string,unknown>;
+      if(Object.keys(o).length===1 && typeof o.$==='number') {
+        if(!Number.isInteger(o.$) || bundle.strings[o.$]===undefined)throw Error('Invalid reference string index');
+        return bundle.strings[o.$];
+      }
+      return Object.fromEntries(Object.entries(o).map(([k,x])=>[k,unpack(x)]));
+    }
+    return v;
+  };
+  return unpack(bundle.reference) as Reference;
+}
+export const normalizeSearch=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const searchCache=new WeakMap<Park,string>();
 export function parkSearchText(p: Park) {
-  return [p.name, p.designation, p.description,
+  const cached=searchCache.get(p);if(cached!==undefined)return cached;
+  const result=normalizeSearch([p.name, p.designation, p.description, ...parkRegions(p),
     ...p.states.flatMap(s=>[s,stateNames[s]??s]), ...p.activities, ...p.topics,
     ...(p.articles??[]).flatMap(a=>[a.topic,a.title,a.text]),
-    ...p.attractions.map(a=>a.name)].join(' ').toLowerCase();
+    ...(p.history??[]).map(h=>h.event),
+    ...p.attractions.flatMap(a=>[a.name,a.description,a.difficulty??'',a.routeType??'',...(a.tags??[])])].join(' '));
+  searchCache.set(p,result);return result;
+}
+export const trailFilters=['Any trails','Short trails (up to 2 mi)','Waterfalls','History','Forest','Geology','Overlooks','Accessibility described','Long trails (10+ mi)'] as const;
+export function parkSearchRank(p:Park,query:string) {
+  const q=normalizeSearch(query).trim(),name=normalizeSearch(p.name);
+  if(!q)return 0;
+  if(name===q)return 4;
+  if(name.startsWith(q))return 3;
+  if(name.includes(q))return 2;
+  return 1;
+}
+export function matchesTrail(a:Attraction,filter:string) {
+  if(a.kind!=='trail')return false;
+  const miles=a.length ? a.length.value*(a.length.unit==='km' ? 1/1.609344 : 1) : undefined;
+  if(filter==='Short trails (up to 2 mi)')return miles!==undefined && miles<=2;
+  if(filter==='Long trails (10+ mi)')return miles!==undefined && miles>=10;
+  if(filter==='Accessibility described')return !!a.accessibility;
+  const tags:Record<string,string>={Waterfalls:'waterfall',History:'historic',Forest:'forest',Geology:'geology',Overlooks:'overlook'};
+  return filter==='Any trails' || !!a.tags?.includes(tags[filter]);
 }

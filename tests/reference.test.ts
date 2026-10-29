@@ -1,5 +1,7 @@
 import { it, expect } from "vitest";
-import { loadReference, safeUrl, parkSearchText } from "../src/reference";
+import { loadReference, safeUrl, parkSearchText, matchesTrail, unpackReference, normalizeSearch } from "../src/reference";
+import readable from '../src/data/parks.json';
+import compact from '../src/data/compact.json';
 it("matches the published official roster without collapsing shared administrative codes", async () => {
   const r = await loadReference();
   expect(
@@ -13,6 +15,21 @@ it("matches the published official roster without collapsing shared administrati
   expect(r.units.filter((p) => p.designation === "National Park")).toHaveLength(
     r.headingCounts["National Parks"],
   );
+});
+
+it('losslessly decodes the compact offline reference and rejects invalid pointers',()=>{
+ expect(unpackReference(compact)).toEqual(readable);
+ expect(()=>unpackReference({strings:[],reference:{$:0}})).toThrow('Invalid reference');
+});
+it('only filters trails with supported structured attributes',()=>{
+ const a={id:'fixture',name:'Fixture',kind:'trail' as const,description:'Waterfall words alone do not establish a tag',source:'https://www.nps.gov/'};
+ expect(matchesTrail(a,'Waterfalls')).toBe(false);
+ expect(matchesTrail(a,'Short trails (up to 2 mi)')).toBe(false);
+ expect(matchesTrail({...a,length:{value:3,unit:'km',method:'round trip'}},'Short trails (up to 2 mi)')).toBe(true);
+ expect(matchesTrail({...a,tags:['waterfall']},'Waterfalls')).toBe(true);
+ expect(matchesTrail({...a,kind:'place',tags:['waterfall']},'Waterfalls')).toBe(false);
+ expect(matchesTrail(a,'Accessibility described')).toBe(false);
+ expect(normalizeSearch('Hōnaunau')).toBe('honaunau');
 });
 it("validates route-safe IDs, coordinates, citations and private-data exclusion", async () => {
   const r = await loadReference();

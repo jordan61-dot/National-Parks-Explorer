@@ -1,6 +1,6 @@
 import type { Host, ModuleProps } from "./host";
 import { storageSpec } from "./domain";
-import { loadReference, parkSearchText } from "./reference";
+import { loadReference, parkSearchText, normalizeSearch, parkSearchRank } from "./reference";
 export function createNationalParksModule(host: Host) {
   if (host.apiVersion !== 1)
     throw Error("National Parks Explorer requires host API 1");
@@ -11,7 +11,7 @@ export function createNationalParksModule(host: Host) {
       "Explore the National Park System, record visits, and plan future discoveries",
     icon: "△",
     category: "parks",
-    version: "0.2.0",
+    version: "0.3.0",
     entry: async () => ({
       default: (await import("./screen")).createScreen(host),
     }),
@@ -60,13 +60,14 @@ export function createNationalParksModule(host: Host) {
       const reference = await loadReference();
       if (request.signal.aborted)
         throw new DOMException("Search cancelled", "AbortError");
-      const terms = request.query.toLowerCase().split(/\s+/).filter(Boolean);
+      const terms = normalizeSearch(request.query).split(/\s+/).filter(Boolean);
       return reference.units
         .filter((p) =>
           terms.every((t) =>
             parkSearchText(p).includes(t),
           ),
         )
+        .sort((a,b)=>parkSearchRank(b,request.query)-parkSearchRank(a,request.query))
         .slice(0, request.limit)
         .map((p) => ({
           moduleId: "national-parks",

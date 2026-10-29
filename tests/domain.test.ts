@@ -179,3 +179,13 @@ it('creates secure random record identities without randomUUID in HTTP previews'
   expect(a.id).not.toBe(b.id);
  } finally {vi.unstubAllGlobals()}
 });
+it('retains separate unknown-date visits after a display-name or designation change',async()=>{
+ const s=new Memory(),r=new Repository(s);
+ await r.save(newVisit('stable-park'));await r.save(newVisit('stable-park'));
+ const before=await s.snapshot();
+ const renamed={...park('stable-park'),name:'Renamed unit',designation:'National Historical Park'};
+ expect(statistics(entities(before),[renamed]).units).toBe(1);
+ expect(visits(entities(before))).toHaveLength(2);
+ expect(visits(entities(before)).every(v=>v.date==='' && v.parkId==='stable-park')).toBe(true);
+ expect(await s.snapshot()).toEqual(before);
+});
