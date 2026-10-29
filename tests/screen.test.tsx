@@ -74,8 +74,8 @@ it('filters the catalog, selects the atlas through keyboard controls, and displa
  await u.clear(screen.getByLabelText('Search parks'));await u.type(screen.getByLabelText('Search parks'),'Ohio');expect(screen.getByText('1 matching places')).toBeTruthy();
  v.go('atlas');await screen.findByLabelText('Accessible location selector');
  await u.selectOptions(screen.getByLabelText('Accessible location selector'),'test-park');
- fireEvent.keyDown(screen.getByRole('button',{name:'Synthetic Park'}),{key:'Enter'});
- expect(screen.getAllByRole('link',{name:'Synthetic Park'})).toHaveLength(2);
+ expect(screen.getByRole('article',{name:'Selected park'}).textContent).toContain('Synthetic Park');
+ expect(screen.getByRole('link',{name:'Open park profile →'}).getAttribute('href')).toContain('park/test-park');
  v.go('park/test-park');await screen.findByText('Synthetic official article fixture.');
  expect(screen.getByRole('link',{name:'Read the full official article ↗'}).getAttribute('href')).toBe(fixture.articles[0].source);
 });

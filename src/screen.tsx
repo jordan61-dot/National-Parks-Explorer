@@ -231,7 +231,7 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
   const { r, all } = useParks(),
     [q, setQ] = useState(""),
     [state, setState] = useState(""),
-    [scope, setScope] = useState("system-unit"),
+    [scope, setScope] = useState(atlas ? "" : "system-unit"),
     [designation, setDesignation] = useState(""),
     [status, setStatus] = useState(""),
     [region,setRegion]=useState(""),
@@ -265,6 +265,7 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
   return (
     <>
       <h2>{atlas ? "Interactive atlas" : "Park encyclopedia"}</h2>
+      <details open={!atlas} className="np-atlas-filters"><summary>Search and filter parks</summary>
       <div className="np-filters">
         <Field label="Search parks">
           <input
@@ -321,7 +322,8 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
         <Field label="Region"><select value={region} onChange={e=>filter(setRegion,e.target.value)}><option value="">All regions</option>{['Northeast','Midwest','South','West','Territories'].map(x=><option key={x}>{x}</option>)}</select></Field>
         <Field label="Trail discovery"><select value={trail} onChange={e=>filter(setTrail,e.target.value)}><option value="">All parks, any trail coverage</option>{trailFilters.map(x=><option key={x}>{x}</option>)}</select></Field>
       </div>
-      <button onClick={()=>{setQ('');setState('');setScope('system-unit');setDesignation('');setStatus('');setRegion('');setTrail('');setCount(24);setSelected('');}}>Reset filters</button>
+      <button onClick={()=>{setQ('');setState('');setScope(atlas?'':'system-unit');setDesignation('');setStatus('');setRegion('');setTrail('');setCount(24);setSelected('');}}>Reset filters</button>
+      </details>
       {trail && <p className="muted">Filters use recorded trail attributes only. Accessibility descriptions include limitations; read the trail details before choosing a route.</p>}
       <p role="status">{parks.length} matching places</p>
       {atlas && (
@@ -332,11 +334,10 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
             onSelect={setSelected}
             visitedIds={stats.ids}
             stateFilter={state}
-            onStateChange={(code) => { setState(code); setRegion(""); setCount(24); setSelected(""); }}
+            onStateChange={(code) => { setState(code); setCount(24); setSelected(""); }}
+            profileHref={(id) => url("park/" + id)}
           />
-          {parks.find((p) => p.id === selected) && (
-            <Card park={parks.find((p) => p.id === selected)!} />
-          )}
+
         </>
       )}
       <div className="np-grid">
