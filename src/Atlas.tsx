@@ -159,6 +159,13 @@ export function Atlas({
                 onClick={() => {
                   setGroupIds(ids.length > 1 ? ids : []);
                   if (ids.length === 1) onSelect(ids[0]);
+                }}
+                onKeyDown={e => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setGroupIds(ids.length > 1 ? ids : []);
+                    if (ids.length === 1) onSelect(ids[0]);
+                  }
                 }}>
                 <span>{ids.length > 1 ? ids.length : ""}</span>
               </button>;
