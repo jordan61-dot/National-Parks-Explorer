@@ -21,7 +21,7 @@ import {
   type Attraction,
 } from "./reference";
 import {mediaImages} from './data/media';
-import { Atlas } from "./Atlas";
+const Atlas = React.lazy(() => import("./Atlas").then(m => ({default:m.Atlas})));
 import {
   Repository,
   entity,
@@ -328,6 +328,7 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
       <p role="status">{parks.length} matching places</p>
       {atlas && (
         <>
+          <React.Suspense fallback={<p role="status">Opening the atlas…</p>}>
           <Atlas
             parks={parks}
             selectedId={selected}
@@ -337,6 +338,7 @@ function Catalog({ atlas = false }: { atlas?: boolean }) {
             onStateChange={(code) => { setState(code); setCount(24); setSelected(""); }}
             profileHref={(id) => url("park/" + id)}
           />
+          </React.Suspense>
 
         </>
       )}
