@@ -941,7 +941,7 @@ function Plans() {
             <article className="np-card" key={e.id}>
               <h3>
                 <a href={url("plan/" + e.id)}>{String(e.name)}</a>
-              </h3>
+              </h3><a href={url("itinerary/"+e.id)}>View itinerary</a>
               <p>
                 {
                   (e.stops as unknown as Stop[]).filter((s) => s.completed)
@@ -967,6 +967,15 @@ function Plans() {
     </>
   );
 }
+function TripOverview({id}:{id:string}) {
+ const {all,r}=useParks(),plan=all.find(e=>e.id===id&&e.kind==='plan');
+ if(!plan)return <p>Trip unavailable. <a href={url('plans')}>Return to trips</a></p>;
+ const stops=plan.stops as unknown as Stop[];
+ return <article className="np-itinerary"><div className="np-itinerary-actions actions"><a href={url('plans')}>Trip list</a><a href={url('plan/'+id)}>Edit trip</a><button onClick={()=>window.print()}>Print itinerary</button></div><p>Personal trip plan</p><h2>{String(plan.name)}</h2>{!!plan.notes&&<p className="np-notes">{String(plan.notes)}</p>}<p>{stops.length} park stops · {stops.filter(s=>s.completed).length} completed · {stops.reduce((n,s)=>n+s.attractions.length,0)} planned activity selections</p><p>Stop completion describes planning status; visit history is separate.</p>
+ {!stops.length&&<p>No park stops planned yet. Use the trip editor to add stops.</p>}
+ {stops.map((s,i)=>{const p=r.units.find(p=>p.id===s.parkId);return <section key={s.id} className="np-itinerary-stop"><h3>Stop {i+1} — {p?.name??'Saved park — current reference unavailable'}</h3>{!p&&<p>Park identifier: {s.parkId}</p>}{p&&<p>{p.designation} · {p.states.map(x=>stateNames[x]??x).join(', ')}</p>}<p>Status: {s.completed?'Completed':'Planned'}</p>{s.notes&&<p className="np-notes">{s.notes}</p>}{p&&<p><a href={url('park/'+p.id)}>Park details</a> · <Link href={p.website} label="Official park information"/></p>}
+ {s.attractions.length?<><h4>Planned activities</h4><ol>{s.attractions.map(ref=>{const a=p?.attractions.find(a=>a.id===ref);return <li key={ref}>{a?<><strong><a href={url('attraction/'+s.parkId+'/'+ref)}>{a.name}</a></strong><p>{a.kind}{a.length?` · ${a.length.value} ${a.length.unit} (${a.length.method})`:a.kind==='trail'?' · Distance unknown':''}{a.routeType?' · '+a.routeType:''}{a.difficulty?' · '+a.difficulty:a.kind==='trail'?' · Difficulty unknown':''}{a.elevationGain?` · Elevation gain ${a.elevationGain.value} ${a.elevationGain.unit} (${a.elevationGain.method})`:''}</p>{a.accessibility&&<p>{a.accessibility}</p>}{a.conflicts?.map((c,i)=><p key={i}>Source difference: {c.detail}</p>)}</>:<p>Previously saved attraction — current reference unavailable. Identifier: {ref}</p>}</li>})}</ol></>:<p>No activities selected for this stop.</p>}</section>})}</article>;
+}
 function PlanEditor({ id }: { id?: string }) {
   const { all, r, repo, run, confirm, busy } = useParks(),
     old = all.find((e) => e.id === id && e.kind === "plan"),
@@ -989,7 +998,7 @@ function PlanEditor({ id }: { id?: string }) {
     );
   return (
     <>
-      <h2>{old ? "Edit trip plan" : "Create trip plan"}</h2>
+      <h2>{old ? "Edit trip plan" : "Create trip plan"}</h2>{old&&<a href={url("itinerary/"+old.id)} target="_blank" rel="noopener noreferrer">View saved itinerary (new tab)</a>}
       <p>
         Stops follow your chosen order. Current conditions, travel times and
         bookings are not inferred.
@@ -1618,6 +1627,8 @@ export function createScreen(host: Host) {
         <Profile key={route} id={seg[1]} />
       ) : route === "plans" ? (
         <Plans />
+      ) : seg[0] === "itinerary" ? (
+        <TripOverview id={seg[1]} />
       ) : seg[0] === "plan" ? (
         <PlanEditor key={route} id={seg[1] === "new" ? undefined : seg[1]} />
       ) : route === "statistics" ? (
