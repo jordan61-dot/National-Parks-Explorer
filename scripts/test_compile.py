@@ -2,6 +2,10 @@ import unittest
 from compile import roster,Page,E
 from details import Article
 class CompilerTests(unittest.TestCase):
+ def test_west_virginia_does_not_imply_virginia(self):
+  parks,_,_=roster((E/'roster.html').read_text())
+  neri=next(p for p in parks if p['parkCode']=='neri');self.assertEqual(neri['states'],['WV'])
+  harpers=next(p for p in parks if p['parkCode']=='hafe');self.assertEqual(set(harpers['states']),{'WV','VA','MD'})
  def test_alternate_evidence_contributes_without_duplicate_articles(self):
   from enrichment import enrich
   from compile import slug

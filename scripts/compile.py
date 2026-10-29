@@ -42,7 +42,9 @@ def roster(raw):
     name,location=text[:split.start()],text[split.end():]
    links=[urljoin(ROSTER,html.unescape(a[0])) for a in anchors];website=links[0] if links else ROSTER
    match=re.search(r'nps.gov/([a-z]{4})/',website);code=match[1] if match else ''
-   states=[k for k,v in STATE.items() if re.search(r'\b'+re.escape(v)+r'\b',location)]
+   # Consume longest names first so West Virginia does not also become Virginia.
+   found=set(re.findall(r'\b(?:'+'|'.join(re.escape(v) for v in sorted(STATE.values(),key=len,reverse=True))+r')\b',location))
+   states=[k for k,v in STATE.items() if v in found]
    parks.append(dict(id=('john-d-rockefeller' if name=='John D. Rockefeller, Jr. Memorial Parkway' else slug(name)),parkCode=code,name=name,designation=names.get(label,label[:-1]),classification='affiliated' if label=='Affiliated Areas' else 'system-unit',states=states,website=website,description='',sources=[dict(url=ROSTER,label='Official NPS roster')],research=[],activities=[],topics=[],attractions=[],coverageNote='Roster location: '+location+'. Detailed visitor coverage may be incomplete.'))
  published=int(re.search(r'manages\s+(\d+)\s+individual units',clean(raw))[1])
  assert sum(p['classification']=='system-unit' for p in parks)==published

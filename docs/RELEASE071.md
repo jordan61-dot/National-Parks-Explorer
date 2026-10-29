@@ -40,7 +40,9 @@ No imagery was reused without verified rights. The NPS ownership policy permits 
 
 ## Verification
 
-Fresh TypeScript checking, 22 public-module tests, 13 Python compiler tests, reference consistency checks and a byte-for-byte repeated compilation pass. Tests include compact serialization, evidence-only trail filtering, alternate article deduplication, canonical URLs, status classification and rate-limit pause behavior, stable identities, repeated unknown-date visits, stale edits, image relationships, trip plans and isolated UI behavior. Automated axe checks pass on catalog, profile and attraction discovery with color contrast and host landmarks explicitly excluded from the isolated DOM test.
+Fresh TypeScript checking, 22 public-module tests, 14 Python compiler tests, reference consistency checks and a byte-for-byte repeated compilation pass. Tests include compact serialization, evidence-only trail filtering, alternate article deduplication, canonical URLs, status classification and rate-limit pause behavior, stable identities, repeated unknown-date visits, stale edits, image relationships, trip plans and isolated UI behavior. Automated axe checks pass on catalog, profile and attraction discovery with color contrast and host landmarks explicitly excluded from the isolated DOM test.
+
+Responsive browser review also caught an inherited roster-parser defect: Virginia matched inside West Virginia. The parser now consumes the longest state names first; a regression test checks New River Gorge as West Virginia only while preserving the genuine Maryland/Virginia/West Virginia association of Harpers Ferry. Park and personal-record IDs are unchanged.
 
 Explorer must pin the exact published revision and run its own integration, backup/restore, production build, offline simulation and compiled Worker checks before deploying. Physical Galaxy S26, full assistive-technology testing and real multi-window offline upgrade acceptance remain unverified and are deferred by the owner. This repository does not claim those host/device checks.
 
