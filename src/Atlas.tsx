@@ -3,7 +3,7 @@ import type {Park} from './reference';
 import {stateNames} from './reference';
 import {areaBounds,boundaries,boundaryByCode,collisionClusters,isTerritory,jurisdictions,outlines,projectedPoint,territories,withinBounds,zoomBounds} from './atlas-geometry';
 
-type Pointer={x:number;y:number};
+type Pointer={x:number;y:number;startX:number;startY:number};
 export function Atlas({parks,selectedId,onSelect,visitedIds=new Set<string>(),stateFilter='',onStateChange,profileHref}:{
  parks:Park[];selectedId?:string;onSelect:(id:string)=>void;visitedIds?:Set<string>;stateFilter?:string;onStateChange?:(code:string)=>void;profileHref?:(id:string)=>string;
 }){
@@ -13,7 +13,7 @@ export function Atlas({parks,selectedId,onSelect,visitedIds=new Set<string>(),st
  const [groupIds,setGroupIds]=useState<string[]>([]),[groupCenter,setGroupCenter]=useState<{x:number;y:number}|null>(null);
  const [expanded,setExpanded]=useState(false),[listQuery,setListQuery]=useState(''),[fullChain,setFullChain]=useState(false);
  const [size,setSize]=useState({width:1000,height:540});
- const stageRef=useRef<HTMLDivElement>(null),pointers=useRef(new Map<number,Pointer>()),pinchDistance=useRef(0);
+ const stageRef=useRef<HTMLDivElement>(null),pointers=useRef(new Map<number,Pointer>()),pinchDistance=useRef(0),gestureMoved=useRef(false);
  useEffect(()=>{if(previousFilter.current!==stateFilter){previousFilter.current=stateFilter;setArea(stateFilter||'us');setZoom(1);setPan({x:0,y:0});setGroupIds([]);setFullChain(false)}},[stateFilter]);
  useEffect(()=>{
   const el=stageRef.current;if(!el)return;
@@ -40,18 +40,23 @@ export function Atlas({parks,selectedId,onSelect,visitedIds=new Set<string>(),st
  const countByTerritory=(code:string)=>parks.filter(p=>p.states.includes(code)).length;
  const choose=(id:string)=>{onSelect(id);setGroupIds([])};
  const handlePointerDown=(e:React.PointerEvent<HTMLDivElement>)=>{
-  if((e.target as Element).closest('button')||((e.target as Element).closest('path[data-state]')&&area==='us'&&zoom===1))return;
-  if(e.pointerType==='mouse'&&zoom<=1)return;
-  pointers.current.set(e.pointerId,{x:e.clientX,y:e.clientY});e.currentTarget.setPointerCapture?.(e.pointerId);
-  const values=[...pointers.current.values()];if(values.length===2)pinchDistance.current=Math.hypot(values[0].x-values[1].x,values[0].y-values[1].y);
+  if(e.pointerType==='mouse'&&e.button!==0)return;
+  if(!pointers.current.size)gestureMoved.current=false;
+  pointers.current.set(e.pointerId,{x:e.clientX,y:e.clientY,startX:e.clientX,startY:e.clientY});
+  const values=[...pointers.current.values()];if(values.length===2){pinchDistance.current=Math.hypot(values[0].x-values[1].x,values[0].y-values[1].y);gestureMoved.current=true}
  };
  const handlePointerMove=(e:React.PointerEvent<HTMLDivElement>)=>{
   const prev=pointers.current.get(e.pointerId);if(!prev)return;
-  pointers.current.set(e.pointerId,{x:e.clientX,y:e.clientY});const vals=[...pointers.current.values()];
-  if(vals.length===2){const distance=Math.hypot(vals[0].x-vals[1].x,vals[0].y-vals[1].y);if(pinchDistance.current>0&&distance>0)setZoom(z=>Math.max(1,Math.min(16,z*distance/pinchDistance.current)));pinchDistance.current=distance;setGroupIds([])}
-  else if(vals.length===1&&zoom>1)setPan(p=>({x:Math.max(-1,Math.min(1,p.x-(e.clientX-prev.x)*2/(size.width*zoom))),y:Math.max(-1,Math.min(1,p.y-(e.clientY-prev.y)*2/(size.height*zoom)))}));
+  const current={...prev,x:e.clientX,y:e.clientY};pointers.current.set(e.pointerId,current);
+  const vals=[...pointers.current.values()];
+  if(Math.hypot(current.x-current.startX,current.y-current.startY)>5)gestureMoved.current=true;
+  if(gestureMoved.current){try{e.currentTarget.setPointerCapture?.(e.pointerId)}catch{/* capture may already have ended */}}
+  if(vals.length>=2){const distance=Math.hypot(vals[0].x-vals[1].x,vals[0].y-vals[1].y);if(pinchDistance.current>0&&distance>0)setZoom(z=>Math.max(1,Math.min(16,z*distance/pinchDistance.current)));pinchDistance.current=distance;setGroupIds([])}
+  else if(gestureMoved.current&&zoom>1)setPan(p=>({x:Math.max(-1,Math.min(1,p.x-(e.clientX-prev.x)*2/(size.width*zoom))),y:Math.max(-1,Math.min(1,p.y-(e.clientY-prev.y)*2/(size.height*zoom)))}));
  };
  const handlePointerEnd=(e:React.PointerEvent<HTMLDivElement>)=>{pointers.current.delete(e.pointerId);pinchDistance.current=0};
+ const suppressGestureClick=(e:React.MouseEvent<HTMLDivElement>)=>{if(gestureMoved.current){e.preventDefault();e.stopPropagation();gestureMoved.current=false}};
+
  return <section className={'np-atlas'+(expanded?' np-atlas-expanded':'')} aria-label="Interactive park atlas">
   <div className="np-atlas-heading"><div><h3>Explore the national park atlas</h3><p className="muted">Choose a state or territory, zoom the map, and select a marker or list entry.</p></div><div className="np-atlas-summary" aria-live="polite"><strong>{regionParks.length}</strong><span>matching places in {title}<br/>{visitedCount} visited · {regionParks.length-visitedCount} not recorded visited</span></div></div>
   <div className="np-atlas-toolbar">
@@ -68,11 +73,11 @@ export function Atlas({parks,selectedId,onSelect,visitedIds=new Set<string>(),st
   {area==='us'&&!expanded&&<div className="np-atlas-territories" aria-label="Territory navigation"><p><strong>Explore beyond the mainland</strong><span>Select a territory for its own detailed map</span></p><div className="np-atlas-territory-grid">{territories.map(code=><button type="button" key={code} onClick={()=>changeArea(code)}><span className="np-atlas-territory-code">{code}</span><span>{stateNames[code]}</span><small>{countByTerritory(code)} places in current filters</small></button>)}</div></div>}
   <div className="np-atlas-map-shell" role="region" aria-label={'Map of '+title}>
    <div ref={stageRef} className={'np-atlas-stage '+(area==='us'?'np-atlas-stage-us':area==='world'?'np-atlas-stage-world':'np-atlas-stage-focus')}
-    onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerEnd} onPointerCancel={handlePointerEnd}>
+    onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerEnd} onPointerCancel={handlePointerEnd} onClickCapture={suppressGestureClick}>
     <svg viewBox={[viewport.x,viewport.y,viewport.width,viewport.height].join(' ')} preserveAspectRatio="none" className="np-atlas-land" aria-label={'Geographic outlines for '+title}>
-     {area==='us'?outlines.states.map(s=><path key={s.code} data-state={s.code} d={s.path} className="np-atlas-outline np-atlas-state-hit" role="button" tabIndex={0} aria-label={'Explore '+(stateNames[s.code]??s.name)} onClick={()=>changeArea(s.code)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();changeArea(s.code)}}}/>):area==='world'?outlines.countries.map(s=><path key={s.code} d={s.path} className="np-atlas-outline"/>):boundaryByCode[area]?<path d={boundaryByCode[area].path} fillRule="evenodd" className="np-atlas-outline np-atlas-outline-active"/>:null}
+     {area==='us'?outlines.states.map(s=>{const feature=s.code==='MI'?boundaryByCode.MI:null;const transform=feature?`translate(${(feature.center[0]+126)*10} ${(50-feature.center[1])*10}) scale(${10/Math.cos(feature.center[1]*Math.PI/180)} 10)`:undefined;return <path key={s.code} data-state={s.code} d={feature?.path??s.path} transform={transform} fillRule={feature?'evenodd':undefined} className="np-atlas-outline np-atlas-state-hit" role="button" tabIndex={0} aria-label={'Explore '+(stateNames[s.code]??s.name)} onClick={()=>changeArea(s.code)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();changeArea(s.code)}}}/>;}):area==='world'?outlines.countries.map(s=><path key={s.code} d={s.path} className="np-atlas-outline"/>):boundaryByCode[area]?<path d={boundaryByCode[area].path} fillRule="evenodd" className="np-atlas-outline np-atlas-outline-active"/>:null}
     </svg>
-    <div className="np-atlas-marker-layer">{clusters.map(c=>{const ids=c.points.map(p=>p.park.id),selected=ids.includes(selectedId??''),visited=c.points.every(p=>visitedIds.has(p.park.id));const label=ids.length===1?c.points[0].park.name:ids.length+' nearby park units: open list';const activate=()=>{if(ids.length===1)choose(ids[0]);else{setGroupIds(ids);setGroupCenter({x:c.x,y:c.y})}};return <button type="button" key={ids.slice().sort().join(':')} aria-label={label} aria-pressed={selected} title={label} onPointerDown={e=>{e.stopPropagation();activate()}} onPointerUp={e=>e.stopPropagation()} className={'np-atlas-pin '+(selected?'np-atlas-pin-selected':visited?'np-atlas-pin-visited':'np-atlas-pin-default')} style={{left:(c.x-viewport.x)/viewport.width*100+'%',top:(c.y-viewport.y)/viewport.height*100+'%'}} onClick={e=>{if(e.detail===0)activate()}}><span>{ids.length>1?ids.length:''}</span></button>})}</div>
+    <div className="np-atlas-marker-layer">{clusters.map(c=>{const ids=c.points.map(p=>p.park.id),selected=ids.includes(selectedId??''),visited=c.points.every(p=>visitedIds.has(p.park.id));const label=ids.length===1?c.points[0].park.name:ids.length+' nearby park units: open list';const activate=()=>{if(ids.length===1)choose(ids[0]);else{setGroupIds(ids);setGroupCenter({x:c.x,y:c.y})}};return <button type="button" key={ids.slice().sort().join(':')} aria-label={label} aria-pressed={selected} title={label} className={'np-atlas-pin '+(selected?'np-atlas-pin-selected':visited?'np-atlas-pin-visited':'np-atlas-pin-default')} style={{left:(c.x-viewport.x)/viewport.width*100+'%',top:(c.y-viewport.y)/viewport.height*100+'%'}} onClick={activate}><span>{ids.length>1?ids.length:''}</span></button>})}</div>
     <div className="np-atlas-map-caption"><span>{title}{['HI','MP','AS'].includes(area)?fullChain?' · entire island chain':' · main islands':''}</span><span>{visible} visible reference points</span></div>
    </div>
   </div>

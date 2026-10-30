@@ -11,7 +11,7 @@ export function createNationalParksModule(host: Host) {
       "Explore the National Park System, record visits, and plan future discoveries",
     icon: "△",
     category: "parks",
-    version: "0.12.0",
+    version: "0.12.1",
     entry: async () => ({
       default: (await import("./screen")).createScreen(host),
     }),

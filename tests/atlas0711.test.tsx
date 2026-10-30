@@ -122,7 +122,37 @@ describe('verified jurisdiction coverage and resilience',()=>{
 
 it('activates overlapping markers with a pointer and keeps all cluster members selectable',()=>{
  const onSelect=vi.fn();render(<Atlas parks={[ohio,ohioTwo]} stateFilter="OH" onSelect={onSelect}/>);
- const marker=screen.getByRole('button',{name:'2 nearby park units: open list'});fireEvent.pointerDown(marker,{pointerId:1,pointerType:'touch'});
+ const marker=screen.getByRole('button',{name:'2 nearby park units: open list'});fireEvent.click(marker);
  const group=screen.getByRole('region',{name:'Overlapping park units'});expect(within(group).getByRole('button',{name:'Ohio Unit'})).toBeTruthy();
  fireEvent.click(within(group).getByRole('button',{name:'Second Ohio Unit'}));expect(onSelect).toHaveBeenCalledWith('oh2');
+});
+
+
+it('retains both Michigan peninsulas in the national map',()=>{
+ render(<Atlas parks={data} onSelect={()=>{}}/>);
+ const michigan=screen.getByRole('button',{name:'Explore Michigan'});
+ expect((michigan.getAttribute('d')!.match(/M/g)||[]).length).toBeGreaterThan(2);
+ expect(michigan.getAttribute('transform')).toMatch(/scale/);
+});
+
+it('pinches and drags when gestures begin on states or markers without accidental selection',()=>{
+ const original=window.PointerEvent;
+ class Pointer extends MouseEvent {pointerId:number;pointerType:string;constructor(type:string, init:PointerEventInit={}){super(type,init);this.pointerId=init.pointerId??1;this.pointerType=init.pointerType??'touch'}}
+ Object.defineProperty(window,'PointerEvent',{value:Pointer,configurable:true});
+ try {
+  const select=vi.fn(), change=vi.fn();render(<Atlas parks={[ohio]} onSelect={select} onStateChange={change}/>);
+  const shape=screen.getByRole('button',{name:'Explore Ohio'});const stage=shape.closest('.np-atlas-stage')!;
+  fireEvent.pointerDown(shape,{pointerId:1,pointerType:'touch',clientX:150,clientY:150});
+  fireEvent.pointerDown(shape,{pointerId:2,pointerType:'touch',clientX:200,clientY:150});
+  fireEvent.pointerMove(shape,{pointerId:2,pointerType:'touch',clientX:250,clientY:150});
+  expect(screen.getByLabelText('Zoom 2.0 times')).toBeTruthy();
+  fireEvent.pointerUp(shape,{pointerId:2,pointerType:'touch'});fireEvent.pointerUp(shape,{pointerId:1,pointerType:'touch'});
+  fireEvent.click(shape);expect(change).not.toHaveBeenCalled();
+  const svg=stage.querySelector('svg')!;const before=svg.getAttribute('viewBox');
+  fireEvent.pointerDown(shape,{pointerId:3,pointerType:'touch',clientX:200,clientY:150});
+  fireEvent.pointerMove(shape,{pointerId:3,pointerType:'touch',clientX:100,clientY:150});
+  fireEvent.pointerUp(shape,{pointerId:3,pointerType:'touch'});fireEvent.click(shape);
+  expect(svg.getAttribute('viewBox')).not.toEqual(before);expect(change).not.toHaveBeenCalled();
+  fireEvent.pointerDown(shape,{pointerId:4,pointerType:'touch',clientX:100,clientY:100});fireEvent.pointerUp(shape,{pointerId:4,pointerType:'touch'});fireEvent.click(shape);expect(change).toHaveBeenCalledWith('OH');
+ } finally {Object.defineProperty(window,'PointerEvent',{value:original,configurable:true})}
 });
