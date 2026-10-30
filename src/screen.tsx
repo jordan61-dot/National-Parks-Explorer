@@ -1597,7 +1597,7 @@ export function createScreen(host: Host) {
       route === "" ? (
         <Overview />
       ) : route === "catalog" || route === "atlas" ? (
-        <Catalog key={route} atlas={route === "atlas"} />
+        <Catalog atlas={route === "atlas"} />
       ) : route === "discover" ? (
         <Discover />
       ) : route === "trails" ? (
