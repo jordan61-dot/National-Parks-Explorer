@@ -103,3 +103,15 @@ it('passes available automated accessibility rules on catalog, profile and attra
   expect(result.violations.map(x=>({id:x.id,nodes:x.nodes.map(n=>n.target)}))).toEqual([]);
  }
 });
+it('discovers parks with filters, opens a preview, and keeps local records unchanged',async()=>{
+ Object.defineProperty(HTMLDialogElement.prototype,'showModal',{configurable:true,value:function(this:HTMLDialogElement){this.setAttribute('open','')}});
+ Object.defineProperty(HTMLDialogElement.prototype,'close',{configurable:true,value:function(this:HTMLDialogElement){this.removeAttribute('open')}});
+ const u=userEvent.setup(),v=setup('explore');await screen.findByRole('heading',{name:'Find your next place of wonder.'});
+ await u.selectOptions(screen.getByLabelText('State or territory'),'OH');expect(screen.getByRole('status').textContent).toContain('1 places match');
+ expect(screen.getByRole('link',{name:'View Ohio on atlas'}).getAttribute('href')).toBe('#/apps/national-parks/atlas/oh');
+ await u.click(screen.getByRole('button',{name:'Preview Synthetic Park'}));expect(screen.getByRole('dialog').textContent).toContain('Synthetic reference');
+ expect(screen.getByRole('link',{name:'Open complete park profile'}).getAttribute('href')).toContain('park/test-park');
+ await u.click(screen.getByRole('button',{name:'Close preview'}));expect(v.store.data.records).toHaveLength(0);
+ v.go('park/test-park');await screen.findByRole('heading',{name:'Synthetic Park'});v.go('explore');await screen.findByRole('heading',{name:'Find your next place of wonder.'});
+ expect((screen.getByLabelText('State or territory') as HTMLSelectElement).value).toBe('OH');delete (HTMLDialogElement.prototype as Partial<HTMLDialogElement>).showModal;delete (HTMLDialogElement.prototype as Partial<HTMLDialogElement>).close;
+});

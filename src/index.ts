@@ -11,13 +11,15 @@ export function createNationalParksModule(host: Host) {
       "Explore the National Park System, record visits, and plan future discoveries",
     icon: "△",
     category: "parks",
-    version: "0.12.2",
+    version: "0.13.0",
     entry: async () => ({
       default: (await import("./screen")).createScreen(host),
     }),
     routes: [
       "",
       "catalog",
+      "explore",
+      "atlas/:state",
       "atlas",
       "discover",
       "trails",
