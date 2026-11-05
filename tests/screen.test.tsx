@@ -115,3 +115,11 @@ it('discovers parks with filters, opens a preview, and keeps local records uncha
  v.go('park/test-park');await screen.findByRole('heading',{name:'Synthetic Park'});v.go('explore');await screen.findByRole('heading',{name:'Find your next place of wonder.'});
  expect((screen.getByLabelText('State or territory') as HTMLSelectElement).value).toBe('OH');delete (HTMLDialogElement.prototype as Partial<HTMLDialogElement>).showModal;delete (HTMLDialogElement.prototype as Partial<HTMLDialogElement>).close;
 });
+it('filters discovery by a documented subject and clears it without changing stored records',async()=>{
+ const u=userEvent.setup(),v=setup('explore');await screen.findByRole('heading',{name:'Find your next place of wonder.'});
+ await u.click(screen.getByRole('button',{name:/Coasts and lakes/}));
+ expect(screen.getByText('No places match. Clear a filter or search another term.')).toBeTruthy();
+ expect(screen.getByText(/Subject selected: Coasts and lakes/)).toBeTruthy();
+ await u.click(screen.getByRole('button',{name:'Clear subject'}));expect(screen.getByRole('heading',{name:'Synthetic Park'})).toBeTruthy();
+ expect(v.store.data.records).toHaveLength(0);
+});
