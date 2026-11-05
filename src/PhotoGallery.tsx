@@ -1,4 +1,4 @@
-import {useEffect,useRef,useState} from 'react';
+import React, {useEffect,useRef,useState} from 'react';
 import type {Park} from './reference';
 import {safeUrl} from './reference';
 import {mediaImages} from './data/media';
