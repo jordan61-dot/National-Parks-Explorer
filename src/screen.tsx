@@ -124,7 +124,7 @@ function Card({ park: p }: { park: Park }) {
   const { all } = useParks(),
     vs = visits(all).filter((v) => v.parkId === p.id);
   return (
-    <article className="np-card">
+    <article className="np-card np-park-card">
       <p className="eyebrow">
         {p.designation} · {p.states.join(", ")}
       </p>
@@ -372,7 +372,7 @@ function Profile({ id }: { id: string }) {
           ? "Official National Park System unit"
           : "Affiliated area"}
       </p>
-      <h2>{p.name}</h2>
+      <h2 className="np-profile-title">{p.name}</h2>
       <ReferencePhoto park={p}/>
       <p>
         {p.states.map((s) => stateNames[s] ?? s).join(" · ")} · {p.designation}
