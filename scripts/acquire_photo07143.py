@@ -77,7 +77,7 @@ def acceptable(a,park):
          any(norm(u.get('Name',''))==norm(park['name']) and (not park['parkCode'] or u.get('Code','').lower()==park['parkCode'].lower()) for u in units) and
          bool(re.search(r'\bNPS\b|National Park Service',credit,re.I)) and not re.search(r'©|copyright|courtesy',credit,re.I) and
          bool((a.get('AltText') or '').strip()) and bool((a.get('Title') or '').strip()) and not re.search(r'\b(poster|painting|illustration|drawing|diagram|graphic|map|logo)\b',a.get('Title','')+' '+a.get('AltText',''),re.I) and explicit_photo_location(park,a.get('Title',''),a.get('AltText','')))
-def acquire(a,park,seen,description_location=False,site_description=None):
+def acquire(a,park,seen,description_location=False,site_description=None,allow_uncredited=False):
  ident=a['AssetID'].lower(); source='https://npgallery.nps.gov/AssetDetail/'+ident
  html=read(source,2000000).decode('utf-8','replace'); rights=label(html,'Constraints Information');units=label(html,'NPS Units'); credit=label(html,'PhotoCredit') or label(html,'Photographer');title=label(html,'Title');alt=label(html,'AltText');description=label(html,'Description')
  if not re.search(r'^Public domain\s*:\s*Full Granting Rights$',rights,re.I):raise ValueError('asset page lacks explicit public-domain full rights')
@@ -86,10 +86,12 @@ def acquire(a,park,seen,description_location=False,site_description=None):
  # actual description with the exact location. This is an opt-in manual path.
  exact_description=description_location and normalized(description).startswith(normalized(park['name'])+' ') and (exact_unit or bool(re.search(r'\bNPS-wide\b',units,re.I)))
  exact_site=site_description=='Stones River National Cemetery' and park['id']=='stones-river-national-battlefield' and exact_unit and normalized(description).startswith(normalized(site_description)+' ')
+ grady_site=site_description=='Grady Monument' and park['id']=='moores-creek-national-battlefield' and exact_unit and 'grady monument' in normalized(title+' '+alt)
  if not (exact_unit or exact_description):raise ValueError('asset page does not identify exact unit or an explicit NPS-wide source location')
- if not re.search(r'\bNPS\b|National Park Service',credit,re.I) or re.search(r'©|copyright|courtesy',credit,re.I):raise ValueError('ambiguous author credit')
+ if not credit and allow_uncredited:credit='Photographer unknown; source: NPS Gallery'
+ elif not re.search(r'\bNPS\b|National Park Service',credit,re.I) or re.search(r'©|copyright|courtesy',credit,re.I):raise ValueError('ambiguous author credit')
  if not title or not alt:raise ValueError('title or descriptive alternative text missing')
- if not explicit_photo_location(park,title,alt) and not exact_description and not exact_site:raise ValueError('title and alternative text do not explicitly identify this park')
+ if not explicit_photo_location(park,title,alt) and not exact_description and not exact_site and not grady_site:raise ValueError('title and alternative text do not explicitly identify this park')
  m=re.search(r'href="([^"]*/proxylores\.jpg[^\"]*)"',html,re.I)
  if not m:raise ValueError('no verified small image')
  download=urllib.parse.urljoin(source,m.group(1))
@@ -100,7 +102,7 @@ def acquire(a,park,seen,description_location=False,site_description=None):
  sha=hashlib.sha256(blob).hexdigest()
  if sha in seen:raise ValueError('duplicate image content')
  dest=IMG/('photo07143-'+ident+'.webp');dest.write_bytes(blob);now=datetime.datetime.now(datetime.timezone.utc).isoformat()
- return dict(id='photo07143-'+ident,asset='src/media072/'+dest.name,source=source,sourcePageSha256=hashlib.sha256(html.encode('utf-8')).hexdigest(),originalSource='https://npgallery.nps.gov/GetAsset/'+ident+'/original.jpg',downloadUrl=download,retrievedAt=now,alt=alt[:1500],caption=title[:500],credit=credit[:300],license='Public domain (NPS asset declaration)',licenseUrl='https://www.nps.gov/aboutus/disclaimer.htm',rightsEvidence=rights,unitEvidence=units,locationEvidence=description[:1500] if (exact_description or exact_site) else 'Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.',locationMethod='nps-site-description' if exact_site else ('nps-description' if exact_description else 'nps-unit'),width=image.width,height=image.height,sha256=sha,bytes=len(blob),changes='Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present.')
+ return dict(id='photo07143-'+ident,asset='src/media072/'+dest.name,source=source,sourcePageSha256=hashlib.sha256(html.encode('utf-8')).hexdigest(),originalSource='https://npgallery.nps.gov/GetAsset/'+ident+'/original.jpg',downloadUrl=download,retrievedAt=now,alt=alt[:1500],caption=title[:500],credit=credit[:300],license='Public domain (NPS asset declaration)',licenseUrl='https://www.nps.gov/aboutus/disclaimer.htm',rightsEvidence=rights,unitEvidence=units,locationEvidence=('Grady Monument: https://www.nps.gov/mocr/planyourvisit/park-brochure.htm' if grady_site else description[:1500] if (exact_description or exact_site) else 'Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.'),locationMethod='nps-grady-site' if grady_site else ('nps-site-description' if exact_site else ('nps-description' if exact_description else 'nps-unit')),width=image.width,height=image.height,sha256=sha,bytes=len(blob),changes='Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present.')
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=10);parser.add_argument('--candidate-limit',type=int,default=10);parser.add_argument('--park',action='append',default=[]);args=parser.parse_args();IMG.mkdir(exist_ok=True)
  if args.candidate_limit < 1:parser.error('--candidate-limit must be positive')

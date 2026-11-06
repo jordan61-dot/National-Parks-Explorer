@@ -299,6 +299,26 @@
       "parkId": "stones-river-national-battlefield",
       "decision": "accepted",
       "method": "Visually inspected cemetery headstones and section markers; NPS description identifies Stones River National Cemetery, unit metadata identifies battlefield, and rights state public domain full granting rights."
+    },
+    "photo07143-c14ccf5c-c7d9-4461-bf10-da6971a63bb0": {
+      "parkId": "moores-creek-national-battlefield",
+      "decision": "accepted",
+      "method": "Visually inspected wooden bridge; NPS identifies Moores Creek Bridge and the exact park and declares full public-domain rights; photographer not identified."
+    },
+    "photo07143-36f76788-2dbf-4041-9d76-c4609cc051d0": {
+      "parkId": "moores-creek-national-battlefield",
+      "decision": "accepted",
+      "method": "Visually inspected distinct view across creek to bridge; NPS source identifies Moores Creek Bridge and park, and states full public-domain rights; photographer unknown."
+    },
+    "photo07143-650ca229-d81d-4acc-975f-6ec958a25c2b": {
+      "parkId": "moores-creek-national-battlefield",
+      "decision": "accepted",
+      "method": "Visually inspected John Grady inscription; NPS identifies Grady Monument in this park brochure and gallery identifies this exact park with full public-domain rights; photographer unknown."
+    },
+    "photo07143-eb77a89c-8fd8-4fb8-aff1-3d4cf9c42fcb": {
+      "parkId": "moores-creek-national-battlefield",
+      "decision": "accepted",
+      "method": "Visually inspected different side of monument with battle inscription; NPS identifies Grady Monument in this park and declares full public-domain rights; photographer unknown."
     }
   }
 }

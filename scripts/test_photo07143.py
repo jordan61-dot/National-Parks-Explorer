@@ -53,4 +53,10 @@ class PhotoRules(unittest.TestCase):
   self.assertTrue(nps_description_matches(park,photo))
   self.assertFalse(nps_description_matches({**park,'id':'other'},photo))
   self.assertFalse(nps_description_matches(park,{**photo,'unitEvidence':'Other unit'}))
+ def test_grady_site_requires_correct_park_and_source(self):
+  park={**self.park,'id':'moores-creek-national-battlefield','name':'Moores Creek National Battlefield'}
+  photo={'locationMethod':'nps-grady-site','unitEvidence':'Moores Creek National Battlefield, Code: MOCR','caption':'Grady Monument','alt':'Monument','locationEvidence':'Grady Monument: https://www.nps.gov/mocr/planyourvisit/park-brochure.htm'}
+  self.assertTrue(nps_description_matches(park,photo))
+  self.assertFalse(nps_description_matches({**park,'id':'other'},photo))
+  self.assertFalse(nps_description_matches(park,{**photo,'locationEvidence':'unverified'}))
 if __name__=='__main__':unittest.main()
