@@ -37,11 +37,20 @@ def search(park,page=1):
  url='https://npgallery.nps.gov/SearchResults?'+urllib.parse.urlencode(params)
  raw=read(url).decode('utf-8','replace'); marker='var search = '; pos=raw.index(marker)+len(marker)
  data,_=json.JSONDecoder().raw_decode(raw[pos:]); return [v.get('Asset',{}) for v in data.get('Results',[])]
+def candidate_priority(asset):
+ """Prefer identifiable views; ordering is only triage, never approval."""
+ text=(asset.get('Title') or '')+' '+(asset.get('AltText') or '')
+ scenic=bool(re.search(r'\b(landscape|overlook|battlefield|trail|fort|historic building|monument|memorial|coast|mountain|river|forest|entrance|visitor center)\b',text,re.I))
+ event=bool(re.search(r'\b(event|festival|reenact|interpreter|volunteer|display|cookies|recipe|presentation|costume|portrait)\b',text,re.I))
+ return (event,not scenic)
+
 def candidates(park):
+ found_assets=[]
  for page in range(1,4):
   found=search(park,page)
   if not found:break
-  yield from found
+  found_assets.extend(found)
+ yield from sorted(found_assets,key=candidate_priority)
 
 def acceptable(a,park):
  rights=a.get('ConstraintsInformation') or {}; credit=a.get('PhotoCredit') or a.get('Photographer') or '';units=a.get('NPSUnits') or []
@@ -68,20 +77,25 @@ def acquire(a,park,seen):
  sha=hashlib.sha256(blob).hexdigest()
  if sha in seen:raise ValueError('duplicate image content')
  dest=IMG/('photo07143-'+ident+'.webp');dest.write_bytes(blob);now=datetime.datetime.now(datetime.timezone.utc).isoformat()
- return dict(id='photo07143-'+ident,asset='src/media072/'+dest.name,source=source,originalSource='https://npgallery.nps.gov/GetAsset/'+ident+'/original.jpg',downloadUrl=download,retrievedAt=now,alt=alt[:1500],caption=title[:500],credit=credit[:300],license='Public domain (NPS asset declaration)',licenseUrl='https://www.nps.gov/aboutus/disclaimer.htm',rightsEvidence=rights,unitEvidence=units,locationEvidence='Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.',width=image.width,height=image.height,sha256=sha,bytes=len(blob),changes='Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present.')
+ return dict(id='photo07143-'+ident,asset='src/media072/'+dest.name,source=source,sourcePageSha256=hashlib.sha256(html.encode('utf-8')).hexdigest(),originalSource='https://npgallery.nps.gov/GetAsset/'+ident+'/original.jpg',downloadUrl=download,retrievedAt=now,alt=alt[:1500],caption=title[:500],credit=credit[:300],license='Public domain (NPS asset declaration)',licenseUrl='https://www.nps.gov/aboutus/disclaimer.htm',rightsEvidence=rights,unitEvidence=units,locationEvidence='Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.',width=image.width,height=image.height,sha256=sha,bytes=len(blob),changes='Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present.')
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=10);parser.add_argument('--park',action='append',default=[]);args=parser.parse_args();IMG.mkdir(exist_ok=True)
+ parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=10);parser.add_argument('--candidate-limit',type=int,default=10);parser.add_argument('--park',action='append',default=[]);args=parser.parse_args();IMG.mkdir(exist_ok=True)
+ if args.candidate_limit < 1:parser.error('--candidate-limit must be positive')
  robots=urllib.robotparser.RobotFileParser();robots.set_url('https://npgallery.nps.gov/robots.txt');robots.read()
  for path in ('SearchResults','AssetDetail/example','GetAsset/example/proxylores.jpg'):
   if not robots.can_fetch(AGENT,'https://npgallery.nps.gov/'+path):raise SystemExit('NPGallery robots denies '+path)
  parks=json.loads((ROOT/'src/data/parks.json').read_text())['units']; existing=json.loads(PHOTO.read_text()) if PHOTO.exists() else {'parks':{}}; report=json.loads(REPORT.read_text()) if REPORT.exists() else {'parks':{}};pending=json.loads(CANDIDATES.read_text()) if CANDIDATES.exists() else {'parks':{}};quarantine=json.loads(QUARANTINE.read_text()) if QUARANTINE.exists() else {'parks':{}};existing072=json.loads((E/'release072-media.json').read_text())['parks'];commons_file=E/'release072zz-commons07143.json';commons=json.loads(commons_file.read_text())['parks'] if commons_file.exists() else {}
+ # A checkpoint may omit unreviewed binaries. Never let stale metadata prevent
+ # their safe reacquisition, and never treat it as evidence of a downloaded file.
+ for unit in pending['parks'].values():
+  unit['photographs']=[p for p in unit.get('photographs',[]) if (ROOT/p['asset']).is_file() and hashlib.sha256((ROOT/p['asset']).read_bytes()).hexdigest()==p['sha256']]
  seen={p['sha256'] for source in (existing072,commons,existing['parks'],pending['parks']) for v in source.values() for p in v.get('photographs',[])}
  parks=[p for p in parks if (not args.park or p['id'] in args.park) and len(existing072.get(p['id'],{}).get('photographs',[]))+len(commons.get(p['id'],{}).get('photographs',[]))+len(existing['parks'].get(p['id'],{}).get('photographs',[]))<5][:args.limit]
  for park in parks:
   base=existing072.get(park['id'],{}).get('photographs',[])+commons.get(park['id'],{}).get('photographs',[])+existing['parks'].get(park['id'],{}).get('photographs',[]);photos=pending['parks'].setdefault(park['id'],{'photographs':[]})['photographs']; rejected=[x['photo'] for x in quarantine['parks'].get(park['id'],[])];errors=[];titles={norm(p['caption']) for p in base+photos+rejected};alts={norm(p['alt']) for p in base+photos+rejected};ids={p['id'] for p in base+photos+rejected}
   try:
    for a in candidates(park):
-    if len(base)+len(photos)>=10:break
+    if len(base)+len(photos)>=args.candidate_limit:break
     if not acceptable(a,park) or 'photo07143-'+a['AssetID'].lower() in ids or norm(a['Title']) in titles or norm(a['AltText']) in alts:continue
     try:
      p=acquire(a,park,seen);photos.append(p);seen.add(p['sha256']);titles.add(norm(p['caption']));alts.add(norm(p['alt']));ids.add(p['id']);save(CANDIDATES,pending);print('  staged candidate',park['id'],p['caption'],flush=True)

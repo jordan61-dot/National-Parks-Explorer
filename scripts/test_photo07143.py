@@ -1,5 +1,5 @@
 import copy,unittest
-from acquire_photo07143 import acceptable
+from acquire_photo07143 import acceptable,candidate_priority
 from release072 import merge
 from photo_coverage07143 import build_report
 
@@ -21,4 +21,8 @@ class PhotoRules(unittest.TestCase):
   p={'id':'one','source':'https://example.org/one','sha256':'a'}
   result=build_report(parks,[{'parks':{'test':{'photographs':[p]}}}]);self.assertEqual(result['additionalPhotosNeeded'],4);self.assertEqual(result['parksWithAtLeastFive'],0)
   with self.assertRaises(ValueError):build_report(parks,[{'parks':{'test':{'photographs':[p,p]}}}])
+ def test_staging_prioritizes_park_views_without_approving_them(self):
+  view={'Title':'Battlefield trail','AltText':'A footpath through the battlefield.'}
+  event={'Title':'Festival display','AltText':'A volunteer at a display table.'}
+  self.assertLess(candidate_priority(view),candidate_priority(event))
 if __name__=='__main__':unittest.main()
