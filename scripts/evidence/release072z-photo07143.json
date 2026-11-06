@@ -1481,6 +1481,33 @@
           "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
         }
       ]
+    },
+    "manassas-national-battlefield-park": {
+      "photographs": [
+        {
+          "id": "photo07143-ad4ecedc-26fd-4976-a4cc-8ef75626ccf7",
+          "asset": "src/media072/photo07143-ad4ecedc-26fd-4976-a4cc-8ef75626ccf7.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/ad4ecedc-26fd-4976-a4cc-8ef75626ccf7",
+          "sourcePageSha256": "f4f25054f05e80e07006b0aafc8446bb27ae64682bcc68a21a01a9fbb8f08b8c",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/ad4ecedc-26fd-4976-a4cc-8ef75626ccf7/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/ad4ecedc-26fd-4976-a4cc-8ef75626ccf7/proxylores.jpg",
+          "retrievedAt": "2026-11-06T09:35:52.027942+00:00",
+          "alt": "Three people wearing wildland fire protective equipment stand or walk with drip torches in field of high grass near historic wooden fence.",
+          "caption": "Wildland firefighter uses drip torch to start prescribed burn at Manassas National Battlefield Park",
+          "credit": "NPS / Jonathan Shafer",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Manassas National Battlefield Park, Code: MANA",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 648,
+          "height": 432,
+          "sha256": "020ae0f0b0ae72cb64e3d4f1b4f01bc24b4bb5ecab0f811241565e9ba66ef440",
+          "bytes": 89138,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
     }
   }
 }
