@@ -294,6 +294,11 @@
       "parkId": "tupelo-national-battlefield",
       "decision": "accepted",
       "method": "Visually inspected the Tupelo Battlefield photograph, checked its NPS description and location, and verified its public-domain full rights; the separate Parkway visitor center is excluded."
+    },
+    "photo07143-00886189-0e3e-4721-88d3-57fc0a79e8bd": {
+      "parkId": "stones-river-national-battlefield",
+      "decision": "accepted",
+      "method": "Visually inspected cemetery headstones and section markers; NPS description identifies Stones River National Cemetery, unit metadata identifies battlefield, and rights state public domain full granting rights."
     }
   }
 }

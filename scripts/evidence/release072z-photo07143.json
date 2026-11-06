@@ -1126,6 +1126,29 @@
           "sha256": "8917543d52938ba3796b4d9a1d63a5599af5c32d17741e2e4d589cbe5764a11a",
           "bytes": 74620,
           "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-00886189-0e3e-4721-88d3-57fc0a79e8bd",
+          "asset": "src/media072/photo07143-00886189-0e3e-4721-88d3-57fc0a79e8bd.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/00886189-0e3e-4721-88d3-57fc0a79e8bd",
+          "sourcePageSha256": "adfdad676b1a39eaa5f5c90cb0a4980dda46c0d425ab924d5d9b59e248e690a9",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/00886189-0e3e-4721-88d3-57fc0a79e8bd/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/00886189-0e3e-4721-88d3-57fc0a79e8bd/proxylores.jpg",
+          "retrievedAt": "2026-11-06T09:00:37.191425+00:00",
+          "alt": "Square posts with letters mark burial sections P and Q, where rows of uniform marble headstones are surrounded by low turf and scattered trees.",
+          "caption": "Section Markers Define Burial Areas",
+          "credit": "NPS",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Stones River National Battlefield, Code: STRI Stones River National Cemetery, Code: SRNC",
+          "locationEvidence": "Stones River National Cemetery was designed in a relatively symmetrical, radial pattern, with burial blocks divided by avenues to form fifteen burial sections. In 1942, Section P was split by a new avenue that was used to divide it into a northern half, designated for white troops, and a southern half, Section Q, which was designated for African Americans.",
+          "locationMethod": "nps-site-description",
+          "width": 500,
+          "height": 375,
+          "sha256": "376eeddcad2f46aea2a80efbacd84155a01645dc077bcc4d497e0b5829c525a8",
+          "bytes": 69644,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
         }
       ]
     },

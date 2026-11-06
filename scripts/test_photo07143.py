@@ -47,4 +47,10 @@ class PhotoRules(unittest.TestCase):
   self.assertTrue(nps_description_matches(self.park,{**photo,'unitEvidence':'Example National Park, Code: EXMP'}))
   for change in ({'locationMethod':'nps-unit'},{'unitEvidence':'Another unit'},{'locationEvidence':'Example National Parkway is a different place.'},{'locationEvidence':'A place near Example National Park.'}):
    self.assertFalse(nps_description_matches(self.park,{**photo,**change}))
+ def test_cemetery_description_requires_correct_park_and_unit(self):
+  park={**self.park,'id':'stones-river-national-battlefield','name':'Stones River National Battlefield'}
+  photo={'locationMethod':'nps-site-description','unitEvidence':'Stones River National Battlefield, Code: STRI','locationEvidence':'Stones River National Cemetery was designed in a radial pattern.'}
+  self.assertTrue(nps_description_matches(park,photo))
+  self.assertFalse(nps_description_matches({**park,'id':'other'},photo))
+  self.assertFalse(nps_description_matches(park,{**photo,'unitEvidence':'Other unit'}))
 if __name__=='__main__':unittest.main()
