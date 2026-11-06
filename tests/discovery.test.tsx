@@ -31,6 +31,13 @@ it('navigates verified offline images, cites each source, and restores focus on 
 it('omits a gallery when there is no bundled photograph',()=>{
  const park={id:'x',photographs:[{id:'unknown'}]} as Park;expect(availablePhotos([park])).toEqual([]);const view=render(<PhotoGallery parks={[park]}/>);expect(view.container.textContent).toBe('');
 });
+it('describes a single park without claiming its coverage is incomplete',async()=>{
+ const r=await loadReference(),park=r.units.find(p=>(p.photographs?.length??0)>=5)!;
+ const view=render(<PhotoGallery parks={[park]}/>);
+ expect(view.container.textContent).toContain('available offline');expect(view.container.textContent).not.toContain('Coverage is incomplete');
+ view.rerender(<PhotoGallery parks={[park,{...park,id:'no-photos',photographs:[]}]}/>);
+ expect(view.container.textContent).toContain('Coverage is incomplete');
+});
 it('keeps gallery thumbnails bounded as the reference library grows',async()=>{
  const r=await loadReference();const imageParks=r.units.filter(p=>p.photographs?.length).slice(0,4);const many=Array.from({length:20},(_,i)=>({...imageParks[i%imageParks.length],id:'fixture-'+i}));
  Object.defineProperty(HTMLDialogElement.prototype,'showModal',{configurable:true,value:function(this:HTMLDialogElement){this.setAttribute('open','')}});
