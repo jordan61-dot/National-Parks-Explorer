@@ -1362,6 +1362,33 @@
           "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
         }
       ]
+    },
+    "kennesaw-mountain-national-battlefield-park": {
+      "photographs": [
+        {
+          "id": "photo07143-17924dbc-98a2-4241-b46a-d1e79a7cbe30",
+          "asset": "src/media072/photo07143-17924dbc-98a2-4241-b46a-d1e79a7cbe30.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/17924dbc-98a2-4241-b46a-d1e79a7cbe30",
+          "sourcePageSha256": "d55b45421a8d6448668c3a058c053c4541177c8cef7b02d9284a0ef0419b6436",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/17924dbc-98a2-4241-b46a-d1e79a7cbe30/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/17924dbc-98a2-4241-b46a-d1e79a7cbe30/proxylores.jpg",
+          "retrievedAt": "2026-11-06T09:15:22.373192+00:00",
+          "alt": "Little Kennesaw Mountain shrouded in rain and mist.",
+          "caption": "Rainy Mountain",
+          "credit": "TOM WILSON",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Kennesaw Mountain National Battlefield Park, Code: KEMO",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 500,
+          "height": 333,
+          "sha256": "3d36cf817c9e35fbcf14fda8874dab5b058c86cc7f176dfc1d65458901f5cd6c",
+          "bytes": 26400,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
     }
   }
 }

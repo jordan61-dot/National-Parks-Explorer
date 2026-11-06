@@ -77,7 +77,7 @@ def acceptable(a,park):
          any(norm(u.get('Name',''))==norm(park['name']) and (not park['parkCode'] or u.get('Code','').lower()==park['parkCode'].lower()) for u in units) and
          bool(re.search(r'\bNPS\b|National Park Service',credit,re.I)) and not re.search(r'©|copyright|courtesy',credit,re.I) and
          bool((a.get('AltText') or '').strip()) and bool((a.get('Title') or '').strip()) and not re.search(r'\b(poster|painting|illustration|drawing|diagram|graphic|map|logo)\b',a.get('Title','')+' '+a.get('AltText',''),re.I) and explicit_photo_location(park,a.get('Title',''),a.get('AltText','')))
-def acquire(a,park,seen,description_location=False,site_description=None,allow_uncredited=False):
+def acquire(a,park,seen,description_location=False,site_description=None,allow_uncredited=False,allow_named_credit=False):
  ident=a['AssetID'].lower(); source='https://npgallery.nps.gov/AssetDetail/'+ident
  html=read(source,2000000).decode('utf-8','replace'); rights=label(html,'Constraints Information');units=label(html,'NPS Units'); credit=label(html,'PhotoCredit') or label(html,'Photographer');title=label(html,'Title');alt=label(html,'AltText');description=label(html,'Description')
  if not re.search(r'^Public domain\s*:\s*Full Granting Rights$',rights,re.I):raise ValueError('asset page lacks explicit public-domain full rights')
@@ -89,7 +89,7 @@ def acquire(a,park,seen,description_location=False,site_description=None,allow_u
  grady_site=site_description=='Grady Monument' and park['id']=='moores-creek-national-battlefield' and exact_unit and 'grady monument' in normalized(title+' '+alt)
  if not (exact_unit or exact_description):raise ValueError('asset page does not identify exact unit or an explicit NPS-wide source location')
  if not credit and allow_uncredited:credit='Photographer unknown; source: NPS Gallery'
- elif not re.search(r'\bNPS\b|National Park Service',credit,re.I) or re.search(r'©|copyright|courtesy',credit,re.I):raise ValueError('ambiguous author credit')
+ elif re.search(r'©|copyright|courtesy',credit,re.I) or (not re.search(r'\bNPS\b|National Park Service',credit,re.I) and not (allow_named_credit and credit)):raise ValueError('ambiguous author credit')
  if not title or not alt:raise ValueError('title or descriptive alternative text missing')
  if not explicit_photo_location(park,title,alt) and not exact_description and not exact_site and not grady_site:raise ValueError('title and alternative text do not explicitly identify this park')
  m=re.search(r'href="([^"]*/proxylores\.jpg[^\"]*)"',html,re.I)
