@@ -7,6 +7,14 @@ from urllib.parse import urlparse
 def normalized(s):
  return re.sub(r'[^a-z0-9]+',' ',unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower()).strip()
 
+def explicit_photo_location(park,title,alt):
+ name=park['name'];designation=park.get('designation','')
+ short=name[:-len(designation)].strip(' ,:-') if designation and name.casefold().endswith(designation.casefold()) else name
+ phrases=[normalized(name)]
+ if len(normalized(short))>=6:phrases.append(normalized(short))
+ hay=' '+normalized(title+' '+alt)+' '
+ return any(' '+phrase+' ' in hay for phrase in phrases if phrase)
+
 def merge(park, data):
  extra=data.get('parks',{}).get(park['id'],{})
  if extra.get('description') and not park['description']:
@@ -32,7 +40,12 @@ def merge(park, data):
    park['attractions'].append(dict(id='place-'+hashlib.sha256(key.encode()).hexdigest()[:20],**value))
  for h in extra.get('history',[]):
   if h not in park.setdefault('history',[]):park['history'].append(h)
- if extra.get('photographs'):park['photographs']=extra['photographs']
+ if extra.get('photographs'):
+  photos=park.setdefault('photographs',[])
+  for photo in extra['photographs']:
+   old=next((x for x in photos if x['id']==photo['id'] or x['source']==photo['source']),None)
+   if old is None:photos.append(photo)
+   else:assert old==photo, (park['id'],photo['id'],'conflicting photo metadata')
  if any(a['kind']=='trail' for a in park['attractions']):park['activities']=sorted(set(park['activities']+['Hiking']))
 
 def compact(value):
@@ -52,6 +65,7 @@ def compact(value):
  return dict(strings=table,reference=pack(value))
 
 def validate(data,root):
+ assert len({p['id'] for p in data['units']})==len(data['units']),'Duplicate park identities'
  ids=set()
  for p in data['units']:
   assert p['id'] not in ids;ids.add(p['id'])
@@ -62,8 +76,20 @@ def validate(data,root):
    assert urlparse(a['source']).scheme=='https' and urlparse(a['source']).hostname=='www.nps.gov'
    if a.get('length'):assert a['kind']=='trail' and a['length']['value']>0 and a['length']['unit'] in {'mi','km'} and a['length']['method']
    if 'latitude' in a:assert a.get('locationSource') and a.get('locationKind') and -90<=a['latitude']<=90 and -180<=a['longitude']<=180
+  photo_ids=set();photo_sources=set()
   for photo in p.get('photographs',[]):
-   assert photo['license'] and photo['credit'] and photo['alt'] and re.search(r'public domain',photo['rightsEvidence'],re.I) and urlparse(photo['source']).hostname=='npgallery.nps.gov'
+   assert photo['id'] not in photo_ids and photo['source'] not in photo_sources,(p['id'],photo['id'])
+   photo_ids.add(photo['id']);photo_sources.add(photo['source'])
+   assert photo['license'] and photo['credit'] and photo['alt'] and re.search(r'public domain',photo['rightsEvidence'],re.I) and urlparse(photo['source']).hostname in {'npgallery.nps.gov','commons.wikimedia.org'}
+   if photo['id'].startswith('photo07143-'):
+    review=json.loads((root/'scripts/evidence/photo07143-review.json').read_text())['reviews'].get(photo['id'],{})
+    assert review.get('decision')=='accepted' and review.get('parkId')==p['id'] and review.get('method')
+    assert photo.get('unitEvidence') and photo.get('retrievedAt') and photo.get('downloadUrl')
+    host=urlparse(photo['source']).hostname
+    if host=='npgallery.nps.gov':
+     assert normalized(p['name']) in normalized(photo['unitEvidence']) and explicit_photo_location(p,photo['caption'],photo['alt']) and photo.get('locationEvidence') and re.search(r'full granting rights',photo['rightsEvidence'],re.I)
+    else:
+     assert host=='commons.wikimedia.org' and p['id']=='9-11-pentagon-memorial' and 'pentagon memorial' in photo['unitEvidence'].lower() and re.search(r'PD US (Navy|Marines|Army)',photo['rightsEvidence'])
    path=(root/photo['asset']).resolve();assert path.is_relative_to((root/'src/media072').resolve())
    assert path.stat().st_size<=200000 and hashlib.sha256(path.read_bytes()).hexdigest()==photo['sha256']
  baseline=json.loads((root/'docs/BASELINE072.json').read_text())['identities']

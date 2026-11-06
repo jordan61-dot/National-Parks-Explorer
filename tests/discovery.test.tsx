@@ -17,7 +17,7 @@ it('builds subject collections from official designations and structured attract
  expect(r.units).toHaveLength(467);
 });
 it('navigates verified offline images, cites each source, and restores focus on close',async()=>{
- const r=await loadReference(),photos=availablePhotos(r.units);expect(photos.length).toBe(4);
+ const r=await loadReference(),photos=availablePhotos(r.units);expect(photos.length).toBeGreaterThanOrEqual(4);
  Object.defineProperty(HTMLDialogElement.prototype,'showModal',{configurable:true,value:function(this:HTMLDialogElement){this.setAttribute('open','')}});
  Object.defineProperty(HTMLDialogElement.prototype,'close',{configurable:true,value:function(this:HTMLDialogElement){this.removeAttribute('open')}});
  const user=userEvent.setup();render(<PhotoGallery parks={r.units}/>);const trigger=screen.getByRole('button',{name:'Open photo gallery'});await user.click(trigger);
@@ -30,4 +30,12 @@ it('navigates verified offline images, cites each source, and restores focus on 
 });
 it('omits a gallery when there is no bundled photograph',()=>{
  const park={id:'x',photographs:[{id:'unknown'}]} as Park;expect(availablePhotos([park])).toEqual([]);const view=render(<PhotoGallery parks={[park]}/>);expect(view.container.textContent).toBe('');
+});
+it('keeps gallery thumbnails bounded as the reference library grows',async()=>{
+ const r=await loadReference();const imageParks=r.units.filter(p=>p.photographs?.length).slice(0,4);const many=Array.from({length:20},(_,i)=>({...imageParks[i%imageParks.length],id:'fixture-'+i}));
+ Object.defineProperty(HTMLDialogElement.prototype,'showModal',{configurable:true,value:function(this:HTMLDialogElement){this.setAttribute('open','')}});
+ Object.defineProperty(HTMLDialogElement.prototype,'close',{configurable:true,value:function(this:HTMLDialogElement){this.removeAttribute('open')}});
+ const user=userEvent.setup();render(<PhotoGallery parks={many}/>);await user.click(screen.getByRole('button',{name:'Open photo gallery'}));
+ expect(screen.getAllByRole('button',{name:/Show photo/}).length).toBeLessThanOrEqual(9);
+ delete (HTMLDialogElement.prototype as Partial<HTMLDialogElement>).showModal;delete (HTMLDialogElement.prototype as Partial<HTMLDialogElement>).close;
 });

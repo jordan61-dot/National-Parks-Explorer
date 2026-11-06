@@ -403,6 +403,7 @@ function Profile({ id }: { id: string }) {
       </p>
       <h2 className="np-profile-title">{p.name}</h2>
       <ReferencePhoto park={p}/>
+      {p.photographs && p.photographs.length > 1 && <PhotoGallery parks={[p]}/>}
       <p>
         {p.states.map((s) => stateNames[s] ?? s).join(" · ")} · {p.designation}
       </p>

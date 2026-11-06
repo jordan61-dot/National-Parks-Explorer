@@ -11,7 +11,9 @@ class RegionalTests(unittest.TestCase):
   units={p['id']:p for p in self.new['units']};self.assertEqual(len(units),467)
   for p in self.old['units']:
    q=units[p['id']]
-   for k in ['id','classification','parkCode','history','photographs']:self.assertEqual(p.get(k),q.get(k))
+   for k in ['id','classification','parkCode','history']:self.assertEqual(p.get(k),q.get(k))
+   new_photos={photo['id']:photo for photo in q.get('photographs',[])}
+   for photo in p.get('photographs',[]):self.assertEqual(new_photos.get(photo['id']),photo)
    now={a['id']:a for a in q['attractions']}
    for a in p['attractions']:
     self.assertIn(a['id'],now)
