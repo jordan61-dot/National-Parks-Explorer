@@ -80,7 +80,7 @@ def acceptable(a,park):
 def acquire(a,park,seen,description_location=False,site_description=None,allow_uncredited=False,allow_named_credit=False):
  ident=a['AssetID'].lower(); source='https://npgallery.nps.gov/AssetDetail/'+ident
  html=read(source,2000000).decode('utf-8','replace'); rights=label(html,'Constraints Information');units=label(html,'NPS Units'); credit=label(html,'PhotoCredit') or label(html,'Photographer');title=label(html,'Title');alt=label(html,'AltText');description=label(html,'Description')
- if not re.search(r'^Public domain\s*:\s*Full Granting Rights$',rights,re.I):raise ValueError('asset page lacks explicit public-domain full rights')
+ if not re.search(r'^Public domain\s*:\s*(?:Full Granting Rights|Contract transferred all rights to the NPS)$',rights,re.I):raise ValueError('asset page lacks explicit public-domain full rights')
  exact_unit=norm(park['name']) in norm(units) and (not park['parkCode'] or re.search(r'\bCode:\s*'+re.escape(park['parkCode'])+r'\b',units,re.I))
  # Some NPS cultural landscape assets are catalogued NPS-wide but begin their
  # actual description with the exact location. This is an opt-in manual path.
@@ -91,6 +91,7 @@ def acquire(a,park,seen,description_location=False,site_description=None,allow_u
  if not (exact_unit or exact_description):raise ValueError('asset page does not identify exact unit or an explicit NPS-wide source location')
  if not credit and allow_uncredited:credit='Photographer unknown; source: NPS Gallery'
  elif re.search(r'©|copyright|courtesy',credit,re.I) or (not re.search(r'\bNPS\b|National Park Service',credit,re.I) and not (allow_named_credit and credit)):raise ValueError('ambiguous author credit')
+ if not alt and title and allow_named_credit:alt=title
  if not title or not alt:raise ValueError('title or descriptive alternative text missing')
  if not explicit_photo_location(park,title,alt) and not exact_description and not exact_site and not grady_site and not illinois_site:raise ValueError('title and alternative text do not explicitly identify this park')
  m=re.search(r'href="([^"]*/proxylores\.jpg[^\"]*)"',html,re.I)

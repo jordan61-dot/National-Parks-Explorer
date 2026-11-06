@@ -100,7 +100,7 @@ def validate(data,root):
     if host=='npgallery.nps.gov':
      exact_unit=normalized(p['name']) in normalized(photo['unitEvidence']) and explicit_photo_location(p,photo['caption'],photo['alt'])
      described=nps_description_matches(p,photo)
-     assert (exact_unit or described) and photo.get('locationEvidence') and re.search(r'full granting rights',photo['rightsEvidence'],re.I)
+     assert (exact_unit or described) and photo.get('locationEvidence') and re.search(r'full granting rights|contract transferred all rights to the nps',photo['rightsEvidence'],re.I)
     else:
      assert host=='commons.wikimedia.org' and p['id']=='9-11-pentagon-memorial' and 'pentagon memorial' in photo['unitEvidence'].lower() and re.search(r'PD US (Navy|Marines|Army)',photo['rightsEvidence'])
    path=(root/photo['asset']).resolve();assert path.is_relative_to((root/'src/media072').resolve())
