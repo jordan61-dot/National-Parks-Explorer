@@ -7,6 +7,11 @@ from urllib.parse import urlparse
 def normalized(s):
  return re.sub(r'[^a-z0-9]+',' ',unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower()).strip()
 
+def nps_description_matches(park,photo):
+ return (photo.get('locationMethod')=='nps-description' and
+         ('nps wide' in normalized(photo.get('unitEvidence','')) or normalized(park['name']) in normalized(photo.get('unitEvidence',''))) and
+         normalized(photo.get('locationEvidence','')).startswith(normalized(park['name'])+' '))
+
 def explicit_photo_location(park,title,alt):
  name=park['name'];designation=park.get('designation','')
  short=name[:-len(designation)].strip(' ,:-') if designation and name.casefold().endswith(designation.casefold()) else name
@@ -87,7 +92,9 @@ def validate(data,root):
     assert photo.get('unitEvidence') and photo.get('retrievedAt') and photo.get('downloadUrl')
     host=urlparse(photo['source']).hostname
     if host=='npgallery.nps.gov':
-     assert normalized(p['name']) in normalized(photo['unitEvidence']) and explicit_photo_location(p,photo['caption'],photo['alt']) and photo.get('locationEvidence') and re.search(r'full granting rights',photo['rightsEvidence'],re.I)
+     exact_unit=normalized(p['name']) in normalized(photo['unitEvidence']) and explicit_photo_location(p,photo['caption'],photo['alt'])
+     described=nps_description_matches(p,photo)
+     assert (exact_unit or described) and photo.get('locationEvidence') and re.search(r'full granting rights',photo['rightsEvidence'],re.I)
     else:
      assert host=='commons.wikimedia.org' and p['id']=='9-11-pentagon-memorial' and 'pentagon memorial' in photo['unitEvidence'].lower() and re.search(r'PD US (Navy|Marines|Army)',photo['rightsEvidence'])
    path=(root/photo['asset']).resolve();assert path.is_relative_to((root/'src/media072').resolve())

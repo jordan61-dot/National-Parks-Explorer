@@ -1,6 +1,6 @@
 import copy,unittest
 from acquire_photo07143 import acceptable,candidate_priority
-from release072 import merge
+from release072 import merge,nps_description_matches
 from photo_coverage07143 import build_report
 
 class PhotoRules(unittest.TestCase):
@@ -25,4 +25,10 @@ class PhotoRules(unittest.TestCase):
   view={'Title':'Battlefield trail','AltText':'A footpath through the battlefield.'}
   event={'Title':'Festival display','AltText':'A volunteer at a display table.'}
   self.assertLess(candidate_priority(view),candidate_priority(event))
+ def test_nps_wide_description_requires_exact_location_and_manual_method(self):
+  photo={'locationMethod':'nps-description','unitEvidence':'NPS-wide, Code: NPS','locationEvidence':'Example National Park. A landscape photograph.'}
+  self.assertTrue(nps_description_matches(self.park,photo))
+  self.assertTrue(nps_description_matches(self.park,{**photo,'unitEvidence':'Example National Park, Code: EXMP'}))
+  for change in ({'locationMethod':'nps-unit'},{'unitEvidence':'Another unit'},{'locationEvidence':'Example National Parkway is a different place.'},{'locationEvidence':'A place near Example National Park.'}):
+   self.assertFalse(nps_description_matches(self.park,{**photo,**change}))
 if __name__=='__main__':unittest.main()
