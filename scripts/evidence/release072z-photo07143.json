@@ -1387,6 +1387,29 @@
           "sha256": "3d36cf817c9e35fbcf14fda8874dab5b058c86cc7f176dfc1d65458901f5cd6c",
           "bytes": 26400,
           "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-fd2a83e1-3fad-43cd-84a5-e6fbfedcf97f",
+          "asset": "src/media072/photo07143-fd2a83e1-3fad-43cd-84a5-e6fbfedcf97f.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/fd2a83e1-3fad-43cd-84a5-e6fbfedcf97f",
+          "sourcePageSha256": "10cf11312d1370fc805ca1fab6eadbc986aebb753c3effbb8b043248a08785c7",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/fd2a83e1-3fad-43cd-84a5-e6fbfedcf97f/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/fd2a83e1-3fad-43cd-84a5-e6fbfedcf97f/proxylores.jpg",
+          "retrievedAt": "2026-11-06T09:26:24.345354+00:00",
+          "alt": "The Illinois Monument",
+          "caption": "The Illinois Monument",
+          "credit": "Brett Koch",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Kennesaw Mountain National Battlefield Park, Code: KEMO",
+          "locationEvidence": "Illinois Monument: https://www.nps.gov/places/the-illinois-monument.htm",
+          "locationMethod": "nps-illinois-site",
+          "width": 700,
+          "height": 471,
+          "sha256": "95c3eab3bafa5d97ffe31738e000ae90fa47147835d059c9afdcb896260234f4",
+          "bytes": 131722,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
         }
       ]
     }

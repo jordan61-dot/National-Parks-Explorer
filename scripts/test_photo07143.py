@@ -59,4 +59,10 @@ class PhotoRules(unittest.TestCase):
   self.assertTrue(nps_description_matches(park,photo))
   self.assertFalse(nps_description_matches({**park,'id':'other'},photo))
   self.assertFalse(nps_description_matches(park,{**photo,'locationEvidence':'unverified'}))
+ def test_illinois_site_requires_exact_park_and_source(self):
+  park={**self.park,'id':'kennesaw-mountain-national-battlefield-park','name':'Kennesaw Mountain National Battlefield Park'}
+  photo={'locationMethod':'nps-illinois-site','unitEvidence':'Kennesaw Mountain National Battlefield Park, Code: KEMO','caption':'The Illinois Monument','alt':'Monument','locationEvidence':'Illinois Monument: https://www.nps.gov/places/the-illinois-monument.htm'}
+  self.assertTrue(nps_description_matches(park,photo))
+  self.assertFalse(nps_description_matches({**park,'id':'other'},photo))
+  self.assertFalse(nps_description_matches(park,{**photo,'locationEvidence':'unverified'}))
 if __name__=='__main__':unittest.main()

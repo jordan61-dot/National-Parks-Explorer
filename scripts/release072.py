@@ -8,6 +8,8 @@ def normalized(s):
  return re.sub(r'[^a-z0-9]+',' ',unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower()).strip()
 
 def nps_description_matches(park,photo):
+ if photo.get('locationMethod')=='nps-illinois-site':
+  return (park['id']=='kennesaw-mountain-national-battlefield-park' and normalized(park['name']) in normalized(photo.get('unitEvidence','')) and 'illinois monument' in normalized(photo.get('caption','')+' '+photo.get('alt','')) and photo.get('locationEvidence')=='Illinois Monument: https://www.nps.gov/places/the-illinois-monument.htm')
  if photo.get('locationMethod')=='nps-grady-site':
   return (park['id']=='moores-creek-national-battlefield' and normalized(park['name']) in normalized(photo.get('unitEvidence','')) and 'grady monument' in normalized(photo.get('caption','')+' '+photo.get('alt','')) and photo.get('locationEvidence')=='Grady Monument: https://www.nps.gov/mocr/planyourvisit/park-brochure.htm')
  if photo.get('locationMethod')=='nps-site-description':
