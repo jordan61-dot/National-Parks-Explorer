@@ -29,6 +29,21 @@ def read(url,limit=3000000):
   if len(b)>limit:raise ValueError('response exceeds size limit')
   return b
 
+def check_robots():
+ """Fail closed when the policy cannot be fetched or explicitly parsed."""
+ url='https://npgallery.nps.gov/robots.txt'
+ try:
+  policy=read(url,500000).decode('utf-8','strict')
+ except (OSError, ValueError, UnicodeError) as exc:
+  raise SystemExit('Cannot verify NPGallery robots policy: '+str(exc)) from exc
+ robots=urllib.robotparser.RobotFileParser(url)
+ robots.parse(policy.splitlines())
+ if not robots.entries and not robots.default_entry:
+  raise SystemExit('Cannot verify NPGallery robots policy: no rules found')
+ for path in ('SearchResults','AssetDetail/example','GetAsset/example/proxylores.jpg'):
+  if not robots.can_fetch(AGENT,'https://npgallery.nps.gov/'+path):
+   raise SystemExit('NPGallery robots denies '+path)
+
 def save(path,value):
  tmp=path.with_suffix(path.suffix+'.tmp');tmp.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n');os.replace(tmp,path)
 
@@ -85,9 +100,7 @@ def acquire(a,park,seen,description_location=False):
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=10);parser.add_argument('--candidate-limit',type=int,default=10);parser.add_argument('--park',action='append',default=[]);args=parser.parse_args();IMG.mkdir(exist_ok=True)
  if args.candidate_limit < 1:parser.error('--candidate-limit must be positive')
- robots=urllib.robotparser.RobotFileParser();robots.set_url('https://npgallery.nps.gov/robots.txt');robots.read()
- for path in ('SearchResults','AssetDetail/example','GetAsset/example/proxylores.jpg'):
-  if not robots.can_fetch(AGENT,'https://npgallery.nps.gov/'+path):raise SystemExit('NPGallery robots denies '+path)
+ check_robots()
  parks=json.loads((ROOT/'src/data/parks.json').read_text())['units']; existing=json.loads(PHOTO.read_text()) if PHOTO.exists() else {'parks':{}}; report=json.loads(REPORT.read_text()) if REPORT.exists() else {'parks':{}};pending=json.loads(CANDIDATES.read_text()) if CANDIDATES.exists() else {'parks':{}};quarantine=json.loads(QUARANTINE.read_text()) if QUARANTINE.exists() else {'parks':{}};existing072=json.loads((E/'release072-media.json').read_text())['parks'];commons_file=E/'release072zz-commons07143.json';commons=json.loads(commons_file.read_text())['parks'] if commons_file.exists() else {}
  # A checkpoint may omit unreviewed binaries. Never let stale metadata prevent
  # their safe reacquisition, and never treat it as evidence of a downloaded file.

@@ -1,5 +1,6 @@
 import copy,unittest
-from acquire_photo07143 import acceptable,candidate_priority
+from unittest.mock import patch
+from acquire_photo07143 import acceptable,candidate_priority,check_robots
 from release072 import merge,nps_description_matches
 from photo_coverage07143 import build_report
 
@@ -25,6 +26,15 @@ class PhotoRules(unittest.TestCase):
   view={'Title':'Battlefield trail','AltText':'A footpath through the battlefield.'}
   event={'Title':'Festival display','AltText':'A volunteer at a display table.'}
   self.assertLess(candidate_priority(view),candidate_priority(event))
+ def test_robot_policy_fails_closed_on_timeout_and_denial(self):
+  with patch('acquire_photo07143.read',side_effect=TimeoutError('timed out')):
+   with self.assertRaisesRegex(SystemExit,'Cannot verify'):
+    check_robots()
+  with patch('acquire_photo07143.read',return_value=b'User-agent: *\nDisallow: /SearchResults\n'):
+   with self.assertRaisesRegex(SystemExit,'robots denies SearchResults'):
+    check_robots()
+  with patch('acquire_photo07143.read',return_value=b'User-agent: *\nDisallow:\n'):
+   check_robots()
  def test_nps_wide_description_requires_exact_location_and_manual_method(self):
   photo={'locationMethod':'nps-description','unitEvidence':'NPS-wide, Code: NPS','locationEvidence':'Example National Park. A landscape photograph.'}
   self.assertTrue(nps_description_matches(self.park,photo))
