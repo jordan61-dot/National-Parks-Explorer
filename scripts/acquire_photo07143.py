@@ -34,6 +34,9 @@ def check_robots():
  url='https://npgallery.nps.gov/robots.txt'
  try:
   policy=read(url,500000).decode('utf-8','strict')
+ except urllib.error.HTTPError as exc:
+  if exc.code in (404,410):return
+  raise SystemExit('Cannot verify NPGallery robots policy: HTTP '+str(exc.code)) from exc
  except (OSError, ValueError, UnicodeError) as exc:
   raise SystemExit('Cannot verify NPGallery robots policy: '+str(exc)) from exc
  robots=urllib.robotparser.RobotFileParser(url)

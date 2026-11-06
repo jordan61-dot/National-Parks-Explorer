@@ -1,4 +1,5 @@
 import copy,unittest
+from urllib.error import HTTPError
 from unittest.mock import patch
 from acquire_photo07143 import acceptable,candidate_priority,check_robots
 from release072 import merge,nps_description_matches
@@ -29,6 +30,11 @@ class PhotoRules(unittest.TestCase):
  def test_robot_policy_fails_closed_on_timeout_and_denial(self):
   with patch('acquire_photo07143.read',side_effect=TimeoutError('timed out')):
    with self.assertRaisesRegex(SystemExit,'Cannot verify'):
+    check_robots()
+  with patch('acquire_photo07143.read',side_effect=HTTPError('https://npgallery.nps.gov/robots.txt',404,'missing',{},None)):
+   check_robots()
+  with patch('acquire_photo07143.read',side_effect=HTTPError('https://npgallery.nps.gov/robots.txt',403,'denied',{},None)):
+   with self.assertRaisesRegex(SystemExit,'HTTP 403'):
     check_robots()
   with patch('acquire_photo07143.read',return_value=b'User-agent: *\nDisallow: /SearchResults\n'):
    with self.assertRaisesRegex(SystemExit,'robots denies SearchResults'):
