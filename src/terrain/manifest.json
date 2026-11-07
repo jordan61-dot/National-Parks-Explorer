@@ -1,0 +1,663 @@
+{
+  "provider": "Natural Earth / NACIS",
+  "dataset": "Shaded Relief Basic SR_50M",
+  "advertisedVersion": "3.2.0",
+  "embeddedVersion": "2.0.0",
+  "url": "https://naciscdn.org/naturalearth/50m/raster/SR_50M.zip",
+  "license": "Public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "retrievedAt": "2026-11-07",
+  "sourceSha256": "ff810f5f2747463fd8ffa612b23e5f5e5d593a345218976872b6749610976ab7",
+  "sourceSize": [
+    10800,
+    5400
+  ],
+  "resolutionDegrees": 0.03333333333333333,
+  "projection": "WGS84 geographic; locally cosine-scaled equirectangular derivatives",
+  "limitations": "Generalized SRTM Plus hillshade; not elevation measurements. Small islands were accentuated by the provider. No local navigation or fine terrain detail. Provider advertises 3.2.0 but ZIP version file says 2.0.0; source is pinned by SHA256.",
+  "assets": {
+    "AK": {
+      "bounds": [
+        -13.22384,
+        -10.08562,
+        27.64217,
+        20.17175
+      ],
+      "width": 1000,
+      "height": 730,
+      "bytes": 62626,
+      "sha256": "674ca97389f141c30911b9aa44001a028b67dbc867a24ac132527593bea2ba32"
+    },
+    "AL": {
+      "bounds": [
+        -1.50947,
+        -2.39235,
+        3.01894,
+        4.78438
+      ],
+      "width": 160,
+      "height": 254,
+      "bytes": 2070,
+      "sha256": "02d8d6a3a97263bc304a195f588782101764e80b58c994f3b4b7817c1fe0bd85"
+    },
+    "AR": {
+      "bounds": [
+        -2.04459,
+        -1.74747,
+        4.08917,
+        3.49512
+      ],
+      "width": 160,
+      "height": 137,
+      "bytes": 1248,
+      "sha256": "5e05a7596e23755874cc9a92df92e5d6ad7f4785003a713f4d3a29352194d292"
+    },
+    "AZ": {
+      "bounds": [
+        -2.38738,
+        -2.83604,
+        4.77494,
+        5.67202
+      ],
+      "width": 173,
+      "height": 206,
+      "bytes": 6108,
+      "sha256": "68602f8cedbfc704c55f824052a1d343beb0b9931557c22827ac56df034eaa22"
+    },
+    "CA": {
+      "bounds": [
+        -4.08961,
+        -4.73752,
+        8.17923,
+        9.47505
+      ],
+      "width": 308,
+      "height": 357,
+      "bytes": 18402,
+      "sha256": "11aedcbbca8cfc3093ab0eaf61e865f2bcd90d72cc10d119c2440b4bd8fb4ef7"
+    },
+    "CO": {
+      "bounds": [
+        -2.72737,
+        -2.00551,
+        5.4547,
+        4.01102
+      ],
+      "width": 211,
+      "height": 155,
+      "bytes": 6260,
+      "sha256": "ff88db68b13444bd6340210ad42a2f320f83b78117d8ff8c30763d97a7fb099d"
+    },
+    "CT": {
+      "bounds": [
+        -0.72661,
+        -0.53522,
+        1.45321,
+        1.06988
+      ],
+      "width": 160,
+      "height": 118,
+      "bytes": 822,
+      "sha256": "b89d784f48076ce0161f1772623b2bc10ca3127cdc17f3159fc1a14ac72d8f90"
+    },
+    "DE": {
+      "bounds": [
+        -0.28684,
+        -0.69311,
+        0.57369,
+        1.38695
+      ],
+      "width": 160,
+      "height": 387,
+      "bytes": 498,
+      "sha256": "3a66bd4a538326d57b17e3f274649199e9cfbed66e13dcdb349bdfbfd5b07b9d"
+    },
+    "FL": {
+      "bounds": [
+        -3.36411,
+        -3.23979,
+        6.7283,
+        6.47958
+      ],
+      "width": 228,
+      "height": 220,
+      "bytes": 324,
+      "sha256": "af32a5478a84cc70fba4dcc7c5ffd22992dfb23a1f709341bc38263eab40c469"
+    },
+    "GA": {
+      "bounds": [
+        -2.00527,
+        -2.3217,
+        4.01054,
+        4.64339
+      ],
+      "width": 160,
+      "height": 185,
+      "bytes": 1242,
+      "sha256": "afe5f4aa7f465820b7259a0211e8a736a4028afe848c8fc14c6e6d1ee15877fa"
+    },
+    "HI": {
+      "bounds": [
+        -10.77543,
+        -4.74588,
+        21.55086,
+        9.49176
+      ],
+      "width": 706,
+      "height": 311,
+      "bytes": 918,
+      "sha256": "c1f52eb19a456fc0bec38aa944f7a5cea9d74bf7315fea0565b767ed21b125d3"
+    },
+    "IA": {
+      "bounds": [
+        -2.41683,
+        -1.56212,
+        4.83385,
+        3.12489
+      ],
+      "width": 195,
+      "height": 126,
+      "bytes": 962,
+      "sha256": "413df26341d93a9a866e172eca43a61f6f1d3c98cd01e4802ce2cc90f5b1186a"
+    },
+    "ID": {
+      "bounds": [
+        -2.17284,
+        -3.50635,
+        4.34568,
+        7.0127
+      ],
+      "width": 186,
+      "height": 300,
+      "bytes": 13760,
+      "sha256": "ecb21294f1bfcd700d5f5521789eb4a4fa5142c6c8b4703be4c0ef2592fc65d1"
+    },
+    "IL": {
+      "bounds": [
+        -1.54471,
+        -2.76909,
+        3.08897,
+        5.53818
+      ],
+      "width": 160,
+      "height": 287,
+      "bytes": 1622,
+      "sha256": "497c1d4692b012a6682e9e16eb66c2ad26031de8dc6dd3705a0089865f21c0b2"
+    },
+    "IN": {
+      "bounds": [
+        -1.27331,
+        -1.99407,
+        2.54621,
+        3.9885
+      ],
+      "width": 160,
+      "height": 251,
+      "bytes": 1204,
+      "sha256": "51f3ee71427cf0076507c92f4d462fdc0f35526f4519e5d4074602915d8f92a8"
+    },
+    "KS": {
+      "bounds": [
+        -2.92051,
+        -1.50499,
+        5.84102,
+        3.01006
+      ],
+      "width": 224,
+      "height": 115,
+      "bytes": 1114,
+      "sha256": "574c4862fbe755f75287ce305ae865e7e718767ba03e8d7755bdb9c56b0ca183"
+    },
+    "KY": {
+      "bounds": [
+        -3.00426,
+        -1.32506,
+        6.00853,
+        2.65023
+      ],
+      "width": 228,
+      "height": 101,
+      "bytes": 1748,
+      "sha256": "f339ff80087fde8ded356af250481e573dcd96422c606a16f0b228f69a640bf0"
+    },
+    "LA": {
+      "bounds": [
+        -2.24044,
+        -2.04519,
+        4.48089,
+        4.08951
+      ],
+      "width": 160,
+      "height": 146,
+      "bytes": 448,
+      "sha256": "681dae687d8920b931b2544159ebc5cbeeb590dce770a98ec48be024bb083e67"
+    },
+    "MA": {
+      "bounds": [
+        -1.32883,
+        -0.82425,
+        2.65747,
+        1.64857
+      ],
+      "width": 160,
+      "height": 99,
+      "bytes": 944,
+      "sha256": "4de24cc2fc1bcbad710495368d68206352ba4fa1325113a7899bef35c7cad52b"
+    },
+    "MD": {
+      "bounds": [
+        -1.72921,
+        -0.90566,
+        3.45841,
+        1.81133
+      ],
+      "width": 160,
+      "height": 84,
+      "bytes": 1232,
+      "sha256": "77871b739f129e38615c2d115101718ed69ea76143c3d73f756db4057a5ad69f"
+    },
+    "ME": {
+      "bounds": [
+        -1.45601,
+        -2.24096,
+        2.91154,
+        4.48192
+      ],
+      "width": 160,
+      "height": 246,
+      "bytes": 2798,
+      "sha256": "cce8aa952aeca3b6694698136e23826ad40077d7f8bfd330d4602914590ea696"
+    },
+    "MI": {
+      "bounds": [
+        -2.83168,
+        -3.27134,
+        5.66336,
+        6.54268
+      ],
+      "width": 240,
+      "height": 277,
+      "bytes": 2398,
+      "sha256": "545afe6875d30f6ae05e85dc953fd8d51ff0e28bb5f7b207fb0d2e0185331384"
+    },
+    "MN": {
+      "bounds": [
+        -2.66858,
+        -2.94249,
+        5.33716,
+        5.88397
+      ],
+      "width": 232,
+      "height": 256,
+      "bytes": 2020,
+      "sha256": "441b54d6861a54dc198088da7864028c93c7f14611de49fd69aa541323f30685"
+    },
+    "MO": {
+      "bounds": [
+        -2.61936,
+        -2.30898,
+        5.23813,
+        4.61796
+      ],
+      "width": 200,
+      "height": 176,
+      "bytes": 1690,
+      "sha256": "9696a67cf03a7a0e57371c980e3ba556f099ab168ea5fbb8bf959800cc48e701"
+    },
+    "MS": {
+      "bounds": [
+        -1.49859,
+        -2.40998,
+        2.99718,
+        4.81998
+      ],
+      "width": 160,
+      "height": 257,
+      "bytes": 1048,
+      "sha256": "f393be630f3c42782ee7bf9aa087453f8a0d602f6e9b03135e5e758218c1cdbc"
+    },
+    "MT": {
+      "bounds": [
+        -4.11974,
+        -2.32171,
+        8.2394,
+        4.64343
+      ],
+      "width": 360,
+      "height": 203,
+      "bytes": 13120,
+      "sha256": "d18f5e5f0472a6956ade993d444218406e178d02ba7fcac26ad0780596d1519c"
+    },
+    "NC": {
+      "bounds": [
+        -3.61978,
+        -1.3729,
+        7.23957,
+        2.7458
+      ],
+      "width": 266,
+      "height": 101,
+      "bytes": 1878,
+      "sha256": "97198851a43178d36436d7a18cc9be8652f794525520f0c4d969811072aac857"
+    },
+    "ND": {
+      "bounds": [
+        -2.53301,
+        -1.53275,
+        5.06613,
+        3.06532
+      ],
+      "width": 225,
+      "height": 136,
+      "bytes": 1176,
+      "sha256": "33fad40ad4ca2cbf5c5fba63b1786b794d36dbd7104fe10b416803bdf3b39d58"
+    },
+    "NE": {
+      "bounds": [
+        -3.27478,
+        -1.49973,
+        6.54963,
+        3.00059
+      ],
+      "width": 262,
+      "height": 120,
+      "bytes": 1518,
+      "sha256": "aa7c922b3507e9ec3337a01018fc6240d2f115e6b787273745743a50e086071a"
+    },
+    "NH": {
+      "bounds": [
+        -0.70013,
+        -1.30422,
+        1.40026,
+        2.60846
+      ],
+      "width": 160,
+      "height": 298,
+      "bytes": 3788,
+      "sha256": "d46d05375e4256237453ebaf2f46b5ceec05331938fa609056095e05ffcd5ee1"
+    },
+    "NJ": {
+      "bounds": [
+        -0.63625,
+        -1.21445,
+        1.27299,
+        2.4289
+      ],
+      "width": 160,
+      "height": 305,
+      "bytes": 1452,
+      "sha256": "8b14f8a80b009280f62b70f09c0e3c5475eed73bea2c3a8b632e43f6f226eaac"
+    },
+    "NM": {
+      "bounds": [
+        -2.50218,
+        -2.83387,
+        5.00416,
+        5.66764
+      ],
+      "width": 181,
+      "height": 205,
+      "bytes": 5162,
+      "sha256": "d52acbde124b9db9fd6e4f0dd7f58108edae273d9f895b37d64ab759ae7fdc5b"
+    },
+    "NV": {
+      "bounds": [
+        -2.33477,
+        -3.50017,
+        4.66908,
+        7.00035
+      ],
+      "width": 179,
+      "height": 268,
+      "bytes": 11752,
+      "sha256": "b065c6e14d5270295efa4af77ec932f7248d48176ed7b6ad6c99f5b52a171080"
+    },
+    "NY": {
+      "bounds": [
+        -2.90238,
+        -2.25987,
+        5.80475,
+        4.51975
+      ],
+      "width": 237,
+      "height": 185,
+      "bytes": 5142,
+      "sha256": "e2bc425c19e56b30f9e0f3e85172216a91929c58c5d171cb7f47ef1c4629c4e1"
+    },
+    "OH": {
+      "bounds": [
+        -1.64296,
+        -1.78698,
+        3.28569,
+        3.57396
+      ],
+      "width": 160,
+      "height": 174,
+      "bytes": 1278,
+      "sha256": "56a44464dbd86f2ee87950254756593b2c78243640d8259fee1045fd1739d7c6"
+    },
+    "OK": {
+      "bounds": [
+        -3.49754,
+        -1.69319,
+        6.99507,
+        3.38637
+      ],
+      "width": 257,
+      "height": 124,
+      "bytes": 1742,
+      "sha256": "4bd5ce69475e50d1715e1f20e02e2a4e8ed9042c8fc28ac7acba02e4f33d374f"
+    },
+    "OR": {
+      "bounds": [
+        -2.90618,
+        -2.14952,
+        5.81354,
+        4.29904
+      ],
+      "width": 243,
+      "height": 180,
+      "bytes": 8900,
+      "sha256": "b012ed15c18cc9385a1859cb708930c73877e8d80f9cf565e387c5358c6f0a19"
+    },
+    "PA": {
+      "bounds": [
+        -2.20029,
+        -1.27503,
+        4.40059,
+        2.55006
+      ],
+      "width": 175,
+      "height": 101,
+      "bytes": 2668,
+      "sha256": "5db9764bfb5b3054a2176e308e529c89c1955a631ecac4c7224f826764f1e01d"
+    },
+    "PR": {
+      "bounds": [
+        -1.29334,
+        -0.3157,
+        2.58736,
+        0.6314
+      ],
+      "width": 160,
+      "height": 39,
+      "bytes": 412,
+      "sha256": "f169320862bbbd483d142a0265b93a061aabeb38b7636d6b2078d5633f908f73"
+    },
+    "RI": {
+      "bounds": [
+        -0.27751,
+        -0.43623,
+        0.55509,
+        0.87187
+      ],
+      "width": 160,
+      "height": 251,
+      "bytes": 550,
+      "sha256": "77c00307694a5a895422c6fb8d4b29b97193b8b75712c13b4cc604a67b6d3a74"
+    },
+    "SC": {
+      "bounds": [
+        -2.00114,
+        -1.5889,
+        4.00228,
+        3.17781
+      ],
+      "width": 160,
+      "height": 127,
+      "bytes": 634,
+      "sha256": "54643dc7f1650cb0dc6a790430a495697c5085fcc545dedc6401a4e8673d53b2"
+    },
+    "SD": {
+      "bounds": [
+        -2.73131,
+        -1.73277,
+        5.46262,
+        3.46527
+      ],
+      "width": 229,
+      "height": 145,
+      "bytes": 1936,
+      "sha256": "d727525e7a687d3c3a8c92484a9cdc355e5038a1f9c5f7a100c971f536a8ab92"
+    },
+    "TN": {
+      "bounds": [
+        -3.512,
+        -0.84757,
+        7.02399,
+        1.69515
+      ],
+      "width": 260,
+      "height": 63,
+      "bytes": 1984,
+      "sha256": "1462d436f22ec3dfd70acd28fd522f5710bc1ac100d2a7072f0993353d9feff9"
+    },
+    "TX": {
+      "bounds": [
+        -5.62031,
+        -5.3314,
+        11.24076,
+        10.66306
+      ],
+      "width": 394,
+      "height": 374,
+      "bytes": 11346,
+      "sha256": "73d723602dca05764016e339297131f6af7b75b43b92fd86249f4918a466dc0c"
+    },
+    "UT": {
+      "bounds": [
+        -1.93366,
+        -2.50187,
+        3.86677,
+        5.00371
+      ],
+      "width": 160,
+      "height": 207,
+      "bytes": 6844,
+      "sha256": "f65ac13fe0e78d73aaf9b7dd500e8f44237325fe27543210088bb91fe91d45c6"
+    },
+    "VA": {
+      "bounds": [
+        -3.32247,
+        -1.46264,
+        6.64493,
+        2.92503
+      ],
+      "width": 253,
+      "height": 111,
+      "bytes": 3108,
+      "sha256": "db7579480b9776dbe0b1820d1bdaf4301da4de24151d7e483a9b731dbffdfa33"
+    },
+    "VT": {
+      "bounds": [
+        -0.71123,
+        -1.1449,
+        1.42245,
+        2.28981
+      ],
+      "width": 160,
+      "height": 258,
+      "bytes": 3450,
+      "sha256": "2ee764a12c6990934e1b6a5924aba477626016f88c6a988760bf52f29ddbaa7c"
+    },
+    "WA": {
+      "bounds": [
+        -2.66214,
+        -1.72934,
+        5.32429,
+        3.45882
+      ],
+      "width": 235,
+      "height": 153,
+      "bytes": 7508,
+      "sha256": "87014948b3b298689ebfc3c8c16087f7d8b649d373815b2ecbaeb9111d382f0b"
+    },
+    "WI": {
+      "bounds": [
+        -2.15856,
+        -2.2937,
+        4.31713,
+        4.58802
+      ],
+      "width": 182,
+      "height": 193,
+      "bytes": 1570,
+      "sha256": "436723e193e494531690de0478703224c1098285e5886f383a37ec5e358273d3"
+    },
+    "WV": {
+      "bounds": [
+        -1.91597,
+        -1.71866,
+        3.83193,
+        3.43732
+      ],
+      "width": 160,
+      "height": 144,
+      "bytes": 3210,
+      "sha256": "a87b03f5082888954552b888a5031c220c9459a22f86bc01f9cd1bfa6d047dec"
+    },
+    "WY": {
+      "bounds": [
+        -2.5606,
+        -2.00553,
+        5.1209,
+        4.01107
+      ],
+      "width": 210,
+      "height": 164,
+      "bytes": 5580,
+      "sha256": "ee7c39adb5427af9c577c17d7d11d9fed3c9b78eeb0cde0d7bf9cf18e2abc06b"
+    },
+    "world": {
+      "bounds": [
+        0,
+        0,
+        720,
+        360
+      ],
+      "width": 1800,
+      "height": 900,
+      "bytes": 46532,
+      "sha256": "7e8b5045e212a67896b438f73d4cf9f03a0cfe960c0a3c389d6463ac73e2962f"
+    },
+    "us": {
+      "bounds": [
+        0,
+        0,
+        660,
+        360
+      ],
+      "width": 1320,
+      "height": 720,
+      "bytes": 80258,
+      "sha256": "e3de492690878d8f100fc48e0e676af522e3c051d05da5d29f9c55c1fa68b219"
+    }
+  },
+  "unavailable": {
+    "AS": "Source resolution is too coarse for useful local relief; use the standard geographic map.",
+    "GU": "Source resolution is too coarse for useful local relief; use the standard geographic map.",
+    "MP": "Source resolution is too coarse for useful local relief; use the standard geographic map.",
+    "VI": "Source resolution is too coarse for useful local relief; use the standard geographic map.",
+    "DC": "Source resolution is too coarse for useful local relief; use the standard geographic map."
+  }
+}

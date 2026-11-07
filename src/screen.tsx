@@ -23,6 +23,7 @@ import {
 import {mediaImages} from './data/media';
 import {PhotoGallery} from './PhotoGallery';
 import {parkThemes,matchesParkTheme} from './discovery';
+import {atlasRegions,filterAtlas} from './atlas-data';
 const Atlas = React.lazy(() => import("./Atlas").then(m => ({default:m.Atlas})));
 import {
   Repository,
@@ -43,6 +44,7 @@ import {
   type Stop,
 } from "./domain";
 import "./style.css";
+import "./atlas3.css";
 const url = (s = "") => "#/apps/national-parks" + (s ? "/" + s : "");
 interface ContextValue {
   host: Host;
@@ -229,16 +231,28 @@ function Overview() {
     </>
   );
 }
-type ParkBrowseState={query:string;state:string;designation:string;classification:string;attribute:string;theme:string;view:'grid'|'list';limit:number};
-let rememberedParkBrowse:ParkBrowseState={query:'',state:'',designation:'',classification:'',attribute:'',theme:'',view:'grid',limit:24};
-function ParkDiscovery(){
- const {r,all}=useParks(); const [filters,setFilters]=useState<ParkBrowseState>(()=>({...rememberedParkBrowse}));
+type ParkBrowseState={query:string;state:string;designation:string;classification:string;attribute:string;theme:string;region:string;visit:string;view:'grid'|'list';limit:number};
+let rememberedParkBrowse:ParkBrowseState={query:'',state:'',designation:'',classification:'',attribute:'',theme:'',region:'',visit:'',view:'grid',limit:24};
+function initialParkBrowse(encoded:string,parks:Park[]):ParkBrowseState{
+ if(!encoded)return {...rememberedParkBrowse};
+ try{
+  const params=new URLSearchParams(decodeURIComponent(encoded)),get=(key:string)=>params.get(key)??'';
+  return {...rememberedParkBrowse,query:get('query').slice(0,200),state:stateNames[get('state')]?get('state'):'',
+   designation:parks.some(p=>p.designation===get('designation'))?get('designation'):'',
+   classification:['system-unit','affiliated'].includes(get('classification'))?get('classification'):'',
+   attribute:['trails','attractions','saved','visited'].includes(get('attribute'))?get('attribute'):'',
+   theme:parkThemes.some(t=>t.id===get('theme'))?get('theme'):'',region:atlasRegions[get('region')]?get('region'):'',
+   visit:['visited','unrecorded'].includes(get('visit'))?get('visit'):'',limit:24};
+ }catch{return {...rememberedParkBrowse}}
+}
+function ParkDiscovery({encodedFilters=''}:{encodedFilters?:string}){
+ const {r,all}=useParks(); const [filters,setFilters]=useState<ParkBrowseState>(()=>initialParkBrowse(encodedFilters,r.units));
  const [selected,setSelected]=useState<Park|null>(null); const dialog=useRef<HTMLDialogElement>(null); const returnFocus=useRef<HTMLElement|null>(null);
  useEffect(()=>{rememberedParkBrowse=filters},[filters]);
  useEffect(()=>{const el=dialog.current;if(!el)return;if(selected&&!el.open)el.showModal();if(!selected&&el.open)el.close()},[selected]);
  const update=(patch:Partial<ParkBrowseState>)=>setFilters(old=>({...old,...patch,limit:24}));
  const counts=useMemo(()=>statistics(all,r.units),[all,r.units]);
- const results=useMemo(()=>r.units.filter(p=>(!filters.query||matchesParkSearch(p,filters.query))&&(!filters.state||p.states.includes(filters.state))&&(!filters.designation||p.designation===filters.designation)&&(!filters.classification||p.classification===filters.classification)&&(!filters.theme||matchesParkTheme(p,filters.theme))&&(!filters.attribute||(filters.attribute==='trails'?p.attractions.some(a=>a.kind==='trail'):filters.attribute==='attractions'?p.attractions.length>0:filters.attribute==='visited'?counts.ids.has(p.id):all.some(e=>e.kind==='saved'&&e.parkId===p.id)))).slice().sort((a,b)=>parkSearchRank(b,filters.query)-parkSearchRank(a,filters.query)||a.name.localeCompare(b.name)||a.id.localeCompare(b.id)),[r.units,filters,all,counts]);
+ const results=useMemo(()=>filterAtlas(r.units,{...filters,attribute:filters.attribute==='visited'?'':filters.attribute,visit:filters.attribute==='visited'?'visited':filters.visit},counts.ids,new Set(all.filter(e=>e.kind==='saved'&&typeof e.parkId==='string').map(e=>String(e.parkId)))).filter(p=>!filters.state||p.states.includes(filters.state)).sort((a,b)=>parkSearchRank(b,filters.query)-parkSearchRank(a,filters.query)||a.name.localeCompare(b.name)||a.id.localeCompare(b.id)),[r.units,filters,all,counts]);
  const featured=r.units.filter(p=>p.photographs?.some(photo=>!!mediaImages[photo.id])).slice(0,4);
  const related=selected?r.units.filter(p=>p.id!==selected.id&&p.states.some(s=>selected.states.includes(s))).sort((a,b)=>a.name.localeCompare(b.name)).slice(0,4):[];
  const close=()=>{setSelected(null);requestAnimationFrame(()=>returnFocus.current?.focus())};
@@ -250,7 +264,8 @@ function ParkDiscovery(){
   <section className="np-theme-collections" aria-labelledby="np-theme-heading"><p className="eyebrow">EXPLORE BY SUBJECT</p><h3 id="np-theme-heading">Follow a thread</h3><p>These collections use official designations and recorded attraction types. Coverage is incomplete, so other relevant parks may not appear.</p><div className="np-theme-grid">{parkThemes.map(theme=><button key={theme.id} className="secondary np-theme-tile" aria-pressed={filters.theme===theme.id} onClick={()=>update({theme:filters.theme===theme.id?'':theme.id})}><strong>{theme.label}</strong><span>{theme.description}</span><small>{r.units.filter(p=>matchesParkTheme(p,theme.id)).length} places in the reference</small></button>)}</div>{filters.theme&&<p role="status">Subject selected: {parkThemes.find(t=>t.id===filters.theme)?.label}. It combines with the filters below. <button className="secondary" onClick={()=>update({theme:''})}>Clear subject</button></p>}</section>
   <div className="np-discovery-themes"><span>Search reference text:</span>{["history","geology","wildlife"].map(q=><button className="secondary" key={q} onClick={()=>update({query:q})}>{q}</button>)}<small>Text matches are starting points; consult each profile and its sources.</small></div>
   <div className="np-discovery-filters"><Field label="Search places"><input type="search" value={filters.query} onChange={e=>update({query:e.target.value})} placeholder="Park, place, or subject"/></Field><Field label="State or territory"><select value={filters.state} onChange={e=>update({state:e.target.value})}><option value="">All locations</option>{Object.entries(stateNames).sort((a,b)=>a[1].localeCompare(b[1])).map(([code,name])=><option key={code} value={code}>{name}</option>)}</select></Field><Field label="Official designation"><select value={filters.designation} onChange={e=>update({designation:e.target.value})}><option value="">All designations</option>{[...new Set(r.units.map(p=>p.designation))].sort().map(d=><option key={d}>{d}</option>)}</select></Field><Field label="Unit classification"><select value={filters.classification} onChange={e=>update({classification:e.target.value})}><option value="">System units and affiliated areas</option><option value="system-unit">Official system units</option><option value="affiliated">Affiliated areas</option></select></Field><Field label="Explore by"><select value={filters.attribute} onChange={e=>update({attribute:e.target.value})}><option value="">All places</option><option value="trails">Recorded trails</option><option value="attractions">Recorded attractions</option><option value="visited">Visited</option><option value="saved">Saved destinations</option></select></Field><Field label="View"><select value={filters.view} onChange={e=>update({view:e.target.value as 'grid'|'list'})}><option value="grid">Visual grid</option><option value="list">Compact list</option></select></Field></div>
-  <div className="np-discovery-toolbar"><p role="status"><strong>{results.length}</strong> places match{filters.state?' in '+stateNames[filters.state]:''}</p><div>{filters.state&&<a href={url('atlas/'+filters.state.toLowerCase())}>View {stateNames[filters.state]} on atlas</a>} <button className="secondary" onClick={()=>setFilters({query:'',state:'',designation:'',classification:'',attribute:'',theme:'',view:filters.view,limit:24})}>Clear filters</button></div></div>
+  {(filters.region||filters.visit)&&<p role="status">Atlas context: {filters.region||'all regions'} · {filters.visit==='visited'?'recorded visited':filters.visit?'no individual visit recorded':'all visit records'}. <button onClick={()=>update({region:'',visit:''})}>Clear atlas context</button></p>}
+  <div className="np-discovery-toolbar"><p role="status"><strong>{results.length}</strong> places match{filters.state?' in '+stateNames[filters.state]:''}</p><div>{filters.state&&<a href={url('atlas/'+filters.state.toLowerCase())}>View {stateNames[filters.state]} on atlas</a>} <button className="secondary" onClick={()=>setFilters({query:'',state:'',designation:'',classification:'',attribute:'',theme:'',region:'',visit:'',view:filters.view,limit:24})}>Clear filters</button></div></div>
   {!results.length?<p className="np-card">No places match. Clear a filter or search another term.</p>:<div className={'np-discovery-results '+filters.view}>{results.slice(0,filters.limit).map(p=>{const photo=p.photographs?.[0],src=photo&&mediaImages[photo.id];return <article className="np-destination" key={p.id}><div className="np-destination-media">{src?<><img src={src} alt={photo.alt} loading="lazy" decoding="async"/><small className="np-photo-credit">{photo.credit} · {photo.license} · <a href={photo.source} target="_blank" rel="noreferrer">Image source</a></small></>:<div className="np-destination-fallback" aria-label="No park photograph available"><span aria-hidden="true">⌁</span><small>FIELD GUIDE · {p.states.join(' / ')||'LOCATION UNKNOWN'}</small></div>}</div><div className="np-destination-body"><p className="eyebrow">{p.designation} · {p.states.join(', ')||'Location unknown'}</p><h3>{p.name}</h3><p>{p.description||'Description unavailable in this reference.'}</p><p className="np-destination-status">{p.classification==='affiliated'?'Affiliated area':'Official unit'} · {counts.ids.has(p.id)?'Visited':'Not recorded visited'}</p><div className="actions"><button onClick={e=>preview(p,e)}>Preview {p.name}</button><a href={url('park/'+p.id)}>Open profile →</a></div></div></article>})}</div>}
   {filters.limit<results.length&&<button onClick={()=>setFilters(f=>({...f,limit:f.limit+24}))}>Show more places</button>}
   <dialog ref={dialog} className="np-preview" aria-labelledby="np-preview-title" onCancel={e=>{e.preventDefault();close()}} onClose={()=>setSelected(null)}>{selected&&<><div className="np-preview-head"><p className="eyebrow">{selected.designation} · {selected.states.map(s=>stateNames[s]??s).join(', ')}</p><button className="secondary" onClick={close}>Close preview</button></div><h2 id="np-preview-title">{selected.name}</h2><ReferencePhoto park={selected}/><p>{selected.description||'Description unavailable in this reference.'}</p><p>{counts.ids.has(selected.id)?'Recorded visited':'Not recorded visited'} · {selected.attractions.length} recorded attractions and trails</p>{selected.attractions.length>0&&<section><h3>Recorded attractions & trails</h3><ul>{selected.attractions.slice(0,3).map(a=><li key={a.id}><a href={url('attraction/'+selected.id+'/'+a.id)}>{a.name} · {a.kind}</a></li>)}</ul></section>}<div className="actions"><a className="button" href={url('park/'+selected.id)}>Open complete park profile</a>{selected.states[0]&&<a href={url('atlas/'+selected.states[0].toLowerCase())}>View {stateNames[selected.states[0]]??selected.states[0]} on atlas</a>}</div>{related.length>0&&<section><h3>More places in {selected.states.map(s=>stateNames[s]??s).join(' / ')}</h3><p className="muted">These places share a listed state or territory.</p><ul>{related.map(p=><li key={p.id}><button className="secondary" onClick={()=>setSelected(p)}>{p.name}</button></li>)}</ul></section>}</>}</dialog>
@@ -268,7 +283,7 @@ function Catalog({ atlas = false, initialState = "" }: { atlas?: boolean; initia
     [count, setCount] = useState(24),
     [selected, setSelected] = useState("");
   const stats = statistics(all, r.units),
-    saved = new Set(all.filter((e) => e.kind === "saved").map((e) => e.parkId));
+    saved = new Set(all.filter((e) => e.kind === "saved" && typeof e.parkId==='string').map((e) => String(e.parkId)));
   const parks = r.units.filter(
     (p) =>
       (!scope || p.classification === scope) &&
@@ -291,6 +306,7 @@ function Catalog({ atlas = false, initialState = "" }: { atlas?: boolean; initia
     setCount(24);
     setSelected("");
   };
+  if(atlas)return <><h2>Atlas 3.0</h2><React.Suspense fallback={<p role="status">Opening the geographic atlas…</p>}><Atlas parks={r.units} selectedId={selected} onSelect={setSelected} visitedIds={stats.ids} savedIds={saved} stateFilter={state} onStateChange={code=>{setState(code);setSelected('')}} profileHref={id=>url('park/'+id)} rememberSession/></React.Suspense></>;
   return (
     <>
       <h2>{atlas ? "Interactive atlas" : "Park encyclopedia"}</h2>
@@ -1625,8 +1641,8 @@ export function createScreen(host: Host) {
     let content: ReactNode =
       route === "" ? (
         <Overview />
-      ) : route === "explore" ? (
-        <ParkDiscovery />
+      ) : route === 'explore' || route.startsWith('explore?') ? (
+        <ParkDiscovery key={route} encodedFilters={route.includes('?')?encodeURIComponent(route.slice(route.indexOf('?')+1)):''}/>
       ) : route === "catalog" || route === "atlas" || (seg[0] === "atlas" && !!stateNames[seg[1]?.toUpperCase()]) ? (
         <Catalog key={route.startsWith("atlas/") ? route : "catalog-atlas"} atlas={route.startsWith("atlas")} initialState={seg[0] === "atlas" ? (stateNames[seg[1]?.toUpperCase()] ? seg[1].toUpperCase() : "") : ""} />
       ) : route === "discover" ? (

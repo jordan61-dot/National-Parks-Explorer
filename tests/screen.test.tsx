@@ -23,6 +23,14 @@ function setup(route:string,store=new Memory()){
  return {store,services,...view,go:(route:string)=>view.rerender(<Screen route={route} services={services}/>)};
 }
 afterEach(()=>{cleanup();location.hash='';vi.restoreAllMocks()});
+it('opens shared Atlas discovery filters, returns matching cards and does not write personal data',async()=>{
+ const v=setup('explore?state=OH&designation=National+Park&region=Midwest');
+ await screen.findByRole('heading',{name:'Find your next place of wonder.'});
+ expect((screen.getByLabelText('State or territory') as HTMLSelectElement).value).toBe('OH');
+ expect((screen.getByLabelText('Official designation') as HTMLSelectElement).value).toBe('National Park');
+ expect(screen.getByRole('heading',{name:'Synthetic Park'})).toBeTruthy();expect(v.store.data).toEqual({records:[],settings:[]});
+ fireEvent.click(screen.getByRole('button',{name:'Clear atlas context'}));
+});
 it('creates, edits, reopens and deletes a visit while preserving unknown dates',async()=>{
  const u=userEvent.setup(),v=setup('visit/new/test-park');
  await screen.findByRole('heading',{name:'Record visit'});
