@@ -115,7 +115,9 @@ def main():
  for unit in pending['parks'].values():
   unit['photographs']=[p for p in unit.get('photographs',[]) if (ROOT/p['asset']).is_file() and hashlib.sha256((ROOT/p['asset']).read_bytes()).hexdigest()==p['sha256']]
  seen={p['sha256'] for source in (existing072,commons,existing['parks'],pending['parks']) for v in source.values() for p in v.get('photographs',[])}
- parks=[p for p in parks if (not args.park or p['id'] in args.park) and len(existing072.get(p['id'],{}).get('photographs',[]))+len(commons.get(p['id'],{}).get('photographs',[]))+len(existing['parks'].get(p['id'],{}).get('photographs',[]))<5][:args.limit]
+ parks=[p for p in parks if (not args.park or p['id'] in args.park) and len(existing072.get(p['id'],{}).get('photographs',[]))+len(commons.get(p['id'],{}).get('photographs',[]))+len(existing['parks'].get(p['id'],{}).get('photographs',[]))<5]
+ parks.sort(key=lambda p:report['parks'].get(p['id'],{}).get('lastChecked',''))
+ parks=parks[:args.limit]
  for park in parks:
   base=existing072.get(park['id'],{}).get('photographs',[])+commons.get(park['id'],{}).get('photographs',[])+existing['parks'].get(park['id'],{}).get('photographs',[]);entry=pending['parks'].setdefault(park['id'],{'photographs':[]});base_ids={p['id'] for p in base};entry['photographs']=[p for p in entry['photographs'] if p['id'] not in base_ids];photos=entry['photographs']; rejected=[x['photo'] for x in quarantine['parks'].get(park['id'],[])];errors=[];titles={norm(p['caption']) for p in base+photos+rejected};alts={norm(p['alt']) for p in base+photos+rejected};ids={p['id'] for p in base+photos+rejected}
   try:
