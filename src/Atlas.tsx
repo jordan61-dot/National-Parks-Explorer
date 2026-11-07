@@ -29,6 +29,7 @@ export function Atlas({parks,selectedId,onSelect,visitedIds=new Set<string>(),sa
  const terrainStatusChange=React.useCallback((s:string)=>setTerrainStatus(s),[]);
  useEffect(()=>{if(rememberSession)remembered={area,zoom,pan,filters,layers,mapStyle,mode,metric,coverage,compare,comparison}},[rememberSession,area,zoom,pan,filters,layers,mapStyle,mode,metric,coverage,compare,comparison]);
  useEffect(()=>{if(selectedId!==undefined)setPreviewId(selectedId)},[selectedId]);
+ useEffect(()=>{if(previewId)sectionRef.current?.querySelector<HTMLButtonElement>('.np-atlas-preview-pane button')?.focus()},[previewId]);
  const [groupIds,setGroupIds]=useState<string[]>([]),[groupCenter,setGroupCenter]=useState<{x:number;y:number}|null>(null);
  const [expanded,setExpanded]=useState(false),[listQuery,setListQuery]=useState(''),[fullChain,setFullChain]=useState(false);
  const [size,setSize]=useState({width:1000,height:540});
@@ -56,7 +57,7 @@ export function Atlas({parks,selectedId,onSelect,visitedIds=new Set<string>(),sa
  const selected=regionParks.find(p=>p.id===previewId);
  const visitedCount=regionParks.filter(p=>visitedIds.has(p.id)).length;
  const listed=regionParks.filter(p=>`${p.name} ${p.designation} ${p.states.join(' ')}`.toLowerCase().includes(listQuery.toLowerCase())).slice().sort((a,b)=>a.name.localeCompare(b.name));
- function changeArea(next:string){setArea(next);setZoom(1);setPan({x:0,y:0});setGroupIds([]);setPreviewId('');setFullChain(false);onStateChange?.(next==='us'||next==='world'?'':next)}
+ function changeArea(next:string){setArea(next);setZoom(1);setPan({x:0,y:0});setGroupIds([]);setPreviewId('');setFullChain(false);onStateChange?.(next==='us'||next==='world'?'':next);requestAnimationFrame(()=>stageRef.current?.scrollIntoView?.({block:'center'}))}
  function move(dx:number,dy:number){if(zoom<=1)return;setPan(p=>({x:Math.max(-1,Math.min(1,p.x+dx/zoom)),y:Math.max(-1,Math.min(1,p.y+dy/zoom))}))}
  function reset(){setZoom(1);setPan({x:0,y:0});setGroupIds([])}
  function zoomGroup(){if(groupCenter){setPan({x:2*(groupCenter.x-(base.x+base.width/2))/base.width,y:2*(groupCenter.y-(base.y+base.height/2))/base.height})}setZoom(z=>Math.min(16,z*2));setGroupIds([])}
