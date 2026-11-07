@@ -249,6 +249,129 @@
       "candidates": 4,
       "lastChecked": "2026-11-07T07:38:03.645434+00:00",
       "errors": []
+    },
+    "kaloko-honokohau-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T13:18:58.901464+00:00",
+      "errors": []
+    },
+    "klondike-gold-rush-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T13:19:10.638990+00:00",
+      "errors": []
+    },
+    "lewis-and-clark-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T13:19:21.776154+00:00",
+      "errors": []
+    },
+    "lowell-national-historical-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-07T13:19:47.100707+00:00",
+      "errors": [
+        "asset 8a15cd19-b4b2-4147-bb98-11314b8dd0d5: duplicate image content",
+        "asset 83a1538c-6df2-45e6-948e-2a52cf7ac41e: duplicate image content"
+      ]
+    },
+    "lyndon-b-johnson-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T13:19:54.165962+00:00",
+      "errors": []
+    },
+    "keweenaw-national-historical-park": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-07T13:20:09.292449+00:00",
+      "errors": []
+    },
+    "manhattan-project-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T13:20:19.642235+00:00",
+      "errors": []
+    },
+    "marsh-billings-rockefeller-national-historical-park": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-07T13:20:36.202490+00:00",
+      "errors": []
+    },
+    "martin-luther-king-jr-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T13:20:47.232530+00:00",
+      "errors": []
+    },
+    "minute-man-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T13:20:59.468575+00:00",
+      "errors": []
+    },
+    "morristown-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T13:21:05.948966+00:00",
+      "errors": []
+    },
+    "natchez-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T13:21:17.675922+00:00",
+      "errors": []
+    },
+    "new-bedford-whaling-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T13:21:25.032237+00:00",
+      "errors": []
+    },
+    "new-orleans-jazz-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T13:21:34.566778+00:00",
+      "errors": []
+    },
+    "nez-perce-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T13:21:41.301447+00:00",
+      "errors": []
+    },
+    "ocmulgee-mounds-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T13:21:48.979577+00:00",
+      "errors": []
+    },
+    "palo-alto-battlefield-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T13:21:59.342911+00:00",
+      "errors": []
+    },
+    "paterson-great-falls-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T13:22:09.129945+00:00",
+      "errors": []
+    },
+    "pecos-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T13:22:17.277299+00:00",
+      "errors": []
+    },
+    "pullman-national-historical-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-07T13:22:37.413217+00:00",
+      "errors": []
     }
   }
 }
