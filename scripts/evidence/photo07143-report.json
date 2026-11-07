@@ -1,0 +1,134 @@
+{
+  "parks": {
+    "wilson-s-creek-national-battlefield": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T03:44:53.449897+00:00",
+      "errors": [
+        "search failed: The read operation timed out"
+      ]
+    },
+    "manassas-national-battlefield-park": {
+      "accepted": 1,
+      "candidates": 7,
+      "lastChecked": "2026-11-07T03:45:08.800925+00:00",
+      "errors": []
+    },
+    "richmond-national-battlefield-park": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-07T03:45:22.536368+00:00",
+      "errors": []
+    },
+    "river-raisin-national-battlefield-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T03:45:28.974464+00:00",
+      "errors": []
+    },
+    "brices-cross-roads-national-battlefield-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T03:45:38.025491+00:00",
+      "errors": []
+    },
+    "chickamauga-and-chattanooga-national-military-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T03:45:45.144048+00:00",
+      "errors": []
+    },
+    "fredericksburg-and-spotsylvania-county-battlefields-memorial-national-13ec65bc": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T03:45:53.403978+00:00",
+      "errors": []
+    },
+    "gettysburg-national-military-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T03:46:02.561339+00:00",
+      "errors": []
+    },
+    "guilford-courthouse-national-military-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T03:46:11.448475+00:00",
+      "errors": []
+    },
+    "horseshoe-bend-national-military-park": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-07T03:46:26.066262+00:00",
+      "errors": []
+    },
+    "kings-mountain-national-military-park": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-07T03:46:40.831483+00:00",
+      "errors": []
+    },
+    "pea-ridge-national-military-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T03:47:16.328009+00:00",
+      "errors": [
+        "search failed: The read operation timed out"
+      ]
+    },
+    "shiloh-national-military-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-07T03:47:33.471495+00:00",
+      "errors": [
+        "asset dff0c32f-339e-4090-aa53-8d8e6a25c9de: title or descriptive alternative text missing"
+      ]
+    },
+    "vicksburg-national-military-park": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-07T03:47:45.414916+00:00",
+      "errors": []
+    },
+    "abraham-lincoln-birthplace-national-historical-park": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-07T03:47:58.409201+00:00",
+      "errors": [
+        "asset a9fd0b21-0791-ed79-cebc-c25281aec2c4: no verified small image",
+        "asset 5bb3bdb2-1dd8-b71c-0792-aee1cd4fed6a: no verified small image",
+        "asset 5b4d1e87-1dd8-b71c-07cf-6642a5b452b6: no verified small image"
+      ]
+    },
+    "adams-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T03:48:08.079517+00:00",
+      "errors": []
+    },
+    "appomattox-court-house-national-historical-park": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-07T03:48:20.468835+00:00",
+      "errors": []
+    },
+    "blackstone-river-valley-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T03:48:26.117116+00:00",
+      "errors": []
+    },
+    "boston-national-historical-park": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-07T03:48:39.239679+00:00",
+      "errors": []
+    },
+    "brown-v-board-of-education-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T03:48:51.471322+00:00",
+      "errors": []
+    }
+  }
+}
