@@ -372,6 +372,126 @@
       "candidates": 8,
       "lastChecked": "2026-11-07T13:22:37.413217+00:00",
       "errors": []
+    },
+    "pu-uhonua-o-honaunau-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T19:12:01.297021+00:00",
+      "errors": []
+    },
+    "reconstruction-era-national-historical-park": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-07T19:12:15.260666+00:00",
+      "errors": []
+    },
+    "rosie-the-riveter-world-war-ii-home-front-national-historical-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T19:12:28.932571+00:00",
+      "errors": []
+    },
+    "salt-river-bay-national-historical-park-and-ecological-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-07T19:12:40.058357+00:00",
+      "errors": []
+    },
+    "san-antonio-missions-national-historical-park": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-07T19:12:55.736279+00:00",
+      "errors": []
+    },
+    "san-francisco-maritime-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T19:13:09.140315+00:00",
+      "errors": []
+    },
+    "san-juan-island-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T19:13:25.835402+00:00",
+      "errors": []
+    },
+    "saratoga-national-historical-park": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-07T19:13:42.962043+00:00",
+      "errors": []
+    },
+    "saint-gaudens-national-historical-park": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-07T19:14:01.273722+00:00",
+      "errors": []
+    },
+    "salem-maritime-national-historical-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-07T19:14:26.450051+00:00",
+      "errors": []
+    },
+    "ste-genevieve-national-historical-park": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-07T19:14:37.278898+00:00",
+      "errors": []
+    },
+    "sitka-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T19:14:50.767917+00:00",
+      "errors": []
+    },
+    "thomas-edison-national-historical-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-07T19:15:13.698748+00:00",
+      "errors": []
+    },
+    "tumacacori-national-historical-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-07T19:15:35.561566+00:00",
+      "errors": []
+    },
+    "valley-forge-national-historical-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-07T19:16:00.896554+00:00",
+      "errors": []
+    },
+    "war-in-the-pacific-national-historical-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T19:16:16.516526+00:00",
+      "errors": []
+    },
+    "weir-farm-national-historical-park": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-07T19:16:35.942075+00:00",
+      "errors": []
+    },
+    "women-s-rights-national-historical-park": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-07T19:16:57.957388+00:00",
+      "errors": []
+    },
+    "allegheny-portage-railroad-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-07T19:17:09.471141+00:00",
+      "errors": []
+    },
+    "amache-national-historic-site": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-07T19:17:17.681622+00:00",
+      "errors": []
     }
   }
 }
