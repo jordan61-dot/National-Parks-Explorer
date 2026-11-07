@@ -108,7 +108,7 @@ export function Atlas({parks,selectedId,onSelect,visitedIds=new Set<string>(),sa
     <div className="np-atlas-map-caption"><span>{title}{['HI','MP','AS'].includes(area)?fullChain?' · entire island chain':' · main islands':''}</span><span>{visible} visible reference points</span></div>
    </div>
   </div>
-  {selected&&<aside className="np-atlas-preview-pane" aria-label="Park context"><AtlasParkPreview park={selected} visited={visitedIds.has(selected.id)} saved={savedIds.has(selected.id)} onClose={closePreview} profileHref={profileHref?.(selected.id)??'#/apps/national-parks/park/'+selected.id} discoveryHref={discoveryHref(selected.states[0])}/><button type="button" onClick={()=>locate(selected.id)} disabled={!validLocation(selected)}>Locate selected reference point</button></aside>}
+  {selected&&<div className="np-atlas-preview-pane" role="complementary" aria-label="Park context"><AtlasParkPreview park={selected} visited={visitedIds.has(selected.id)} saved={savedIds.has(selected.id)} onClose={closePreview} profileHref={profileHref?.(selected.id)??'#/apps/national-parks/park/'+selected.id} discoveryHref={discoveryHref(selected.states[0])}/><button type="button" onClick={()=>locate(selected.id)} disabled={!validLocation(selected)}>Locate selected reference point</button></div>}
   </div>
   {mapStyle==='terrain'&&<p className="np-atlas-terrain-status" role="status">{terrainStatus} <a href="https://www.naturalearthdata.com/downloads/50m-raster-data/50m-shaded-relief/" target="_blank" rel="noreferrer">Terrain source</a></p>}
   {layers.choropleth&&area==='world'&&<p>World context retains country outlines. Jurisdiction shading is available in the U.S. overview, focused maps, and exact statistics table.</p>}
