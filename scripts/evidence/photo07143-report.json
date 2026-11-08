@@ -623,6 +623,131 @@
       "candidates": 0,
       "lastChecked": "2026-11-08T01:40:06.565083+00:00",
       "errors": []
+    },
+    "fort-point-national-historic-site": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-08T07:30:15.011227+00:00",
+      "errors": []
+    },
+    "fort-raleigh-national-historic-site": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-08T07:30:30.866344+00:00",
+      "errors": []
+    },
+    "fort-scott-national-historic-site": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-08T07:30:46.284687+00:00",
+      "errors": []
+    },
+    "fort-smith-national-historic-site": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-08T07:31:04.868278+00:00",
+      "errors": [
+        "asset 91733664-05a3-4f6e-9c35-a3e6992a1b0a: no verified small image"
+      ]
+    },
+    "fort-union-trading-post-national-historic-site": {
+      "accepted": 1,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T07:31:19.268467+00:00",
+      "errors": []
+    },
+    "fort-vancouver-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T07:31:40.725134+00:00",
+      "errors": []
+    },
+    "frederick-douglass-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T07:32:01.285593+00:00",
+      "errors": []
+    },
+    "frederick-law-olmsted-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T07:32:24.828812+00:00",
+      "errors": []
+    },
+    "friendship-hill-national-historic-site": {
+      "accepted": 0,
+      "candidates": 6,
+      "lastChecked": "2026-11-08T07:32:44.823906+00:00",
+      "errors": []
+    },
+    "grant-kohrs-ranch-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T07:33:07.458725+00:00",
+      "errors": []
+    },
+    "hampton-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T07:33:29.318817+00:00",
+      "errors": [
+        "asset 74b00337-7a03-4744-affa-3a16404d5920: no verified small image",
+        "asset 980b28e3-89ff-4584-be40-b8bb046be6bb: no verified small image"
+      ]
+    },
+    "harry-s-truman-national-historic-site": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-08T07:33:45.354176+00:00",
+      "errors": []
+    },
+    "herbert-hoover-national-historic-site": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-08T07:34:01.345653+00:00",
+      "errors": []
+    },
+    "home-of-franklin-d-roosevelt-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-08T07:34:15.955092+00:00",
+      "errors": []
+    },
+    "hopewell-furnace-national-historic-site": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-08T07:34:33.969897+00:00",
+      "errors": []
+    },
+    "honouliuli-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T07:34:53.257126+00:00",
+      "errors": []
+    },
+    "hubbell-trading-post-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T07:35:02.361993+00:00",
+      "errors": []
+    },
+    "james-a-garfield-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T07:35:22.259035+00:00",
+      "errors": []
+    },
+    "john-fitzgerald-kennedy-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-08T07:35:31.894166+00:00",
+      "errors": []
+    },
+    "john-muir-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T07:35:55.078086+00:00",
+      "errors": []
     }
   }
 }
