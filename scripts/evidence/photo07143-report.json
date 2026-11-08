@@ -874,6 +874,128 @@
       "errors": [
         "asset 371b4839-155d-451f-67e3-9f45117a4260: duplicate image content"
       ]
+    },
+    "saugus-iron-works-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-08T19:12:24.359626+00:00",
+      "errors": []
+    },
+    "springfield-armory-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T19:12:39.697974+00:00",
+      "errors": []
+    },
+    "steamtown-national-historic-site": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-08T19:12:56.556443+00:00",
+      "errors": []
+    },
+    "theodore-roosevelt-birthplace-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T19:13:04.650155+00:00",
+      "errors": []
+    },
+    "theodore-roosevelt-inaugural-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T19:13:11.005357+00:00",
+      "errors": []
+    },
+    "thomas-stone-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T19:13:29.953161+00:00",
+      "errors": []
+    },
+    "tuskegee-airmen-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-08T19:13:37.387559+00:00",
+      "errors": []
+    },
+    "tuskegee-institute-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T19:13:42.932140+00:00",
+      "errors": []
+    },
+    "ulysses-s-grant-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T19:13:49.191730+00:00",
+      "errors": []
+    },
+    "vanderbilt-mansion-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-08T19:13:56.704995+00:00",
+      "errors": []
+    },
+    "washita-battlefield-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T19:14:02.370886+00:00",
+      "errors": []
+    },
+    "whitman-mission-national-historic-site": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-08T19:14:13.632451+00:00",
+      "errors": []
+    },
+    "william-howard-taft-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T19:14:23.554221+00:00",
+      "errors": []
+    },
+    "saint-croix-island-international-historic-site": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-08T19:14:35.914007+00:00",
+      "errors": []
+    },
+    "apostle-islands-national-lakeshore": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T19:14:56.400795+00:00",
+      "errors": []
+    },
+    "pictured-rocks-national-lakeshore": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T19:15:13.740335+00:00",
+      "errors": []
+    },
+    "sleeping-bear-dunes-national-lakeshore": {
+      "accepted": 0,
+      "candidates": 7,
+      "lastChecked": "2026-11-08T19:15:33.854775+00:00",
+      "errors": []
+    },
+    "arkansas-post-national-memorial": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T19:15:41.101467+00:00",
+      "errors": []
+    },
+    "arlington-house-the-robert-e-lee-memorial": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-08T19:15:50.231021+00:00",
+      "errors": [
+        "asset cf5fbb50-a4c5-4b68-8718-c89364520e2b: untrusted asset URL"
+      ]
+    },
+    "chamizal-national-memorial": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-08T19:15:59.044842+00:00",
+      "errors": []
     }
   }
 }
