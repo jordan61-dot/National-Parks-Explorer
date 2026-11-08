@@ -748,6 +748,132 @@
       "candidates": 8,
       "lastChecked": "2026-11-08T07:35:55.078086+00:00",
       "errors": []
+    },
+    "knife-river-indian-villages-national-historic-site": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-08T13:18:04.238108+00:00",
+      "errors": []
+    },
+    "lincoln-home-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:18:15.986585+00:00",
+      "errors": []
+    },
+    "little-rock-central-high-school-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:18:34.575664+00:00",
+      "errors": []
+    },
+    "longfellow-washington-s-headquarters-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:18:48.652046+00:00",
+      "errors": []
+    },
+    "maggie-l-walker-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:18:57.935595+00:00",
+      "errors": []
+    },
+    "manzanar-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:19:05.582230+00:00",
+      "errors": []
+    },
+    "martin-van-buren-national-historic-site": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-08T13:19:23.299827+00:00",
+      "errors": []
+    },
+    "mary-mcleod-bethune-council-house-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-08T13:19:38.405790+00:00",
+      "errors": []
+    },
+    "minidoka-national-historic-site": {
+      "accepted": 0,
+      "candidates": 6,
+      "lastChecked": "2026-11-08T13:19:55.361840+00:00",
+      "errors": [
+        "asset ca6b3984-155d-4519-3e4d-a843612dee02: no verified small image"
+      ]
+    },
+    "minuteman-missile-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:20:06.021431+00:00",
+      "errors": []
+    },
+    "new-philadelphia-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:20:12.867718+00:00",
+      "errors": []
+    },
+    "nicodemus-national-historic-site": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-08T13:20:33.762656+00:00",
+      "errors": [
+        "asset c2c93155-9738-d032-b864-2d004de1e035: no verified small image"
+      ]
+    },
+    "ninety-six-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:20:43.276811+00:00",
+      "errors": []
+    },
+    "pennsylvania-avenue-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-08T13:20:56.096461+00:00",
+      "errors": []
+    },
+    "president-william-jefferson-clinton-birthplace-home-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-08T13:21:11.326673+00:00",
+      "errors": []
+    },
+    "pu-ukohola-heiau-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:21:13.141796+00:00",
+      "errors": []
+    },
+    "sagamore-hill-national-historic-site": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-08T13:21:26.331987+00:00",
+      "errors": []
+    },
+    "saint-paul-s-church-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:21:37.648237+00:00",
+      "errors": []
+    },
+    "san-juan-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-08T13:21:47.829759+00:00",
+      "errors": []
+    },
+    "sand-creek-massacre-national-historic-site": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-08T13:22:07.436060+00:00",
+      "errors": [
+        "asset 371b4839-155d-451f-67e3-9f45117a4260: duplicate image content"
+      ]
     }
   }
 }
