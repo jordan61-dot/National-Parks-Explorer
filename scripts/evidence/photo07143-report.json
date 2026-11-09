@@ -1376,6 +1376,130 @@
       "candidates": 8,
       "lastChecked": "2026-11-09T13:44:58.561686+00:00",
       "errors": []
+    },
+    "emmett-till-and-mamie-till-mobley-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T19:22:59.557856+00:00",
+      "errors": []
+    },
+    "florissant-fossil-beds-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T19:23:14.507282+00:00",
+      "errors": []
+    },
+    "fort-frederica-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T19:23:26.582029+00:00",
+      "errors": []
+    },
+    "fort-matanzas-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T19:23:49.557325+00:00",
+      "errors": []
+    },
+    "fort-mchenry-national-monument-and-historic-shrine": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T19:23:58.434569+00:00",
+      "errors": []
+    },
+    "fort-monroe-national-monument": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-09T19:24:10.219936+00:00",
+      "errors": []
+    },
+    "fort-pulaski-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T19:24:27.399020+00:00",
+      "errors": [
+        "asset a930d297-bb2c-4b55-b021-1e543e2f720c: duplicate image content"
+      ]
+    },
+    "fort-stanwix-national-monument": {
+      "accepted": 0,
+      "candidates": 7,
+      "lastChecked": "2026-11-09T19:24:41.416813+00:00",
+      "errors": []
+    },
+    "fort-union-national-monument": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-09T19:24:57.994394+00:00",
+      "errors": []
+    },
+    "fossil-butte-national-monument": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-09T19:25:12.583194+00:00",
+      "errors": []
+    },
+    "frances-perkins-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T19:25:14.264122+00:00",
+      "errors": []
+    },
+    "freedom-riders-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T19:25:29.510440+00:00",
+      "errors": []
+    },
+    "george-washington-birthplace-national-monument": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-09T19:25:46.585055+00:00",
+      "errors": []
+    },
+    "george-washington-carver-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T19:26:05.213040+00:00",
+      "errors": []
+    },
+    "gila-cliff-dwellings-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T19:26:17.114351+00:00",
+      "errors": []
+    },
+    "governors-island-national-monument": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-09T19:26:33.763636+00:00",
+      "errors": []
+    },
+    "grand-portage-national-monument": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-09T19:26:54.115262+00:00",
+      "errors": []
+    },
+    "hagerman-fossil-beds-national-monument": {
+      "accepted": 0,
+      "candidates": 6,
+      "lastChecked": "2026-11-09T19:27:12.615931+00:00",
+      "errors": [
+        "asset cab0759e-1dd8-b71b-0b77-a5ec54290734: duplicate image content"
+      ]
+    },
+    "hohokam-pima-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T19:27:18.403090+00:00",
+      "errors": []
+    },
+    "hovenweep-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T19:27:26.299418+00:00",
+      "errors": []
     }
   }
 }
