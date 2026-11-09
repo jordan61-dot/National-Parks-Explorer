@@ -1128,6 +1128,131 @@
       "candidates": 1,
       "lastChecked": "2026-11-09T01:42:24.922464+00:00",
       "errors": []
+    },
+    "roger-williams-national-memorial": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-09T07:52:17.219436+00:00",
+      "errors": [
+        "asset 83431c1c-9ab0-4fd9-9296-5c4c225b9cda: untrusted asset URL",
+        "asset 858ca323-b963-488f-9d25-6298538d603b: untrusted asset URL"
+      ]
+    },
+    "thaddeus-kosciuszko-national-memorial": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-09T07:52:27.677088+00:00",
+      "errors": []
+    },
+    "theodore-roosevelt-island": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T07:52:48.205627+00:00",
+      "errors": [
+        "asset 69226db5-75ae-4f1f-8848-bbf9a2d9d433: untrusted asset URL"
+      ]
+    },
+    "thomas-jefferson-memorial": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-09T07:52:57.405745+00:00",
+      "errors": []
+    },
+    "vietnam-veterans-memorial": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-09T07:53:05.809065+00:00",
+      "errors": []
+    },
+    "washington-monument": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-09T07:53:13.975964+00:00",
+      "errors": []
+    },
+    "world-war-i-memorial": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T07:53:22.796537+00:00",
+      "errors": []
+    },
+    "world-war-ii-memorial": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T07:53:37.410160+00:00",
+      "errors": []
+    },
+    "wright-brothers-national-memorial": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-09T07:53:51.214144+00:00",
+      "errors": []
+    },
+    "african-burial-ground-national-monument": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-09T07:54:01.418608+00:00",
+      "errors": []
+    },
+    "agate-fossil-beds-national-monument": {
+      "accepted": 1,
+      "candidates": 4,
+      "lastChecked": "2026-11-09T07:54:15.845870+00:00",
+      "errors": []
+    },
+    "alibates-flint-quarries-national-monument": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-09T07:54:28.231208+00:00",
+      "errors": []
+    },
+    "aniakchak-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T07:54:33.586318+00:00",
+      "errors": []
+    },
+    "aztec-ruins-national-monument": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-09T07:54:43.662657+00:00",
+      "errors": []
+    },
+    "bandelier-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T07:54:48.773981+00:00",
+      "errors": []
+    },
+    "belmont-paul-women-s-equality-national-monument": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-09T07:54:58.726220+00:00",
+      "errors": []
+    },
+    "birmingham-civil-rights-national-monument": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-09T07:55:07.028464+00:00",
+      "errors": []
+    },
+    "booker-t-washington-national-monument": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-09T07:55:18.866408+00:00",
+      "errors": []
+    },
+    "buck-island-reef-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T07:55:26.664664+00:00",
+      "errors": []
+    },
+    "cabrillo-national-monument": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-09T07:55:36.532458+00:00",
+      "errors": []
     }
   }
 }
