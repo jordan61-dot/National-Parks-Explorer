@@ -1253,6 +1253,129 @@
       "candidates": 3,
       "lastChecked": "2026-11-09T07:55:36.532458+00:00",
       "errors": []
+    },
+    "camp-nelson-national-monument": {
+      "accepted": 0,
+      "candidates": 7,
+      "lastChecked": "2026-11-09T13:40:33.164777+00:00",
+      "errors": []
+    },
+    "canyon-de-chelly-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T13:40:39.654676+00:00",
+      "errors": []
+    },
+    "cape-krusenstern-national-monument": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-09T13:40:53.807967+00:00",
+      "errors": []
+    },
+    "capulin-volcano-national-monument": {
+      "accepted": 0,
+      "candidates": 6,
+      "lastChecked": "2026-11-09T13:41:12.123310+00:00",
+      "errors": []
+    },
+    "carlisle-federal-indian-boarding-school-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T13:41:14.923980+00:00",
+      "errors": []
+    },
+    "casa-grande-ruins-national-monument": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-09T13:41:28.728992+00:00",
+      "errors": []
+    },
+    "castillo-de-san-marcos-national-monument": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-09T13:41:41.135508+00:00",
+      "errors": []
+    },
+    "castle-clinton-national-monument": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-09T13:41:49.263694+00:00",
+      "errors": []
+    },
+    "castle-mountains-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T13:41:58.767815+00:00",
+      "errors": []
+    },
+    "cedar-breaks-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T13:42:22.701504+00:00",
+      "errors": []
+    },
+    "cesar-e-chavez-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T13:42:27.493817+00:00",
+      "errors": []
+    },
+    "charles-young-buffalo-soldiers-national-monument": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-09T13:42:55.794518+00:00",
+      "errors": []
+    },
+    "colorado-national-monument": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-09T13:43:06.048514+00:00",
+      "errors": []
+    },
+    "craters-of-the-moon-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T13:43:15.896239+00:00",
+      "errors": []
+    },
+    "devils-postpile-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T13:43:23.665392+00:00",
+      "errors": []
+    },
+    "devils-tower-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T13:43:51.479729+00:00",
+      "errors": []
+    },
+    "dinosaur-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T13:44:13.901962+00:00",
+      "errors": [
+        "asset 445bf9b0-f468-4f24-8219-e1ee8d3fb4ee: no verified small image",
+        "asset 38c602ce-4632-4f1a-a090-90650b7d8aa1: no verified small image"
+      ]
+    },
+    "effigy-mounds-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T13:44:34.810839+00:00",
+      "errors": []
+    },
+    "el-malpais-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-09T13:44:40.025811+00:00",
+      "errors": []
+    },
+    "el-morro-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-09T13:44:58.561686+00:00",
+      "errors": []
     }
   }
 }
