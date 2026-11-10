@@ -1740,6 +1740,126 @@
       "candidates": 0,
       "lastChecked": "2026-11-10T07:43:31.754636+00:00",
       "errors": []
+    },
+    "black-canyon-of-the-gunnison-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T13:30:22.057502+00:00",
+      "errors": []
+    },
+    "bryce-canyon-national-park": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-10T13:30:39.193443+00:00",
+      "errors": []
+    },
+    "canyonlands-national-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T13:31:00.595447+00:00",
+      "errors": []
+    },
+    "capitol-reef-national-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T13:31:24.005722+00:00",
+      "errors": []
+    },
+    "carlsbad-caverns-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-10T13:31:32.834308+00:00",
+      "errors": []
+    },
+    "channel-islands-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T13:31:51.331759+00:00",
+      "errors": []
+    },
+    "chiricahua-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T13:31:57.227934+00:00",
+      "errors": []
+    },
+    "congaree-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-10T13:32:04.715660+00:00",
+      "errors": []
+    },
+    "crater-lake-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T13:32:18.248438+00:00",
+      "errors": []
+    },
+    "cuyahoga-valley-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-10T13:32:32.438747+00:00",
+      "errors": []
+    },
+    "death-valley-national-park": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-10T13:32:51.152045+00:00",
+      "errors": []
+    },
+    "denali-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T13:32:59.944756+00:00",
+      "errors": []
+    },
+    "dry-tortugas-national-park": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-10T13:33:15.148341+00:00",
+      "errors": []
+    },
+    "everglades-national-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T13:33:36.442257+00:00",
+      "errors": []
+    },
+    "gates-of-the-arctic-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T13:33:46.088230+00:00",
+      "errors": []
+    },
+    "gateway-arch-national-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T13:34:13.976951+00:00",
+      "errors": []
+    },
+    "glacier-bay-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T13:34:28.132913+00:00",
+      "errors": []
+    },
+    "glacier-national-park": {
+      "accepted": 0,
+      "candidates": 7,
+      "lastChecked": "2026-11-10T13:34:53.775731+00:00",
+      "errors": []
+    },
+    "grand-canyon-national-park": {
+      "accepted": 2,
+      "candidates": 6,
+      "lastChecked": "2026-11-10T13:35:16.701551+00:00",
+      "errors": []
+    },
+    "grand-teton-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-10T13:35:29.292689+00:00",
+      "errors": []
     }
   }
 }
