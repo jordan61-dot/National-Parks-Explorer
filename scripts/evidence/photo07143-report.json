@@ -1620,6 +1620,126 @@
       "candidates": 0,
       "lastChecked": "2026-11-10T01:34:28.079486+00:00",
       "errors": []
+    },
+    "scotts-bluff-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T07:39:55.607270+00:00",
+      "errors": []
+    },
+    "springfield-1908-race-riot-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T07:39:57.616881+00:00",
+      "errors": []
+    },
+    "statue-of-liberty-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T07:40:05.594267+00:00",
+      "errors": []
+    },
+    "stonewall-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T07:40:22.413070+00:00",
+      "errors": []
+    },
+    "sunset-crater-volcano-national-monument": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-10T07:40:35.265957+00:00",
+      "errors": []
+    },
+    "timpanogos-cave-national-monument": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-10T07:40:48.181860+00:00",
+      "errors": []
+    },
+    "tonto-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T07:40:52.676288+00:00",
+      "errors": []
+    },
+    "tule-lake-national-monument": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-10T07:41:01.503307+00:00",
+      "errors": []
+    },
+    "tule-springs-fossil-beds-national-monument": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-10T07:41:18.052358+00:00",
+      "errors": []
+    },
+    "tuzigoot-national-monument": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-10T07:41:28.476201+00:00",
+      "errors": []
+    },
+    "virgin-islands-coral-reef-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T07:41:39.773224+00:00",
+      "errors": []
+    },
+    "waco-mammoth-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T07:41:44.569775+00:00",
+      "errors": []
+    },
+    "walnut-canyon-national-monument": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-10T07:41:53.403866+00:00",
+      "errors": []
+    },
+    "wupatki-national-monument": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T07:42:08.845920+00:00",
+      "errors": []
+    },
+    "yucca-house-national-monument": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T07:42:15.560796+00:00",
+      "errors": []
+    },
+    "acadia-national-park": {
+      "accepted": 2,
+      "candidates": 6,
+      "lastChecked": "2026-11-10T07:42:40.102359+00:00",
+      "errors": []
+    },
+    "arches-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-10T07:42:51.644602+00:00",
+      "errors": []
+    },
+    "badlands-national-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T07:43:12.377455+00:00",
+      "errors": []
+    },
+    "big-bend-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-10T07:43:24.096499+00:00",
+      "errors": []
+    },
+    "biscayne-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T07:43:31.754636+00:00",
+      "errors": []
     }
   }
 }
