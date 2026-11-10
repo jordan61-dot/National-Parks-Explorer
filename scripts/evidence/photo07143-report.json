@@ -1860,6 +1860,133 @@
       "candidates": 1,
       "lastChecked": "2026-11-10T13:35:29.292689+00:00",
       "errors": []
+    },
+    "great-basin-national-park": {
+      "accepted": 3,
+      "candidates": 5,
+      "lastChecked": "2026-11-10T19:25:11.611341+00:00",
+      "errors": []
+    },
+    "great-sand-dunes-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:25:27.486584+00:00",
+      "errors": []
+    },
+    "great-smoky-mountains-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-10T19:25:45.097497+00:00",
+      "errors": []
+    },
+    "guadalupe-mountains-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:25:51.868584+00:00",
+      "errors": []
+    },
+    "haleakala-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:25:53.336682+00:00",
+      "errors": []
+    },
+    "hawai-i-volcanoes-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:26:04.571606+00:00",
+      "errors": []
+    },
+    "hot-springs-national-park": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-10T19:26:49.459760+00:00",
+      "errors": []
+    },
+    "indiana-dunes-national-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T19:27:20.134585+00:00",
+      "errors": []
+    },
+    "isle-royale-national-park": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-10T19:27:39.113576+00:00",
+      "errors": []
+    },
+    "joshua-tree-national-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T19:28:09.925050+00:00",
+      "errors": [
+        "asset bf706e1b-6971-4d7c-9e22-241b00a8e57b: no verified small image",
+        "asset aed814f0-555b-4be9-b8cc-71d4ff41a1e9: no verified small image",
+        "asset 0a07b181-27d6-4fc3-a456-46f2d1638212: no verified small image",
+        "asset 6281a707-9ef8-485c-b30e-b7ffa078d029: no verified small image"
+      ]
+    },
+    "katmai-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:28:19.919591+00:00",
+      "errors": []
+    },
+    "kenai-fjords-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:28:38.606399+00:00",
+      "errors": []
+    },
+    "kings-canyon-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:28:52.173622+00:00",
+      "errors": []
+    },
+    "kobuk-valley-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:29:00.009642+00:00",
+      "errors": []
+    },
+    "lake-clark-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:29:19.879096+00:00",
+      "errors": []
+    },
+    "lassen-volcanic-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:29:35.682893+00:00",
+      "errors": []
+    },
+    "mammoth-cave-national-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T19:30:04.292672+00:00",
+      "errors": [
+        "asset ea3284d9-a5be-4659-8169-559b4b66fdd6: no verified small image"
+      ]
+    },
+    "mesa-verde-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-10T19:30:21.219129+00:00",
+      "errors": []
+    },
+    "mount-rainier-national-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-10T19:30:49.859883+00:00",
+      "errors": []
+    },
+    "national-park-of-american-samoa": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-10T19:30:59.602863+00:00",
+      "errors": []
     }
   }
 }
