@@ -2231,6 +2231,130 @@
       "candidates": 5,
       "lastChecked": "2026-11-11T07:45:52.404111+00:00",
       "errors": []
+    },
+    "wrangell-st-elias-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:38:05.070452+00:00",
+      "errors": []
+    },
+    "yukon-charley-rivers-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:38:14.946710+00:00",
+      "errors": []
+    },
+    "city-of-rocks-national-reserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:38:21.516779+00:00",
+      "errors": []
+    },
+    "ebey-s-landing-national-historical-reserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:38:28.734027+00:00",
+      "errors": []
+    },
+    "amistad-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-11T13:38:46.755696+00:00",
+      "errors": [
+        "asset d266be59-7371-4080-ac6e-e05af53b8dd0: no verified small image"
+      ]
+    },
+    "bighorn-canyon-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:38:57.144930+00:00",
+      "errors": []
+    },
+    "boston-harbor-islands-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:39:15.498403+00:00",
+      "errors": [
+        "asset b92b8a61-e2fe-4239-90b7-1f6c29d0e837: duplicate image content"
+      ]
+    },
+    "chattahoochee-river-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:39:22.252695+00:00",
+      "errors": []
+    },
+    "chickasaw-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-11T13:39:30.847137+00:00",
+      "errors": []
+    },
+    "curecanti-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-11T13:39:39.691661+00:00",
+      "errors": []
+    },
+    "delaware-water-gap-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:39:52.005763+00:00",
+      "errors": []
+    },
+    "gateway-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T13:40:03.519292+00:00",
+      "errors": []
+    },
+    "gauley-river-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T13:40:11.593346+00:00",
+      "errors": []
+    },
+    "glen-canyon-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 6,
+      "lastChecked": "2026-11-11T13:40:31.646086+00:00",
+      "errors": []
+    },
+    "golden-gate-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:40:42.476349+00:00",
+      "errors": []
+    },
+    "lake-chelan-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:40:48.495295+00:00",
+      "errors": []
+    },
+    "lake-mead-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 6,
+      "lastChecked": "2026-11-11T13:41:08.654462+00:00",
+      "errors": []
+    },
+    "lake-meredith-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-11T13:41:25.809880+00:00",
+      "errors": []
+    },
+    "lake-roosevelt-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:41:36.370711+00:00",
+      "errors": []
+    },
+    "ross-lake-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T13:41:50.879233+00:00",
+      "errors": []
     }
   }
 }
