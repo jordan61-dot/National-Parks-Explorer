@@ -1987,6 +1987,128 @@
       "candidates": 0,
       "lastChecked": "2026-11-10T19:30:59.602863+00:00",
       "errors": []
+    },
+    "new-river-gorge-national-park-and-preserve": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T01:29:54.770746+00:00",
+      "errors": []
+    },
+    "north-cascades-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:30:05.784949+00:00",
+      "errors": []
+    },
+    "olympic-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:30:13.709769+00:00",
+      "errors": []
+    },
+    "petrified-forest-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:30:24.930521+00:00",
+      "errors": []
+    },
+    "pinnacles-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:30:37.816473+00:00",
+      "errors": []
+    },
+    "redwood-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:30:46.564159+00:00",
+      "errors": []
+    },
+    "rocky-mountain-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:30:56.918039+00:00",
+      "errors": []
+    },
+    "saguaro-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T01:31:07.268335+00:00",
+      "errors": []
+    },
+    "sequoia-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:31:18.505599+00:00",
+      "errors": []
+    },
+    "shenandoah-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:31:27.529294+00:00",
+      "errors": []
+    },
+    "theodore-roosevelt-national-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T01:31:45.416782+00:00",
+      "errors": []
+    },
+    "virgin-islands-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:32:00.558329+00:00",
+      "errors": []
+    },
+    "voyageurs-national-park": {
+      "accepted": 0,
+      "candidates": 7,
+      "lastChecked": "2026-11-11T01:32:21.449340+00:00",
+      "errors": []
+    },
+    "white-sands-national-park": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-11T01:32:41.531538+00:00",
+      "errors": []
+    },
+    "wind-cave-national-park": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-11T01:33:03.828196+00:00",
+      "errors": []
+    },
+    "wrangell-st-elias-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:33:20.719498+00:00",
+      "errors": []
+    },
+    "yellowstone-national-park": {
+      "accepted": 2,
+      "candidates": 6,
+      "lastChecked": "2026-11-11T01:33:43.842862+00:00",
+      "errors": [
+        "asset 5c192bbf-3167-4b74-9f92-553a88fab7de: duplicate image content"
+      ]
+    },
+    "yosemite-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:33:55.177160+00:00",
+      "errors": []
+    },
+    "zion-national-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T01:34:07.853156+00:00",
+      "errors": []
+    },
+    "blue-ridge-parkway": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-11T01:34:32.347006+00:00",
+      "errors": []
     }
   }
 }
