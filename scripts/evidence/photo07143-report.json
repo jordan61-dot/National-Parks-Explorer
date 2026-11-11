@@ -2355,6 +2355,126 @@
       "candidates": 0,
       "lastChecked": "2026-11-11T13:41:50.879233+00:00",
       "errors": []
+    },
+    "santa-monica-mountains-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T19:26:47.171825+00:00",
+      "errors": []
+    },
+    "whiskeytown-shasta-trinity-national-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:27:01.333048+00:00",
+      "errors": []
+    },
+    "big-south-fork-national-river-and-recreation-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:27:21.321853+00:00",
+      "errors": []
+    },
+    "buffalo-national-river": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-11T19:27:40.980987+00:00",
+      "errors": []
+    },
+    "mississippi-national-river-and-recreation-areas": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:27:54.845976+00:00",
+      "errors": []
+    },
+    "ozark-national-scenic-riverways": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T19:28:07.765379+00:00",
+      "errors": []
+    },
+    "alagnak-wild-river": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:28:14.997339+00:00",
+      "errors": []
+    },
+    "bluestone-national-scenic-river": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T19:28:25.430676+00:00",
+      "errors": []
+    },
+    "middle-delaware-national-scenic-river": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:28:35.038649+00:00",
+      "errors": []
+    },
+    "great-egg-harbor-national-scenic-and-recreational-river": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:28:49.543535+00:00",
+      "errors": []
+    },
+    "missouri-national-recreational-river": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T19:28:59.064871+00:00",
+      "errors": []
+    },
+    "niobrara-national-scenic-river": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-11T19:29:24.366951+00:00",
+      "errors": []
+    },
+    "obed-wild-and-scenic-river": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:29:35.703444+00:00",
+      "errors": []
+    },
+    "rio-grande-wild-and-scenic-river": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:29:47.896946+00:00",
+      "errors": []
+    },
+    "saint-croix-national-scenic-riverway": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:30:00.322682+00:00",
+      "errors": []
+    },
+    "upper-delaware-scenic-and-recreational-river": {
+      "accepted": 0,
+      "candidates": 6,
+      "lastChecked": "2026-11-11T19:30:21.724738+00:00",
+      "errors": []
+    },
+    "appalachian-national-scenic-trail": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T19:30:35.153315+00:00",
+      "errors": []
+    },
+    "ice-age-national-scenic-trail": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T19:30:52.039206+00:00",
+      "errors": []
+    },
+    "natchez-trace-national-scenic-trail": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-11T19:31:12.953238+00:00",
+      "errors": []
+    },
+    "new-england-national-scenic-trail": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T19:31:22.070879+00:00",
+      "errors": []
     }
   }
 }
