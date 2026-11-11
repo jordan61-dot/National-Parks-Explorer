@@ -2109,6 +2109,128 @@
       "candidates": 8,
       "lastChecked": "2026-11-11T01:34:32.347006+00:00",
       "errors": []
+    },
+    "george-washington-memorial-parkway": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T07:42:36.653991+00:00",
+      "errors": []
+    },
+    "john-d-rockefeller": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:42:41.843606+00:00",
+      "errors": []
+    },
+    "natchez-trace-parkway": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:42:54.756937+00:00",
+      "errors": []
+    },
+    "aniakchak-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:42:59.301544+00:00",
+      "errors": []
+    },
+    "bering-land-bridge-national-preserve": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-11T07:43:16.153051+00:00",
+      "errors": []
+    },
+    "big-cypress-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:43:26.693684+00:00",
+      "errors": []
+    },
+    "big-thicket-national-preserve": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-11T07:43:34.007605+00:00",
+      "errors": []
+    },
+    "craters-of-the-moon-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:43:45.783064+00:00",
+      "errors": []
+    },
+    "denali-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:43:56.385627+00:00",
+      "errors": []
+    },
+    "gates-of-the-arctic-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:44:08.104156+00:00",
+      "errors": []
+    },
+    "glacier-bay-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:44:19.191971+00:00",
+      "errors": []
+    },
+    "great-sand-dunes-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:44:32.109881+00:00",
+      "errors": []
+    },
+    "katmai-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:44:37.668489+00:00",
+      "errors": []
+    },
+    "lake-clark-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:44:46.824628+00:00",
+      "errors": []
+    },
+    "little-river-canyon-national-preserve": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-11T07:45:01.086550+00:00",
+      "errors": []
+    },
+    "mojave-national-preserve": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-11T07:45:15.393011+00:00",
+      "errors": [
+        "asset e5e106fb-9588-4f77-af8a-af059096564a: no verified small image"
+      ]
+    },
+    "noatak-national-preserve": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-11T07:45:24.204693+00:00",
+      "errors": []
+    },
+    "tallgrass-prairie-national-preserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-11T07:45:33.576888+00:00",
+      "errors": []
+    },
+    "timucuan-ecological-and-historic-preserve": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-11T07:45:41.072616+00:00",
+      "errors": []
+    },
+    "valles-caldera-national-preserve": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-11T07:45:52.404111+00:00",
+      "errors": []
     }
   }
 }
