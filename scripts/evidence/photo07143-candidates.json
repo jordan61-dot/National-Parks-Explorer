@@ -25461,6 +25461,439 @@
           "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
         }
       ]
+    },
+    "rock-creek-park": {
+      "photographs": [
+        {
+          "id": "photo07143-7ee434b6-8681-4d34-b8c2-ed3aa9d35088",
+          "asset": "src/media072/photo07143-7ee434b6-8681-4d34-b8c2-ed3aa9d35088.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/7ee434b6-8681-4d34-b8c2-ed3aa9d35088",
+          "sourcePageSha256": "b52fbd820c1621f6579fd126ac79c55118e040550a6c3c7881b8865032dcb4ad",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/7ee434b6-8681-4d34-b8c2-ed3aa9d35088/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/7ee434b6-8681-4d34-b8c2-ed3aa9d35088/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:44:44.199826+00:00",
+          "alt": "Volunteers at Rock Creek Park clean benches along a trail",
+          "caption": "Volunteers at Rock Creek Park clean benches at the Carter Barron Amphitheater in Washington, D.C., June 17, 2025.",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Rock Creek Park, Code: ROCR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 700,
+          "height": 467,
+          "sha256": "25451200ab21ce686c0ce1115a9de6c4c8ba94c8665741562a78a79b13d36b2d",
+          "bytes": 111148,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-b6ff3bf3-8ab6-484c-b7e8-753779ac401a",
+          "asset": "src/media072/photo07143-b6ff3bf3-8ab6-484c-b7e8-753779ac401a.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/b6ff3bf3-8ab6-484c-b7e8-753779ac401a",
+          "sourcePageSha256": "865d3b40948b139261089e26c6bb7a68d16660ccecc8cfe45c9b46b816cb35a8",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/b6ff3bf3-8ab6-484c-b7e8-753779ac401a/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/b6ff3bf3-8ab6-484c-b7e8-753779ac401a/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:44:45.993879+00:00",
+          "alt": "A park ranger points out an invasive plant along a trail.",
+          "caption": "National Park Service Botanist Ana Chuquin teaches volunteers how to spot and remove honeysuckle, an invasive plant, located in Rock Creek Park on June 17, 2025. .",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Rock Creek Park, Code: ROCR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 697,
+          "height": 465,
+          "sha256": "fe5f86e7f7bb26d4e05e0251bb5247f49b18dcd5f784e2aae51c5c7669bd6de7",
+          "bytes": 102704,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-751f0473-7131-4d22-8a06-946a10da1943",
+          "asset": "src/media072/photo07143-751f0473-7131-4d22-8a06-946a10da1943.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/751f0473-7131-4d22-8a06-946a10da1943",
+          "sourcePageSha256": "7d1841c830d835f06f7b33f123ba88a61404683180fa22a81fd353754cf49e47",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/751f0473-7131-4d22-8a06-946a10da1943/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/751f0473-7131-4d22-8a06-946a10da1943/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:44:47.939384+00:00",
+          "alt": "a two-lane road amidst the forest, with a wall made of boulders on either side",
+          "caption": "Along Beach Drive in Rock Creek Park",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Rock Creek Park, Code: ROCR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 700,
+          "height": 467,
+          "sha256": "48fb903c6e6e457e4373d291e449039664fca1867b67a24fb1635396f406cafe",
+          "bytes": 133988,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-ce1a4802-398d-4d82-9470-6fb3398c6314",
+          "asset": "src/media072/photo07143-ce1a4802-398d-4d82-9470-6fb3398c6314.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/ce1a4802-398d-4d82-9470-6fb3398c6314",
+          "sourcePageSha256": "fd48f6b9b00c7862334366ae8b92a77417b3e3f1c5c78ffcc4945242f8368c71",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/ce1a4802-398d-4d82-9470-6fb3398c6314/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/ce1a4802-398d-4d82-9470-6fb3398c6314/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:44:49.714094+00:00",
+          "alt": "a two-lane road winds through the forest, which provides shade on a sunny day",
+          "caption": "Beach Drive in Rock Creek Park",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Rock Creek Park, Code: ROCR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 700,
+          "height": 467,
+          "sha256": "ea29feeb7446165b23fa0d4f2bf7c26d47c1968b6238127e9a4fd402a4ffe48b",
+          "bytes": 123022,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-4c570cd4-048f-461c-bddd-e9c0eb04241d",
+          "asset": "src/media072/photo07143-4c570cd4-048f-461c-bddd-e9c0eb04241d.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/4c570cd4-048f-461c-bddd-e9c0eb04241d",
+          "sourcePageSha256": "7d33515cb939f129f4fe9cbda4cc7bc60dc8fc0dcdfa5b38a0debb3cd58e8134",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/4c570cd4-048f-461c-bddd-e9c0eb04241d/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/4c570cd4-048f-461c-bddd-e9c0eb04241d/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:44:51.502901+00:00",
+          "alt": "A large bush like plant takes over an area next to a building",
+          "caption": "Bush honeysuckle, an invasive plant to Washington, D.C., is observed in this image on June 17, 2025 in Rock Creek Park.",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Rock Creek Park, Code: ROCR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 700,
+          "height": 467,
+          "sha256": "b136b8353559795fab2e2ab6d87080021bb48027bf3e0c9fe6a60d3200f018ba",
+          "bytes": 158008,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-3704a9e6-a773-4ba0-aa41-655cbbbd0280",
+          "asset": "src/media072/photo07143-3704a9e6-a773-4ba0-aa41-655cbbbd0280.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/3704a9e6-a773-4ba0-aa41-655cbbbd0280",
+          "sourcePageSha256": "6937db39ba1106ece4a80077c42a85cd0dfdc179862e397b0e474356e44e3184",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/3704a9e6-a773-4ba0-aa41-655cbbbd0280/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/3704a9e6-a773-4ba0-aa41-655cbbbd0280/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:44:53.257130+00:00",
+          "alt": "A park ranger points out invasive plants in a wooded area.",
+          "caption": "National Park Service Botanist Ana Chuquin teaches volunteers how to spot and remove bush honeysuckle, an invasive plant, located in Rock Creek Park on June 17, 2025. .",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Rock Creek Park, Code: ROCR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 700,
+          "height": 467,
+          "sha256": "0fa329d461471fccfb3708c3e24aeb222b9cca59462e15a96380f474a59daf64",
+          "bytes": 140820,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-0acfdb44-5bc6-4aff-b126-1295023c5a76",
+          "asset": "src/media072/photo07143-0acfdb44-5bc6-4aff-b126-1295023c5a76.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/0acfdb44-5bc6-4aff-b126-1295023c5a76",
+          "sourcePageSha256": "edb7d00353a6ce1347c369fa3a9133e26f6cff9bbfc7630e92d8ed79174eac35",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/0acfdb44-5bc6-4aff-b126-1295023c5a76/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/0acfdb44-5bc6-4aff-b126-1295023c5a76/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:44:55.001741+00:00",
+          "alt": "Park volunteers remove invasive plants from a large area",
+          "caption": "Park volunteers remove bush honeysuckle, an invasive plant to Washington, D.C., on June 17, 2025 in Rock Creek Park.",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Rock Creek Park, Code: ROCR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 686,
+          "height": 457,
+          "sha256": "11a57a1f29907c15303cd0af9e653d0123b5d86f8c53e5e347030a4802e8a640",
+          "bytes": 144664,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-661d5886-f084-4c5b-81aa-2a6d34594435",
+          "asset": "src/media072/photo07143-661d5886-f084-4c5b-81aa-2a6d34594435.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/661d5886-f084-4c5b-81aa-2a6d34594435",
+          "sourcePageSha256": "9482b5512c66cf2073a9eac5f9fe015bfac7b391a0877e0ca6b0908009b6fea3",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/661d5886-f084-4c5b-81aa-2a6d34594435/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/661d5886-f084-4c5b-81aa-2a6d34594435/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:44:56.763131+00:00",
+          "alt": "An area including a bench, a small building, and a lamppost. Next to this area is a cleared off space that used to have overgrown plants.",
+          "caption": "Pictured in this image is an area that used to contain the invasive plant bush honeysuckle, that was removed from Rock Creek Park by National Park Service volunteers on June 17, 2025",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Rock Creek Park, Code: ROCR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 696,
+          "height": 464,
+          "sha256": "e32de0fcc60f99dd25022019774956c4ebf2aee098b2e6ded2c6ec5821888158",
+          "bytes": 167422,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    },
+    "the-white-house-and-president-s-park": {
+      "photographs": [
+        {
+          "id": "photo07143-8e484842-e252-4217-b535-1e256dde179d",
+          "asset": "src/media072/photo07143-8e484842-e252-4217-b535-1e256dde179d.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/8e484842-e252-4217-b535-1e256dde179d",
+          "sourcePageSha256": "d6fe40f2804f5fe69b8ea08c41df97200be7f959bfe1ba4498bb409061c10d2a",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/8e484842-e252-4217-b535-1e256dde179d/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/8e484842-e252-4217-b535-1e256dde179d/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:45:12.232964+00:00",
+          "alt": "National Park Service Chief of Maintenance for The White House and President's Park Scott Sommers observes a broken sprinkler system at The White House and President's Park Ellipse in Washington on July 22, 2025",
+          "caption": "National Park Service Chief of Maintenance Scott Sommers observes a broken sprinkler system at The White House and President’s Park Ellipse in Washington on July 22, 2025.",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "The White House and President’s Park, Code: WHHO",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 700,
+          "height": 467,
+          "sha256": "7e24cb5bae61df1bce9c2d0ce6d643d83fc7b69961c9b81b77c60313dc48ea90",
+          "bytes": 123654,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-bcfaf5ad-d7e9-489d-b774-53b0a89321ae",
+          "asset": "src/media072/photo07143-bcfaf5ad-d7e9-489d-b774-53b0a89321ae.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/bcfaf5ad-d7e9-489d-b774-53b0a89321ae",
+          "sourcePageSha256": "2cb3fa0cf4fbdc0b4bd90bc3c4a912379555ecc0b596f510a3d655cc0317d025",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/bcfaf5ad-d7e9-489d-b774-53b0a89321ae/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/bcfaf5ad-d7e9-489d-b774-53b0a89321ae/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:45:14.018074+00:00",
+          "alt": "Secretary Haaland speaks on a stage with a large Christmas Tree and the White House behind him",
+          "caption": "Secretary of the Interior Deb Haaland delivers holiday greetings at the 2024 National Christmas Tree Lighting Dec. 5, at The White House and President's Park.",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "The White House and President’s Park, Code: WHHO",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 700,
+          "height": 467,
+          "sha256": "25889973e20cb8b9c90f6fe5b641ecba70c2c382cd98f81f06bddc36bea260c9",
+          "bytes": 103088,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-e9d42088-ad3b-4036-84e3-2eecbc3e45bd",
+          "asset": "src/media072/photo07143-e9d42088-ad3b-4036-84e3-2eecbc3e45bd.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/e9d42088-ad3b-4036-84e3-2eecbc3e45bd",
+          "sourcePageSha256": "9a0132cac1e8f5f5118a81227e424f8bf4f533f0fc043b591a67e15555ae7f61",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/e9d42088-ad3b-4036-84e3-2eecbc3e45bd/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/e9d42088-ad3b-4036-84e3-2eecbc3e45bd/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:45:15.617120+00:00",
+          "alt": "President Biden smiles as performers sing at the National Christmas Tree Lighting",
+          "caption": "President Joe Biden enjoys the performances at the 2024 National Christmas Tree Lighting, Dec. 5, at The White House and President's Park.",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "The White House and President’s Park, Code: WHHO",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 500,
+          "height": 366,
+          "sha256": "80422c078242277317a61ff2bde37c8dcff3a0e4df72963580debfcbaa5c1751",
+          "bytes": 41258,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-e66fc18d-d3d5-4440-93cb-bfa14c8c8c51",
+          "asset": "src/media072/photo07143-e66fc18d-d3d5-4440-93cb-bfa14c8c8c51.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/e66fc18d-d3d5-4440-93cb-bfa14c8c8c51",
+          "sourcePageSha256": "12477c95e511d996f163c0d8e958bf5c63fc002b24108cb6aa004e9478ab31af",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/e66fc18d-d3d5-4440-93cb-bfa14c8c8c51/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/e66fc18d-d3d5-4440-93cb-bfa14c8c8c51/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:45:17.301375+00:00",
+          "alt": "The president lights a large green christmas tree",
+          "caption": "President Joe Biden lights the National Christmas Tree at the 2024 National Christmas Tree Lighting, Dec. 5, at The White House and President's Park.",
+          "credit": "NPS / Kelsey Graczyk",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "The White House and President’s Park, Code: WHHO",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 500,
+          "height": 298,
+          "sha256": "701a54931ef3d77e44b64333f191c569b5c8c16b5464485cd2b4bd62baa84849",
+          "bytes": 81654,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    },
+    "wolf-trap-national-park-for-the-performing-arts": {
+      "photographs": [
+        {
+          "id": "photo07143-243e1344-37fe-422a-8815-63fd4ceead72",
+          "asset": "src/media072/photo07143-243e1344-37fe-422a-8815-63fd4ceead72.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/243e1344-37fe-422a-8815-63fd4ceead72",
+          "sourcePageSha256": "fe27755457352ab52b67e1d75e726983234a16d503ef32ca46a89b9bb7a7011b",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/243e1344-37fe-422a-8815-63fd4ceead72/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/243e1344-37fe-422a-8815-63fd4ceead72/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:45:29.588269+00:00",
+          "alt": "A meadow is mostly charred black, with a few splotches of yellow-green. Firefighters clean up in the distance. A single picnic table sits unscathed in the middle.",
+          "caption": "The meadow outside Wolf Trap National Park for the Performing Arts after a prescribed burn",
+          "credit": "NPS / Nathan King",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Wolf Trap National Park for the Performing Arts, Code: WOTR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 648,
+          "height": 432,
+          "sha256": "2dd0e079568dacf1e9506acca1eddedd99b22a2005f40531814774bfdbd37449",
+          "bytes": 123148,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        },
+        {
+          "id": "photo07143-8694da18-7dfe-4187-91d9-e1692b797e46",
+          "asset": "src/media072/photo07143-8694da18-7dfe-4187-91d9-e1692b797e46.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/8694da18-7dfe-4187-91d9-e1692b797e46",
+          "sourcePageSha256": "af23e37c5f8f8ae4aa6fdd2ea3f09e8fa95927104312f5f75c2c5f761b0d0de1",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/8694da18-7dfe-4187-91d9-e1692b797e46/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/8694da18-7dfe-4187-91d9-e1692b797e46/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:45:31.347844+00:00",
+          "alt": "A decorated chalk board with birthday wishes for the National Park Service",
+          "caption": "Wolf Trap National Park for the Performing Arts",
+          "credit": "NPS Photo",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Wolf Trap National Park for the Performing Arts, Code: WOTR",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 499,
+          "height": 374,
+          "sha256": "0c009caa112cbf47e9f4eed41f1ebeac343998fa81bdaec35ac5a3af56472436",
+          "bytes": 69810,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    },
+    "aleutian-world-war-ii-national-historic-area": {
+      "photographs": []
+    },
+    "american-memorial-park": {
+      "photographs": []
+    },
+    "benjamin-franklin-national-memorial": {
+      "photographs": []
+    },
+    "chicago-portage-national-historic-site": {
+      "photographs": []
+    },
+    "chimney-rock-national-historic-site": {
+      "photographs": []
+    },
+    "claymont-community-center": {
+      "photographs": []
+    },
+    "eutaw-springs-battlefield": {
+      "photographs": []
+    },
+    "fallen-timbers-battlefield-and-fort-miamis-national-historic-site": {
+      "photographs": [
+        {
+          "id": "photo07143-d816d271-02da-4b15-ab34-9835c8802d3a",
+          "asset": "src/media072/photo07143-d816d271-02da-4b15-ab34-9835c8802d3a.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/d816d271-02da-4b15-ab34-9835c8802d3a",
+          "sourcePageSha256": "d7af0feab01fda5d0b6afd2e855beb8bb826fbfa0e62a5bfc47a5b34d0206a2f",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/d816d271-02da-4b15-ab34-9835c8802d3a/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/d816d271-02da-4b15-ab34-9835c8802d3a/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:46:35.807261+00:00",
+          "alt": "Boulder with turkey foot-shaped petroglyphs",
+          "caption": "Fallen Timbers Battlefield and Fort Miamis National Historic Site",
+          "credit": "NPS / Victoria Stauffenberg",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Fallen Timbers Battlefield and Fort Miamis National Historic Site, Code: FATI",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 499,
+          "height": 357,
+          "sha256": "e50ee7b4b9c59f31df05e6f52174016f28fe8c8eba9ff543188cd28588274f10",
+          "bytes": 91682,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    },
+    "father-marquette-national-memorial": {
+      "photographs": [
+        {
+          "id": "photo07143-96a4c629-0bbb-4e4a-a33a-4e7463a22551",
+          "asset": "src/media072/photo07143-96a4c629-0bbb-4e4a-a33a-4e7463a22551.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/96a4c629-0bbb-4e4a-a33a-4e7463a22551",
+          "sourcePageSha256": "fe8d8be49fb2f7598fbd903d06af9d50892e2c9d8c4912285f614c8d2bd64bfa",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/96a4c629-0bbb-4e4a-a33a-4e7463a22551/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/96a4c629-0bbb-4e4a-a33a-4e7463a22551/proxylores.jpg",
+          "retrievedAt": "2026-11-12T07:46:44.208072+00:00",
+          "alt": "View from a trail of treetops and a large bridge crossing a lake in the distance",
+          "caption": "Father Marquette National Memorial",
+          "credit": "NPS / Victoria Stauffenberg",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Father Marquette National Memorial, Code: FAMA",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 499,
+          "height": 334,
+          "sha256": "bcf6c3dbe2a26ac634b67e804ae8004db22aadf6e5c4c6c37f89e45afad0a38a",
+          "bytes": 72852,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    },
+    "gloria-dei-old-swedes-church-national-historic-site": {
+      "photographs": []
+    },
+    "green-springs-national-historic-landmark-district": {
+      "photographs": []
+    },
+    "historic-camden-revolutionary-war-site": {
+      "photographs": []
+    },
+    "hockessin-colored-school-107": {
+      "photographs": []
+    },
+    "howard-high-school-of-technology": {
+      "photographs": []
+    },
+    "ice-age-national-scientific-reserve": {
+      "photographs": []
+    },
+    "international-peace-garden": {
+      "photographs": []
+    },
+    "inupiat-heritage-center": {
+      "photographs": []
     }
   }
 }

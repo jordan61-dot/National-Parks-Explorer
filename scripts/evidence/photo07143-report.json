@@ -2595,6 +2595,126 @@
       "candidates": 1,
       "lastChecked": "2026-11-12T01:44:56.992633+00:00",
       "errors": []
+    },
+    "rock-creek-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-12T07:44:56.783252+00:00",
+      "errors": []
+    },
+    "the-white-house-and-president-s-park": {
+      "accepted": 0,
+      "candidates": 4,
+      "lastChecked": "2026-11-12T07:45:17.322047+00:00",
+      "errors": []
+    },
+    "wolf-trap-national-park-for-the-performing-arts": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-12T07:45:31.369044+00:00",
+      "errors": []
+    },
+    "aleutian-world-war-ii-national-historic-area": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:45:42.797160+00:00",
+      "errors": []
+    },
+    "american-memorial-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:45:53.934975+00:00",
+      "errors": []
+    },
+    "benjamin-franklin-national-memorial": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:45:59.838089+00:00",
+      "errors": []
+    },
+    "chicago-portage-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:46:07.288597+00:00",
+      "errors": []
+    },
+    "chimney-rock-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:46:15.071679+00:00",
+      "errors": []
+    },
+    "claymont-community-center": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:46:21.706010+00:00",
+      "errors": []
+    },
+    "eutaw-springs-battlefield": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:46:23.071502+00:00",
+      "errors": []
+    },
+    "fallen-timbers-battlefield-and-fort-miamis-national-historic-site": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T07:46:35.829301+00:00",
+      "errors": []
+    },
+    "father-marquette-national-memorial": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T07:46:44.229177+00:00",
+      "errors": []
+    },
+    "gloria-dei-old-swedes-church-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:46:51.880024+00:00",
+      "errors": []
+    },
+    "green-springs-national-historic-landmark-district": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:47:01.690636+00:00",
+      "errors": []
+    },
+    "historic-camden-revolutionary-war-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:47:03.345766+00:00",
+      "errors": []
+    },
+    "hockessin-colored-school-107": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:47:06.465842+00:00",
+      "errors": []
+    },
+    "howard-high-school-of-technology": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:47:08.196347+00:00",
+      "errors": []
+    },
+    "ice-age-national-scientific-reserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:47:16.844676+00:00",
+      "errors": []
+    },
+    "international-peace-garden": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:47:21.676105+00:00",
+      "errors": []
+    },
+    "inupiat-heritage-center": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T07:47:23.965092+00:00",
+      "errors": []
     }
   }
 }
