@@ -3,7 +3,7 @@
     "wilson-s-creek-national-battlefield": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-07T03:44:53.449897+00:00",
+      "lastChecked": "2026-11-12T13:41:52.063823+00:00",
       "errors": [
         "search failed: The read operation timed out"
       ]
@@ -11,25 +11,25 @@
     "manassas-national-battlefield-park": {
       "accepted": 1,
       "candidates": 7,
-      "lastChecked": "2026-11-07T03:45:08.800925+00:00",
+      "lastChecked": "2026-11-12T13:41:59.886276+00:00",
       "errors": []
     },
     "richmond-national-battlefield-park": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-07T03:45:22.536368+00:00",
+      "lastChecked": "2026-11-12T13:42:07.134907+00:00",
       "errors": []
     },
     "river-raisin-national-battlefield-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-07T03:45:28.974464+00:00",
+      "lastChecked": "2026-11-12T13:42:13.057065+00:00",
       "errors": []
     },
     "brices-cross-roads-national-battlefield-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-07T03:45:38.025491+00:00",
+      "lastChecked": "2026-11-12T13:42:20.364297+00:00",
       "errors": []
     },
     "chickamauga-and-chattanooga-national-military-park": {
@@ -2714,6 +2714,96 @@
       "accepted": 0,
       "candidates": 0,
       "lastChecked": "2026-11-12T07:47:23.965092+00:00",
+      "errors": []
+    },
+    "jamestown-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:18.184562+00:00",
+      "errors": []
+    },
+    "john-philip-sousa-middle-school": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:19.653058+00:00",
+      "errors": []
+    },
+    "kate-mullany-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:20.999685+00:00",
+      "errors": []
+    },
+    "kettle-creek-battlefield": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:24.734888+00:00",
+      "errors": []
+    },
+    "lower-east-side-tenement-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:32.574279+00:00",
+      "errors": []
+    },
+    "natural-bridge-state-park": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:43.431431+00:00",
+      "errors": []
+    },
+    "oklahoma-city-national-memorial": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:48.484577+00:00",
+      "errors": []
+    },
+    "parkers-crossroads-battlefield": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:52.137004+00:00",
+      "errors": []
+    },
+    "pinelands-national-reserve": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:55.960725+00:00",
+      "errors": []
+    },
+    "red-hill-patrick-henry-national-memorial": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:58.073219+00:00",
+      "errors": []
+    },
+    "robert-russa-moton-museum": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:40:59.208942+00:00",
+      "errors": []
+    },
+    "roosevelt-campobello-international-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T13:41:04.256811+00:00",
+      "errors": []
+    },
+    "thomas-cole-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:41:08.988305+00:00",
+      "errors": []
+    },
+    "touro-synagogue-national-historic-site": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:41:14.518851+00:00",
+      "errors": []
+    },
+    "wing-luke-museum-of-the-asian-pacific-american-experience": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T13:41:16.549988+00:00",
       "errors": []
     }
   }

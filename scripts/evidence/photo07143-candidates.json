@@ -25894,6 +25894,75 @@
     },
     "inupiat-heritage-center": {
       "photographs": []
+    },
+    "jamestown-national-historic-site": {
+      "photographs": []
+    },
+    "john-philip-sousa-middle-school": {
+      "photographs": []
+    },
+    "kate-mullany-national-historic-site": {
+      "photographs": []
+    },
+    "kettle-creek-battlefield": {
+      "photographs": []
+    },
+    "lower-east-side-tenement-national-historic-site": {
+      "photographs": []
+    },
+    "natural-bridge-state-park": {
+      "photographs": []
+    },
+    "oklahoma-city-national-memorial": {
+      "photographs": []
+    },
+    "parkers-crossroads-battlefield": {
+      "photographs": []
+    },
+    "pinelands-national-reserve": {
+      "photographs": []
+    },
+    "red-hill-patrick-henry-national-memorial": {
+      "photographs": []
+    },
+    "robert-russa-moton-museum": {
+      "photographs": []
+    },
+    "roosevelt-campobello-international-park": {
+      "photographs": [
+        {
+          "id": "photo07143-3a07af05-c821-4841-876a-94b67331829c",
+          "asset": "src/media072/photo07143-3a07af05-c821-4841-876a-94b67331829c.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/3a07af05-c821-4841-876a-94b67331829c",
+          "sourcePageSha256": "4c4d7b3941962fc68b8b87712f6654129ee18a155503023e9febf724266c45b0",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/3a07af05-c821-4841-876a-94b67331829c/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/3a07af05-c821-4841-876a-94b67331829c/proxylores.jpg",
+          "retrievedAt": "2026-11-12T13:41:04.233772+00:00",
+          "alt": "Plaque with an image of Eleanor Roosevelt's face and text, including \"Eleanor Roosevelt Centennial 1884 1984\"",
+          "caption": "Roosevelt Campobello International Park",
+          "credit": "NPS / Victoria Stauffenberg",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Roosevelt Campobello International Park, Code: ROCA",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 360,
+          "height": 499,
+          "sha256": "8171638133bbf67b2fe6fc113553755d4b587947e706128eaea6b228ef32c153",
+          "bytes": 77306,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
+    },
+    "thomas-cole-national-historic-site": {
+      "photographs": []
+    },
+    "touro-synagogue-national-historic-site": {
+      "photographs": []
+    },
+    "wing-luke-museum-of-the-asian-pacific-american-experience": {
+      "photographs": []
     }
   }
 }
