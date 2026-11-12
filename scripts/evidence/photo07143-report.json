@@ -2475,6 +2475,126 @@
       "candidates": 0,
       "lastChecked": "2026-11-11T19:31:22.070879+00:00",
       "errors": []
+    },
+    "north-country-national-scenic-trail": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-12T01:40:41.134773+00:00",
+      "errors": []
+    },
+    "potomac-heritage-national-scenic-trail": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-12T01:40:57.556687+00:00",
+      "errors": []
+    },
+    "assateague-island-national-seashore": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T01:41:05.786717+00:00",
+      "errors": []
+    },
+    "canaveral-national-seashore": {
+      "accepted": 0,
+      "candidates": 3,
+      "lastChecked": "2026-11-12T01:41:15.622221+00:00",
+      "errors": []
+    },
+    "cape-cod-national-seashore": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T01:41:35.722442+00:00",
+      "errors": []
+    },
+    "cape-hatteras-national-seashore": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T01:41:43.215012+00:00",
+      "errors": []
+    },
+    "cape-lookout-national-seashore": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-12T01:41:59.146785+00:00",
+      "errors": []
+    },
+    "cumberland-island-national-seashore": {
+      "accepted": 2,
+      "candidates": 3,
+      "lastChecked": "2026-11-12T01:42:11.737226+00:00",
+      "errors": []
+    },
+    "fire-island-national-seashore": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-12T01:42:42.351380+00:00",
+      "errors": []
+    },
+    "gulf-islands-national-seashore": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T01:42:54.907878+00:00",
+      "errors": []
+    },
+    "padre-island-national-seashore": {
+      "accepted": 0,
+      "candidates": 5,
+      "lastChecked": "2026-11-12T01:43:12.480238+00:00",
+      "errors": []
+    },
+    "point-reyes-national-seashore": {
+      "accepted": 0,
+      "candidates": 2,
+      "lastChecked": "2026-11-12T01:43:30.859057+00:00",
+      "errors": []
+    },
+    "catoctin-mountain-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T01:43:41.661558+00:00",
+      "errors": []
+    },
+    "constitution-gardens": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T01:43:47.820206+00:00",
+      "errors": []
+    },
+    "fort-washington-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T01:43:57.466838+00:00",
+      "errors": []
+    },
+    "greenbelt-park": {
+      "accepted": 0,
+      "candidates": 8,
+      "lastChecked": "2026-11-12T01:44:15.800128+00:00",
+      "errors": []
+    },
+    "national-capital-parks-east": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T01:44:27.917569+00:00",
+      "errors": []
+    },
+    "national-mall-and-memorial-parks": {
+      "accepted": 0,
+      "candidates": 0,
+      "lastChecked": "2026-11-12T01:44:37.083404+00:00",
+      "errors": []
+    },
+    "piscataway-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T01:44:43.464764+00:00",
+      "errors": []
+    },
+    "prince-william-forest-park": {
+      "accepted": 0,
+      "candidates": 1,
+      "lastChecked": "2026-11-12T01:44:56.992633+00:00",
+      "errors": []
     }
   }
 }
