@@ -521,7 +521,7 @@
     "carl-sandburg-home-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T01:37:13.319809+00:00",
+      "lastChecked": "2026-11-13T19:22:56.618268+00:00",
       "errors": [
         "asset fd78a33e-d4cd-4453-92c6-0da3571ab4a5: untrusted asset URL",
         "asset cc18414b-127e-421d-959e-04521f8a5ed6: untrusted asset URL",
@@ -538,109 +538,109 @@
     "carter-g-woodson-home-national-historic-site": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-08T01:37:23.310694+00:00",
+      "lastChecked": "2026-11-13T19:23:04.010366+00:00",
       "errors": []
     },
     "charles-pinckney-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T01:37:29.345250+00:00",
+      "lastChecked": "2026-11-13T19:23:11.770920+00:00",
       "errors": []
     },
     "christiansted-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T01:37:44.671534+00:00",
+      "lastChecked": "2026-11-13T19:23:17.676116+00:00",
       "errors": []
     },
     "clara-barton-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T01:38:00.073344+00:00",
+      "lastChecked": "2026-11-13T19:23:22.423442+00:00",
       "errors": []
     },
     "edgar-allan-poe-national-historic-site": {
       "accepted": 0,
       "candidates": 6,
-      "lastChecked": "2026-11-08T01:38:14.280080+00:00",
+      "lastChecked": "2026-11-13T19:23:29.031726+00:00",
       "errors": []
     },
     "eisenhower-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T01:38:33.162248+00:00",
+      "lastChecked": "2026-11-13T19:23:37.118817+00:00",
       "errors": []
     },
     "eleanor-roosevelt-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T01:38:41.250897+00:00",
+      "lastChecked": "2026-11-13T19:23:45.678223+00:00",
       "errors": []
     },
     "eugene-o-neill-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T01:38:46.504854+00:00",
+      "lastChecked": "2026-11-13T19:23:49.874997+00:00",
       "errors": []
     },
     "first-ladies-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T01:38:58.451672+00:00",
+      "lastChecked": "2026-11-13T19:24:03.782888+00:00",
       "errors": []
     },
     "ford-s-theatre-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T01:39:23.318635+00:00",
+      "lastChecked": "2026-11-13T19:24:13.772170+00:00",
       "errors": []
     },
     "fort-bowie-national-historic-site": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-08T01:39:32.494085+00:00",
+      "lastChecked": "2026-11-13T19:24:21.123532+00:00",
       "errors": []
     },
     "fort-davis-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T01:39:44.749826+00:00",
+      "lastChecked": "2026-11-13T19:24:35.477734+00:00",
       "errors": []
     },
     "fort-laramie-national-historic-site": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-08T01:39:55.657607+00:00",
+      "lastChecked": "2026-11-13T19:24:44.655316+00:00",
       "errors": []
     },
     "fort-larned-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T01:40:06.565083+00:00",
+      "lastChecked": "2026-11-13T19:24:53.764793+00:00",
       "errors": []
     },
     "fort-point-national-historic-site": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-08T07:30:15.011227+00:00",
+      "lastChecked": "2026-11-13T19:25:13.513848+00:00",
       "errors": []
     },
     "fort-raleigh-national-historic-site": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-08T07:30:30.866344+00:00",
+      "lastChecked": "2026-11-13T19:25:21.843027+00:00",
       "errors": []
     },
     "fort-scott-national-historic-site": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-08T07:30:46.284687+00:00",
+      "lastChecked": "2026-11-13T19:25:36.868857+00:00",
       "errors": []
     },
     "fort-smith-national-historic-site": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-08T07:31:04.868278+00:00",
+      "lastChecked": "2026-11-13T19:25:50.482983+00:00",
       "errors": [
         "asset 91733664-05a3-4f6e-9c35-a3e6992a1b0a: no verified small image"
       ]
@@ -648,7 +648,7 @@
     "fort-union-trading-post-national-historic-site": {
       "accepted": 1,
       "candidates": 0,
-      "lastChecked": "2026-11-08T07:31:19.268467+00:00",
+      "lastChecked": "2026-11-13T19:26:05.940239+00:00",
       "errors": []
     },
     "fort-vancouver-national-historic-site": {
