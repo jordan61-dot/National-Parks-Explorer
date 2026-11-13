@@ -161,124 +161,121 @@
     "cumberland-gap-national-historical-park": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-07T07:31:05.446367+00:00",
+      "lastChecked": "2026-11-13T01:35:21.765077+00:00",
       "errors": []
     },
     "dayton-aviation-heritage-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-07T07:31:16.163312+00:00",
+      "lastChecked": "2026-11-13T01:35:30.757883+00:00",
       "errors": []
     },
     "first-state-national-historical-park": {
       "accepted": 0,
       "candidates": 6,
-      "lastChecked": "2026-11-07T07:32:08.033379+00:00",
+      "lastChecked": "2026-11-13T01:35:45.106031+00:00",
       "errors": []
     },
     "fort-sumter-and-fort-moultrie-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-07T07:32:24.876913+00:00",
+      "lastChecked": "2026-11-13T01:35:54.860347+00:00",
       "errors": []
     },
     "george-rogers-clark-national-historical-park": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-07T07:32:50.254301+00:00",
+      "lastChecked": "2026-11-13T01:36:04.195285+00:00",
       "errors": []
     },
     "golden-spike-national-historical-park": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-07T07:33:04.810595+00:00",
+      "lastChecked": "2026-11-13T01:36:12.551690+00:00",
       "errors": []
     },
     "harpers-ferry-national-historical-park": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-07T07:33:49.861002+00:00",
+      "lastChecked": "2026-11-13T01:36:31.315375+00:00",
       "errors": []
     },
     "harriet-tubman-national-historical-park": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-07T07:34:17.155964+00:00",
+      "lastChecked": "2026-11-13T01:36:38.141578+00:00",
       "errors": []
     },
     "harriet-tubman-underground-railroad-national-historical-park": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-07T07:34:51.695311+00:00",
+      "lastChecked": "2026-11-13T01:36:50.390457+00:00",
       "errors": []
     },
     "homestead-national-historical-park": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-07T07:35:25.532444+00:00",
+      "lastChecked": "2026-11-13T01:37:00.192957+00:00",
       "errors": []
     },
     "hopewell-culture-national-historical-park": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-07T07:35:58.970587+00:00",
+      "lastChecked": "2026-11-13T01:37:10.185566+00:00",
       "errors": []
     },
     "independence-national-historical-park": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-07T07:36:37.939073+00:00",
+      "lastChecked": "2026-11-13T01:37:19.711488+00:00",
       "errors": []
     },
     "jean-lafitte-national-historical-park-and-preserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-07T07:37:11.448695+00:00",
+      "lastChecked": "2026-11-13T01:37:45.921201+00:00",
       "errors": []
     },
     "jimmy-carter-national-historical-park": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-07T07:37:33.575509+00:00",
+      "lastChecked": "2026-11-13T01:37:55.686445+00:00",
       "errors": []
     },
     "kalaupapa-national-historical-park": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-07T07:38:03.645434+00:00",
+      "lastChecked": "2026-11-13T01:38:05.383064+00:00",
       "errors": []
     },
     "kaloko-honokohau-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-07T13:18:58.901464+00:00",
+      "lastChecked": "2026-11-13T01:38:07.490793+00:00",
       "errors": []
     },
     "klondike-gold-rush-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-07T13:19:10.638990+00:00",
+      "lastChecked": "2026-11-13T01:38:21.660070+00:00",
       "errors": []
     },
     "lewis-and-clark-national-historical-park": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-07T13:19:21.776154+00:00",
+      "lastChecked": "2026-11-13T01:38:31.559092+00:00",
       "errors": []
     },
     "lowell-national-historical-park": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-07T13:19:47.100707+00:00",
-      "errors": [
-        "asset 8a15cd19-b4b2-4147-bb98-11314b8dd0d5: duplicate image content",
-        "asset 83a1538c-6df2-45e6-948e-2a52cf7ac41e: duplicate image content"
-      ]
+      "lastChecked": "2026-11-13T01:38:39.748251+00:00",
+      "errors": []
     },
     "lyndon-b-johnson-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-07T13:19:54.165962+00:00",
+      "lastChecked": "2026-11-13T01:38:48.979105+00:00",
       "errors": []
     },
     "keweenaw-national-historical-park": {
