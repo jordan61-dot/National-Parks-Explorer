@@ -774,25 +774,25 @@
     "manzanar-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:19:05.582230+00:00",
+      "lastChecked": "2026-11-14T07:30:37.228262+00:00",
       "errors": []
     },
     "martin-van-buren-national-historic-site": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-08T13:19:23.299827+00:00",
+      "lastChecked": "2026-11-14T07:30:51.911410+00:00",
       "errors": []
     },
     "mary-mcleod-bethune-council-house-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T13:19:38.405790+00:00",
+      "lastChecked": "2026-11-14T07:31:13.318292+00:00",
       "errors": []
     },
     "minidoka-national-historic-site": {
       "accepted": 0,
       "candidates": 6,
-      "lastChecked": "2026-11-08T13:19:55.361840+00:00",
+      "lastChecked": "2026-11-14T07:31:22.533289+00:00",
       "errors": [
         "asset ca6b3984-155d-4519-3e4d-a843612dee02: no verified small image"
       ]
@@ -800,69 +800,67 @@
     "minuteman-missile-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:20:06.021431+00:00",
+      "lastChecked": "2026-11-14T07:32:00.358207+00:00",
       "errors": []
     },
     "new-philadelphia-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:20:12.867718+00:00",
+      "lastChecked": "2026-11-14T07:32:08.685951+00:00",
       "errors": []
     },
     "nicodemus-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T13:20:33.762656+00:00",
-      "errors": [
-        "asset c2c93155-9738-d032-b864-2d004de1e035: no verified small image"
-      ]
+      "lastChecked": "2026-11-14T07:32:16.341614+00:00",
+      "errors": []
     },
     "ninety-six-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:20:43.276811+00:00",
+      "lastChecked": "2026-11-14T07:32:30.003110+00:00",
       "errors": []
     },
     "pennsylvania-avenue-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T13:20:56.096461+00:00",
+      "lastChecked": "2026-11-14T07:32:42.305786+00:00",
       "errors": []
     },
     "president-william-jefferson-clinton-birthplace-home-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T13:21:11.326673+00:00",
+      "lastChecked": "2026-11-14T07:33:14.425529+00:00",
       "errors": []
     },
     "pu-ukohola-heiau-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:21:13.141796+00:00",
+      "lastChecked": "2026-11-14T07:33:17.394478+00:00",
       "errors": []
     },
     "sagamore-hill-national-historic-site": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-08T13:21:26.331987+00:00",
+      "lastChecked": "2026-11-14T07:33:41.246556+00:00",
       "errors": []
     },
     "saint-paul-s-church-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:21:37.648237+00:00",
+      "lastChecked": "2026-11-14T07:34:10.059217+00:00",
       "errors": []
     },
     "san-juan-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:21:47.829759+00:00",
+      "lastChecked": "2026-11-14T07:34:31.260837+00:00",
       "errors": []
     },
     "sand-creek-massacre-national-historic-site": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-08T13:22:07.436060+00:00",
+      "lastChecked": "2026-11-14T07:34:48.727973+00:00",
       "errors": [
         "asset 371b4839-155d-451f-67e3-9f45117a4260: duplicate image content"
       ]
@@ -870,31 +868,31 @@
     "saugus-iron-works-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T19:12:24.359626+00:00",
+      "lastChecked": "2026-11-14T07:35:04.378402+00:00",
       "errors": []
     },
     "springfield-armory-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T19:12:39.697974+00:00",
+      "lastChecked": "2026-11-14T07:35:15.622953+00:00",
       "errors": []
     },
     "steamtown-national-historic-site": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-08T19:12:56.556443+00:00",
+      "lastChecked": "2026-11-14T07:35:35.943940+00:00",
       "errors": []
     },
     "theodore-roosevelt-birthplace-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T19:13:04.650155+00:00",
+      "lastChecked": "2026-11-14T07:35:49.916442+00:00",
       "errors": []
     },
     "theodore-roosevelt-inaugural-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T19:13:11.005357+00:00",
+      "lastChecked": "2026-11-14T07:36:00.675560+00:00",
       "errors": []
     },
     "thomas-stone-national-historic-site": {
