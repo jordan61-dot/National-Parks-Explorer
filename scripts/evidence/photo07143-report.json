@@ -1020,109 +1020,97 @@
     "flight-93-national-memorial": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-09T01:39:46.322723+00:00",
+      "lastChecked": "2026-11-14T19:13:06.730571+00:00",
       "errors": []
     },
     "fort-caroline-national-memorial": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-09T01:39:53.304376+00:00",
+      "lastChecked": "2026-11-14T19:13:11.981670+00:00",
       "errors": []
     },
     "franklin-delano-roosevelt-memorial": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-09T01:40:10.550242+00:00",
-      "errors": [
-        "asset d7e0c570-054c-4f0e-a4e6-c2ea2e67c865: untrusted asset URL",
-        "asset bdf321a4-0b34-465f-abba-543532e18b7a: untrusted asset URL",
-        "asset 6ab3eb2a-e0f5-4869-b74a-81a252b9d01f: untrusted asset URL",
-        "asset eb9eaaca-272a-4cad-85ab-3cb1221707e1: untrusted asset URL",
-        "asset 0a0c8bc8-6e6d-441e-a45e-62e9ee38501d: untrusted asset URL",
-        "asset 7244ec73-68df-4488-8f67-c0d96c847236: untrusted asset URL",
-        "asset b5bdb651-bfcb-4552-9662-8ae38ef02abf: untrusted asset URL",
-        "asset e6ee50d7-7bd4-4245-8aae-6480bea7fec4: untrusted asset URL",
-        "asset 250855a8-9cc9-42f8-bdbc-496c8ac2bd0c: untrusted asset URL",
-        "asset 63d6c7c0-399d-4a59-a281-b708af150d4d: untrusted asset URL",
-        "asset 8f7e8a2d-5768-4ac6-a991-2207014c7461: untrusted asset URL"
-      ]
+      "lastChecked": "2026-11-14T19:13:16.047332+00:00",
+      "errors": []
     },
     "general-grant-national-memorial": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-09T01:40:24.835119+00:00",
+      "lastChecked": "2026-11-14T19:13:28.874244+00:00",
       "errors": []
     },
     "hamilton-grange-national-memorial": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-09T01:40:41.493288+00:00",
+      "lastChecked": "2026-11-14T19:13:34.459758+00:00",
       "errors": []
     },
     "johnstown-flood-national-memorial": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-09T01:40:47.394831+00:00",
+      "lastChecked": "2026-11-14T19:13:41.851604+00:00",
       "errors": []
     },
     "korean-war-veterans-memorial": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-09T01:40:57.243273+00:00",
+      "lastChecked": "2026-11-14T19:13:47.361390+00:00",
       "errors": []
     },
     "lincoln-boyhood-national-memorial": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-09T01:41:14.673285+00:00",
+      "lastChecked": "2026-11-14T19:13:58.999864+00:00",
       "errors": []
     },
     "lincoln-memorial": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-09T01:41:20.630853+00:00",
+      "lastChecked": "2026-11-14T19:14:05.692501+00:00",
       "errors": []
     },
     "lyndon-baines-johnson-memorial-grove-on-the-potomac": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-09T01:41:28.677427+00:00",
+      "lastChecked": "2026-11-14T19:14:10.948280+00:00",
       "errors": []
     },
     "martin-luther-king-jr-memorial": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-09T01:41:34.509683+00:00",
+      "lastChecked": "2026-11-14T19:14:17.894183+00:00",
       "errors": []
     },
     "mount-rushmore-national-memorial": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-09T01:41:51.117411+00:00",
+      "lastChecked": "2026-11-14T19:14:23.606280+00:00",
       "errors": []
     },
     "pearl-harbor-national-memorial": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-09T01:42:01.059227+00:00",
+      "lastChecked": "2026-11-14T19:14:40.940268+00:00",
       "errors": []
     },
     "perry-s-victory-and-international-peace-memorial": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-09T01:42:14.609766+00:00",
+      "lastChecked": "2026-11-14T19:14:47.561423+00:00",
       "errors": []
     },
     "port-chicago-naval-magazine-national-memorial": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-09T01:42:24.922464+00:00",
+      "lastChecked": "2026-11-14T19:14:56.566112+00:00",
       "errors": []
     },
     "roger-williams-national-memorial": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-09T07:52:17.219436+00:00",
+      "lastChecked": "2026-11-14T19:15:15.525084+00:00",
       "errors": [
         "asset 83431c1c-9ab0-4fd9-9296-5c4c225b9cda: untrusted asset URL",
         "asset 858ca323-b963-488f-9d25-6298538d603b: untrusted asset URL"
@@ -1131,27 +1119,25 @@
     "thaddeus-kosciuszko-national-memorial": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-09T07:52:27.677088+00:00",
+      "lastChecked": "2026-11-14T19:15:20.739334+00:00",
       "errors": []
     },
     "theodore-roosevelt-island": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-09T07:52:48.205627+00:00",
-      "errors": [
-        "asset 69226db5-75ae-4f1f-8848-bbf9a2d9d433: untrusted asset URL"
-      ]
+      "lastChecked": "2026-11-14T19:15:29.696208+00:00",
+      "errors": []
     },
     "thomas-jefferson-memorial": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-09T07:52:57.405745+00:00",
+      "lastChecked": "2026-11-14T19:15:34.855943+00:00",
       "errors": []
     },
     "vietnam-veterans-memorial": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-09T07:53:05.809065+00:00",
+      "lastChecked": "2026-11-14T19:15:39.317330+00:00",
       "errors": []
     },
     "washington-monument": {
