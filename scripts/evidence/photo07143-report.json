@@ -654,124 +654,121 @@
     "fort-vancouver-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T07:31:40.725134+00:00",
+      "lastChecked": "2026-11-14T01:30:09.328559+00:00",
       "errors": []
     },
     "frederick-douglass-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T07:32:01.285593+00:00",
+      "lastChecked": "2026-11-14T01:30:17.192939+00:00",
       "errors": []
     },
     "frederick-law-olmsted-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T07:32:24.828812+00:00",
+      "lastChecked": "2026-11-14T01:30:31.195556+00:00",
       "errors": []
     },
     "friendship-hill-national-historic-site": {
       "accepted": 0,
       "candidates": 6,
-      "lastChecked": "2026-11-08T07:32:44.823906+00:00",
+      "lastChecked": "2026-11-14T01:30:47.859898+00:00",
       "errors": []
     },
     "grant-kohrs-ranch-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T07:33:07.458725+00:00",
+      "lastChecked": "2026-11-14T01:31:04.037771+00:00",
       "errors": []
     },
     "hampton-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T07:33:29.318817+00:00",
-      "errors": [
-        "asset 74b00337-7a03-4744-affa-3a16404d5920: no verified small image",
-        "asset 980b28e3-89ff-4584-be40-b8bb046be6bb: no verified small image"
-      ]
+      "lastChecked": "2026-11-14T01:31:11.548759+00:00",
+      "errors": []
     },
     "harry-s-truman-national-historic-site": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-08T07:33:45.354176+00:00",
+      "lastChecked": "2026-11-14T01:31:28.776414+00:00",
       "errors": []
     },
     "herbert-hoover-national-historic-site": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-08T07:34:01.345653+00:00",
+      "lastChecked": "2026-11-14T01:31:43.103371+00:00",
       "errors": []
     },
     "home-of-franklin-d-roosevelt-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T07:34:15.955092+00:00",
+      "lastChecked": "2026-11-14T01:32:04.733397+00:00",
       "errors": []
     },
     "hopewell-furnace-national-historic-site": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-08T07:34:33.969897+00:00",
+      "lastChecked": "2026-11-14T01:32:24.165888+00:00",
       "errors": []
     },
     "honouliuli-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T07:34:53.257126+00:00",
+      "lastChecked": "2026-11-14T01:32:30.063093+00:00",
       "errors": []
     },
     "hubbell-trading-post-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T07:35:02.361993+00:00",
+      "lastChecked": "2026-11-14T01:33:10.451836+00:00",
       "errors": []
     },
     "james-a-garfield-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T07:35:22.259035+00:00",
+      "lastChecked": "2026-11-14T01:33:18.763657+00:00",
       "errors": []
     },
     "john-fitzgerald-kennedy-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-08T07:35:31.894166+00:00",
+      "lastChecked": "2026-11-14T01:33:29.790967+00:00",
       "errors": []
     },
     "john-muir-national-historic-site": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-08T07:35:55.078086+00:00",
+      "lastChecked": "2026-11-14T01:33:42.506753+00:00",
       "errors": []
     },
     "knife-river-indian-villages-national-historic-site": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-08T13:18:04.238108+00:00",
+      "lastChecked": "2026-11-14T01:34:02.924239+00:00",
       "errors": []
     },
     "lincoln-home-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:18:15.986585+00:00",
+      "lastChecked": "2026-11-14T01:34:21.968643+00:00",
       "errors": []
     },
     "little-rock-central-high-school-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:18:34.575664+00:00",
+      "lastChecked": "2026-11-14T01:35:08.857436+00:00",
       "errors": []
     },
     "longfellow-washington-s-headquarters-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:18:48.652046+00:00",
+      "lastChecked": "2026-11-14T01:35:26.280077+00:00",
       "errors": []
     },
     "maggie-l-walker-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-08T13:18:57.935595+00:00",
+      "lastChecked": "2026-11-14T01:35:38.209338+00:00",
       "errors": []
     },
     "manzanar-national-historic-site": {
