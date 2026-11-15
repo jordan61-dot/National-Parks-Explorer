@@ -1383,81 +1383,79 @@
     "fort-monroe-national-monument": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-09T19:24:10.219936+00:00",
+      "lastChecked": "2026-11-15T13:22:08.613464+00:00",
       "errors": []
     },
     "fort-pulaski-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-09T19:24:27.399020+00:00",
-      "errors": [
-        "asset a930d297-bb2c-4b55-b021-1e543e2f720c: duplicate image content"
-      ]
+      "lastChecked": "2026-11-15T13:22:15.898538+00:00",
+      "errors": []
     },
     "fort-stanwix-national-monument": {
       "accepted": 0,
       "candidates": 7,
-      "lastChecked": "2026-11-09T19:24:41.416813+00:00",
+      "lastChecked": "2026-11-15T13:22:23.704876+00:00",
       "errors": []
     },
     "fort-union-national-monument": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-09T19:24:57.994394+00:00",
+      "lastChecked": "2026-11-15T13:22:34.651321+00:00",
       "errors": []
     },
     "fossil-butte-national-monument": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-09T19:25:12.583194+00:00",
+      "lastChecked": "2026-11-15T13:22:43.479661+00:00",
       "errors": []
     },
     "frances-perkins-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-09T19:25:14.264122+00:00",
+      "lastChecked": "2026-11-15T13:22:44.881428+00:00",
       "errors": []
     },
     "freedom-riders-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-09T19:25:29.510440+00:00",
+      "lastChecked": "2026-11-15T13:22:53.610403+00:00",
       "errors": []
     },
     "george-washington-birthplace-national-monument": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-09T19:25:46.585055+00:00",
+      "lastChecked": "2026-11-15T13:23:03.209128+00:00",
       "errors": []
     },
     "george-washington-carver-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-09T19:26:05.213040+00:00",
+      "lastChecked": "2026-11-15T13:23:09.759403+00:00",
       "errors": []
     },
     "gila-cliff-dwellings-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-09T19:26:17.114351+00:00",
+      "lastChecked": "2026-11-15T13:23:16.762030+00:00",
       "errors": []
     },
     "governors-island-national-monument": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-09T19:26:33.763636+00:00",
+      "lastChecked": "2026-11-15T13:23:23.147996+00:00",
       "errors": []
     },
     "grand-portage-national-monument": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-09T19:26:54.115262+00:00",
+      "lastChecked": "2026-11-15T13:23:42.375337+00:00",
       "errors": []
     },
     "hagerman-fossil-beds-national-monument": {
       "accepted": 0,
       "candidates": 6,
-      "lastChecked": "2026-11-09T19:27:12.615931+00:00",
+      "lastChecked": "2026-11-15T13:23:56.402252+00:00",
       "errors": [
         "asset cab0759e-1dd8-b71b-0b77-a5ec54290734: duplicate image content"
       ]
@@ -1465,43 +1463,43 @@
     "hohokam-pima-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-09T19:27:18.403090+00:00",
+      "lastChecked": "2026-11-15T13:24:00.550120+00:00",
       "errors": []
     },
     "hovenweep-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-09T19:27:26.299418+00:00",
+      "lastChecked": "2026-11-15T13:24:06.418104+00:00",
       "errors": []
     },
     "jewel-cave-national-monument": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-10T01:30:31.224394+00:00",
+      "lastChecked": "2026-11-15T13:24:15.660863+00:00",
       "errors": []
     },
     "john-day-fossil-beds-national-monument": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-10T01:30:47.244012+00:00",
+      "lastChecked": "2026-11-15T13:24:31.973480+00:00",
       "errors": []
     },
     "katahdin-woods-and-waters-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-10T01:30:55.909883+00:00",
+      "lastChecked": "2026-11-15T13:24:44.121342+00:00",
       "errors": []
     },
     "lava-beds-national-monument": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-10T01:31:07.342857+00:00",
+      "lastChecked": "2026-11-15T13:24:57.314270+00:00",
       "errors": []
     },
     "little-bighorn-battlefield-national-monument": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-10T01:31:30.767130+00:00",
+      "lastChecked": "2026-11-15T13:25:12.717215+00:00",
       "errors": []
     },
     "medgar-and-myrlie-evers-home-national-monument": {
