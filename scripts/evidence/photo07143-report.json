@@ -1985,123 +1985,121 @@
     "redwood-national-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T01:30:46.564159+00:00",
+      "lastChecked": "2026-11-16T19:25:30.842905+00:00",
       "errors": []
     },
     "rocky-mountain-national-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T01:30:56.918039+00:00",
+      "lastChecked": "2026-11-16T19:26:32.422093+00:00",
       "errors": []
     },
     "saguaro-national-park": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-11T01:31:07.268335+00:00",
+      "lastChecked": "2026-11-16T19:26:52.597609+00:00",
       "errors": []
     },
     "sequoia-national-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T01:31:18.505599+00:00",
+      "lastChecked": "2026-11-16T19:27:13.405524+00:00",
       "errors": []
     },
     "shenandoah-national-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T01:31:27.529294+00:00",
+      "lastChecked": "2026-11-16T19:27:41.650188+00:00",
       "errors": []
     },
     "theodore-roosevelt-national-park": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-11T01:31:45.416782+00:00",
+      "lastChecked": "2026-11-16T19:28:05.406910+00:00",
       "errors": []
     },
     "virgin-islands-national-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T01:32:00.558329+00:00",
+      "lastChecked": "2026-11-16T19:28:22.666432+00:00",
       "errors": []
     },
     "voyageurs-national-park": {
       "accepted": 0,
       "candidates": 7,
-      "lastChecked": "2026-11-11T01:32:21.449340+00:00",
+      "lastChecked": "2026-11-16T19:28:33.870361+00:00",
       "errors": []
     },
     "white-sands-national-park": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-11T01:32:41.531538+00:00",
+      "lastChecked": "2026-11-16T19:28:49.558649+00:00",
       "errors": []
     },
     "wind-cave-national-park": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-11T01:33:03.828196+00:00",
+      "lastChecked": "2026-11-16T19:29:01.271228+00:00",
       "errors": []
     },
     "wrangell-st-elias-national-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T01:33:20.719498+00:00",
+      "lastChecked": "2026-11-16T19:29:13.158117+00:00",
       "errors": []
     },
     "yellowstone-national-park": {
       "accepted": 2,
       "candidates": 6,
-      "lastChecked": "2026-11-11T01:33:43.842862+00:00",
-      "errors": [
-        "asset 5c192bbf-3167-4b74-9f92-553a88fab7de: duplicate image content"
-      ]
+      "lastChecked": "2026-11-16T19:29:23.240472+00:00",
+      "errors": []
     },
     "yosemite-national-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T01:33:55.177160+00:00",
+      "lastChecked": "2026-11-16T19:29:34.076671+00:00",
       "errors": []
     },
     "zion-national-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T01:34:07.853156+00:00",
+      "lastChecked": "2026-11-16T19:29:44.625164+00:00",
       "errors": []
     },
     "blue-ridge-parkway": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-11T01:34:32.347006+00:00",
+      "lastChecked": "2026-11-16T19:29:56.045326+00:00",
       "errors": []
     },
     "george-washington-memorial-parkway": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-11T07:42:36.653991+00:00",
+      "lastChecked": "2026-11-16T19:30:07.644550+00:00",
       "errors": []
     },
     "john-d-rockefeller": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T07:42:41.843606+00:00",
+      "lastChecked": "2026-11-16T19:30:15.449590+00:00",
       "errors": []
     },
     "natchez-trace-parkway": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T07:42:54.756937+00:00",
+      "lastChecked": "2026-11-16T19:30:24.342675+00:00",
       "errors": []
     },
     "aniakchak-national-preserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T07:42:59.301544+00:00",
+      "lastChecked": "2026-11-16T19:30:31.298784+00:00",
       "errors": []
     },
     "bering-land-bridge-national-preserve": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-11T07:43:16.153051+00:00",
+      "lastChecked": "2026-11-16T19:30:40.847227+00:00",
       "errors": []
     },
     "big-cypress-national-preserve": {
