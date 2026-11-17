@@ -2227,13 +2227,15 @@
     "bighorn-canyon-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T13:38:57.144930+00:00",
-      "errors": []
+      "lastChecked": "2026-11-17T07:45:54.433306+00:00",
+      "errors": [
+        "search failed: The read operation timed out"
+      ]
     },
     "boston-harbor-islands-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T13:39:15.498403+00:00",
+      "lastChecked": "2026-11-17T07:46:52.126839+00:00",
       "errors": [
         "asset b92b8a61-e2fe-4239-90b7-1f6c29d0e837: duplicate image content"
       ]
@@ -2241,109 +2243,109 @@
     "chattahoochee-river-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T13:39:22.252695+00:00",
+      "lastChecked": "2026-11-17T07:47:01.443996+00:00",
       "errors": []
     },
     "chickasaw-national-recreation-area": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-11T13:39:30.847137+00:00",
+      "lastChecked": "2026-11-17T07:47:08.479615+00:00",
       "errors": []
     },
     "curecanti-national-recreation-area": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-11T13:39:39.691661+00:00",
+      "lastChecked": "2026-11-17T07:47:15.284806+00:00",
       "errors": []
     },
     "delaware-water-gap-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T13:39:52.005763+00:00",
+      "lastChecked": "2026-11-17T07:47:32.460510+00:00",
       "errors": []
     },
     "gateway-national-recreation-area": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-11T13:40:03.519292+00:00",
+      "lastChecked": "2026-11-17T07:47:45.536539+00:00",
       "errors": []
     },
     "gauley-river-national-recreation-area": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-11T13:40:11.593346+00:00",
+      "lastChecked": "2026-11-17T07:47:51.889321+00:00",
       "errors": []
     },
     "glen-canyon-national-recreation-area": {
       "accepted": 0,
       "candidates": 6,
-      "lastChecked": "2026-11-11T13:40:31.646086+00:00",
+      "lastChecked": "2026-11-17T07:48:06.547853+00:00",
       "errors": []
     },
     "golden-gate-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T13:40:42.476349+00:00",
+      "lastChecked": "2026-11-17T07:48:20.161856+00:00",
       "errors": []
     },
     "lake-chelan-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T13:40:48.495295+00:00",
+      "lastChecked": "2026-11-17T07:48:26.957408+00:00",
       "errors": []
     },
     "lake-mead-national-recreation-area": {
       "accepted": 0,
       "candidates": 6,
-      "lastChecked": "2026-11-11T13:41:08.654462+00:00",
+      "lastChecked": "2026-11-17T07:48:41.313213+00:00",
       "errors": []
     },
     "lake-meredith-national-recreation-area": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-11T13:41:25.809880+00:00",
+      "lastChecked": "2026-11-17T07:48:51.998080+00:00",
       "errors": []
     },
     "lake-roosevelt-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T13:41:36.370711+00:00",
+      "lastChecked": "2026-11-17T07:49:09.879213+00:00",
       "errors": []
     },
     "ross-lake-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T13:41:50.879233+00:00",
+      "lastChecked": "2026-11-17T07:49:27.212137+00:00",
       "errors": []
     },
     "santa-monica-mountains-national-recreation-area": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-11T19:26:47.171825+00:00",
+      "lastChecked": "2026-11-17T07:50:31.904639+00:00",
       "errors": []
     },
     "whiskeytown-shasta-trinity-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T19:27:01.333048+00:00",
+      "lastChecked": "2026-11-17T07:50:51.244459+00:00",
       "errors": []
     },
     "big-south-fork-national-river-and-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T19:27:21.321853+00:00",
+      "lastChecked": "2026-11-17T07:51:27.410883+00:00",
       "errors": []
     },
     "buffalo-national-river": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-11T19:27:40.980987+00:00",
+      "lastChecked": "2026-11-17T07:51:42.133560+00:00",
       "errors": []
     },
     "mississippi-national-river-and-recreation-areas": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-11T19:27:54.845976+00:00",
+      "lastChecked": "2026-11-17T07:52:01.794655+00:00",
       "errors": []
     },
     "ozark-national-scenic-riverways": {
