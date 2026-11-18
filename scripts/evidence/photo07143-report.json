@@ -3,7 +3,7 @@
     "wilson-s-creek-national-battlefield": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:41:52.063823+00:00",
+      "lastChecked": "2026-11-18T07:46:08.113862+00:00",
       "errors": [
         "search failed: The read operation timed out"
       ]
@@ -11,55 +11,55 @@
     "manassas-national-battlefield-park": {
       "accepted": 1,
       "candidates": 7,
-      "lastChecked": "2026-11-12T13:41:59.886276+00:00",
+      "lastChecked": "2026-11-18T07:46:19.560442+00:00",
       "errors": []
     },
     "richmond-national-battlefield-park": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-12T13:42:07.134907+00:00",
+      "lastChecked": "2026-11-18T07:46:27.510556+00:00",
       "errors": []
     },
     "river-raisin-national-battlefield-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:42:13.057065+00:00",
+      "lastChecked": "2026-11-18T07:46:34.810720+00:00",
       "errors": []
     },
     "brices-cross-roads-national-battlefield-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-12T13:42:20.364297+00:00",
+      "lastChecked": "2026-11-18T07:46:42.326430+00:00",
       "errors": []
     },
     "chickamauga-and-chattanooga-national-military-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T19:22:24.773474+00:00",
+      "lastChecked": "2026-11-18T07:46:49.276419+00:00",
       "errors": []
     },
     "fredericksburg-and-spotsylvania-county-battlefields-memorial-national-13ec65bc": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T19:22:33.916022+00:00",
+      "lastChecked": "2026-11-18T07:46:57.294002+00:00",
       "errors": []
     },
     "gettysburg-national-military-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T19:22:46.718056+00:00",
+      "lastChecked": "2026-11-18T07:47:09.929620+00:00",
       "errors": []
     },
     "guilford-courthouse-national-military-park": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-12T19:22:54.562098+00:00",
+      "lastChecked": "2026-11-18T07:47:18.680364+00:00",
       "errors": []
     },
     "horseshoe-bend-national-military-park": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-12T19:23:04.679984+00:00",
+      "lastChecked": "2026-11-18T07:47:28.767311+00:00",
       "errors": []
     },
     "kings-mountain-national-military-park": {
@@ -2717,61 +2717,61 @@
     "natural-bridge-state-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:43.431431+00:00",
+      "lastChecked": "2026-11-18T07:44:54.589605+00:00",
       "errors": []
     },
     "oklahoma-city-national-memorial": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:48.484577+00:00",
+      "lastChecked": "2026-11-18T07:45:00.109692+00:00",
       "errors": []
     },
     "parkers-crossroads-battlefield": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:52.137004+00:00",
+      "lastChecked": "2026-11-18T07:45:04.668261+00:00",
       "errors": []
     },
     "pinelands-national-reserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:55.960725+00:00",
+      "lastChecked": "2026-11-18T07:45:09.430293+00:00",
       "errors": []
     },
     "red-hill-patrick-henry-national-memorial": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:58.073219+00:00",
+      "lastChecked": "2026-11-18T07:45:11.708403+00:00",
       "errors": []
     },
     "robert-russa-moton-museum": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:59.208942+00:00",
+      "lastChecked": "2026-11-18T07:45:13.117614+00:00",
       "errors": []
     },
     "roosevelt-campobello-international-park": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-12T13:41:04.256811+00:00",
+      "lastChecked": "2026-11-18T07:45:18.076420+00:00",
       "errors": []
     },
     "thomas-cole-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:41:08.988305+00:00",
+      "lastChecked": "2026-11-18T07:45:23.639930+00:00",
       "errors": []
     },
     "touro-synagogue-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:41:14.518851+00:00",
+      "lastChecked": "2026-11-18T07:45:29.690444+00:00",
       "errors": []
     },
     "wing-luke-museum-of-the-asian-pacific-american-experience": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:41:16.549988+00:00",
+      "lastChecked": "2026-11-18T07:45:32.422249+00:00",
       "errors": []
     }
   }
