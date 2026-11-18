@@ -65,13 +65,13 @@
     "kings-mountain-national-military-park": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-12T19:23:19.456071+00:00",
+      "lastChecked": "2026-11-18T13:41:55.380186+00:00",
       "errors": []
     },
     "pea-ridge-national-military-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T19:23:55.284802+00:00",
+      "lastChecked": "2026-11-18T13:42:31.076030+00:00",
       "errors": [
         "search failed: The read operation timed out"
       ]
@@ -79,19 +79,19 @@
     "shiloh-national-military-park": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-12T19:24:05.943510+00:00",
+      "lastChecked": "2026-11-18T13:42:42.957759+00:00",
       "errors": []
     },
     "vicksburg-national-military-park": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-12T19:24:14.698608+00:00",
+      "lastChecked": "2026-11-18T13:42:51.425328+00:00",
       "errors": []
     },
     "abraham-lincoln-birthplace-national-historical-park": {
       "accepted": 0,
       "candidates": 3,
-      "lastChecked": "2026-11-12T19:24:26.046994+00:00",
+      "lastChecked": "2026-11-18T13:43:02.539424+00:00",
       "errors": [
         "asset a9fd0b21-0791-ed79-cebc-c25281aec2c4: no verified small image",
         "asset 5bb3bdb2-1dd8-b71c-0792-aee1cd4fed6a: no verified small image",
@@ -101,91 +101,91 @@
     "adams-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T19:24:34.680282+00:00",
+      "lastChecked": "2026-11-18T13:43:10.555821+00:00",
       "errors": []
     },
     "appomattox-court-house-national-historical-park": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-12T19:24:43.738794+00:00",
+      "lastChecked": "2026-11-18T13:43:19.257792+00:00",
       "errors": []
     },
     "blackstone-river-valley-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T19:24:51.434684+00:00",
+      "lastChecked": "2026-11-18T13:43:25.904050+00:00",
       "errors": []
     },
     "boston-national-historical-park": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-12T19:25:07.056115+00:00",
+      "lastChecked": "2026-11-18T13:43:33.526373+00:00",
       "errors": []
     },
     "brown-v-board-of-education-national-historical-park": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-12T19:25:22.407909+00:00",
+      "lastChecked": "2026-11-18T13:43:45.865810+00:00",
       "errors": []
     },
     "cane-river-creole-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T19:25:33.243722+00:00",
+      "lastChecked": "2026-11-18T13:43:54.800637+00:00",
       "errors": []
     },
     "cedar-creek-and-belle-grove-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T19:25:46.635438+00:00",
+      "lastChecked": "2026-11-18T13:44:03.473300+00:00",
       "errors": []
     },
     "chaco-culture-national-historical-park": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-12T19:25:54.823888+00:00",
+      "lastChecked": "2026-11-18T13:44:11.065975+00:00",
       "errors": []
     },
     "chesapeake-and-ohio-canal-national-historical-park": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-12T19:26:07.189047+00:00",
+      "lastChecked": "2026-11-18T13:44:29.795260+00:00",
       "errors": []
     },
     "colonial-national-historical-park": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-12T19:26:17.185741+00:00",
+      "lastChecked": "2026-11-18T13:44:39.439483+00:00",
       "errors": []
     },
     "cumberland-gap-national-historical-park": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-13T01:35:21.765077+00:00",
+      "lastChecked": "2026-11-18T13:44:48.791834+00:00",
       "errors": []
     },
     "dayton-aviation-heritage-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-13T01:35:30.757883+00:00",
+      "lastChecked": "2026-11-18T13:44:55.887567+00:00",
       "errors": []
     },
     "first-state-national-historical-park": {
       "accepted": 0,
       "candidates": 6,
-      "lastChecked": "2026-11-13T01:35:45.106031+00:00",
+      "lastChecked": "2026-11-18T13:45:10.048919+00:00",
       "errors": []
     },
     "fort-sumter-and-fort-moultrie-national-historical-park": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-13T01:35:54.860347+00:00",
+      "lastChecked": "2026-11-18T13:45:21.675815+00:00",
       "errors": []
     },
     "george-rogers-clark-national-historical-park": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-13T01:36:04.195285+00:00",
+      "lastChecked": "2026-11-18T13:45:30.439106+00:00",
       "errors": []
     },
     "golden-spike-national-historical-park": {
