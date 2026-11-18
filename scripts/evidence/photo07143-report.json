@@ -2591,121 +2591,127 @@
     "benjamin-franklin-national-memorial": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:45:59.838089+00:00",
+      "lastChecked": "2026-11-18T01:46:11.190109+00:00",
       "errors": []
     },
     "chicago-portage-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:46:07.288597+00:00",
+      "lastChecked": "2026-11-18T01:46:19.224528+00:00",
       "errors": []
     },
     "chimney-rock-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:46:15.071679+00:00",
+      "lastChecked": "2026-11-18T01:46:28.448173+00:00",
       "errors": []
     },
     "claymont-community-center": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:46:21.706010+00:00",
+      "lastChecked": "2026-11-18T01:46:38.349009+00:00",
       "errors": []
     },
     "eutaw-springs-battlefield": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:46:23.071502+00:00",
+      "lastChecked": "2026-11-18T01:46:47.207002+00:00",
       "errors": []
     },
     "fallen-timbers-battlefield-and-fort-miamis-national-historic-site": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-12T07:46:35.829301+00:00",
-      "errors": []
+      "lastChecked": "2026-11-18T01:47:22.888638+00:00",
+      "errors": [
+        "search failed: The read operation timed out"
+      ]
     },
     "father-marquette-national-memorial": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-12T07:46:44.229177+00:00",
+      "lastChecked": "2026-11-18T01:48:29.430914+00:00",
       "errors": []
     },
     "gloria-dei-old-swedes-church-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:46:51.880024+00:00",
-      "errors": []
+      "lastChecked": "2026-11-18T01:49:05.138655+00:00",
+      "errors": [
+        "search failed: The read operation timed out"
+      ]
     },
     "green-springs-national-historic-landmark-district": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:47:01.690636+00:00",
-      "errors": []
+      "lastChecked": "2026-11-18T01:49:40.847103+00:00",
+      "errors": [
+        "search failed: The read operation timed out"
+      ]
     },
     "historic-camden-revolutionary-war-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:47:03.345766+00:00",
+      "lastChecked": "2026-11-18T01:49:51.858927+00:00",
       "errors": []
     },
     "hockessin-colored-school-107": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:47:06.465842+00:00",
+      "lastChecked": "2026-11-18T01:50:08.064769+00:00",
       "errors": []
     },
     "howard-high-school-of-technology": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:47:08.196347+00:00",
+      "lastChecked": "2026-11-18T01:50:13.367953+00:00",
       "errors": []
     },
     "ice-age-national-scientific-reserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:47:16.844676+00:00",
+      "lastChecked": "2026-11-18T01:50:26.344715+00:00",
       "errors": []
     },
     "international-peace-garden": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:47:21.676105+00:00",
+      "lastChecked": "2026-11-18T01:50:32.291883+00:00",
       "errors": []
     },
     "inupiat-heritage-center": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T07:47:23.965092+00:00",
+      "lastChecked": "2026-11-18T01:50:34.754484+00:00",
       "errors": []
     },
     "jamestown-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:18.184562+00:00",
+      "lastChecked": "2026-11-18T01:50:40.457958+00:00",
       "errors": []
     },
     "john-philip-sousa-middle-school": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:19.653058+00:00",
+      "lastChecked": "2026-11-18T01:50:48.824419+00:00",
       "errors": []
     },
     "kate-mullany-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:20.999685+00:00",
+      "lastChecked": "2026-11-18T01:51:02.512391+00:00",
       "errors": []
     },
     "kettle-creek-battlefield": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:24.734888+00:00",
+      "lastChecked": "2026-11-18T01:51:13.949256+00:00",
       "errors": []
     },
     "lower-east-side-tenement-national-historic-site": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-12T13:40:32.574279+00:00",
+      "lastChecked": "2026-11-18T01:51:41.380773+00:00",
       "errors": []
     },
     "natural-bridge-state-park": {
