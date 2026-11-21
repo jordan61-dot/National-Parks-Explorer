@@ -1293,121 +1293,123 @@
     "cesar-e-chavez-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-15T07:34:34.567868+00:00",
+      "lastChecked": "2026-11-21T01:42:05.033120+00:00",
       "errors": []
     },
     "charles-young-buffalo-soldiers-national-monument": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-15T07:34:50.035923+00:00",
+      "lastChecked": "2026-11-21T01:42:42.525128+00:00",
       "errors": []
     },
     "colorado-national-monument": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-15T07:34:57.695827+00:00",
+      "lastChecked": "2026-11-21T01:42:59.892480+00:00",
       "errors": []
     },
     "craters-of-the-moon-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-15T07:35:22.614806+00:00",
+      "lastChecked": "2026-11-21T01:43:28.696178+00:00",
       "errors": []
     },
     "devils-postpile-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-15T07:35:32.735118+00:00",
+      "lastChecked": "2026-11-21T01:43:56.924412+00:00",
       "errors": []
     },
     "devils-tower-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-15T07:35:51.291939+00:00",
-      "errors": []
+      "lastChecked": "2026-11-21T01:44:44.853648+00:00",
+      "errors": [
+        "search failed: The read operation timed out"
+      ]
     },
     "dinosaur-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-15T07:36:03.199609+00:00",
+      "lastChecked": "2026-11-21T01:45:29.893073+00:00",
       "errors": []
     },
     "effigy-mounds-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-15T07:36:13.969866+00:00",
+      "lastChecked": "2026-11-21T01:45:45.357735+00:00",
       "errors": []
     },
     "el-malpais-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-15T07:36:21.368605+00:00",
+      "lastChecked": "2026-11-21T01:45:59.150469+00:00",
       "errors": []
     },
     "el-morro-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-15T07:36:29.661074+00:00",
+      "lastChecked": "2026-11-21T01:46:06.874106+00:00",
       "errors": []
     },
     "emmett-till-and-mamie-till-mobley-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-15T07:36:46.343453+00:00",
+      "lastChecked": "2026-11-21T01:46:52.933130+00:00",
       "errors": []
     },
     "florissant-fossil-beds-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-15T07:36:53.321488+00:00",
+      "lastChecked": "2026-11-21T01:47:12.761040+00:00",
       "errors": []
     },
     "fort-frederica-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-15T07:36:59.006597+00:00",
+      "lastChecked": "2026-11-21T01:47:25.814260+00:00",
       "errors": []
     },
     "fort-matanzas-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-15T07:37:05.887531+00:00",
+      "lastChecked": "2026-11-21T01:47:42.787899+00:00",
       "errors": []
     },
     "fort-mchenry-national-monument-and-historic-shrine": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-15T07:37:13.623354+00:00",
+      "lastChecked": "2026-11-21T01:47:59.751515+00:00",
       "errors": []
     },
     "fort-monroe-national-monument": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-15T13:22:08.613464+00:00",
+      "lastChecked": "2026-11-21T01:48:12.131360+00:00",
       "errors": []
     },
     "fort-pulaski-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-15T13:22:15.898538+00:00",
+      "lastChecked": "2026-11-21T01:48:25.475583+00:00",
       "errors": []
     },
     "fort-stanwix-national-monument": {
       "accepted": 0,
       "candidates": 7,
-      "lastChecked": "2026-11-15T13:22:23.704876+00:00",
+      "lastChecked": "2026-11-21T01:48:40.473694+00:00",
       "errors": []
     },
     "fort-union-national-monument": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-15T13:22:34.651321+00:00",
+      "lastChecked": "2026-11-21T01:49:16.466418+00:00",
       "errors": []
     },
     "fossil-butte-national-monument": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-15T13:22:43.479661+00:00",
+      "lastChecked": "2026-11-21T01:50:00.083707+00:00",
       "errors": []
     },
     "frances-perkins-national-monument": {
