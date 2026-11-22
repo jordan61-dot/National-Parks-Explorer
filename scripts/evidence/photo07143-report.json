@@ -2137,37 +2137,37 @@
     "glacier-bay-national-preserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T01:42:55.718816+00:00",
+      "lastChecked": "2026-11-22T19:16:54.947642+00:00",
       "errors": []
     },
     "great-sand-dunes-national-preserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T01:43:11.077933+00:00",
+      "lastChecked": "2026-11-22T19:17:09.068538+00:00",
       "errors": []
     },
     "katmai-national-preserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T01:43:18.077190+00:00",
+      "lastChecked": "2026-11-22T19:17:15.738260+00:00",
       "errors": []
     },
     "lake-clark-national-preserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T01:43:32.597753+00:00",
+      "lastChecked": "2026-11-22T19:17:25.683624+00:00",
       "errors": []
     },
     "little-river-canyon-national-preserve": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-17T01:43:48.678697+00:00",
+      "lastChecked": "2026-11-22T19:17:37.656213+00:00",
       "errors": []
     },
     "mojave-national-preserve": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-17T01:43:59.063629+00:00",
+      "lastChecked": "2026-11-22T19:17:45.742460+00:00",
       "errors": [
         "asset e5e106fb-9588-4f77-af8a-af059096564a: no verified small image"
       ]
@@ -2175,69 +2175,67 @@
     "noatak-national-preserve": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-17T01:44:05.133704+00:00",
+      "lastChecked": "2026-11-22T19:17:50.608388+00:00",
       "errors": []
     },
     "tallgrass-prairie-national-preserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T01:44:14.773606+00:00",
+      "lastChecked": "2026-11-22T19:17:58.918145+00:00",
       "errors": []
     },
     "timucuan-ecological-and-historic-preserve": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-17T01:44:23.529040+00:00",
+      "lastChecked": "2026-11-22T19:18:04.877933+00:00",
       "errors": []
     },
     "valles-caldera-national-preserve": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-17T01:44:37.603333+00:00",
+      "lastChecked": "2026-11-22T19:18:12.854287+00:00",
       "errors": []
     },
     "wrangell-st-elias-national-preserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T01:44:48.425375+00:00",
+      "lastChecked": "2026-11-22T19:18:24.600133+00:00",
       "errors": []
     },
     "yukon-charley-rivers-national-preserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T01:45:04.504320+00:00",
+      "lastChecked": "2026-11-22T19:18:34.519702+00:00",
       "errors": []
     },
     "city-of-rocks-national-reserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T01:45:14.643144+00:00",
+      "lastChecked": "2026-11-22T19:18:41.235093+00:00",
       "errors": []
     },
     "ebey-s-landing-national-historical-reserve": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T01:45:23.866296+00:00",
+      "lastChecked": "2026-11-22T19:18:48.860698+00:00",
       "errors": []
     },
     "amistad-national-recreation-area": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-17T01:45:30.193425+00:00",
+      "lastChecked": "2026-11-22T19:18:54.063705+00:00",
       "errors": []
     },
     "bighorn-canyon-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T07:45:54.433306+00:00",
-      "errors": [
-        "search failed: The read operation timed out"
-      ]
+      "lastChecked": "2026-11-22T19:19:06.745253+00:00",
+      "errors": []
     },
     "boston-harbor-islands-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T07:46:52.126839+00:00",
+      "lastChecked": "2026-11-22T19:19:27.002313+00:00",
       "errors": [
         "asset b92b8a61-e2fe-4239-90b7-1f6c29d0e837: duplicate image content"
       ]
@@ -2245,19 +2243,19 @@
     "chattahoochee-river-national-recreation-area": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-17T07:47:01.443996+00:00",
+      "lastChecked": "2026-11-22T19:19:34.355311+00:00",
       "errors": []
     },
     "chickasaw-national-recreation-area": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-17T07:47:08.479615+00:00",
+      "lastChecked": "2026-11-22T19:19:45.164055+00:00",
       "errors": []
     },
     "curecanti-national-recreation-area": {
       "accepted": 0,
       "candidates": 2,
-      "lastChecked": "2026-11-17T07:47:15.284806+00:00",
+      "lastChecked": "2026-11-22T19:19:52.184355+00:00",
       "errors": []
     },
     "delaware-water-gap-national-recreation-area": {
