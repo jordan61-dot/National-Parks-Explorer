@@ -22045,7 +22045,31 @@
       "photographs": []
     },
     "zion-national-park": {
-      "photographs": []
+      "photographs": [
+        {
+          "id": "photo07143-41b0d193-ad5e-43e4-9067-ab9a58dad9d3",
+          "asset": "src/media072/photo07143-41b0d193-ad5e-43e4-9067-ab9a58dad9d3.webp",
+          "source": "https://npgallery.nps.gov/AssetDetail/41b0d193-ad5e-43e4-9067-ab9a58dad9d3",
+          "sourcePageSha256": "cb2b80f09783ee56ce74a29ea044cf2af43fadcc107f6c9bc4f905e56e83c26a",
+          "originalSource": "https://npgallery.nps.gov/GetAsset/41b0d193-ad5e-43e4-9067-ab9a58dad9d3/original.jpg",
+          "downloadUrl": "https://npgallery.nps.gov/GetAsset/41b0d193-ad5e-43e4-9067-ab9a58dad9d3/proxylores.jpg",
+          "retrievedAt": "2026-11-22T13:27:29.680504+00:00",
+          "alt": "A stone monument with an arrowhead on it stands next to a roadway with vehicles lined up at a fee booth.",
+          "caption": "South Entrance of Zion National Park",
+          "credit": "NPS/A. Farish",
+          "license": "Public domain (NPS asset declaration)",
+          "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+          "rightsEvidence": "Public domain:Full Granting Rights",
+          "unitEvidence": "Zion National Park, Code: ZION",
+          "locationEvidence": "Park name or distinctive park name appears in the NPS title or alternative text; NPS asset explicitly identifies this unit.",
+          "locationMethod": "nps-unit",
+          "width": 700,
+          "height": 421,
+          "sha256": "68b46ce9fddf92175608b2503a16da539b82ef4d58445656ac8e3f26b3beb8d5",
+          "bytes": 75518,
+          "changes": "Resized NPS small version and encoded WebP; no visual alteration. Embedded EXIF/XMP preserved where present."
+        }
+      ]
     },
     "blue-ridge-parkway": {
       "photographs": [
