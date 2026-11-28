@@ -1323,123 +1323,121 @@
     "devils-tower-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-21T01:44:44.853648+00:00",
-      "errors": [
-        "search failed: The read operation timed out"
-      ]
+      "lastChecked": "2026-11-28T15:43:15.632201+00:00",
+      "errors": []
     },
     "dinosaur-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-21T01:45:29.893073+00:00",
+      "lastChecked": "2026-11-28T15:43:28.502550+00:00",
       "errors": []
     },
     "effigy-mounds-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-21T01:45:45.357735+00:00",
+      "lastChecked": "2026-11-28T15:43:39.066187+00:00",
       "errors": []
     },
     "el-malpais-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-21T01:45:59.150469+00:00",
+      "lastChecked": "2026-11-28T15:43:47.117764+00:00",
       "errors": []
     },
     "el-morro-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-21T01:46:06.874106+00:00",
+      "lastChecked": "2026-11-28T15:43:55.320384+00:00",
       "errors": []
     },
     "emmett-till-and-mamie-till-mobley-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-21T01:46:52.933130+00:00",
+      "lastChecked": "2026-11-28T15:44:24.440178+00:00",
       "errors": []
     },
     "florissant-fossil-beds-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-21T01:47:12.761040+00:00",
+      "lastChecked": "2026-11-28T15:44:40.208975+00:00",
       "errors": []
     },
     "fort-frederica-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-21T01:47:25.814260+00:00",
+      "lastChecked": "2026-11-28T15:44:51.533749+00:00",
       "errors": []
     },
     "fort-matanzas-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-21T01:47:42.787899+00:00",
+      "lastChecked": "2026-11-28T15:45:09.007110+00:00",
       "errors": []
     },
     "fort-mchenry-national-monument-and-historic-shrine": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-21T01:47:59.751515+00:00",
+      "lastChecked": "2026-11-28T15:45:22.301144+00:00",
       "errors": []
     },
     "fort-monroe-national-monument": {
       "accepted": 0,
       "candidates": 4,
-      "lastChecked": "2026-11-21T01:48:12.131360+00:00",
+      "lastChecked": "2026-11-28T15:45:35.302896+00:00",
       "errors": []
     },
     "fort-pulaski-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-21T01:48:25.475583+00:00",
+      "lastChecked": "2026-11-28T15:45:44.690322+00:00",
       "errors": []
     },
     "fort-stanwix-national-monument": {
       "accepted": 0,
       "candidates": 7,
-      "lastChecked": "2026-11-21T01:48:40.473694+00:00",
+      "lastChecked": "2026-11-28T15:45:53.844412+00:00",
       "errors": []
     },
     "fort-union-national-monument": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-21T01:49:16.466418+00:00",
+      "lastChecked": "2026-11-28T15:46:13.739044+00:00",
       "errors": []
     },
     "fossil-butte-national-monument": {
       "accepted": 0,
       "candidates": 5,
-      "lastChecked": "2026-11-21T01:50:00.083707+00:00",
+      "lastChecked": "2026-11-28T15:46:25.407061+00:00",
       "errors": []
     },
     "frances-perkins-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-21T07:38:33.650890+00:00",
+      "lastChecked": "2026-11-28T15:46:27.461448+00:00",
       "errors": []
     },
     "freedom-riders-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-21T07:38:38.829120+00:00",
+      "lastChecked": "2026-11-28T15:46:36.229586+00:00",
       "errors": []
     },
     "george-washington-birthplace-national-monument": {
       "accepted": 0,
       "candidates": 1,
-      "lastChecked": "2026-11-21T07:38:48.568200+00:00",
+      "lastChecked": "2026-11-28T15:46:49.003192+00:00",
       "errors": []
     },
     "george-washington-carver-national-monument": {
       "accepted": 0,
       "candidates": 8,
-      "lastChecked": "2026-11-21T07:38:54.872804+00:00",
+      "lastChecked": "2026-11-28T15:47:02.268846+00:00",
       "errors": []
     },
     "gila-cliff-dwellings-national-monument": {
       "accepted": 0,
       "candidates": 0,
-      "lastChecked": "2026-11-21T07:39:01.532775+00:00",
+      "lastChecked": "2026-11-28T15:47:14.737331+00:00",
       "errors": []
     },
     "governors-island-national-monument": {
